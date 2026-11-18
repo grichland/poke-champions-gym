@@ -1,0 +1,100 @@
+ÿþ    Finished `release` profile [optimized + debuginfo] target(s) in 18.65s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 26 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 23 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+test result: ok. 22 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+test result: ok. 32 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.45s
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.21s
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 14.11s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.38s
+test result: ok. 12 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.64s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.56s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.63s
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.27s
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 11.77s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.52s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.42s
+test result: ok. 30 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+bash.exe :    Compiling pyo3-ffi v0.29.3
+At line:1 char:1
++ & 'C:\Program Files\Git\bin\bash.exe' target/np2-final.sh 2>&1 | Tee- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (   Compiling pyo3-ffi v0.29.3:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+   Compiling pyo3 v0.29.3
+   Compiling cg-bindings v0.1.0 (C:\Users\user\Code\pokemon_champions\champions-gym\bindings)
+    Finished `release` profile [optimized + debuginfo] target(s) in 10.04s
+python-ext.sh: wrote python/champions_gym/_cg.cp312-win_amd64.pyd
+== python/tests/test_battle_view.py
+3 passed, 0 failed
+== python/tests/test_env.py
+7 passed, 0 failed
+== python/tests/test_live.py
+champions_gym.live: ignored options some_later_option
+28 passed, 0 failed
+== python/tests/test_neural.py
+champions_gym.neural: running despite: layout_hash: model 
+'0000000000000000000000000000000000000000000000000000000000000000', CG 
+'8b8a8fa78150d7cce598e6e91e23689a3d694fab752d0ab3dcd44363225adaad'
+24 passed, 0 failed
+== python/tests/test_obs.py
+6 passed, 0 failed
+== python/tests/test_teams_builtin.py
+9 passed, 0 failed
+== players_run
+{"a":"tower","a_asked":153379,"a_fired":{},"a_voluntary_switches":337,"a_win_rate":0.50705,"a_wins":10141,"anomalies":0,"anomalies_by_kind":{"explained:illusion opp garchomp HP was":{"examples":["seed 13640119498714396468 ep 52 seat 0: opp garchomp HP was 22 by the Battle, 100 by the row","seed 10953748227807536452 ep 338 seat 1: opp garchomp HP was 2 by the Battle, 100 by the row"],"n":2},"explained:illusion opp golisopod enters while":{"examples":["seed 14633072986550852049 ep 8 seat 0: opp golisopod enters while on the field"],"n":1},"explained:illusion opp rotomheat HP was":{"examples":["seed 7398245536507384638 ep 66 seat 0: opp rotomheat HP was 18 by the Battle, 100 by the row"],"n":1}},"anomalies_explained":4,"asked":306151,"auto_decisions":7112,"b":"max_damage","b_asked":152772,"b_fired":{},"b_voluntary_switches":0,"b_wins":9859,"battle_empty":0,"battles_per_s":29970.619801408677,"by_assignment":[{"a_seat":0,"a_win_rate":0.5035,"a_wins":5035,"b_wins":4965,"games":10000,"ties":0,"truncated":0},{"a_seat":1,"a_win_rate":0.5106,"a_wins":5106,"b_wins":4894,"games":10000,"ties":0,"truncated":0}],"check_a_by_field":{"explained:hidden_regenerator":{"examples":["seed 17828260411578536422 ep 105 turn 4 seat 1 slowkinggalar state 95 battle 62","seed 17828260411578536422 ep 105 turn 4 seat 1 slowkinggalar state 95 battle 62","seed 17828260411578536422 ep 105 turn 5 seat 1 slowkinggalar state 95 battle 62"],"n":5},"explained:illusion":{"examples":["seed 2082352067882284608 ep 244 turn 1 seat 1 garchomp state 100 battle 90","seed 2082352067882284608 ep 244 turn 1 seat 1 garchomp state garchompitez battle Held(ItemId(87))","seed 2082352067882284608 ep 244 turn 1 seat 1 garchomp bittermalice not among its moves"],"n":816},"explained:lock_end_unseen":{"examples":["seed 8814869500039806460 ep 264 turn 6 seat 1 garchomp outrage state 9 battle 10","seed 16527086277463778940 ep 179 turn 8 seat 1 garchomp outrage state 9 battle 10","seed 6592817150825218859 ep 191 turn 7 seat 1 garchomp outrage state 9 battle 10"],"n":3},"explained:regenerator_estimate":{"examples":["seed 13640119498714396468 ep 235 turn 6 seat 1 dragalge state 62 battle 61.333332","seed 13640119498714396468 ep 235 turn 6 seat 1 dragalge state 62 battle 61.333332","seed 13640119498714396468 ep 235 turn 7 seat 1 dragalge state 62 battle 61.333332"],"n":12}},"check_a_disagreements":0,"check_a_explained":836,"check_b_agreement_rate":1,"check_b_battle_allows_more":0,"check_b_battle_forbids":0,"check_b_classes":{},"check_d_equal":40000,"check_d_rebuilt":40000,"checked_decisions":306151,"checks":true,"decisions":346151,"decisions_per_s":518718.00074387074,"errors":[],"games":20000,"hidden_by_kind":{},"hidden_differences":0,"hidden_games":5024,"hidden_steps":28593,"label":"","labels_checked":346151,"max_turns":81,"mean_turns":6.0733,"player_fallbacks":0,"prior0_actions":0,"prior0_by_kind":{},"refusal_fallbacks":0,"refusals":0,"refusals_by_class":{},"refused_disabled":0,"refused_trapped":0,"replace_asked":70331,"replace_before_rows":false,"replace_twins":0,"replace_twins_varied":0,"rows":1003268,"rule":"battle","seat0_win_rate":0.49645,"seed":8001,"stale_checked":0,"stale_events":0,"stale_replace":0,"stale_unsnapped":0,"steps":190044,"team_mode":"real","teams":"tools/rig/data/teams.json","teams_a":null,"threads":24,"ties":0,"time_capped":false,"truncated":0,"truth_by_kind":{},"truth_errors":0,"wall_s":0.6673202}
+tower vs max_damage: 20000 games, A 50.7% (A seat0 50.4%, A seat1 51.1%), turns mean 6.1 max 81, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 40000/40000, prior0 0, truth 0, hidden 0 (5024 games, 28593 steps), refused trapped 0, steps 190044, 29971 battles/s, 518718 decisions/s
+== wheel
+wheel.py: wrote C:\Users\user\Code\pokemon_champions\champions-gym\dist\champions_gym-0.4.0-cp312-cp312-win_amd64.whl (2218822 bytes, 15 files)
+CHECKS-DONE

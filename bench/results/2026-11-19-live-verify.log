@@ -1,0 +1,35 @@
+ÿþ    Finished `release` profile [optimized + debuginfo] target(s) in 39.54s
+rust passed 376 failed 0
+python-ext.sh: wrote python/champions_gym/_cg.cp312-win_amd64.pyd
+3 passed, 0 failed
+7 passed, 0 failed
+17 passed, 0 failed
+6 passed, 0 failed
+9 passed, 0 failed
+tower vs max_damage: 20000 games, A 50.7% (A seat0 50.4%, A seat1 51.1%), turns mean 6.1 max 81, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 40000/40000, prior0 0, truth 0
+tower vs max_damage: 50000 games, A 50.6% (A seat0 50.2%, A seat1 51.0%), turns mean 6.0 max 61, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 100000/100000, prior0 0, truth 0, hidden 0 (12528 games, 70226 steps), refused trapped 0, 
+endgame vs pilot_hazard: 10000 games, A 53.8% (A seat0 53.2%, A seat1 54.4%), turns mean 6.7 max 70, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 20000/20000, prior0 0, truth 0, hidden 0 (2512 games, 14063 steps), refused trapped 0,
+random vs random: 9600 games, A 50.0% (A seat0 50.2%, A seat1 49.8%), turns mean 36.0 max 123, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 19200/19200, prior0 0, truth 0, 
+random vs random: 9600 games, A 50.0% (A seat0 49.8%, A seat1 50.2%), turns mean 36.9 max 143, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 19200/19200, prior0 0, truth 0, 
+random vs random: 9600 games, A 50.0% (A seat0 49.4%, A seat1 50.6%), turns mean 58.9 max 255, truncated 0, refusals 222, anomalies 0, check a 0, check b 0.9990, rebuild 19200/19200, prior0 0, truth 0
+random vs random: 9600 games, A 50.0% (A seat0 49.8%, A seat1 50.2%), turns mean 42.4 max 164, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 19200/19200, prior0 0, truth 0, 
+random vs random: 9600 games, A 50.0% (A seat0 49.2%, A seat1 50.8%), turns mean 26.0 max 95, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 19200/19200, prior0 0, truth 0, h
+random vs random: 9600 games, A 50.0% (A seat0 50.4%, A seat1 49.6%), turns mean 47.5 max 162, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 19200/19200, prior0 0, truth 0, 
+random vs random: 9600 games, A 50.0% (A seat0 49.9%, A seat1 50.1%), turns mean 32.2 max 149, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 19200/19200, prior0 0, truth 0, 
+random vs random: 9600 games, A 50.0% (A seat0 51.6%, A seat1 48.4%), turns mean 28.7 max 92, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 19200/19200, prior0 0, truth 0, h
+random vs random: 9600 games, A 50.0% (A seat0 50.4%, A seat1 49.6%), turns mean 64.3 max 253, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 19200/19200, prior0 0, truth 0, 
+random vs random: 9600 games, A 50.0% (A seat0 51.1%, A seat1 48.9%), turns mean 24.8 max 69, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 19200/19200, prior0 0, truth 0, h
+random vs random: 9600 games, A 50.0% (A seat0 49.2%, A seat1 50.8%), turns mean 58.5 max 237, truncated 0, refusals 4420, anomalies 0, check a 0, check b 0.9872, rebuild 19200/19200, prior0 0, truth 
+random vs random: 9600 games, A 50.0% (A seat0 50.4%, A seat1 49.6%), turns mean 31.9 max 129, truncated 0, refusals 38332, anomalies 0, check a 0, check b 0.8124, rebuild 19200/19200, prior0 0, truth
+{"battles": 800, "battles_identical": 800, "steps": 17054, "options_identical": 17054, "states_identical": 17054, "events_identica
+{"rows_steps": 17054, "rows_steps_equal": 17054, "kinds": {"enter": {"both": 8881, "showdown_only": 0, "engine_only": 0}, "ability
+{"battles": 500, "battles_identical": 500, "steps": 14861, "options_identical": 14861, "states_identical": 14861, "events_identica
+{"rows_steps": 14861, "rows_steps_equal": 14861, "kinds": {"enter": {"both": 6897, "showdown_only": 0, "engine_only": 0}, "turn": 
+tower orders 16 bad 0 anomalies 2
+endgame orders 16 bad 0 anomalies 2
+pilot_priority orders 16 bad 0 anomalies 2
+max_damage orders 16 bad 0 anomalies 2
+disciplined orders 16 bad 0 anomalies 2
+{'error': 'bad JSON: json: bad number at 0'} {'error': 'message for battle "x"; this session holds None (send battle_start first)', 'type': 'decision_request'}
+wheel.py: wrote C:\Users\user\Code\pokemon_champions\champions-gym\dist\champions_gym-0.1.0-cp312-cp312-win_amd64.whl (2153358 bytes, 13 files)
+VERIFY_DONE

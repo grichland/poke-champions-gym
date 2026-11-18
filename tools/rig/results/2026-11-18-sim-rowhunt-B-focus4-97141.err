@@ -1,0 +1,6 @@
+500 battles, 14613 steps, 500 identical, 43s
+1000 battles, 29125 steps, 999 identical, 87s
+1500 battles, 44003 steps, 1499 identical, 128s
+2000 battles, 58520 steps, 1999 identical, 176s
+2500 battles, 72881 steps, 2499 identical, 222s
+3000 battles, 87258 steps, 2999 identical, 267s

@@ -1,0 +1,87 @@
+
+===== compile =====
+exit 0
+
+===== exists right after compile =====
+True
+
+Name      Length
+----      ------
+hello.cs      65
+hello.exe   3584
+
+
+
+
+===== exists after 2s =====
+
+Name      Length
+----      ------
+hello.cs      65
+hello.exe   3584
+
+
+
+
+===== run =====
+hello
+exit 0
+
+===== exists after run =====
+
+Name      Length
+----      ------
+hello.cs      65
+hello.exe   3584
+
+
+
+
+===== managed dll =====
+
+Name      Length
+----      ------
+hello.cs      65
+hello.exe   3584
+lib.dll     3072
+
+
+
+
+===== AV products =====
+
+
+displayName  : Windows Defender
+productState : 393472
+
+displayName  : McAfee
+productState : 266240
+
+
+
+
+
+===== Application/Defender/McAfee events last 10 min =====
+
+
+
+===== McAfee processes/services =====
+
+Name           Id
+----           --
+mc-fw-host   2128
+mc-fw-host   5668
+mc-neo-host 10180
+mc-web-view 22412
+
+
+
+
+===== Zone/ADS of pyd =====
+
+Stream
+------
+:$DATA
+
+
+

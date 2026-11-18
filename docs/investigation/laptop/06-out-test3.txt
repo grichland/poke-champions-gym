@@ -1,0 +1,158 @@
+exetest dir now:
+
+Name     Length
+----     ------
+hello.cs     91
+
+
+
+run 1 : exists=True FAILED: Program 'hello.exe' failed to run: Unknown error (0xfffffffe)At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-test3.ps1:9 char:13
++   try{ $o = & "$d\hello.exe" 2>&1; "run $i : exists=$ex out=$o exit=$ ...
++             ~~~~~~~~~~~~~~~~~~~~~.
+  exists after: False
+run 2 : exists=True out=hello 2 exit=0
+  exists after: True
+run 3 : exists=True out=hello 3 exit=0
+  exists after: True
+run 4 : exists=True out=hello 4 exit=0
+  exists after: True
+& : The term 'C:\Users\grich\Code\pcsa\poke-engine-investigation\exetest3_1\hello.exe' is not recognized as the name 
+of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, 
+verify that the path is correct and try again.
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-test3.ps1:14 char:3
++ & "$scr\exetest3_1\hello.exe"
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\grich\...st3_1\hello.exe:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+
+TimeCreated : 11/16/2026 3:13:42 PM
+Id          : 3033
+Message     : Code Integrity determined that a process 
+              (\Device\HarddiskVolume3\Windows\System32\SecurityHealthService.exe) attempted to load 
+              \Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-sec-plugin-x64.dll that did not meet the 
+              Windows signing level requirements.
+
+TimeCreated : 11/16/2026 3:13:42 PM
+Id          : 3033
+Message     : Code Integrity determined that a process 
+              (\Device\HarddiskVolume3\Windows\System32\SecurityHealthService.exe) attempted to load 
+              \Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-sec-plugin-x64.dll that did not meet the 
+              Windows signing level requirements.
+
+TimeCreated : 11/16/2026 3:13:42 PM
+Id          : 3033
+Message     : Code Integrity determined that a process 
+              (\Device\HarddiskVolume3\Windows\System32\SecurityHealthService.exe) attempted to load 
+              \Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-sec-plugin-x64.dll that did not meet the 
+              Windows signing level requirements.
+
+TimeCreated : 11/16/2026 3:13:42 PM
+Id          : 3033
+Message     : Code Integrity determined that a process 
+              (\Device\HarddiskVolume3\Windows\System32\SecurityHealthService.exe) attempted to load 
+              \Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-sec-plugin-x64.dll that did not meet the 
+              Windows signing level requirements.
+
+TimeCreated : 11/16/2026 3:13:42 PM
+Id          : 3033
+Message     : Code Integrity determined that a process 
+              (\Device\HarddiskVolume3\Windows\System32\SecurityHealthService.exe) attempted to load 
+              \Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-sec-plugin-x64.dll that did not meet the 
+              Windows signing level requirements.
+
+TimeCreated : 11/16/2026 3:13:42 PM
+Id          : 3033
+Message     : Code Integrity determined that a process 
+              (\Device\HarddiskVolume3\Windows\System32\SecurityHealthService.exe) attempted to load 
+              \Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-sec-plugin-x64.dll that did not meet the 
+              Windows signing level requirements.
+
+TimeCreated : 11/16/2026 3:13:42 PM
+Id          : 3033
+Message     : Code Integrity determined that a process 
+              (\Device\HarddiskVolume3\Windows\System32\SecurityHealthService.exe) attempted to load 
+              \Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-sec-plugin-x64.dll that did not meet the 
+              Windows signing level requirements.
+
+TimeCreated : 11/16/2026 3:13:42 PM
+Id          : 3033
+Message     : Code Integrity determined that a process 
+              (\Device\HarddiskVolume3\Windows\System32\SecurityHealthService.exe) attempted to load 
+              \Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-sec-plugin-x64.dll that did not meet the 
+              Windows signing level requirements.
+
+TimeCreated : 11/16/2026 3:13:42 PM
+Id          : 3033
+Message     : Code Integrity determined that a process 
+              (\Device\HarddiskVolume3\Windows\System32\SecurityHealthService.exe) attempted to load 
+              \Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-sec-plugin-x64.dll that did not meet the 
+              Windows signing level requirements.
+
+TimeCreated : 11/16/2026 3:13:42 PM
+Id          : 3033
+Message     : Code Integrity determined that a process 
+              (\Device\HarddiskVolume3\Windows\System32\SecurityHealthService.exe) attempted to load 
+              \Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-sec-plugin-x64.dll that did not meet the 
+              Windows signing level requirements.
+
+TimeCreated : 11/16/2026 3:13:42 PM
+Id          : 3033
+Message     : Code Integrity determined that a process 
+              (\Device\HarddiskVolume3\Windows\System32\SecurityHealthService.exe) attempted to load 
+              \Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-sec-plugin-x64.dll that did not meet the 
+              Windows signing level requirements.
+
+TimeCreated : 11/16/2026 3:13:42 PM
+Id          : 3033
+Message     : Code Integrity determined that a process 
+              (\Device\HarddiskVolume3\Windows\System32\SecurityHealthService.exe) attempted to load 
+              \Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-sec-plugin-x64.dll that did not meet the 
+              Windows signing level requirements.
+
+TimeCreated : 11/16/2026 3:13:42 PM
+Id          : 3033
+Message     : Code Integrity determined that a process 
+              (\Device\HarddiskVolume3\Windows\System32\SecurityHealthService.exe) attempted to load 
+              \Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-sec-plugin-x64.dll that did not meet the 
+              Windows signing level requirements.
+
+TimeCreated : 11/16/2026 3:13:42 PM
+Id          : 3033
+Message     : Code Integrity determined that a process 
+              (\Device\HarddiskVolume3\Windows\System32\SecurityHealthService.exe) attempted to load 
+              \Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-sec-plugin-x64.dll that did not meet the 
+              Windows signing level requirements.
+
+TimeCreated : 11/16/2026 3:13:42 PM
+Id          : 3033
+Message     : Code Integrity determined that a process 
+              (\Device\HarddiskVolume3\Windows\System32\SecurityHealthService.exe) attempted to load 
+              \Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-sec-plugin-x64.dll that did not meet the 
+              Windows signing level requirements.
+
+TimeCreated : 11/16/2026 3:13:42 PM
+Id          : 3033
+Message     : Code Integrity determined that a process 
+              (\Device\HarddiskVolume3\Windows\System32\SecurityHealthService.exe) attempted to load 
+              \Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-sec-plugin-x64.dll that did not meet the 
+              Windows signing level requirements.
+
+TimeCreated : 11/16/2026 3:13:42 PM
+Id          : 3033
+Message     : Code Integrity determined that a process 
+              (\Device\HarddiskVolume3\Windows\System32\SecurityHealthService.exe) attempted to load 
+              \Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-sec-plugin-x64.dll that did not meet the 
+              Windows signing level requirements.
+
+TimeCreated : 11/16/2026 3:13:42 PM
+Id          : 3033
+Message     : Code Integrity determined that a process 
+              (\Device\HarddiskVolume3\Windows\System32\SecurityHealthService.exe) attempted to load 
+              \Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-sec-plugin-x64.dll that did not meet the 
+              Windows signing level requirements.
+
+
+
+

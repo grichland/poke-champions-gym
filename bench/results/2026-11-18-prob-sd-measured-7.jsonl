@@ -1,0 +1,5 @@
+{"name":"tripleaxel","trials":40000,"counts":{"0":4003,"1":3536,"2":3214,"3":29247},"wall_s":79.846,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"sec_airslash_sg","trials":40000,"counts":{"flinch":22569,"none":17431},"wall_s":83.753,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"confusion_turns","trials":40000,"counts":{"1":10045,"2":9892,"3":9932,"4":10131},"wall_s":216.115,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"drag_redcard","trials":40000,"counts":{"1":20015,"2":19985},"wall_s":34.042,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"item_quickclaw","trials":40000,"counts":{"none":31874,"proc":8126},"wall_s":31.439,"showdown":"c0845f33d","format":"gen9championsbssregmc"}

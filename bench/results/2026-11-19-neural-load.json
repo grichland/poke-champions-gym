@@ -1,0 +1,94 @@
+{
+ "ckpt": "../pcsa-former/runs/league-20261118-f/evals/iter-00092.pt",
+ "cg_contract": {
+  "contract": "0.6",
+  "layout_hash": "8b8a8fa78150d7cce598e6e91e23689a3d694fab752d0ab3dcd44363225adaad",
+  "shapes": {
+   "rows": [
+    12,
+    300
+   ],
+   "row_ids": [
+    12,
+    10
+   ],
+   "field": [
+    66
+   ],
+   "last": [
+    17
+   ],
+   "last_ids": [
+    4
+   ],
+   "mask": [
+    11
+   ],
+   "action_mask": [
+    71
+   ],
+   "seat": [],
+   "kind": [],
+   "decision": [],
+   "opp_prior": [
+    13
+   ]
+  },
+  "vocab": {
+   "species": 393,
+   "moves": 516,
+   "items": 168,
+   "abilities": 319
+  }
+ },
+ "strict_load": "refused: policy does not match this CG build: contract: model '0.5', CG '0.6'",
+ "info": {
+  "contract": "0.5",
+  "layout_hash": "8b8a8fa78150d7cce598e6e91e23689a3d694fab752d0ab3dcd44363225adaad",
+  "shapes": {
+   "rows": [
+    12,
+    300
+   ],
+   "row_ids": [
+    12,
+    10
+   ],
+   "field": [
+    66
+   ],
+   "last": [
+    17
+   ],
+   "last_ids": [
+    4
+   ],
+   "mask": [
+    11
+   ],
+   "opp_prior": [
+    13
+   ]
+  },
+  "vocab": {
+   "species": 393,
+   "items": 168,
+   "abilities": 319,
+   "moves": 516
+  },
+  "model_id": "C:\\Users\\user\\Code\\pokemon_champions\\pcsa-former\\runs\\league-20261118-f\\evals\\iter-00092.pt",
+  "model_hash": "001fc79980c7e7b7",
+  "requery_refused": false,
+  "run": "league-20261118-f",
+  "iteration": 92,
+  "memory": 32
+ },
+ "mismatch": [
+  "contract: model '0.5', CG '0.6'"
+ ],
+ "warmup_ms": [
+  66.8,
+  6.3
+ ],
+ "load_s": 2.39
+}

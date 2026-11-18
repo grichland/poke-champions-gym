@@ -1,0 +1,511 @@
+ÿþ== load
+bash.exe : champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+At line:1 char:1
++ & 'C:\Program Files\Git\bin\bash.exe' target/np2-real.sh 2>&1 | Tee-O ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (champions_gym.n...'0.5', CG '0.6':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+{
+ "ckpt": "../pcsa-former/runs/league-20261118-f/evals/iter-00092.pt",
+ "cg_contract": {
+  "contract": "0.6",
+  "layout_hash": "8b8a8fa78150d7cce598e6e91e23689a3d694fab752d0ab3dcd44363225adaad",
+  "shapes": {
+   "rows": [
+    12,
+    300
+   ],
+   "row_ids": [
+    12,
+    10
+   ],
+   "field": [
+    66
+   ],
+   "last": [
+    17
+   ],
+   "last_ids": [
+    4
+   ],
+   "mask": [
+    11
+   ],
+   "action_mask": [
+    71
+   ],
+   "seat": [],
+   "kind": [],
+   "decision": [],
+   "opp_prior": [
+    13
+   ]
+  },
+  "vocab": {
+   "species": 393,
+   "moves": 516,
+   "items": 168,
+   "abilities": 319
+  }
+ },
+ "strict_load": "refused: policy does not match this CG build: contract: model '0.5', CG '0.6'",
+ "info": {
+  "contract": "0.5",
+  "layout_hash": "8b8a8fa78150d7cce598e6e91e23689a3d694fab752d0ab3dcd44363225adaad",
+  "shapes": {
+   "rows": [
+    12,
+    300
+   ],
+   "row_ids": [
+    12,
+    10
+   ],
+   "field": [
+    66
+   ],
+   "last": [
+    17
+   ],
+   "last_ids": [
+    4
+   ],
+   "mask": [
+    11
+   ],
+   "opp_prior": [
+    13
+   ]
+  },
+  "vocab": {
+   "species": 393,
+   "items": 168,
+   "abilities": 319,
+   "moves": 516
+  },
+  "model_id": "C:\\Users\\user\\Code\\pokemon_champions\\pcsa-former\\runs\\league-20261118-f\\evals\\iter-00092.pt",
+  "checkpoint": "C:\\Users\\user\\Code\\pokemon_champions\\pcsa-former\\runs\\league-20261118-f\\evals\\iter-00092.pt",
+  "model_hash": "001fc79980c7e7b7",
+  "requery_refused": false,
+  "run": "league-20261118-f",
+  "iteration": 92,
+  "memory": 32
+ },
+ "mismatch": [
+  "contract: model '0.5', CG '0.6'"
+ ],
+ "warmup_ms": [
+  10.6,
+  5.9
+ ],
+ "load_s": 2.35
+}
+wrote C:\Users\user\Code\pokemon_champions\champions-gym\bench\results\2026-11-19-neural2-load.json
+== restart
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"stream": "phone", "requests": 16, "restart_at_seq": 3, "after": 13, "with_hook": 0, "with_hook_value_differs": 0, "without_hook": 0, "without_hook_value_differs": 13, "in_process": 0, "in_process_value_differs": 0}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"stream": "restart-0", "requests": 6, "restart_at_seq": 10, "after": 1, "with_hook": 0, "with_hook_value_differs": 0, "without_hook": 0, "without_hook_value_differs": 1, "in_process": 0, "in_process_value_differs": 0}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"stream": "restart-1", "requests": 7, "restart_at_seq": 4, "after": 6, "with_hook": 0, "with_hook_value_differs": 0, "without_hook": 0, "without_hook_value_differs": 6, "in_process": 0, "in_process_value_differs": 0}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"stream": "restart-2", "requests": 11, "restart_at_seq": 11, "after": 6, "with_hook": 0, "with_hook_value_differs": 0, "without_hook": 0, "without_hook_value_differs": 6, "in_process": 0, "in_process_value_differs": 0}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"stream": "restart-3", "requests": 7, "restart_at_seq": 3, "after": 6, "with_hook": 0, "with_hook_value_differs": 0, "without_hook": 0, "without_hook_value_differs": 6, "in_process": 0, "in_process_value_differs": 0}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"stream": "restart-4", "requests": 8, "restart_at_seq": 9, "after": 4, "with_hook": 0, "with_hook_value_differs": 0, "without_hook": 0, "without_hook_value_differs": 4, "in_process": 0, "in_process_value_differs": 0}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"stream": "restart-5", "requests": 8, "restart_at_seq": 14, "after": 1, "with_hook": 0, "with_hook_value_differs": 0, "without_hook": 1, "without_hook_value_differs": 1, "in_process": 0, "in_process_value_differs": 0}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"stream": "restart-6", "requests": 11, "restart_at_seq": 16, "after": 3, "with_hook": 0, "with_hook_value_differs": 0, "without_hook": 0, "without_hook_value_differs": 3, "in_process": 0, "in_process_value_differs": 0}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"stream": "restart-7", "requests": 6, "restart_at_seq": 9, "after": 2, "with_hook": 0, "with_hook_value_differs": 0, "without_hook": 0, "without_hook_value_differs": 2, "in_process": 0, "in_process_value_differs": 0}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"stream": "restart-8", "requests": 10, "restart_at_seq": 14, "after": 3, "with_hook": 0, "with_hook_value_differs": 0, "without_hook": 0, "without_hook_value_differs": 3, "in_process": 0, "in_process_value_differs": 0}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"stream": "restart-9", "requests": 8, "restart_at_seq": 16, "after": 1, "with_hook": 0, "with_hook_value_differs": 0, "without_hook": 0, "without_hook_value_differs": 1, "in_process": 0, "in_process_value_differs": 0}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"stream": "restart-10", "requests": 13, "restart_at_seq": 10, "after": 9, "with_hook": 0, "with_hook_value_differs": 0, "without_hook": 0, "without_hook_value_differs": 9, "in_process": 0, "in_process_value_differs": 0}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"stream": "restart-11", "requests": 9, "restart_at_seq": 4, "after": 7, "with_hook": 0, "with_hook_value_differs": 0, "without_hook": 0, "without_hook_value_differs": 7, "in_process": 0, "in_process_value_differs": 0}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"stream": "restart-12", "requests": 4, "restart_at_seq": 6, "after": 2, "with_hook": 0, "with_hook_value_differs": 0, "without_hook": 0, "without_hook_value_differs": 2, "in_process": 0, "in_process_value_differs": 0}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"stream": "restart-13", "requests": 9, "restart_at_seq": 3, "after": 8, "with_hook": 0, "with_hook_value_differs": 0, "without_hook": 0, "without_hook_value_differs": 8, "in_process": 0, "in_process_value_differs": 0}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"stream": "restart-14", "requests": 10, "restart_at_seq": 14, "after": 3, "with_hook": 0, "with_hook_value_differs": 0, "without_hook": 0, "without_hook_value_differs": 3, "in_process": 0, "in_process_value_differs": 0}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"stream": "restart-15", "requests": 9, "restart_at_seq": 14, "after": 2, "with_hook": 0, "with_hook_value_differs": 0, "without_hook": 0, "without_hook_value_differs": 2, "in_process": 0, "in_process_value_differs": 0}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"stream": "restart-16", "requests": 5, "restart_at_seq": 4, "after": 4, "with_hook": 0, "with_hook_value_differs": 0, "without_hook": 0, "without_hook_value_differs": 3, "in_process": 0, "in_process_value_differs": 0}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"stream": "restart-17", "requests": 9, "restart_at_seq": 17, "after": 1, "with_hook": 0, "with_hook_value_differs": 0, "without_hook": 0, "without_hook_value_differs": 1, "in_process": 0, "in_process_value_differs": 0}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"stream": "restart-18", "requests": 9, "restart_at_seq": 11, "after": 4, "with_hook": 0, "with_hook_value_differs": 0, "without_hook": 0, "without_hook_value_differs": 4, "in_process": 0, "in_process_value_differs": 0}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"stream": "restart-19", "requests": 9, "restart_at_seq": 9, "after": 5, "with_hook": 0, "with_hook_value_differs": 0, "without_hook": 0, "without_hook_value_differs": 5, "in_process": 0, "in_process_value_differs": 0}
+{"after": 91, "differ_with_hook": 0, "differ_without_hook": 1, "differ_in_process": 0, "value_differs_with_hook": 0, "value_differs_without_hook": 90, "value_differs_in_process": 0}
+wrote C:\Users\user\Code\pokemon_champions\champions-gym\bench\results\2026-11-19-neural2-restart.json
+== equiv
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"opponent": "tower", "games": 200, "batched_decisions": 2247, "single_decisions": 2247, "identical_prefix": 2247, "equal": true, "same_count": 2247, "first_difference": null}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"opponent": "max_damage", "games": 200, "batched_decisions": 2107, "single_decisions": 2107, "identical_prefix": 2107, "equal": true, "same_count": 2107, "first_difference": null}
+wrote C:\Users\user\Code\pokemon_champions\champions-gym\bench\results\2026-11-19-neural2-equiv.json
+== live
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{
+ "warmup_ms": [
+  14.7,
+  6.3
+ ],
+ "phone": {
+  "answers": 17,
+  "illegal_or_fallback": 0,
+  "anomalies": []
+ },
+ "streams": {
+  "streams": 20,
+  "answers": 187,
+  "illegal_or_fallback": 0
+ },
+ "handle_ms": {
+  "n": 204,
+  "median": 6.5,
+  "p99": 10.0,
+  "max": 13.7
+ },
+ "stats": {
+  "decisions": 204,
+  "policy_calls": 204,
+  "cached": 0,
+  "fallbacks": 0,
+  "slow": 0,
+  "observed": 0,
+  "replace_stale": 38,
+  "replace_fresh": 0,
+  "mask_mismatch": 0,
+  "policy_ms": 1284.8500000072818,
+  "reasons": {},
+  "ms": [
+   6.312100002105581,
+   5.551300000661286,
+   5.504000000655651,
+   5.354500000976259,
+   5.461900000227615,
+   8.605300001363503,
+   9.516200003417907,
+   6.446999999752734,
+   6.166900002426701,
+   7.785300000250572,
+   6.003899998177076,
+   8.776000002399087,
+   6.470699998317286,
+   5.913799999689218,
+   5.589699998381548,
+   8.438900000328431,
+   5.46540000141249,
+   7.864899998821784,
+   6.031100001564482,
+   5.748800002038479,
+   5.322199998772703,
+   6.130599998869002,
+   6.094299998949282,
+   5.855799998244038,
+   5.935799999861047,
+   5.477499998960411,
+   5.369700000301236,
+   5.3446000019903295,
+   5.306200000632089,
+   6.1961000028532,
+   6.073000000469619,
+   7.1596999987377785,
+   8.873300001141615,
+   6.609399999433663,
+   8.95930000115186,
+   5.477800001244759,
+   6.144099999801256,
+   6.302099998720223,
+   7.3790999995253514,
+   6.999199998972472,
+   6.824100000812905,
+   5.381200000556419,
+   5.785600002127467,
+   5.476700000144774,
+   5.3736999980174005,
+   5.232999999861931,
+   5.458499999804189,
+   7.700800000748131,
+   10.21010000113165,
+   6.127900000137743,
+   5.768000002717599,
+   5.3622999985236675,
+   5.648400001518894,
+   5.754499998147367,
+   6.966500000999076,
+   7.493999997677747,
+   6.111000002420042,
+   6.211500000063097,
+   6.442199999582954,
+   6.158699998195516,
+   6.600300002901349,
+   7.554299998446368,
+   6.487800001195865,
+   6.31979999889154,
+   7.874200000514975,
+   6.482599997980287,
+   5.675899999914691,
+   5.629200000839774,
+   5.436399998870911,
+   6.371499999659136,
+   6.658599999354919,
+   5.519300000742078,
+   5.2794000002904795,
+   5.164300000615185,
+   5.208300000958843,
+   5.091300001367927,
+   6.286100000579609,
+   6.748799998604227,
+   5.465900001581758,
+   7.125199997972231,
+   7.015099999989616,
+   8.7271000011242,
+   6.80600000123377,
+   5.422199999884469,
+   6.916599999385653,
+   5.904099998588208,
+   6.19870000082301,
+   5.440900000394322,
+   5.3969999971741345,
+   6.240599999728147,
+   6.969500002014684,
+   6.195199999638135,
+   5.574700000579469,
+   7.7085000011720695,
+   6.028600000718143,
+   6.005600000207778,
+   5.7500000002619345,
+   5.624299999908544,
+   6.042400000296766,
+   6.306600000243634,
+   8.230400002503302,
+   9.525800000119489,
+   8.992200000648154,
+   6.318200001260266,
+   6.33670000024722,
+   5.970799997157883,
+   6.56650000018999,
+   6.08759999886388,
+   6.4444999989063945,
+   5.700800000340678,
+   5.67360000059125,
+   5.619399998977315,
+   5.57469999694149,
+   5.719299999327632,
+   5.550899997615488,
+   6.436100000428269,
+   6.4191000019491185,
+   5.820900001708651,
+   6.509399998321896,
+   6.154700000479352,
+   5.723099999158876,
+   6.246500000997912,
+   6.109400001150789,
+   5.948400001216214,
+   6.924099998286692,
+   9.203099998558173,
+   6.546099997649435,
+   6.040599997504614,
+   5.603499997960171,
+   5.333500001142966,
+   5.947999998170417,
+   6.045399997674394,
+   8.14890000037849,
+   7.651600000826875,
+   6.191000000399072,
+   6.038400002580602,
+   5.576299998210743,
+   5.333199998858618,
+   5.393700001150137,
+   5.200899999181274,
+   6.646199999522651,
+   7.8014999999140855,
+   8.972499999799766,
+   5.877300001884578,
+   5.8845999992627185,
+   7.273700000951067,
+   6.173999998281943,
+   5.804500000522239,
+   5.3014000004623085,
+   6.250900001759874,
+   6.746399998519337,
+   6.356199999572709,
+   6.265500000154134,
+   5.763400000432739,
+   5.588700001680991,
+   6.179100000736071,
+   5.575399998633657,
+   5.3577999970002566,
+   7.102900002792012,
+   7.628499999555061,
+   7.127699998818571,
+   7.181600001786137,
+   6.150900000648107,
+   6.528500001877546,
+   6.787999998778105,
+   6.270199999562465,
+   7.745400002022507,
+   6.7249000021547545,
+   5.7643000000098255,
+   5.321700002241414,
+   5.912799999350682,
+   5.339199997251853,
+   5.805200002214406,
+   5.376699999033008,
+   5.217300000367686,
+   5.240099999355152,
+   5.393399998865789,
+   5.404000003181864,
+   5.413599999883445,
+   5.343099997844547,
+   6.529099999170285,
+   7.1779999998398125,
+   8.238599999458529,
+   6.076099998608697,
+   5.653399999573594,
+   5.797100002382649,
+   5.361800001992378,
+   5.186499998671934,
+   5.238800000370247,
+   5.35660000241478,
+   5.309300002409145,
+   5.219799997576047,
+   5.785699999250937,
+   6.11639999988256,
+   5.885299997316906,
+   5.820899998070672,
+   5.796499997813953,
+   5.626999998639803,
+   6.539499998325482,
+   6.691900001897011,
+   8.117600002151448,
+   6.705299998429837,
+   6.764300000213552,
+   5.638999999064254
+  ]
+ }
+}
+wrote C:\Users\user\Code\pokemon_champions\champions-gym\bench\results\2026-11-19-neural2-live.json
+== eval
+EVAL {"opponent": "tower", "games": 2000, "wins": 1430, "losses": 570, "ties": 0, "truncated": 0, "win_rate": 0.715, "ci95": [0.6948, 0.7344], "by_seat": {"0": [712, 1000], "1": [718, 1000]}, "mean_turns": 8.11, "decisions": 21324, "policy_calls": 246, "refusals": 2, "fallbacks": 0, "fallback_reasons": {}, "cached": 2, "decisions_per_s": 1837.7, "policy_ms_per_decision": 0.41, "seconds": 11.6, "stopped_early": false, "replace_counters": [9869, 9866, 70243], "model": {"id": "C:\\Users\\user\\Code\\pokemon_champions\\pcsa-former\\runs\\league-20261118-f\\evals\\iter-00092.pt", "hash": "001fc79980c7e7b7"}, "actions": null, "replace_before_rows": true, "teams": "pcsa-former eval_cg_teams.json, pool weights", "ckpt": "../pcsa-former/runs/league-20261118-f/evals/iter-00092.pt"}
+EVAL {"opponent": "max_damage", "games": 2000, "wins": 1464, "losses": 536, "ties": 0, "truncated": 0, "win_rate": 0.732, "ci95": [0.7122, 0.751], "by_seat": {"0": [729, 1000], "1": [735, 1000]}, "mean_turns": 7.79, "decisions": 20752, "policy_calls": 257, "refusals": 5, "fallbacks": 0, "fallback_reasons": {}, "cached": 8, "decisions_per_s": 1831.2, "policy_ms_per_decision": 0.413, "seconds": 11.3, "stopped_early": false, "replace_counters": [10917, 10912, 80251], "model": {"id": "C:\\Users\\user\\Code\\pokemon_champions\\pcsa-former\\runs\\league-20261118-f\\evals\\iter-00092.pt", "hash": "001fc79980c7e7b7"}, "actions": null, "replace_before_rows": true, "teams": "pcsa-former eval_cg_teams.json, pool weights", "ckpt": "../pcsa-former/runs/league-20261118-f/evals/iter-00092.pt"}
+EVAL {"opponent": "tower", "games": 2000, "wins": 1425, "losses": 575, "ties": 0, "truncated": 0, "win_rate": 0.7125, "ci95": [0.6923, 0.7319], "by_seat": {"0": [722, 1000], "1": [703, 1000]}, "mean_turns": 8.02, "decisions": 21077, "policy_calls": 294, "refusals": 0, "fallbacks": 0, "fallback_reasons": {}, "cached": 0, "decisions_per_s": 1785.6, "policy_ms_per_decision": 0.411, "seconds": 11.8, "stopped_early": false, "replace_counters": [13534, 0, 0], "model": {"id": "C:\\Users\\user\\Code\\pokemon_champions\\pcsa-former\\runs\\league-20261118-f\\evals\\iter-00092.pt", "hash": "001fc79980c7e7b7"}, "actions": null, "replace_before_rows": false, "teams": "pcsa-former eval_cg_teams.json, pool weights", "ckpt": "../pcsa-former/runs/league-20261118-f/evals/iter-00092.pt"}
+EVAL {"opponent": "max_damage", "games": 2000, "wins": 1472, "losses": 528, "ties": 0, "truncated": 0, "win_rate": 0.736, "ci95": [0.7162, 0.7549], "by_seat": {"0": [733, 1000], "1": [739, 1000]}, "mean_turns": 7.78, "decisions": 20712, "policy_calls": 251, "refusals": 0, "fallbacks": 0, "fallback_reasons": {}, "cached": 0, "decisions_per_s": 1586.8, "policy_ms_per_decision": 0.474, "seconds": 13.1, "stopped_early": false, "replace_counters": [11019, 0, 0], "model": {"id": "C:\\Users\\user\\Code\\pokemon_champions\\pcsa-former\\runs\\league-20261118-f\\evals\\iter-00092.pt", "hash": "001fc79980c7e7b7"}, "actions": null, "replace_before_rows": false, "teams": "pcsa-former eval_cg_teams.json, pool weights", "ckpt": "../pcsa-former/runs/league-20261118-f/evals/iter-00092.pt"}
+wrote C:\Users\user\Code\pokemon_champions\champions-gym\bench\results\2026-11-19-neural2-eval.json
+PART-DONE

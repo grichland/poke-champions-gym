@@ -1,0 +1,1498 @@
+[
+ {
+  "name": "leppa berry restores the move that ran out",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "Leppa Berry",
+     "moves": [
+      "Belly Drum",
+      "Body Slam"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "moves": [
+      "Roost",
+      "Iron Defense"
+     ],
+     "evs": {
+      "hp": 32
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "Leppa Berry"
+  ]
+ },
+ {
+  "name": "oran berry and the status berries",
+  "teams": {
+   "p1": [
+    {
+     "species": "Gengar",
+     "ability": "Cursed Body",
+     "moves": [
+      "Will-O-Wisp",
+      "Toxic",
+      "Hypnosis",
+      "Thunder Wave"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "Rawst Berry",
+     "moves": [
+      "Belly Drum"
+     ]
+    },
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "item": "Chesto Berry",
+     "moves": [
+      "Roost"
+     ]
+    },
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "Pecha Berry",
+     "moves": [
+      "Swords Dance"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 2",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 2",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "switch 2"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "Rawst Berry"
+  ]
+ },
+ {
+  "name": "zoom lens, wide lens and bright powder change accuracy",
+  "seed": [
+   8,
+   8,
+   8,
+   8
+  ],
+  "teams": {
+   "p1": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "Zoom Lens",
+     "moves": [
+      "Stone Edge",
+      "Focus Blast"
+     ]
+    },
+    {
+     "species": "Alakazam",
+     "ability": "Synchronize",
+     "item": "Wide Lens",
+     "moves": [
+      "Focus Blast"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "item": "Bright Powder",
+     "moves": [
+      "Roost"
+     ],
+     "evs": {
+      "hp": 32
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ]
+ },
+ {
+  "name": "light ball doubles pikachu's attack stats",
+  "teams": {
+   "p1": [
+    {
+     "species": "Pikachu",
+     "ability": "Static",
+     "item": "Light Ball",
+     "moves": [
+      "Thunderbolt",
+      "Iron Tail"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "moves": [
+      "Swords Dance"
+     ],
+     "evs": {
+      "hp": 32
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ]
+ },
+ {
+  "name": "binding band traps for a sixth each turn",
+  "teams": {
+   "p1": [
+    {
+     "species": "Tyranitar",
+     "ability": "Sand Stream",
+     "item": "Binding Band",
+     "moves": [
+      "Sand Tomb",
+      "Protect"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "moves": [
+      "Swords Dance"
+     ],
+     "evs": {
+      "hp": 32
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ]
+ },
+ {
+  "name": "icy rock and smooth rock with weather abilities",
+  "teams": {
+   "p1": [
+    {
+     "species": "Abomasnow",
+     "ability": "Snow Warning",
+     "item": "Icy Rock",
+     "moves": [
+      "Protect"
+     ]
+    },
+    {
+     "species": "Hippowdon",
+     "ability": "Sand Stream",
+     "item": "Smooth Rock",
+     "moves": [
+      "Protect"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "moves": [
+      "Swords Dance"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ]
+ },
+ {
+  "name": "electric, misty and psychic seeds",
+  "teams": {
+   "p1": [
+    {
+     "species": "Pincurchin",
+     "ability": "Electric Surge",
+     "moves": [
+      "Misty Terrain",
+      "Psychic Terrain"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "Electric Seed",
+     "moves": [
+      "Swords Dance"
+     ]
+    },
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "item": "Misty Seed",
+     "moves": [
+      "Roost"
+     ]
+    },
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "Psychic Seed",
+     "moves": [
+      "Swords Dance"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "switch 2"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "Seed"
+  ]
+ },
+ {
+  "name": "normal gem against a substitute; chilan berry on a neutral normal hit",
+  "teams": {
+   "p1": [
+    {
+     "species": "Kangaskhan",
+     "ability": "Scrappy",
+     "item": "Normal Gem",
+     "moves": [
+      "Body Slam",
+      "Facade"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "moves": [
+      "Body Slam"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Gholdengo",
+     "ability": "Good as Gold",
+     "moves": [
+      "Substitute",
+      "Nasty Plot"
+     ]
+    },
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "item": "Chilan Berry",
+     "moves": [
+      "Roost"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "Normal Gem"
+  ]
+ },
+ {
+  "name": "eject button holder knocked out: no switch; red card against suction cups: used, no drag",
+  "teams": {
+   "p1": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "moves": [
+      "Outrage",
+      "Dragon Claw"
+     ],
+     "evs": {
+      "atk": 32
+     }
+    },
+    {
+     "species": "Basculegion",
+     "ability": "Swift Swim",
+     "moves": [
+      "Wave Crash"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Alakazam",
+     "ability": "Synchronize",
+     "item": "Eject Button",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "Red Card",
+     "moves": [
+      "Body Slam"
+     ]
+    },
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "moves": [
+      "Roost"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ]
+ },
+ {
+  "name": "big root with leech seed and drain; shell bell on a multi-hit move",
+  "teams": {
+   "p1": [
+    {
+     "species": "Venusaur",
+     "ability": "Overgrow",
+     "item": "Big Root",
+     "moves": [
+      "Leech Seed",
+      "Giga Drain",
+      "Belly Drum"
+     ]
+    },
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "Shell Bell",
+     "moves": [
+      "Scale Shot",
+      "Belly Drum"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "moves": [
+      "Swords Dance"
+     ],
+     "evs": {
+      "hp": 32
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 2",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ]
+ },
+ {
+  "name": "expert belt, muscle band, wise glasses, scope lens, type booster",
+  "teams": {
+   "p1": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "Expert Belt",
+     "moves": [
+      "Dragon Claw"
+     ]
+    },
+    {
+     "species": "Lucario",
+     "ability": "Inner Focus",
+     "item": "Muscle Band",
+     "moves": [
+      "Close Combat"
+     ]
+    },
+    {
+     "species": "Alakazam",
+     "ability": "Synchronize",
+     "item": "Wise Glasses",
+     "moves": [
+      "Psychic"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Kommo-o",
+     "ability": "Bulletproof",
+     "item": "Scope Lens",
+     "moves": [
+      "Slash",
+      "Swords Dance"
+     ],
+     "evs": {
+      "hp": 32,
+      "def": 32
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 2",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ]
+ },
+ {
+  "name": "fling fails under klutz and magic room; poltergeist hits a klutz holder's item",
+  "teams": {
+   "p1": [
+    {
+     "species": "Lopunny",
+     "ability": "Klutz",
+     "item": "Iron Ball",
+     "moves": [
+      "Fling",
+      "Magic Room"
+     ]
+    },
+    {
+     "species": "Gengar",
+     "ability": "Cursed Body",
+     "item": "Life Orb",
+     "moves": [
+      "Fling",
+      "Poltergeist"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "moves": [
+      "Swords Dance"
+     ],
+     "evs": {
+      "hp": 32
+     }
+    },
+    {
+     "species": "Lopunny",
+     "ability": "Klutz",
+     "item": "Leftovers",
+     "moves": [
+      "Swords Dance"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ]
+ },
+ {
+  "name": "corrosive gas against a stone; stuff cheeks at +6; teatime against unnerve",
+  "teams": {
+   "p1": [
+    {
+     "species": "Toxapex",
+     "ability": "Regenerator",
+     "moves": [
+      "Corrosive Gas",
+      "Teatime"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "Garchompite Z",
+     "moves": [
+      "Swords Dance"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "Sitrus Berry",
+     "moves": [
+      "Stuff Cheeks",
+      "Iron Defense"
+     ]
+    },
+    {
+     "species": "Tyranitar",
+     "ability": "Unnerve",
+     "item": "Lum Berry",
+     "moves": [
+      "Swords Dance"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "switch 2"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ]
+ },
+ {
+  "name": "bug bite against sticky hold and through unnerve; pluck a sitrus at full HP",
+  "teams": {
+   "p1": [
+    {
+     "species": "Tyranitar",
+     "ability": "Unnerve",
+     "moves": [
+      "Bug Bite",
+      "Pluck"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Swalot",
+     "ability": "Sticky Hold",
+     "item": "Sitrus Berry",
+     "moves": [
+      "Swords Dance"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "Oran Berry",
+     "moves": [
+      "Swords Dance"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ]
+ },
+ {
+  "name": "covet after a gem; switcheroo against sticky hold; recycle an air balloon",
+  "teams": {
+   "p1": [
+    {
+     "species": "Kangaskhan",
+     "ability": "Scrappy",
+     "item": "Normal Gem",
+     "moves": [
+      "Covet",
+      "Switcheroo"
+     ]
+    },
+    {
+     "species": "Gholdengo",
+     "ability": "Good as Gold",
+     "item": "Air Balloon",
+     "moves": [
+      "Recycle",
+      "Nasty Plot"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Swalot",
+     "ability": "Sticky Hold",
+     "item": "Leftovers",
+     "moves": [
+      "Body Slam"
+     ]
+    },
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "moves": [
+      "Dragon Claw"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ]
+ },
+ {
+  "name": "harvest without sun draws; cud chew after fling",
+  "seed": [
+   42,
+   42,
+   42,
+   42
+  ],
+  "teams": {
+   "p1": [
+    {
+     "species": "Trevenant",
+     "ability": "Harvest",
+     "item": "Sitrus Berry",
+     "moves": [
+      "Belly Drum",
+      "Horn Leech"
+     ]
+    },
+    {
+     "species": "Tauros-Paldea-Combat",
+     "ability": "Cud Chew",
+     "item": "Lum Berry",
+     "moves": [
+      "Fling",
+      "Bulk Up"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "moves": [
+      "Thunder Wave",
+      "Swords Dance"
+     ],
+     "evs": {
+      "hp": 32
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "Harvest"
+  ]
+ },
+ {
+  "name": "ripen doubles the sitrus heal and the resist berry's halving; cheek pouch",
+  "teams": {
+   "p1": [
+    {
+     "species": "Appletun",
+     "ability": "Ripen",
+     "item": "Yache Berry",
+     "moves": [
+      "Belly Drum"
+     ]
+    },
+    {
+     "species": "Dedenne",
+     "ability": "Cheek Pouch",
+     "item": "Sitrus Berry",
+     "moves": [
+      "Belly Drum"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Mamoswine",
+     "ability": "Oblivious",
+     "moves": [
+      "Ice Shard",
+      "Swords Dance"
+     ],
+     "evs": {
+      "hp": 32
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "Yache Berry"
+  ]
+ },
+ {
+  "name": "pickpocket against sticky hold; knock off through mold breaker; unburden after knock off",
+  "teams": {
+   "p1": [
+    {
+     "species": "Excadrill",
+     "ability": "Mold Breaker",
+     "moves": [
+      "Knock Off"
+     ]
+    },
+    {
+     "species": "Swalot",
+     "ability": "Sticky Hold",
+     "item": "Leftovers",
+     "moves": [
+      "Body Slam"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Swalot",
+     "ability": "Sticky Hold",
+     "item": "Leftovers",
+     "moves": [
+      "Swords Dance"
+     ]
+    },
+    {
+     "species": "Weavile",
+     "ability": "Pickpocket",
+     "moves": [
+      "Swords Dance"
+     ]
+    },
+    {
+     "species": "Sceptile",
+     "ability": "Unburden",
+     "item": "Sitrus Berry",
+     "moves": [
+      "Swords Dance"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 0",
+    "p2": "switch 2"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ]
+ },
+ {
+  "name": "opportunist copies at the foe's mega and at switch-in; white herb at a switch-in",
+  "teams": {
+   "p1": [
+    {
+     "species": "Espathra",
+     "ability": "Opportunist",
+     "item": "White Herb",
+     "moves": [
+      "Calm Mind",
+      "Lumina Crash"
+     ]
+    },
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "moves": [
+      "Swords Dance"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Scrafty",
+     "ability": "Moxie",
+     "item": "Scraftinite",
+     "moves": [
+      "Bulk Up",
+      "Swords Dance"
+     ]
+    },
+    {
+     "species": "Gyarados",
+     "ability": "Intimidate",
+     "moves": [
+      "Dragon Dance"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0 mega"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "Opportunist"
+  ]
+ },
+ {
+  "name": "stalwart in an ordinary turn; skarmory mega's stalwart",
+  "teams": {
+   "p1": [
+    {
+     "species": "Skarmory",
+     "ability": "Sturdy",
+     "item": "Skarmorite",
+     "moves": [
+      "Brave Bird",
+      "Roost"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "moves": [
+      "U-turn",
+      "Swords Dance"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "moves": [
+      "Body Slam"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0 mega",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-mega|"
+  ]
+ },
+ {
+  "name": "metronome item and a two-turn move; king's rock and stench",
+  "seed": [
+   17,
+   17,
+   17,
+   17
+  ],
+  "teams": {
+   "p1": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "Metronome",
+     "moves": [
+      "Dig",
+      "Dragon Claw"
+     ]
+    },
+    {
+     "species": "Swalot",
+     "ability": "Stench",
+     "item": "King's Rock",
+     "moves": [
+      "Sludge Bomb"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "moves": [
+      "Swords Dance"
+     ],
+     "evs": {
+      "hp": 32,
+      "def": 32
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ]
+ },
+ {
+  "name": "shed shell against mega gengar's shadow tag; iron ball against levitate",
+  "teams": {
+   "p1": [
+    {
+     "species": "Gengar",
+     "ability": "Cursed Body",
+     "item": "Gengarite",
+     "moves": [
+      "Shadow Ball",
+      "Earthquake"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Rotom-Wash",
+     "ability": "Levitate",
+     "item": "Shed Shell",
+     "moves": [
+      "Hydro Pump"
+     ]
+    },
+    {
+     "species": "Chandelure",
+     "ability": "Levitate",
+     "item": "Iron Ball",
+     "moves": [
+      "Flamethrower"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0 mega",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ]
+ },
+ {
+  "name": "white herb fling; mental herb fling; lum berry fling",
+  "teams": {
+   "p1": [
+    {
+     "species": "Lucario",
+     "ability": "Inner Focus",
+     "item": "White Herb",
+     "moves": [
+      "Fling",
+      "Close Combat"
+     ]
+    },
+    {
+     "species": "Grimmsnarl",
+     "ability": "Prankster",
+     "item": "Mental Herb",
+     "moves": [
+      "Fling",
+      "Taunt"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "moves": [
+      "Curse",
+      "Swords Dance"
+     ],
+     "evs": {
+      "hp": 32
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ]
+ },
+ {
+  "name": "future sight's hit costs the user its life orb recoil, called by the condition",
+  "teams": {
+   "p1": [
+    {
+     "species": "Alakazam",
+     "ability": "Synchronize",
+     "item": "Life Orb",
+     "moves": [
+      "Future Sight",
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "moves": [
+      "Swords Dance"
+     ],
+     "evs": {
+      "hp": 32
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "[from] item: Life Orb"
+  ]
+ },
+ {
+  "name": "explosion uses a normal gem: the gem's condition reaches the fainted user",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "Normal Gem",
+     "moves": [
+      "Explosion"
+     ]
+    },
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "moves": [
+      "Earthquake"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "moves": [
+      "Roost"
+     ],
+     "evs": {
+      "hp": 32,
+      "def": 32
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "Normal Gem"
+  ]
+ }
+]

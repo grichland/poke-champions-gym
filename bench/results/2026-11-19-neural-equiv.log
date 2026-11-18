@@ -1,0 +1,13 @@
+ÿþ== equivalence
+bash.exe : champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+At line:1 char:1
++ & 'C:\Program Files\Git\bin\bash.exe' target/neural-rest.sh 2>&1 | Te ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (champions_gym.n...'0.5', CG '0.6':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+{"opponent": "tower", "games": 200, "batched_decisions": 2247, "single_decisions": 2247, "identical_prefix": 2247, "equal": true, "same_count": 2247, "first_difference": null}
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{"opponent": "max_damage", "games": 200, "batched_decisions": 2107, "single_decisions": 2107, "identical_prefix": 2107, "equal": true, "same_count": 2107, "first_difference": null}
+wrote C:\Users\user\Code\pokemon_champions\cg-wt-neural\bench\results\2026-11-19-neural-equiv.json
+PART-DONE

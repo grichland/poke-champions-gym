@@ -1,0 +1,19 @@
+[package]
+name = "obs"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "CG's observation: the model's input tensors from a Battle (features_proposed.csv)."
+
+[lib]
+name = "obs"
+path = "src/lib.rs"
+
+[[bin]]
+name = "obs_speed"
+path = "src/bin/obs_speed.rs"
+
+[dependencies]
+battle = { path = "../battle" }
+players = { path = "../players" }
+cg-engine = { path = "../engine" }

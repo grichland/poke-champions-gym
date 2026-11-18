@@ -1,0 +1,69 @@
+ÿþ    Finished `release` profile [optimized + debuginfo] target(s) in 41.09s
+rust passed 387 failed 0 ignored 1
+python-ext.sh: wrote python/champions_gym/_cg.cp312-win_amd64.pyd
+3 passed, 0 failed
+7 passed, 0 failed
+21 passed, 0 failed
+6 passed, 0 failed
+9 passed, 0 failed
+tower vs max_damage: 20000 games, A 50.7% (A seat0 50.4%, A seat1 51.1%), turns mean 6.1 max 81, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 40000/40000, prior0 0, truth 0
+replace before rows: 352381 of 352562 replace requests stale, 7.7 events unseen each, check a at the last turn request 352562 (no State yet 0), replays 237473 (72977 varied)
+tower vs max_damage: 100000 games, A 50.6% (A seat0 50.6%, A seat1 50.6%), turns mean 6.0 max 63, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 200000/200000, prior0 0, truth 0, hidden 0 (25008 games, 141616 steps), refused
+replace before rows: 34984 of 35000 replace requests stale, 7.7 events unseen each, check a at the last turn request 35000 (no State yet 0), replays 23676 (7166 varied)
+replace before rows: 35075 of 35091 replace requests stale, 7.7 events unseen each, check a at the last turn request 35091 (no State yet 0), replays 23711 (7366 varied)
+replace before rows: 35031 of 35059 replace requests stale, 7.7 events unseen each, check a at the last turn request 35059 (no State yet 0), replays 23661 (7377 varied)
+replace before rows: 35287 of 35347 replace requests stale, 7.3 events unseen each, check a at the last turn request 35347 (no State yet 0), replays 23801 (6493 varied)
+replace before rows: 35313 of 35358 replace requests stale, 7.5 events unseen each, check a at the last turn request 35358 (no State yet 0), replays 23768 (6365 varied)
+replace before rows: 34962 of 35016 replace requests stale, 7.5 events unseen each, check a at the last turn request 35016 (no State yet 0), replays 23875 (6031 varied)
+replace before rows: 34930 of 34985 replace requests stale, 7.3 events unseen each, check a at the last turn request 34985 (no State yet 0), replays 23629 (6879 varied)
+replace before rows: 31245 of 31284 replace requests stale, 7.3 events unseen each, check a at the last turn request 31284 (no State yet 0), replays 21049 (6278 varied)
+replace before rows: 49212 of 49474 replace requests stale, 7.2 events unseen each, check a at the last turn request 49474 (no State yet 0), replays 34478 (12102 varied)
+replace before rows: 39672 of 39672 replace requests stale, 7.6 events unseen each, check a at the last turn request 39672 (no State yet 0), replays 27194 (10398 varied)
+replace before rows: 41532 of 41532 replace requests stale, 6.5 events unseen each, check a at the last turn request 41532 (no State yet 0), replays 28460 (12088 varied)
+replace before rows: 31692 of 31692 replace requests stale, 6.9 events unseen each, check a at the last turn request 31692 (no State yet 0), replays 21656 (4504 varied)
+replace before rows: 40486 of 40486 replace requests stale, 7.3 events unseen each, check a at the last turn request 40486 (no State yet 0), replays 27794 (10932 varied)
+replace before rows: 30450 of 30450 replace requests stale, 7.4 events unseen each, check a at the last turn request 30450 (no State yet 0), replays 20586 (4784 varied)
+replace before rows: 41004 of 41598 replace requests stale, 6.1 events unseen each, check a at the last turn request 41598 (no State yet 0), replays 28868 (8278 varied)
+replace before rows: 34842 of 34842 replace requests stale, 7.5 events unseen each, check a at the last turn request 34842 (no State yet 0), replays 23214 (5896 varied)
+replace before rows: 65016 of 65302 replace requests stale, 7.6 events unseen each, check a at the last turn request 65302 (no State yet 0), replays 47452 (23170 varied)
+replace before rows: 37972 of 37972 replace requests stale, 6.4 events unseen each, check a at the last turn request 37972 (no State yet 0), replays 26182 (8556 varied)
+replace before rows: 31702 of 31702 replace requests stale, 8.0 events unseen each, check a at the last turn request 31702 (no State yet 0), replays 21656 (5914 varied)
+replace before rows: 38654 of 38656 replace requests stale, 6.0 events unseen each, check a at the last turn request 38656 (no State yet 0), replays 27100 (10416 varied)
+m2-on games 100000 awin 0.507 a 0 more 0 forbid 0 unexpl_anom 0 p0 0 truth 0 hid 0 reb 200000 / 200000 refus 181 unexpl_ref 0 fb 0 err 0 trunc 0
+m2-off games 100000 awin 0.5059 a 0 more 0 forbid 0 unexpl_anom 0 p0 0 truth 0 hid 0 reb 200000 / 200000 refus 0 unexpl_ref 0 fb 0 err 0 trunc 0
+m2-endgame games 10000 awin 0.515 a 0 more 0 forbid 0 unexpl_anom 0 p0 0 truth 0 hid 0 reb 20000 / 20000 refus 16 unexpl_ref 0 fb 0 err 0 trunc 0
+m2-disciplined games 10000 awin 0.498 a 0 more 0 forbid 0 unexpl_anom 0 p0 0 truth 0 hid 0 reb 20000 / 20000 refus 16 unexpl_ref 0 fb 0 err 0 trunc 0
+m2-best_matchup_max_damage games 10000 awin 0.4995 a 0 more 0 forbid 0 unexpl_anom 0 p0 0 truth 0 hid 0 reb 20000 / 20000 refus 28 unexpl_ref 0 fb 0 err 0 trunc 0
+m2-pilot_encore games 10000 awin 0.4833 a 0 more 0 forbid 0 unexpl_anom 0 p0 0 truth 0 hid 0 reb 20000 / 20000 refus 60 unexpl_ref 0 fb 0 err 0 trunc 0
+m2-pilot_weather games 10000 awin 0.4716 a 0 more 0 forbid 0 unexpl_anom 0 p0 0 truth 0 hid 0 reb 20000 / 20000 refus 45 unexpl_ref 0 fb 0 err 0 trunc 0
+m2-pilot_hazard games 10000 awin 0.4673 a 0 more 0 forbid 0 unexpl_anom 0 p0 0 truth 0 hid 0 reb 20000 / 20000 refus 54 unexpl_ref 0 fb 0 err 0 trunc 0
+m2-pilot_priority games 10000 awin 0.5168 a 0 more 0 forbid 2 unexpl_anom 0 p0 0 truth 0 hid 0 reb 20000 / 20000 refus 55 unexpl_ref 0 fb 1 err 0 trunc 0
+m2-random games 10000 awin 0.0746 a 0 more 0 forbid 0 unexpl_anom 0 p0 0 truth 0 hid 0 reb 20000 / 20000 refus 39 unexpl_ref 0 fb 0 err 0 trunc 0
+m2-pool-field games 9600 awin 0.5 a 0 more 0 forbid 0 unexpl_anom 0 p0 0 truth 0 hid 0 reb 19200 / 19200 refus 262 unexpl_ref 0 fb 0 err 0 trunc 0
+m2-pool-traps games 9600 awin 0.5 a 0 more 0 forbid 0 unexpl_anom 0 p0 0 truth 0 hid 0 reb 19200 / 19200 refus 0 unexpl_ref 0 fb 0 err 0 trunc 0
+m2-pool-calls games 9600 awin 0.5 a 0 more 0 forbid 0 unexpl_anom 0 p0 0 truth 0 hid 0 reb 19200 / 19200 refus 258 unexpl_ref 0 fb 0 err 0 trunc 0
+m2-pool-stages games 9600 awin 0.5 a 0 more 0 forbid 0 unexpl_anom 0 p0 0 truth 0 hid 0 reb 19200 / 19200 refus 0 unexpl_ref 0 fb 0 err 0 trunc 0
+m2-pool-exchanges games 9600 awin 0.5 a 0 more 0 forbid 0 unexpl_anom 0 p0 0 truth 0 hid 0 reb 19200 / 19200 refus 0 unexpl_ref 0 fb 0 err 0 trunc 0
+m2-pool-pp games 9600 awin 0.5 a 0 more 0 forbid 0 unexpl_anom 0 p0 0 truth 0 hid 0 reb 19200 / 19200 refus 0 unexpl_ref 0 fb 0 err 0 trunc 0
+m2-pool-abilities games 9600 awin 0.5 a 0 more 0 forbid 0 unexpl_anom 0 p0 0 truth 0 hid 0 reb 19200 / 19200 refus 594 unexpl_ref 0 fb 0 err 0 trunc 0
+m2-pool-charges games 9600 awin 0.5 a 0 more 0 forbid 0 unexpl_anom 0 p0 0 truth 0 hid 0 reb 19200 / 19200 refus 0 unexpl_ref 0 fb 0 err 0 trunc 0
+m2-pool-turn_end games 9600 awin 0.5 a 0 more 0 forbid 0 unexpl_anom 0 p0 0 truth 0 hid 0 reb 19200 / 19200 refus 286 unexpl_ref 0 fb 0 err 0 trunc 0
+m2-pool-items games 9600 awin 0.5 a 0 more 0 forbid 0 unexpl_anom 0 p0 0 truth 0 hid 0 reb 19200 / 19200 refus 0 unexpl_ref 0 fb 0 err 0 trunc 0
+m2-pool-imprison games 9600 awin 0.5 a 0 more 0 forbid 0 unexpl_anom 0 p0 0 truth 0 hid 0 reb 19200 / 19200 refus 4450 unexpl_ref 0 fb 0 err 0 trunc 0
+m2-pool-hidden_trap games 9600 awin 0.5 a 0 more 0 forbid 0 unexpl_anom 0 p0 0 truth 0 hid 0 reb 19200 / 19200 refus 38264 unexpl_ref 0 fb 0 err 0 trunc 0
+{"battles": 500, "battles_identical": 500, "steps": 10642, "options_identical": 10642, "states_identical": 10642, "events_identica
+{"rows_steps": 10642, "rows_steps_equal": 10642, "kinds": {"enter": {"both": 5523, "showdown_only": 0, "engine_only": 0}, "turn": 
+random 16 orders, bad 0 anomalies 0 corrections 2
+max_damage 16 orders, bad 0 anomalies 0 corrections 2
+tower 16 orders, bad 0 anomalies 0 corrections 2
+best_matchup_max_damage 16 orders, bad 0 anomalies 0 corrections 2
+disciplined 16 orders, bad 0 anomalies 0 corrections 2
+endgame 16 orders, bad 0 anomalies 0 corrections 2
+pilot_encore 16 orders, bad 0 anomalies 0 corrections 2
+pilot_weather 16 orders, bad 0 anomalies 0 corrections 2
+pilot_hazard 16 orders, bad 0 anomalies 0 corrections 2
+pilot_priority 16 orders, bad 0 anomalies 0 corrections 3
+rbr True games 3002 decisions 73728 counters (7, 0, 1267) (10662, 10655, 78387)
+rbr False games 3061 decisions 74752 counters (0, 0, 1199) (10908, 0, 0)
+wheel.py: wrote C:\Users\user\Code\pokemon_champions\champions-gym\dist\champions_gym-0.2.0-cp312-cp312-win_amd64.whl (2193667 bytes, 13 files)
+VERIFY_DONE

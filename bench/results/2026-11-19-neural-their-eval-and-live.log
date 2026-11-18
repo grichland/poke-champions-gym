@@ -1,0 +1,70 @@
+ÿþ== pcsa-former's own evaluator, CPU, this CG build (live order)
+EVAL {"opponent": "tower", "games": 2000, "wins": 1430, "losses": 570, "ties": 0, "win_rate": 0.715, "mean_turns": 8.4, "decisions": 72226, "iteration": 92, "run": "league-20261118-f", "phase": "snapshots", "mode": "greedy", "seconds": 6.4, "device": "cuda"}
+EVAL {"opponent": "max_damage", "games": 2000, "wins": 1460, "losses": 540, "ties": 0, "win_rate": 0.73, "mean_turns": 8.0, "decisions": 60866, "iteration": 92, "run": "league-20261118-f", "phase": "snapshots", "mode": "greedy", "seconds": 4.1, "device": "cuda"}
+== equivalence
+bash.exe : Traceback (most recent call last):
+At line:1 char:1
++ & 'C:\Program Files\Git\bin\bash.exe' target/neural-rest.sh 2>&1 | Te ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Users\user\Code\pokemon_champions\cg-wt-neural\bench\python\neural_pcsa_former.py", line 156, in <module>
+    main()
+  File "C:\Users\user\Code\pokemon_champions\cg-wt-neural\bench\python\neural_pcsa_former.py", line 152, in main
+    {"load": part_load, "eval": part_eval, "equiv": part_equiv, "live": part_live}[a.part](a)
+  File "C:\Users\user\Code\pokemon_champions\cg-wt-neural\bench\python\neural_pcsa_former.py", line 91, in part_equiv
+    log, p = manual_play(policy(a), opp, games, seed, a.batch, a.threads)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Code\pokemon_champions\cg-wt-neural\python\tests\test_neural.py", line 374, in manual_play
+    p = player(policy)
+        ^^^^^^^^^^^^^^
+  File "C:\Users\user\Code\pokemon_champions\cg-wt-neural\python\tests\test_neural.py", line 32, in player
+    return N.NeuralPlayer(policy, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Code\pokemon_champions\cg-wt-neural\python\champions_gym\neural.py", line 576, in __init__
+    self.shell = Shell(policy, mode, temperature, seed, fallback, timeout_s, hard_timeout_s, slow_limit, max_errors, 
+log_extras, allow_mismatch)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Code\pokemon_champions\cg-wt-neural\python\champions_gym\neural.py", line 346, in __init__
+    raise ModelMismatch("policy does not match this CG build: " + "; ".join(self.mismatch))
+champions_gym.neural.ModelMismatch: policy does not match this CG build: contract: model '0.5', CG '0.6'
+== live
+champions_gym.neural: running despite: contract: model '0.5', CG '0.6'
+{
+ "warmup_ms": [
+  15.8,
+  9.4
+ ],
+ "phone": {
+  "answers": 17,
+  "illegal_or_fallback": 0,
+  "anomalies": []
+ },
+ "streams": {
+  "streams": 20,
+  "answers": 187,
+  "illegal_or_fallback": 0
+ },
+ "handle_ms": {
+  "n": 204,
+  "median": 7.4,
+  "p99": 17.6,
+  "max": 25.4
+ },
+ "stats": {
+  "decisions": 204,
+  "policy_calls": 204,
+  "cached": 0,
+  "fallbacks": 0,
+  "slow": 0,
+  "replace_stale": 38,
+  "replace_fresh": 0,
+  "mask_mismatch": 0,
+  "policy_ms": 1584.456600005069,
+  "reasons": {}
+ }
+}
+wrote C:\Users\user\Code\pokemon_champions\cg-wt-neural\bench\results\2026-11-19-neural-live.json
+PART-DONE

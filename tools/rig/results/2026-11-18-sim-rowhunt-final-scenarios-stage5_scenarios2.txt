@@ -1,0 +1,27 @@
+identical      leppa berry restores the move that ran out
+identical      oran berry and the status berries
+identical      zoom lens, wide lens and bright powder change accuracy
+identical      light ball doubles pikachu's attack stats
+identical      binding band traps for a sixth each turn
+identical      icy rock and smooth rock with weather abilities
+identical      electric, misty and psychic seeds
+identical      normal gem against a substitute; chilan berry on a neutral normal hit
+identical      eject button holder knocked out: no switch; red card against suction cups: used, no drag
+identical      big root with leech seed and drain; shell bell on a multi-hit move
+identical      expert belt, muscle band, wise glasses, scope lens, type booster
+identical      fling fails under klutz and magic room; poltergeist hits a klutz holder's item
+identical      corrosive gas against a stone; stuff cheeks at +6; teatime against unnerve
+identical      bug bite against sticky hold and through unnerve; pluck a sitrus at full HP
+identical      covet after a gem; switcheroo against sticky hold; recycle an air balloon
+identical      harvest without sun draws; cud chew after fling
+identical      ripen doubles the sitrus heal and the resist berry's halving; cheek pouch
+identical      pickpocket against sticky hold; knock off through mold breaker; unburden after knock off
+identical      opportunist copies at the foe's mega and at switch-in; white herb at a switch-in
+identical      stalwart in an ordinary turn; skarmory mega's stalwart
+identical      metronome item and a two-turn move; king's rock and stench
+identical      shed shell against mega gengar's shadow tag; iron ball against levitate
+identical      white herb fling; mental herb fling; lum berry fling
+identical      future sight's hit costs the user its life orb recoil, called by the condition
+identical      explosion uses a normal gem: the gem's condition reaches the fainted user
+{"scenarios": 25, "identical": 25}
+{"rows_steps": 139, "rows_steps_equal": 139, "disagreements": {}}

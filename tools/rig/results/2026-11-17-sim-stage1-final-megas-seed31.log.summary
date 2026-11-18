@@ -1,0 +1,1 @@
+﻿{"battles": 300, "battles_identical": 157, "steps": 4506, "options_identical": 4479, "states_identical": 4366, "events_identical": 4491, "tape_errors": 15, "engine_errors": 0, "oracle_errors": 0, "unimplemented_battles": 159, "fail_kinds": {"state": 125, "options": 3, "tape": 15}, "capped": 0, "seconds": 4.7}

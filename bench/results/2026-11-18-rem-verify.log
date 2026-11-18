@@ -1,0 +1,282 @@
+ÿþbash.exe : + cargo build --offline --release --workspace
+At line:1 char:1
++ & 'C:\Program Files\Git\bin\bash.exe' target/verify_rem.sh 2>&1 | Tee ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (+ cargo build -...ase --workspace:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
++ tail -2
+   Compiling cg-bindings v0.1.0 (C:\Users\user\Code\pokemon_champions\poke-engine\bindings)
+    Finished `release` profile [optimized + debuginfo] target(s) in 9.22s
++ cargo test --offline --release --workspace
++ grep -E '^test result|FAILED|failed|panicked'
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 26 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 22 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.30s
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 13.97s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.96s
+test result: ok. 12 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.57s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.54s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 10.78s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.52s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.40s
+test result: ok. 30 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 256 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+test result: ok. 22 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 32 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+test result: ok. 673 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 16.36s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.64s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
++ bash tools/build/python-ext.sh
++ tail -1
+python-ext.sh: wrote python/champions_gym/_cg.cp312-win_amd64.pyd
++ for t in python/tests/*.py
++ PYTHONDONTWRITEBYTECODE=1
++ PYTHONPATH=python
++ '/c/Program Files/Python312/python.exe' python/tests/test_battle_view.py
++ tail -1
+3 passed, 0 failed
++ for t in python/tests/*.py
++ PYTHONDONTWRITEBYTECODE=1
++ PYTHONPATH=python
++ '/c/Program Files/Python312/python.exe' python/tests/test_env.py
++ tail -1
+7 passed, 0 failed
++ for t in python/tests/*.py
++ PYTHONDONTWRITEBYTECODE=1
++ PYTHONPATH=python
++ '/c/Program Files/Python312/python.exe' python/tests/test_obs.py
++ tail -1
+6 passed, 0 failed
++ for t in python/tests/*.py
++ PYTHONDONTWRITEBYTECODE=1
++ PYTHONPATH=python
++ /c/Users/user/Code/pokemon_champions/pcsa/.venv/Scripts/python.exe python/tests/test_battle_view.py
++ tail -1
+3 passed, 0 failed
++ for t in python/tests/*.py
++ PYTHONDONTWRITEBYTECODE=1
++ PYTHONPATH=python
++ /c/Users/user/Code/pokemon_champions/pcsa/.venv/Scripts/python.exe python/tests/test_env.py
++ tail -1
+7 passed, 0 failed
++ for t in python/tests/*.py
++ PYTHONDONTWRITEBYTECODE=1
++ PYTHONPATH=python
++ /c/Users/user/Code/pokemon_champions/pcsa/.venv/Scripts/python.exe python/tests/test_obs.py
++ tail -1
+6 passed, 0 failed
++ rm -f bench/results/2026-11-18-rem-verify.jsonl
++ run --a tower --b max_damage --games 100000 --seed 7701 --label v-real
++ ./target/release/players_run.exe --a tower --b max_damage --games 100000 --seed 7701 --label v-real --threads 24 
+--cap 500 --out bench/results/2026-11-18-rem-verify.jsonl
++ tail -1
++ cut -c1-200
+tower vs max_damage: 100000 games, A 50.5% (A seat0 50.7%, A seat1 50.2%), turns mean 6.0 max 74, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 200000/200000, prior0 0, trut
++ run --a tower --b random --games 20000 --seed 7702 --label v-tower-random
++ ./target/release/players_run.exe --a tower --b random --games 20000 --seed 7702 --label v-tower-random --threads 24 
+--cap 500 --out bench/results/2026-11-18-rem-verify.jsonl
++ tail -1
++ cut -c1-200
+tower vs random: 20000 games, A 93.0% (A seat0 93.2%, A seat1 92.9%), turns mean 8.5 max 73, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 40000/40000, prior0 0, truth 0, hi
++ run --a max_damage --b random --games 20000 --seed 7703 --label v-max-random
++ ./target/release/players_run.exe --a max_damage --b random --games 20000 --seed 7703 --label v-max-random --threads 
+24 --cap 500 --out bench/results/2026-11-18-rem-verify.jsonl
++ tail -1
++ cut -c1-200
+max_damage vs random: 20000 games, A 92.5% (A seat0 92.6%, A seat1 92.4%), turns mean 8.0 max 72, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 40000/40000, prior0 0, truth 
++ run --a random --b random --games 20000 --seed 7704 --label v-random-random
++ ./target/release/players_run.exe --a random --b random --games 20000 --seed 7704 --label v-random-random --threads 
+24 --cap 500 --out bench/results/2026-11-18-rem-verify.jsonl
++ tail -1
++ cut -c1-200
+random vs random: 20000 games, A 50.0% (A seat0 50.6%, A seat1 49.4%), turns mean 17.8 max 101, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 40000/40000, prior0 0, truth 0,
++ for p in field traps calls stages exchanges pp abilities charges turn_end items imprison hidden_trap
++ run --a random --b random --games 9600 --seed 7710 --teams bench/data/pools/field.json --label v-pool-field
++ ./target/release/players_run.exe --a random --b random --games 9600 --seed 7710 --teams bench/data/pools/field.json 
+--label v-pool-field --threads 24 --cap 500 --out bench/results/2026-11-18-rem-verify.jsonl
++ tail -1
++ cut -c1-200
+random vs random: 9600 games, A 50.0% (A seat0 49.9%, A seat1 50.1%), turns mean 35.8 max 121, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 19200/19200, prior0 0, truth 0, 
++ for p in field traps calls stages exchanges pp abilities charges turn_end items imprison hidden_trap
++ run --a random --b random --games 9600 --seed 7710 --teams bench/data/pools/traps.json --label v-pool-traps
++ ./target/release/players_run.exe --a random --b random --games 9600 --seed 7710 --teams bench/data/pools/traps.json 
+--label v-pool-traps --threads 24 --cap 500 --out bench/results/2026-11-18-rem-verify.jsonl
++ tail -1
++ cut -c1-200
+random vs random: 9600 games, A 50.0% (A seat0 49.5%, A seat1 50.5%), turns mean 36.8 max 143, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 19200/19200, prior0 0, truth 0, 
++ for p in field traps calls stages exchanges pp abilities charges turn_end items imprison hidden_trap
++ run --a random --b random --games 9600 --seed 7710 --teams bench/data/pools/calls.json --label v-pool-calls
++ ./target/release/players_run.exe --a random --b random --games 9600 --seed 7710 --teams bench/data/pools/calls.json 
+--label v-pool-calls --threads 24 --cap 500 --out bench/results/2026-11-18-rem-verify.jsonl
++ tail -1
++ cut -c1-200
+random vs random: 9600 games, A 50.0% (A seat0 51.5%, A seat1 48.5%), turns mean 58.7 max 271, truncated 0, refusals 256, anomalies 0, check a 0, check b 0.9989, rebuild 19200/19200, prior0 0, truth 0
++ for p in field traps calls stages exchanges pp abilities charges turn_end items imprison hidden_trap
++ run --a random --b random --games 9600 --seed 7710 --teams bench/data/pools/stages.json --label v-pool-stages
++ ./target/release/players_run.exe --a random --b random --games 9600 --seed 7710 --teams bench/data/pools/stages.json 
+--label v-pool-stages --threads 24 --cap 500 --out bench/results/2026-11-18-rem-verify.jsonl
++ tail -1
++ cut -c1-200
+random vs random: 9600 games, A 50.0% (A seat0 49.9%, A seat1 50.1%), turns mean 42.9 max 158, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 19200/19200, prior0 0, truth 0, 
++ for p in field traps calls stages exchanges pp abilities charges turn_end items imprison hidden_trap
++ run --a random --b random --games 9600 --seed 7710 --teams bench/data/pools/exchanges.json --label v-pool-exchanges
++ ./target/release/players_run.exe --a random --b random --games 9600 --seed 7710 --teams 
+bench/data/pools/exchanges.json --label v-pool-exchanges --threads 24 --cap 500 --out 
+bench/results/2026-11-18-rem-verify.jsonl
++ tail -1
++ cut -c1-200
+random vs random: 9600 games, A 50.0% (A seat0 51.3%, A seat1 48.7%), turns mean 25.9 max 96, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 19200/19200, prior0 0, truth 0, h
++ for p in field traps calls stages exchanges pp abilities charges turn_end items imprison hidden_trap
++ run --a random --b random --games 9600 --seed 7710 --teams bench/data/pools/pp.json --label v-pool-pp
++ ./target/release/players_run.exe --a random --b random --games 9600 --seed 7710 --teams bench/data/pools/pp.json 
+--label v-pool-pp --threads 24 --cap 500 --out bench/results/2026-11-18-rem-verify.jsonl
++ tail -1
++ cut -c1-200
+random vs random: 9600 games, A 50.0% (A seat0 49.9%, A seat1 50.1%), turns mean 47.2 max 174, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 19200/19200, prior0 0, truth 0, 
++ for p in field traps calls stages exchanges pp abilities charges turn_end items imprison hidden_trap
++ run --a random --b random --games 9600 --seed 7710 --teams bench/data/pools/abilities.json --label v-pool-abilities
++ ./target/release/players_run.exe --a random --b random --games 9600 --seed 7710 --teams 
+bench/data/pools/abilities.json --label v-pool-abilities --threads 24 --cap 500 --out 
+bench/results/2026-11-18-rem-verify.jsonl
++ tail -1
++ cut -c1-200
+random vs random: 9600 games, A 50.0% (A seat0 50.5%, A seat1 49.5%), turns mean 31.7 max 137, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 19200/19200, prior0 0, truth 0, 
++ for p in field traps calls stages exchanges pp abilities charges turn_end items imprison hidden_trap
++ run --a random --b random --games 9600 --seed 7710 --teams bench/data/pools/charges.json --label v-pool-charges
++ ./target/release/players_run.exe --a random --b random --games 9600 --seed 7710 --teams 
+bench/data/pools/charges.json --label v-pool-charges --threads 24 --cap 500 --out 
+bench/results/2026-11-18-rem-verify.jsonl
++ tail -1
++ cut -c1-200
+random vs random: 9600 games, A 50.0% (A seat0 48.8%, A seat1 51.2%), turns mean 28.9 max 93, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 19200/19200, prior0 0, truth 0, h
++ for p in field traps calls stages exchanges pp abilities charges turn_end items imprison hidden_trap
++ run --a random --b random --games 9600 --seed 7710 --teams bench/data/pools/turn_end.json --label v-pool-turn_end
++ ./target/release/players_run.exe --a random --b random --games 9600 --seed 7710 --teams 
+bench/data/pools/turn_end.json --label v-pool-turn_end --threads 24 --cap 500 --out 
+bench/results/2026-11-18-rem-verify.jsonl
++ tail -1
++ cut -c1-200
+random vs random: 9600 games, A 50.0% (A seat0 48.7%, A seat1 51.3%), turns mean 64.2 max 226, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 19200/19200, prior0 0, truth 0, 
++ for p in field traps calls stages exchanges pp abilities charges turn_end items imprison hidden_trap
++ run --a random --b random --games 9600 --seed 7710 --teams bench/data/pools/items.json --label v-pool-items
++ ./target/release/players_run.exe --a random --b random --games 9600 --seed 7710 --teams bench/data/pools/items.json 
+--label v-pool-items --threads 24 --cap 500 --out bench/results/2026-11-18-rem-verify.jsonl
++ tail -1
++ cut -c1-200
+random vs random: 9600 games, A 50.0% (A seat0 49.9%, A seat1 50.1%), turns mean 24.7 max 74, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 19200/19200, prior0 0, truth 0, h
++ for p in field traps calls stages exchanges pp abilities charges turn_end items imprison hidden_trap
++ run --a random --b random --games 9600 --seed 7710 --teams bench/data/pools/imprison.json --label v-pool-imprison
++ ./target/release/players_run.exe --a random --b random --games 9600 --seed 7710 --teams 
+bench/data/pools/imprison.json --label v-pool-imprison --threads 24 --cap 500 --out 
+bench/results/2026-11-18-rem-verify.jsonl
++ tail -1
++ cut -c1-200
+random vs random: 9600 games, A 50.0% (A seat0 51.4%, A seat1 48.6%), turns mean 59.4 max 234, truncated 0, refusals 4578, anomalies 0, check a 0, check b 0.9867, rebuild 19200/19200, prior0 0, truth 
++ for p in field traps calls stages exchanges pp abilities charges turn_end items imprison hidden_trap
++ run --a random --b random --games 9600 --seed 7710 --teams bench/data/pools/hidden_trap.json --label 
+v-pool-hidden_trap
++ ./target/release/players_run.exe --a random --b random --games 9600 --seed 7710 --teams 
+bench/data/pools/hidden_trap.json --label v-pool-hidden_trap --threads 24 --cap 500 --out 
+bench/results/2026-11-18-rem-verify.jsonl
++ tail -1
++ cut -c1-200
+random vs random: 9600 games, A 50.0% (A seat0 49.3%, A seat1 50.7%), turns mean 32.7 max 128, truncated 0, refusals 38804, anomalies 0, check a 0, check b 0.8127, rebuild 19200/19200, prior0 0, truth
++ ./target/release/players_run.exe --a tower --b max_damage --games 10000 --seed 7720 --threads 8 --cap 300 --label 
+v-8t --out bench/results/2026-11-18-rem-verify.jsonl
++ tail -1
++ cut -c1-200
+tower vs max_damage: 10000 games, A 50.2% (A seat0 49.9%, A seat1 50.6%), turns mean 6.1 max 61, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 20000/20000, prior0 0, truth 0
++ python -
+v-real games 100000 awin 0.5046 chk 1524110 a 0 more 0 forbid 0 anom 0 unexpl_anom 0 p0 0 truth 0 hid 0 / 25008 reb 200000 / 200000 trunc 0 err 0 fb 0 0 bps 24003 dps 413842
+v-tower-random games 20000 awin 0.9303 chk 392699 a 0 more 0 forbid 0 anom 0 unexpl_anom 0 p0 0 truth 0 hid 0 / 5024 reb 40000 / 40000 trunc 0 err 0 fb 0 0 bps 20364 dps 440572
+v-max-random games 20000 awin 0.9252 chk 375062 a 0 more 0 forbid 0 anom 0 unexpl_anom 0 p0 0 truth 0 hid 0 / 5024 reb 40000 / 40000 trunc 0 err 0 fb 0 0 bps 20043 dps 415960
+v-random-random games 20000 awin 0.5 chk 784592 a 0 more 0 forbid 0 anom 0 unexpl_anom 0 p0 0 truth 0 hid 0 / 5024 reb 40000 / 40000 trunc 0 err 0 fb 0 0 bps 12518 dps 516125
+v-pool-field games 9600 awin 0.5 chk 736054 a 0 more 0 forbid 0 anom 0 unexpl_anom 0 p0 0 truth 0 hid 0 / 2400 reb 19200 / 19200 trunc 0 err 0 fb 0 0 bps 6481 dps 509881
+v-pool-traps games 9600 awin 0.5 chk 740764 a 0 more 0 forbid 0 anom 0 unexpl_anom 0 p0 0 truth 0 hid 0 / 2400 reb 19200 / 19200 trunc 0 err 0 fb 0 0 bps 6243 dps 494220
+v-pool-calls games 9600 awin 0.5 chk 1168078 a 0 more 0 forbid 0 anom 0 unexpl_anom 0 p0 0 truth 0 hid 0 / 2400 reb 19200 / 19200 trunc 0 err 0 fb 0 0 bps 4191 dps 518287
+v-pool-stages games 9600 awin 0.5 chk 856338 a 0 more 0 forbid 0 anom 0 unexpl_anom 0 p0 0 truth 0 hid 0 / 2400 reb 19200 / 19200 trunc 0 err 0 fb 0 0 bps 6001 dps 547324
+v-pool-exchanges games 9600 awin 0.5 chk 538530 a 0 more 0 forbid 0 anom 0 unexpl_anom 0 p0 0 truth 0 hid 0 / 2400 reb 19200 / 19200 trunc 0 err 0 fb 0 0 bps 8362 dps 485782
+v-pool-pp games 9600 awin 0.5 chk 927506 a 0 more 0 forbid 0 anom 0 unexpl_anom 0 p0 0 truth 0 hid 0 / 2400 reb 19200 / 19200 trunc 0 err 0 fb 0 0 bps 5256 dps 518343
+v-pool-abilities games 9600 awin 0.5 chk 648460 a 0 more 0 forbid 0 anom 0 unexpl_anom 0 p0 0 truth 0 hid 0 / 2400 reb 19200 / 19200 trunc 0 err 0 fb 0 0 bps 7898 dps 549271
+v-pool-charges games 9600 awin 0.5 chk 528660 a 0 more 0 forbid 0 anom 0 unexpl_anom 0 p0 0 truth 0 hid 0 / 2400 reb 19200 / 19200 trunc 0 err 0 fb 0 0 bps 8471 dps 483431
+v-pool-turn_end games 9600 awin 0.5 chk 1298302 a 0 more 0 forbid 0 anom 0 unexpl_anom 0 p0 0 truth 0 hid 0 / 2400 reb 19200 / 19200 trunc 0 err 0 fb 0 0 bps 3591 dps 492884
+v-pool-items games 9600 awin 0.5 chk 512972 a 0 more 0 forbid 0 anom 0 unexpl_anom 0 p0 0 truth 0 hid 0 / 2400 reb 19200 / 19200 trunc 0 err 0 fb 0 0 bps 10253 dps 568346
+v-pool-imprison games 9600 awin 0.5 chk 1176446 a 0 more 0 forbid 0 anom 0 unexpl_anom 0 p0 0 truth 0 hid 0 / 2400 reb 19200 / 19200 trunc 0 err 0 fb 0 0 bps 4503 dps 560872
+v-pool-hidden_trap games 9600 awin 0.5 chk 704868 a 0 more 0 forbid 0 anom 0 unexpl_anom 0 p0 0 truth 0 hid 0 / 2400 reb 19200 / 19200 trunc 0 err 0 fb 0 0 bps 5557 dps 419152
+v-8t games 10000 awin 0.5024 chk 152631 a 0 more 0 forbid 0 anom 0 unexpl_anom 0 p0 0 truth 0 hid 0 / 2512 reb 20000 / 20000 trunc 0 err 0 fb 0 0 bps 14381 dps 248261
++ python tools/rig/driver.py --sim --real --rows --battles 1000 --seed 99301 --out target/vr-real.jsonl.gz
++ tail -2
++ cut -c1-260
+{"battles": 1000, "battles_identical": 1000, "steps": 21283, "options_identical": 21283, "states_identical": 21283, "events_identical": 21283, "tape_errors": 0, "engine_errors": 0, "oracle_errors": 0, "unimplemented_battles": 0, "fail_kinds": {}, "capped": 0, 
+{"rows_steps": 21283, "rows_steps_equal": 21283, "kinds": {"enter": {"both": 10989, "showdown_only": 0, "engine_only": 0}, "ability": {"both": 4516, "showdown_only": 0, "engine_only": 0}, "turn": {"both": 16553, "showdown_only": 0, "engine_only": 0}, "move": {
++ ./target/release/env_threads.exe --n 4096 --threads 1,8,24 --secs 10 --rounds 2 --seed 77 --label verify --out 
+bench/results/2026-11-18-rem-verify-threads.jsonl
++ tail -14
++ cut -c1-220
+{"battles_per_s":1915.3391936086705,"bench":"env_threads","cores":32,"cpu_busy":0.05604133545310016,"cpu_other_load":0.024344197138314788,"cpu_this_process":0.03169713831478537,"decisions":847872,"decisions_per_s":84607.
+{"battles_per_s":1009.418518496367,"bench":"env_threads","cores":32,"cpu_busy":0.053466396683058526,"cpu_other_load":0.022418281747179632,"cpu_this_process":0.031048114935878893,"decisions":417792,"decisions_per_s":41439
+{"battles_per_s":14091.089326184388,"bench":"env_threads","cores":32,"cpu_busy":0.25169773154168473,"cpu_other_load":0.02701921687617398,"cpu_this_process":0.22467851466551075,"decisions":5804032,"decisions_per_s":579785
+{"battles_per_s":7337.829988564486,"bench":"env_threads","cores":32,"cpu_busy":0.2658558203663581,"cpu_other_load":0.024029938940319073,"cpu_this_process":0.241825881426039,"decisions":3026944,"decisions_per_s":302213.76
+{"battles_per_s":20703.51052346568,"bench":"env_threads","cores":32,"cpu_busy":0.6432518137702398,"cpu_other_load":0.024696103396915414,"cpu_this_process":0.6185557103733244,"decisions":8523776,"decisions_per_s":852032.3
+{"battles_per_s":10551.3456978898,"bench":"env_threads","cores":32,"cpu_busy":0.6696797395149925,"cpu_other_load":0.028429800262428917,"cpu_this_process":0.6412499392525636,"decisions":4354048,"decisions_per_s":434661.05
++ PYTHONDONTWRITEBYTECODE=1
++ PYTHONPATH=python
++ /c/Users/user/Code/pokemon_champions/pcsa/.venv/Scripts/python.exe bench/python/pyenv_threads.py 
+tools/rig/data/teams.json --games 4096 --threads 1,8,24 --secs 10 --rounds 2 --seed 77 --label verify-py --out 
+bench/results/2026-11-18-rem-verify-threads.jsonl
++ tail -14
++ cut -c1-220
+{"bench": "pyenv_threads", "where": "python", "label": "verify-py", "python": "3.12.10", "numpy": "2.5.4", "alternating": true, "rounds": 2, "cores": 32, "n": 4096, "threads": 1, "observe": false, "seconds": 10.03, "deci
+{"bench": "pyenv_threads", "where": "python", "label": "verify-py", "python": "3.12.10", "numpy": "2.5.4", "alternating": true, "rounds": 2, "cores": 32, "n": 4096, "threads": 1, "observe": true, "seconds": 10.09, "decis
+{"bench": "pyenv_threads", "where": "python", "label": "verify-py", "python": "3.12.10", "numpy": "2.5.4", "alternating": true, "rounds": 2, "cores": 32, "n": 4096, "threads": 8, "observe": false, "seconds": 10.01, "deci
+{"bench": "pyenv_threads", "where": "python", "label": "verify-py", "python": "3.12.10", "numpy": "2.5.4", "alternating": true, "rounds": 2, "cores": 32, "n": 4096, "threads": 8, "observe": true, "seconds": 10.0, "decisi
+{"bench": "pyenv_threads", "where": "python", "label": "verify-py", "python": "3.12.10", "numpy": "2.5.4", "alternating": true, "rounds": 2, "cores": 32, "n": 4096, "threads": 24, "observe": false, "seconds": 10.0, "deci
+{"bench": "pyenv_threads", "where": "python", "label": "verify-py", "python": "3.12.10", "numpy": "2.5.4", "alternating": true, "rounds": 2, "cores": 32, "n": 4096, "threads": 24, "observe": true, "seconds": 10.02, "deci
++ echo VERIFY_DONE
+VERIFY_DONE

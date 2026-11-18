@@ -1,0 +1,13 @@
+[package]
+name = "battle"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "CG's Battle: what one player knows, built from the live contract's events (contracts/LIVE.md)."
+
+[lib]
+name = "battle"
+path = "src/lib.rs"
+
+[dependencies]
+cg-engine = { path = "../engine" }

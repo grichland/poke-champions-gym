@@ -1,0 +1,2719 @@
+{
+ "summary": {
+  "compared": {
+   "moves": 515,
+   "species(name enum)": 392,
+   "megas": 82,
+   "species(base stats held by engine)": 4,
+   "items": 166,
+   "abilities": 317,
+   "typechart pairs": 324,
+   "natures": 25
+  },
+  "fields_compared": {
+   "moves:exists": 515,
+   "moves:type": 515,
+   "moves:category": 515,
+   "moves:basePower": 515,
+   "moves:accuracy": 515,
+   "moves:priority": 515,
+   "moves:target": 515,
+   "moves:flag.bite": 515,
+   "moves:flag.bullet": 515,
+   "moves:flag.charge": 515,
+   "moves:flag.contact": 515,
+   "moves:flag.heal": 515,
+   "moves:flag.powder": 515,
+   "moves:flag.protect": 515,
+   "moves:flag.pulse": 515,
+   "moves:flag.punch": 515,
+   "moves:flag.recharge": 515,
+   "moves:flag.reflectable": 515,
+   "moves:flag.slicing": 515,
+   "moves:flag.sound": 515,
+   "moves:flag.wind": 515,
+   "moves:flag.drag(forceSwitch)": 515,
+   "moves:flag.pivot(selfSwitch)": 515,
+   "moves:critRatio": 515,
+   "moves:willCrit": 515,
+   "moves:multihit": 515,
+   "moves:multiaccuracy": 515,
+   "moves:crash(hasCrashDamage)": 515,
+   "moves:effect.boost": 515,
+   "moves:effect.status": 515,
+   "moves:effect.volatile_status": 515,
+   "moves:effect.side_condition": 515,
+   "moves:effect.heal": 515,
+   "moves:effect.selfdestruct": 515,
+   "moves:drain": 515,
+   "moves:recoil": 515,
+   "moves:secondaries": 515,
+   "moves:effect placement": 2,
+   "moves:recoil(special)": 2,
+   "species:exists in PokemonName": 392,
+   "megas:exists": 82,
+   "megas:requiredItem": 82,
+   "megas:changesFrom": 82,
+   "megas:types": 82,
+   "megas:ability": 82,
+   "megas:baseStats.hp": 82,
+   "megas:baseStats(table).hp": 82,
+   "megas:baseStats.atk": 82,
+   "megas:baseStats(table).atk": 82,
+   "megas:baseStats.def": 82,
+   "megas:baseStats(table).def": 82,
+   "megas:baseStats.spa": 82,
+   "megas:baseStats(table).spa": 82,
+   "megas:baseStats.spd": 82,
+   "megas:baseStats(table).spd": 82,
+   "megas:baseStats.spe": 82,
+   "megas:baseStats(table).spe": 82,
+   "species:baseStats": 4,
+   "items:exists in enum": 166,
+   "abilities:exists in enum": 317,
+   "typechart:multiplier": 324,
+   "natures:plus/minus": 25
+  },
+  "diff_by_cat_cls": {
+   "moves:representation": 158,
+   "moves:needs-reading": 29,
+   "moves:real": 31,
+   "megas:real": 8,
+   "items:real": 22,
+   "abilities:real": 1
+  },
+  "diff_by_cat_field": {
+   "moves:accuracy": 139,
+   "moves:effect.boost": 8,
+   "moves:basePower": 7,
+   "moves:flag.slicing": 3,
+   "moves:effect.volatile_status": 8,
+   "moves:critRatio": 1,
+   "moves:secondaries": 9,
+   "moves:flag.punch": 1,
+   "moves:flag.sound": 1,
+   "moves:type": 1,
+   "moves:effect placement": 2,
+   "moves:target": 18,
+   "moves:effect.side_condition": 4,
+   "moves:flag.wind": 2,
+   "moves:effect.selfdestruct": 4,
+   "moves:flag.powder": 1,
+   "moves:effect.heal": 3,
+   "moves:multiaccuracy": 2,
+   "moves:flag.pivot(selfSwitch)": 2,
+   "moves:recoil(special)": 2,
+   "megas:baseStats.atk": 1,
+   "megas:baseStats(table).atk": 1,
+   "megas:ability": 4,
+   "megas:baseStats.spd": 1,
+   "megas:baseStats(table).spd": 1,
+   "items:exists in enum": 22,
+   "abilities:exists in enum": 1
+  },
+  "showdown_flags_not_in_engine": {
+   "metronome": 447,
+   "mirror": 399,
+   "snatch": 58,
+   "bypasssub": 52,
+   "allyanim": 47,
+   "noassist": 33,
+   "failcopycat": 27,
+   "nonsky": 25,
+   "failinstruct": 22,
+   "distance": 19,
+   "nosleeptalk": 15,
+   "failmefirst": 10,
+   "dance": 9,
+   "defrost": 6,
+   "minimize": 6,
+   "noparentalbond": 6,
+   "failmimic": 5,
+   "failencore": 5,
+   "gravity": 5,
+   "mustpressure": 4,
+   "nosketch": 2,
+   "futuremove": 1,
+   "cantusetwice": 1
+  },
+  "showdown_move_props_not_compared": {
+   "ignoreImmunity": 180,
+   "onHit": 65,
+   "onTry": 30,
+   "basePowerCallback": 29,
+   "onTryHit": 26,
+   "onTryMove": 13,
+   "onModifyMove": 11,
+   "onBasePower": 11,
+   "onPrepareHit": 10,
+   "onAfterHit": 8,
+   "onTryImmunity": 7,
+   "onAfterSubDamage": 7,
+   "damageCallback": 7,
+   "stallingMove": 6,
+   "weather": 5,
+   "pseudoWeather": 5,
+   "onModifyType": 4,
+   "onMoveFail": 4,
+   "onHitField": 4,
+   "terrain": 4,
+   "ohko": 4,
+   "priorityChargeCallback": 3,
+   "onAfterMove": 3,
+   "onHitSide": 3,
+   "thawsTarget": 3,
+   "onDisableMove": 2,
+   "onEffectiveness": 2,
+   "onModifyTarget": 2,
+   "callsMove": 2,
+   "beforeTurnCallback": 2,
+   "ignoreDefensive": 2,
+   "ignoreEvasion": 2,
+   "breaksProtect": 2,
+   "damage": 2,
+   "sleepUsable": 2,
+   "tracksTarget": 1,
+   "overrideOffensiveStat": 1,
+   "smartTarget": 1,
+   "hasSheerForceBoost": 1,
+   "onAfterMoveSecondarySelf": 1,
+   "beforeMoveCallback": 1,
+   "overrideOffensivePokemon": 1,
+   "onModifyPriority": 1,
+   "overrideDefensiveStat": 1,
+   "mindBlownRecoil": 1,
+   "struggleRecoil": 1
+  },
+  "engine_megas_not_legal_in_showdown": [
+   "DARKRAIMEGA",
+   "DIANCIEMEGA",
+   "HEATRANMEGA",
+   "LATIASMEGA",
+   "LATIOSMEGA",
+   "MAGEARNAMEGA",
+   "MAGEARNAORIGINALMEGA",
+   "MEWTWOMEGAX",
+   "MEWTWOMEGAY",
+   "TATSUGIRICURLYMEGA",
+   "TATSUGIRIDROOPYMEGA",
+   "TATSUGIRISTRETCHYMEGA",
+   "ZERAORAMEGA",
+   "ZYGARDEMEGA"
+  ],
+  "engine_items_not_legal_in_showdown": [
+   "ABSORBBULB",
+   "ADAMANTCRYSTAL",
+   "ADAMANTORB",
+   "ADRENALINEORB",
+   "ASSAULTVEST",
+   "BLACKSLUDGE",
+   "BLANKPLATE",
+   "BLUNDERPOLICY",
+   "BOOSTERENERGY",
+   "BUGGEM",
+   "BUGMEMORY",
+   "CELLBATTERY",
+   "CHOICEBAND",
+   "CHOICESPECS",
+   "CLEARAMULET",
+   "CORNERSTONEMASK",
+   "COVERTCLOAK",
+   "CUSTAPBERRY",
+   "DARKGEM",
+   "DARKMEMORY",
+   "DARKRANITE",
+   "DIANCITE",
+   "DRACOPLATE",
+   "DRAGONGEM",
+   "DRAGONMEMORY",
+   "DRAGONSCALE",
+   "DREADPLATE",
+   "EARTHPLATE",
+   "ELECTRICGEM",
+   "ELECTRICMEMORY",
+   "EVIOLITE",
+   "FAIRYGEM",
+   "FAIRYMEMORY",
+   "FIGHTINGGEM",
+   "FIGHTINGMEMORY",
+   "FIREGEM",
+   "FIREMEMORY",
+   "FISTPLATE",
+   "FLAMEORB",
+   "FLAMEPLATE",
+   "FLYINGGEM",
+   "FLYINGMEMORY",
+   "GHOSTGEM",
+   "GHOSTMEMORY",
+   "GRASSGEM",
+   "GRASSMEMORY",
+   "GRISEOUSCORE",
+   "GRISEOUSORB",
+   "GROUNDGEM",
+   "GROUNDMEMORY",
+   "HEARTHFLAMEMASK",
+   "HEATRANITE",
+   "HEAVYDUTYBOOTS",
+   "ICEGEM",
+   "ICEMEMORY",
+   "ICICLEPLATE",
+   "INSECTPLATE",
+   "IRONPLATE",
+   "LATIASITE",
+   "LATIOSITE",
+   "LIECHIBERRY",
+   "LOADEDDICE",
+   "LUSTROUSGLOBE",
+   "LUSTROUSORB",
+   "MAGEARNITE",
+   "MEADOWPLATE",
+   "METALPOWDER",
+   "MEWTWONITEX",
+   "MEWTWONITEY",
+   "MINDPLATE",
+   "NONE",
+   "ODDINCENSE",
+   "PETAYABERRY",
+   "PINKBOW",
+   "PIXIEPLATE",
+   "POISONGEM",
+   "POISONMEMORY",
+   "POLKADOTBOW",
+   "POWERHERB",
+   "PROTECTIVEPADS",
+   "PSYCHICGEM",
+   "PSYCHICMEMORY",
+   "PUNCHINGGLOVE",
+   "ROCKGEM",
+   "ROCKMEMORY",
+   "RUSTEDSHIELD",
+   "RUSTEDSWORD",
+   "SALACBERRY",
+   "SEAINCENSE",
+   "SKYPLATE",
+   "SOULDEW",
+   "SPLASHPLATE",
+   "SPOOKYPLATE",
+   "STEELGEM",
+   "STEELMEMORY",
+   "STONEPLATE",
+   "TATSUGIRINITE",
+   "THICKCLUB",
+   "THROATSPRAY",
+   "TOXICORB",
+   "TOXICPLATE",
+   "UNKNOWNITEM",
+   "WATERGEM",
+   "WATERMEMORY",
+   "WAVEINCENSE",
+   "WEAKNESSPOLICY",
+   "WELLSPRINGMASK",
+   "ZAPPLATE",
+   "ZERAORITE",
+   "ZYGARDITE"
+  ],
+  "engine_abilities_not_legal_in_showdown": [
+   "EMBODYASPECT",
+   "MOUNTAINEER",
+   "NOABILITY",
+   "NONE",
+   "PERSISTENT",
+   "REBOUND"
+  ],
+  "engine_moves_total": 885
+ },
+ "diffs": [
+  {
+   "cat": "moves",
+   "id": "banefulbunker",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "clangoroussoul",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "clangoroussoul",
+   "field": "effect.boost",
+   "showdown": [
+    "User",
+    "atk+1,def+1,spa+1,spd+1,spe+1"
+   ],
+   "engine": null,
+   "cls": "needs-reading",
+   "note": "engine has move-specific code in choice_effects.rs"
+  },
+  {
+   "cat": "moves",
+   "id": "crabhammer",
+   "field": "basePower",
+   "showdown": 100,
+   "engine": 95,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "crabhammer",
+   "field": "accuracy",
+   "showdown": 95,
+   "engine": 90,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "crushclaw",
+   "field": "flag.slicing",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "curse",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "curse",
+   "field": "effect.boost",
+   "showdown": null,
+   "engine": [
+    "User",
+    "atk+1,def+1,spe-1"
+   ],
+   "cls": "needs-reading",
+   "note": "Showdown applies effects in onModifyMove,onTryHit,onHit"
+  },
+  {
+   "cat": "moves",
+   "id": "curse",
+   "field": "effect.volatile_status",
+   "showdown": null,
+   "engine": [
+    "User",
+    "curse"
+   ],
+   "cls": "needs-reading",
+   "note": "Showdown applies effects in onModifyMove,onTryHit,onHit"
+  },
+  {
+   "cat": "moves",
+   "id": "direclaw",
+   "field": "flag.slicing",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "direclaw",
+   "field": "critRatio",
+   "showdown": 1,
+   "engine": 2,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "direclaw",
+   "field": "secondaries",
+   "showdown": [
+    [
+     30,
+     "?",
+     "onHit-function",
+     null
+    ]
+   ],
+   "engine": null,
+   "cls": "needs-reading",
+   "note": "Showdown secondary is an onHit function"
+  },
+  {
+   "cat": "moves",
+   "id": "doubleshock",
+   "field": "flag.punch",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "dragoncheer",
+   "field": "basePower",
+   "showdown": 0,
+   "engine": 60,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "dragoncheer",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "dragoncheer",
+   "field": "flag.sound",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "dragoncheer",
+   "field": "effect.volatile_status",
+   "showdown": [
+    "User",
+    "dragoncheer"
+   ],
+   "engine": null,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "electrify",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "freezedry",
+   "field": "secondaries",
+   "showdown": null,
+   "engine": [
+    [
+     10,
+     "Opponent",
+     "Status",
+     "FREEZE"
+    ]
+   ],
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "growth",
+   "field": "type",
+   "showdown": "GRASS",
+   "engine": "NORMAL",
+   "cls": "real",
+   "note": "engine also has move-specific code in choice_effects.rs"
+  },
+  {
+   "cat": "moves",
+   "id": "growth",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "howl",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "kingsshield",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "makeitrain",
+   "field": "basePower",
+   "showdown": 120,
+   "engine": 95,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "makeitrain",
+   "field": "accuracy",
+   "showdown": 95,
+   "engine": 100,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "meteorassault",
+   "field": "basePower",
+   "showdown": 170,
+   "engine": 150,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "milkdrink",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "noretreat",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "powershift",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "protect",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "saltcure",
+   "field": "effect placement",
+   "showdown": "secondary 100%",
+   "engine": "primary",
+   "cls": "representation",
+   "note": "volatile_status saltcure stored as a 100% secondary on the showdown side"
+  },
+  {
+   "cat": "moves",
+   "id": "sandstorm",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "sandstorm",
+   "field": "target",
+   "showdown": "all",
+   "engine": "Opponent",
+   "cls": "representation",
+   "note": "field-wide move; engine has only User/Opponent"
+  },
+  {
+   "cat": "moves",
+   "id": "slash",
+   "field": "basePower",
+   "showdown": 80,
+   "engine": 70,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "snowscape",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "snowscape",
+   "field": "target",
+   "showdown": "all",
+   "engine": "Opponent",
+   "cls": "representation",
+   "note": "field-wide move; engine has only User/Opponent"
+  },
+  {
+   "cat": "moves",
+   "id": "spikyshield",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "spiritshackle",
+   "field": "secondaries",
+   "showdown": [
+    [
+     100,
+     "?",
+     "onHit-function",
+     null
+    ]
+   ],
+   "engine": null,
+   "cls": "needs-reading",
+   "note": "Showdown secondary is an onHit function"
+  },
+  {
+   "cat": "moves",
+   "id": "stuffcheeks",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "syrupbomb",
+   "field": "basePower",
+   "showdown": 60,
+   "engine": 90,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "syrupbomb",
+   "field": "accuracy",
+   "showdown": 90,
+   "engine": 85,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "wish",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "wish",
+   "field": "effect.side_condition",
+   "showdown": [
+    "User",
+    "Wish"
+   ],
+   "engine": null,
+   "cls": "needs-reading",
+   "note": "engine has move-specific code in choice_effects.rs"
+  },
+  {
+   "cat": "moves",
+   "id": "acidarmor",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "acupressure",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "aerialace",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "afteryou",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "agility",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "aircutter",
+   "field": "flag.slicing",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "aircutter",
+   "field": "flag.wind",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "alluringvoice",
+   "field": "secondaries",
+   "showdown": [
+    [
+     100,
+     "?",
+     "onHit-function",
+     null
+    ]
+   ],
+   "engine": null,
+   "cls": "needs-reading",
+   "note": "Showdown secondary is an onHit function"
+  },
+  {
+   "cat": "moves",
+   "id": "allyswitch",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "amnesia",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "aquaring",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "armorcannon",
+   "field": "effect.boost",
+   "showdown": [
+    "User",
+    "def-1,spd-1"
+   ],
+   "engine": null,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "aromaticmist",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "aurasphere",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "auroraveil",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "batonpass",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "bellydrum",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "blizzard",
+   "field": "flag.wind",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "block",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "block",
+   "field": "effect.volatile_status",
+   "showdown": null,
+   "engine": [
+    "Opponent",
+    "trapped"
+   ],
+   "cls": "needs-reading",
+   "note": "Showdown applies effects in onHit"
+  },
+  {
+   "cat": "moves",
+   "id": "bulkup",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "burningjealousy",
+   "field": "secondaries",
+   "showdown": [
+    [
+     100,
+     "?",
+     "onHit-function",
+     null
+    ]
+   ],
+   "engine": null,
+   "cls": "needs-reading",
+   "note": "Showdown secondary is an onHit function"
+  },
+  {
+   "cat": "moves",
+   "id": "calmmind",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "ceaselessedge",
+   "field": "effect.side_condition",
+   "showdown": null,
+   "engine": [
+    "Opponent",
+    "spikes"
+   ],
+   "cls": "needs-reading",
+   "note": "Showdown applies effects in onAfterHit,onAfterSubDamage"
+  },
+  {
+   "cat": "moves",
+   "id": "charge",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "chillyreception",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "chillyreception",
+   "field": "target",
+   "showdown": "all",
+   "engine": "Opponent",
+   "cls": "representation",
+   "note": "field-wide move; engine has only User/Opponent"
+  },
+  {
+   "cat": "moves",
+   "id": "clearsmog",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "coaching",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "coil",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "copycat",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "cosmicpower",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "cottonguard",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "courtchange",
+   "field": "target",
+   "showdown": "all",
+   "engine": "Opponent",
+   "cls": "representation",
+   "note": "field-wide move; engine has only User/Opponent"
+  },
+  {
+   "cat": "moves",
+   "id": "decorate",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "defog",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "destinybond",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "detect",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "doubleteam",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "doubleteam",
+   "field": "effect.boost",
+   "showdown": [
+    "User",
+    "evasion+1"
+   ],
+   "engine": null,
+   "cls": "real",
+   "note": "engine StatBoosts has no evasion field (engine boost is all zeros)"
+  },
+  {
+   "cat": "moves",
+   "id": "dragondance",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "eeriespell",
+   "field": "secondaries",
+   "showdown": [
+    [
+     100,
+     "?",
+     "onHit-function",
+     null
+    ]
+   ],
+   "engine": null,
+   "cls": "needs-reading",
+   "note": "Showdown secondary is an onHit function"
+  },
+  {
+   "cat": "moves",
+   "id": "electricterrain",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "electricterrain",
+   "field": "target",
+   "showdown": "all",
+   "engine": "Opponent",
+   "cls": "representation",
+   "note": "field-wide move; engine has only User/Opponent"
+  },
+  {
+   "cat": "moves",
+   "id": "endure",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "explosion",
+   "field": "effect.selfdestruct",
+   "showdown": true,
+   "engine": false,
+   "cls": "needs-reading",
+   "note": "engine has move-specific code in abilities.rs,choice_effects.rs,generate_instructions.rs; Showdown selfdestruct=always; engine field = heal -1 on User"
+  },
+  {
+   "cat": "moves",
+   "id": "fairylock",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "fairylock",
+   "field": "target",
+   "showdown": "all",
+   "engine": "Opponent",
+   "cls": "representation",
+   "note": "field-wide move; engine has only User/Opponent"
+  },
+  {
+   "cat": "moves",
+   "id": "ficklebeam",
+   "field": "secondaries",
+   "showdown": null,
+   "engine": [
+    [
+     50,
+     "User",
+     "Boost",
+     "spa+1"
+    ]
+   ],
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "finalgambit",
+   "field": "effect.selfdestruct",
+   "showdown": true,
+   "engine": false,
+   "cls": "needs-reading",
+   "note": "engine has move-specific code in choice_effects.rs,generate_instructions.rs; Showdown selfdestruct=ifHit; engine field = heal -1 on User"
+  },
+  {
+   "cat": "moves",
+   "id": "flowertrick",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "focusenergy",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "followme",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "glaiverush",
+   "field": "effect.volatile_status",
+   "showdown": [
+    "User",
+    "glaiverush"
+   ],
+   "engine": null,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "grassyterrain",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "grassyterrain",
+   "field": "target",
+   "showdown": "all",
+   "engine": "Opponent",
+   "cls": "representation",
+   "note": "field-wide move; engine has only User/Opponent"
+  },
+  {
+   "cat": "moves",
+   "id": "gravity",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "gravity",
+   "field": "target",
+   "showdown": "all",
+   "engine": "Opponent",
+   "cls": "representation",
+   "note": "field-wide move; engine has only User/Opponent"
+  },
+  {
+   "cat": "moves",
+   "id": "guardsplit",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "guardswap",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "haze",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "haze",
+   "field": "target",
+   "showdown": "all",
+   "engine": "Opponent",
+   "cls": "representation",
+   "note": "field-wide move; engine has only User/Opponent"
+  },
+  {
+   "cat": "moves",
+   "id": "healbell",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "healingwish",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "healpulse",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "helpinghand",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "imprison",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "ingrain",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "instruct",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "irondefense",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "kowtowcleave",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "leechseed",
+   "field": "flag.powder",
+   "showdown": false,
+   "engine": true,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "lifedew",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "lightscreen",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "lockon",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "magicroom",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "magicroom",
+   "field": "target",
+   "showdown": "all",
+   "engine": "Opponent",
+   "cls": "representation",
+   "note": "field-wide move; engine has only User/Opponent"
+  },
+  {
+   "cat": "moves",
+   "id": "magneticflux",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "magnetrise",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "meanlook",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "meanlook",
+   "field": "effect.volatile_status",
+   "showdown": null,
+   "engine": [
+    "Opponent",
+    "trapped"
+   ],
+   "cls": "needs-reading",
+   "note": "Showdown applies effects in onHit"
+  },
+  {
+   "cat": "moves",
+   "id": "minimize",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "minimize",
+   "field": "effect.boost",
+   "showdown": [
+    "User",
+    "evasion+2"
+   ],
+   "engine": null,
+   "cls": "real",
+   "note": "engine StatBoosts has no evasion field (engine boost is all zeros)"
+  },
+  {
+   "cat": "moves",
+   "id": "mistyexplosion",
+   "field": "effect.selfdestruct",
+   "showdown": true,
+   "engine": false,
+   "cls": "needs-reading",
+   "note": "engine has move-specific code in abilities.rs,choice_effects.rs; Showdown selfdestruct=always; engine field = heal -1 on User"
+  },
+  {
+   "cat": "moves",
+   "id": "mistyterrain",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "mistyterrain",
+   "field": "target",
+   "showdown": "all",
+   "engine": "Opponent",
+   "cls": "representation",
+   "note": "field-wide move; engine has only User/Opponent"
+  },
+  {
+   "cat": "moves",
+   "id": "moonlight",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "moonlight",
+   "field": "effect.heal",
+   "showdown": null,
+   "engine": [
+    "User",
+    0.5
+   ],
+   "cls": "needs-reading",
+   "note": "Showdown applies effects in onHit"
+  },
+  {
+   "cat": "moves",
+   "id": "morningsun",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "morningsun",
+   "field": "effect.heal",
+   "showdown": null,
+   "engine": [
+    "User",
+    0.5
+   ],
+   "cls": "needs-reading",
+   "note": "Showdown applies effects in onHit"
+  },
+  {
+   "cat": "moves",
+   "id": "nastyplot",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "painsplit",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "partingshot",
+   "field": "effect.boost",
+   "showdown": null,
+   "engine": [
+    "Opponent",
+    "atk-1,spa-1"
+   ],
+   "cls": "needs-reading",
+   "note": "Showdown applies effects in onHit"
+  },
+  {
+   "cat": "moves",
+   "id": "perishsong",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "perishsong",
+   "field": "target",
+   "showdown": "all",
+   "engine": "Opponent",
+   "cls": "representation",
+   "note": "field-wide move; engine has only User/Opponent"
+  },
+  {
+   "cat": "moves",
+   "id": "populationbomb",
+   "field": "multiaccuracy",
+   "showdown": true,
+   "engine": "PopulationBomb",
+   "cls": "representation",
+   "note": "engine has no per-hit accuracy; multi_accuracy() exists but multi_hit() approximation is used"
+  },
+  {
+   "cat": "moves",
+   "id": "powersplit",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "powerswap",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "powertrick",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "psychicnoise",
+   "field": "effect placement",
+   "showdown": "secondary 100%",
+   "engine": "primary",
+   "cls": "representation",
+   "note": "volatile_status healblock stored as a 100% secondary on the showdown side"
+  },
+  {
+   "cat": "moves",
+   "id": "psychicterrain",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "psychicterrain",
+   "field": "target",
+   "showdown": "all",
+   "engine": "Opponent",
+   "cls": "representation",
+   "note": "field-wide move; engine has only User/Opponent"
+  },
+  {
+   "cat": "moves",
+   "id": "psychup",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "quickguard",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "quiverdance",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "ragepowder",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "raindance",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "raindance",
+   "field": "target",
+   "showdown": "all",
+   "engine": "Opponent",
+   "cls": "representation",
+   "note": "field-wide move; engine has only User/Opponent"
+  },
+  {
+   "cat": "moves",
+   "id": "recover",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "recycle",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "reflect",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "reflecttype",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "rest",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "revivalblessing",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "revivalblessing",
+   "field": "flag.pivot(selfSwitch)",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": "selfSwitch=True"
+  },
+  {
+   "cat": "moves",
+   "id": "revivalblessing",
+   "field": "effect.side_condition",
+   "showdown": [
+    "User",
+    "revivalblessing"
+   ],
+   "engine": null,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "roar",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "rockpolish",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "roleplay",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "roost",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "safeguard",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "selfdestruct",
+   "field": "effect.selfdestruct",
+   "showdown": true,
+   "engine": false,
+   "cls": "needs-reading",
+   "note": "engine has move-specific code in abilities.rs,choice_effects.rs; Showdown selfdestruct=always; engine field = heal -1 on User"
+  },
+  {
+   "cat": "moves",
+   "id": "shadowpunch",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "shedtail",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "shedtail",
+   "field": "flag.pivot(selfSwitch)",
+   "showdown": "shedtail",
+   "engine": false,
+   "cls": "needs-reading",
+   "note": "selfSwitch=shedtail; engine has move-specific code in choice_effects.rs,generate_instructions.rs"
+  },
+  {
+   "cat": "moves",
+   "id": "shedtail",
+   "field": "effect.volatile_status",
+   "showdown": [
+    "User",
+    "substitute"
+   ],
+   "engine": null,
+   "cls": "needs-reading",
+   "note": "engine has move-specific code in choice_effects.rs,generate_instructions.rs"
+  },
+  {
+   "cat": "moves",
+   "id": "shellsmash",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "shelter",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "shiftgear",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "skillswap",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "slackoff",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "sleeptalk",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "smartstrike",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "softboiled",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "speedswap",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "spicyextract",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "spikes",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "stealthrock",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "steelbeam",
+   "field": "recoil(special)",
+   "showdown": "mindBlownRecoil",
+   "engine": "heal -0.5 (User)",
+   "cls": "representation",
+   "note": "half-max-HP self damage stored as negative heal"
+  },
+  {
+   "cat": "moves",
+   "id": "stickyweb",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "stockpile",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "stoneaxe",
+   "field": "effect.side_condition",
+   "showdown": null,
+   "engine": [
+    "Opponent",
+    "stealthrock"
+   ],
+   "cls": "needs-reading",
+   "note": "Showdown applies effects in onAfterHit,onAfterSubDamage"
+  },
+  {
+   "cat": "moves",
+   "id": "struggle",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "struggle",
+   "field": "recoil(special)",
+   "showdown": "struggleRecoil",
+   "engine": null,
+   "cls": "needs-reading",
+   "note": "Showdown special recoil (half max HP); engine field empty"
+  },
+  {
+   "cat": "moves",
+   "id": "substitute",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "sunnyday",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "sunnyday",
+   "field": "target",
+   "showdown": "all",
+   "engine": "Opponent",
+   "cls": "representation",
+   "note": "field-wide move; engine has only User/Opponent"
+  },
+  {
+   "cat": "moves",
+   "id": "swagger",
+   "field": "accuracy",
+   "showdown": 85,
+   "engine": 90,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "swallow",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "sweetscent",
+   "field": "effect.boost",
+   "showdown": [
+    "Opponent",
+    "evasion-2"
+   ],
+   "engine": null,
+   "cls": "real",
+   "note": "engine StatBoosts has no evasion field (engine boost is all zeros)"
+  },
+  {
+   "cat": "moves",
+   "id": "swordsdance",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "synthesis",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "synthesis",
+   "field": "effect.heal",
+   "showdown": null,
+   "engine": [
+    "User",
+    0.5
+   ],
+   "cls": "needs-reading",
+   "note": "Showdown applies effects in onHit"
+  },
+  {
+   "cat": "moves",
+   "id": "tailwind",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "tearfullook",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "teatime",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "teatime",
+   "field": "target",
+   "showdown": "all",
+   "engine": "Opponent",
+   "cls": "representation",
+   "note": "field-wide move; engine has only User/Opponent"
+  },
+  {
+   "cat": "moves",
+   "id": "throatchop",
+   "field": "effect.volatile_status",
+   "showdown": null,
+   "engine": [
+    "Opponent",
+    "throatchop"
+   ],
+   "cls": "needs-reading",
+   "note": "Showdown applies effects in secondary.onHit,secondaries[0].onHit"
+  },
+  {
+   "cat": "moves",
+   "id": "throatchop",
+   "field": "secondaries",
+   "showdown": [
+    [
+     100,
+     "?",
+     "onHit-function",
+     null
+    ]
+   ],
+   "engine": null,
+   "cls": "needs-reading",
+   "note": "Showdown secondary is an onHit function"
+  },
+  {
+   "cat": "moves",
+   "id": "tidyup",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "tidyup",
+   "field": "effect.boost",
+   "showdown": null,
+   "engine": [
+    "User",
+    "atk+1,spe+1"
+   ],
+   "cls": "needs-reading",
+   "note": "Showdown applies effects in onHit"
+  },
+  {
+   "cat": "moves",
+   "id": "topsyturvy",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "toxicspikes",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "transform",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "triattack",
+   "field": "secondaries",
+   "showdown": [
+    [
+     20,
+     "?",
+     "onHit-function",
+     null
+    ]
+   ],
+   "engine": [
+    [
+     6.67,
+     "Opponent",
+     "Status",
+     "BURN"
+    ],
+    [
+     6.67,
+     "Opponent",
+     "Status",
+     "FREEZE"
+    ],
+    [
+     6.67,
+     "Opponent",
+     "Status",
+     "PARALYZE"
+    ]
+   ],
+   "cls": "needs-reading",
+   "note": "Showdown secondary is an onHit function"
+  },
+  {
+   "cat": "moves",
+   "id": "trickroom",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "trickroom",
+   "field": "target",
+   "showdown": "all",
+   "engine": "Opponent",
+   "cls": "representation",
+   "note": "field-wide move; engine has only User/Opponent"
+  },
+  {
+   "cat": "moves",
+   "id": "tripleaxel",
+   "field": "basePower",
+   "showdown": 20,
+   "engine": 40,
+   "cls": "needs-reading",
+   "note": "Showdown computes power in a callback"
+  },
+  {
+   "cat": "moves",
+   "id": "tripleaxel",
+   "field": "multiaccuracy",
+   "showdown": true,
+   "engine": "TripleAxel",
+   "cls": "representation",
+   "note": "engine has no per-hit accuracy; multi_accuracy() exists but multi_hit() approximation is used"
+  },
+  {
+   "cat": "moves",
+   "id": "uproar",
+   "field": "effect.volatile_status",
+   "showdown": [
+    "User",
+    "uproar"
+   ],
+   "engine": null,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "moves",
+   "id": "whirlwind",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "wideguard",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "wonderroom",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "moves",
+   "id": "wonderroom",
+   "field": "target",
+   "showdown": "all",
+   "engine": "Opponent",
+   "cls": "representation",
+   "note": "field-wide move; engine has only User/Opponent"
+  },
+  {
+   "cat": "moves",
+   "id": "yawn",
+   "field": "accuracy",
+   "showdown": true,
+   "engine": 100,
+   "cls": "representation",
+   "note": "never-miss stored as 100"
+  },
+  {
+   "cat": "megas",
+   "id": "starmiemega",
+   "field": "baseStats.atk",
+   "showdown": 100,
+   "engine": 140,
+   "cls": "real",
+   "note": "mega_evolve_target() data"
+  },
+  {
+   "cat": "megas",
+   "id": "starmiemega",
+   "field": "baseStats(table).atk",
+   "showdown": 100,
+   "engine": 140,
+   "cls": "real",
+   "note": "PokemonName::base_stats() (used for stat recalculation)"
+  },
+  {
+   "cat": "megas",
+   "id": "absolmegaz",
+   "field": "ability",
+   "showdown": "SHARPNESS",
+   "engine": "MAGICBOUNCE",
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "megas",
+   "id": "garchompmegaz",
+   "field": "ability",
+   "showdown": "LEVITATE",
+   "engine": "SANDFORCE",
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "megas",
+   "id": "lucariomegaz",
+   "field": "ability",
+   "showdown": "AURAGUARD",
+   "engine": "ADAPTABILITY",
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "megas",
+   "id": "golisopodmega",
+   "field": "ability",
+   "showdown": "TOUGHCLAWS",
+   "engine": "EMERGENCYEXIT",
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "megas",
+   "id": "drampamega",
+   "field": "baseStats.spd",
+   "showdown": 116,
+   "engine": 114,
+   "cls": "real",
+   "note": "mega_evolve_target() data"
+  },
+  {
+   "cat": "megas",
+   "id": "drampamega",
+   "field": "baseStats(table).spd",
+   "showdown": 116,
+   "engine": 114,
+   "cls": "real",
+   "note": "PokemonName::base_stats() (used for stat recalculation)"
+  },
+  {
+   "cat": "items",
+   "id": "ejectbutton",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "items",
+   "id": "leek",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "items",
+   "id": "bigroot",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "items",
+   "id": "bindingband",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "items",
+   "id": "brightpowder",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "items",
+   "id": "damprock",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "items",
+   "id": "focusband",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "items",
+   "id": "heatrock",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "items",
+   "id": "icyrock",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "items",
+   "id": "kingsrock",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "items",
+   "id": "leppaberry",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "items",
+   "id": "lightclay",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "items",
+   "id": "mentalherb",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "items",
+   "id": "metronome",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "items",
+   "id": "oranberry",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "items",
+   "id": "persimberry",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "items",
+   "id": "quickclaw",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "items",
+   "id": "redcard",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "items",
+   "id": "scopelens",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "items",
+   "id": "smoothrock",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "items",
+   "id": "terrainextender",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "items",
+   "id": "zoomlens",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  },
+  {
+   "cat": "abilities",
+   "id": "auraguard",
+   "field": "exists in enum",
+   "showdown": true,
+   "engine": false,
+   "cls": "real",
+   "note": ""
+  }
+ ]
+}

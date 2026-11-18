@@ -1,0 +1,18 @@
+[package]
+name = "players"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "CG's scripted Players over a Battle only: random, max damage, tower and the ported Python players."
+
+[lib]
+name = "players"
+path = "src/lib.rs"
+
+[[bin]]
+name = "players_speed"
+path = "src/bin/players_speed.rs"
+
+[dependencies]
+battle = { path = "../battle" }
+cg-engine = { path = "../engine" }

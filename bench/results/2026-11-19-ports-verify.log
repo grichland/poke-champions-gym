@@ -1,0 +1,18 @@
+ÿþ    Finished `release` profile [optimized + debuginfo] target(s) in 0.06s
+rust passed 360 failed 0
+python-ext.sh: wrote python/champions_gym/_cg.cp312-win_amd64.pyd
+3 passed, 0 failed
+7 passed, 0 failed
+6 passed, 0 failed
+9 passed, 0 failed
+tower vs max_damage: 20000 games, A 50.7% (A seat0 50.4%, A seat1 51.1%), turns mean 6.1 max 81, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 40000/40000, prior0 0, truth 0
+endgame vs best_matchup_max_damage: 10000 games, A 52.4% (A seat0 50.8%, A seat1 54.1%), turns mean 6.0 max 70, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 20000/20000, prior0 0, truth 0, hidden 0 (2512 games, 13988 steps), refused trapped 0, steps 93741, 21776 battles/s, 371663 decisions/s
+disciplined vs best_matchup_max_damage: 10000 games, A 50.5% (A seat0 50.7%, A seat1 50.4%), turns mean 5.9 max 60, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 20000/20000, prior0 0, truth 0, hidden 0 (2512 games, 13763 steps), refused trapped 0, steps 93239, 22312 battles/s, 377959 decisions/s
+best_matchup_max_damage vs max_damage: 10000 games, A 50.0% (A seat0 49.1%, A seat1 51.0%), turns mean 5.8 max 37, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 20000/20000, prior0 0, truth 0, hidden 0 (2512 games, 13615 steps), refused trapped 0, steps 92415, 23436 battles/s, 392893 decisions/s
+pilot_priority vs tower: 10000 games, A 51.5% (A seat0 52.4%, A seat1 50.6%), turns mean 6.5 max 85, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 20000/20000, prior0 0, truth 0, hidden 0 (2512 games, 15373 steps), refused trapped 0, steps 99427, 21093 battles/s, 385161 decisions/s
+pilot_hazard vs max_damage: 10000 games, A 47.4% (A seat0 47.6%, A seat1 47.2%), turns mean 6.4 max 37, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 20000/20000, prior0 0, truth 0, hidden 0 (2512 games, 13899 steps), refused trapped 0, steps 97839, 21146 battles/s, 377866 decisions/s
+pilot_encore vs tower: 10000 games, A 47.4% (A seat0 47.3%, A seat1 47.5%), turns mean 6.6 max 58, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 20000/20000, prior0 0, truth 0, hidden 0 (2512 games, 14715 steps), refused trapped 0, steps 100074, 18967 battles/s, 347028 decisions/s
+pilot_weather vs tower: 10000 games, A 47.5% (A seat0 46.9%, A seat1 48.2%), turns mean 6.7 max 59, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 20000/20000, prior0 0, truth 0, hidden 0 (2512 games, 14243 steps), refused trapped 0, steps 101219, 14439 battles/s, 267869 decisions/s
+endgame vs pilot_priority: 10000 games, A 49.9% (A seat0 50.3%, A seat1 49.5%), turns mean 6.4 max 59, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 20000/20000, prior0 0, truth 0, hidden 0 (2512 games, 14492 steps), refused trapped 0, steps 97853, 14337 battles/s, 257494 decisions/s
+endgame vs random: 10000 games, A 92.0% (A seat0 91.8%, A seat1 92.1%), turns mean 8.3 max 72, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 20000/20000, prior0 0, truth 0, hidden 0 (2512 games, 15921 steps), refused trapped 0, steps 113070, 13634 battles/s, 289767 decisions/s
+VERIFY_DONE

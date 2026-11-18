@@ -1,0 +1,12 @@
+Tue, Nov 17, 2026 12:20:42 PM
+== reference: 8 Nov pe_ext.random_battles, 100000 battles, seed 1000
+{"states": 200, "seed": 1000, "sha256": "f96915a8990343626f6aaea2d322b4b649f2a58995c7a78a5da58e8eab7f24a2", "procedure": "play.py: random.Random(seed); [(sample_team, sample_team)] x n; preview_state; to_string", "catalog": "pcsa/assets/sets/top_builds.json, game/species.json, game/vocab.json"}
+{"source": "pe_ext.random_battles (8 Nov build)", "battles": 100000, "seed": 1000, "wall_s": 4.396, "battles_per_s": 22745.8, "steps": 2459873, "steps_per_s": 559516.9, "steps_per_battle": 24.6, "s1_wins": 47660, "s2_wins": 52146, "unfinished": 194}
+states regenerated identically
+== random_play run 1
+{"battles": 100000, "states": 200, "per_state": 500, "seed": 1000, "wall_s": 4.542, "process_s": 4.542, "battles_per_s": 22016.4, "steps": 2459873, "steps_per_s": 541576.1, "steps_per_battle": 24.60, "branches_per_step": 2.074, "s1_wins": 47660, "s2_wins": 52146, "unfinished": 194, "time_capped": false}
+== random_play run 2
+{"battles": 100000, "states": 200, "per_state": 500, "seed": 1000, "wall_s": 4.373, "process_s": 4.373, "battles_per_s": 22870.2, "steps": 2459873, "steps_per_s": 562577.6, "steps_per_battle": 24.60, "branches_per_step": 2.074, "s1_wins": 47660, "s2_wins": 52146, "unfinished": 194, "time_capped": false}
+== random_play run 3
+{"battles": 100000, "states": 200, "per_state": 500, "seed": 1000, "wall_s": 4.350, "process_s": 4.351, "battles_per_s": 22987.4, "steps": 2459873, "steps_per_s": 565462.1, "steps_per_battle": 24.60, "branches_per_step": 2.074, "s1_wins": 47660, "s2_wins": 52146, "unfinished": 194, "time_capped": false}
+Tue, Nov 17, 2026 12:21:01 PM

@@ -1,0 +1,42 @@
+identical      focus sash saves a full-HP holder once; a multi-hit move gets through after
+identical      sturdy before focus sash: the sash stays
+identical      focus band rolls on every damage event (poison, sand)
+identical      sitrus berry is eaten between the hits of a multi-hit move
+identical      lum berry cures paralysis at once, confusion at the next update
+identical      resist berry halves the first hit only; status move and fixed damage leave it
+identical      normal gem: kept on a miss and against a Ghost, used on the hit
+identical      life orb recoil, none with sheer force on a move with a secondary
+identical      leftovers heal before poison damage
+identical      rocky helmet on each contact hit; magic guard takes none
+identical      air balloon: immune to ground moves, popped by any other hit, gravity grounds it
+identical      red card drags the attacker out at random
+identical      eject button after u-turn: both sides switch (Champions keeps the attacker's switch)
+identical      white herb after close combat, after intimidate and after a Mega's intimidate
+identical      choice scarf locks on use; trick hands it over and the lock follows the new holder
+identical      quick claw rolls once per move action and beats speed, not +1 priority
+identical      iron ball grounds a flying holder and halves its speed
+identical      heat rock and damp rock: eight turns of weather from the setter's ability
+identical      light clay and terrain extender: eight turns
+identical      knock off: x1.5 and removal; sticky hold keeps the item but not the power; a stone stays
+identical      trick fails with the user's own stone and against sticky hold
+identical      thief and covet steal only into an empty hand; stones and gems stop them
+identical      fling: the item leaves even into protect; berries and herbs act on the target
+identical      acrobatics doubles without an item; belch works after bug bite ate a berry
+identical      recycle brings back an eaten berry, not a knocked-off item
+identical      mega garchomp z: post-mega speed on the mega turn, levitate against earth power
+identical      mega golisopod: first impression after the mega action, tough claws
+identical      two megas in one turn; mega banette's prankster on the mega turn
+identical      stalwart: a locked move called by copycat goes back at the stored target (the user)
+identical      unburden doubles speed once the berry is eaten
+identical      harvest restores the berry in sun; cud chew eats it again a turn later
+identical      opportunist copies the foe's boosts
+identical      magician and pickpocket steal on contact
+identical      klutz and magic room stop item effects
+identical      metronome item: consecutive uses build up, a different move resets
+identical      mental herb cures taunt and the rest at the next update
+identical      terrain seeds: used on entry under the terrain and when it starts later
+identical      shell bell and big root heal
+identical      mega offered after outrage's lock ends, not during it
+identical      unnerve keeps the berry uneaten; teatime makes both eat
+{"scenarios": 40, "identical": 40}
+{"rows_steps": 174, "rows_steps_equal": 174, "disagreements": {}}

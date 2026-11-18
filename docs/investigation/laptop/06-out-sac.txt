@@ -1,0 +1,133 @@
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "MpComputerStatus" to type "System.Int64". Error: 
+"Input string was not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-sac.ps1:2 char:3
++ H 'MpComputerStatus'; try{ Get-MpComputerStatus | Select SmartAppCont ...
++   ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+
+
+SmartAppControlState      : 
+AMServiceEnabled          : False
+RealTimeProtectionEnabled : False
+AntivirusEnabled          : False
+
+
+
+
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "CI policy reg" to type "System.Int64". Error: "Input 
+string was not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-sac.ps1:3 char:3
++ H 'CI policy reg'; try{ Get-ItemProperty 'HKLM:\SYSTEM\CurrentControl ...
++   ~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+
+
+EmodePolicyRequired             : 0
+SkuPolicyRequired               : 0
+VerifiedAndReputablePolicyState : 0
+SAC_PreviousState               : 1
+SAC_EnforcementReason           : 6
+PSPath                          : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Contr
+                                  ol\CI\Policy
+PSParentPath                    : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Contr
+                                  ol\CI
+PSChildName                     : Policy
+PSDrive                         : HKLM
+PSProvider                      : Microsoft.PowerShell.Core\Registry
+
+
+
+
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "WDAC / DeviceGuard" to type "System.Int64". Error: 
+"Input string was not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-sac.ps1:4 char:3
++ H 'WDAC / DeviceGuard'; try{ Get-CimInstance -ClassName Win32_DeviceG ...
++   ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+
+
+CodeIntegrityPolicyEnforcementStatus         : 2
+UsermodeCodeIntegrityPolicyEnforcementStatus : 0
+SecurityServicesRunning                      : {2}
+
+
+
+
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "CodeIntegrity events" to type "System.Int64". Error: 
+"Input string was not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-sac.ps1:5 char:3
++ H 'CodeIntegrity events'; try{ Get-WinEvent -LogName 'Microsoft-Windo ...
++   ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+
+TimeCreated              Id LevelDisplayName M                                                                                                                                                                                                                                                              
+-----------              -- ---------------- -                                                                                                                                                                                                                                                              
+11/16/2026 12:46:54 PM 3089 Information      Signature information for another event. Match using the Correlation Id.                                                                                                                                                                                       
+11/16/2026 12:46:54 PM 3089 Information      Signature information for another event. Match using the Correlation Id.                                                                                                                                                                                       
+11/16/2026 12:46:54 PM 3033 Error            Code Integrity determined that a process (\Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-fw-host.exe) attempted to load \Device\HarddiskVolume3\Windows\System32\vulkan-1.dll that did not meet the Custom 3 / Antimalware signing level       
+                                             requirements.                                                                                                                                                                                                                                                  
+11/16/2026 12:46:54 PM 3089 Information      Signature information for another event. Match using the Correlation Id.                                                                                                                                                                                       
+11/16/2026 12:46:54 PM 3089 Information      Signature information for another event. Match using the Correlation Id.                                                                                                                                                                                       
+11/16/2026 12:46:54 PM 3089 Information      Signature information for another event. Match using the Correlation Id.                                                                                                                                                                                       
+11/16/2026 12:46:54 PM 3089 Information      Signature information for another event. Match using the Correlation Id.                                                                                                                                                                                       
+11/16/2026 12:46:54 PM 3033 Error            Code Integrity determined that a process (\Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-fw-host.exe) attempted to load                                                                                                                        
+                                             \Device\HarddiskVolume3\Windows\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_d2ef2890f1d3b11c\igd10iumd64.dll that did not meet the Custom 3 / Antimalware signing level requirements.                                                               
+11/16/2026 12:46:54 PM 3089 Information      Signature information for another event. Match using the Correlation Id.                                                                                                                                                                                       
+11/16/2026 12:46:54 PM 3089 Information      Signature information for another event. Match using the Correlation Id.                                                                                                                                                                                       
+11/16/2026 12:46:54 PM 3089 Information      Signature information for another event. Match using the Correlation Id.                                                                                                                                                                                       
+11/16/2026 12:46:54 PM 3089 Information      Signature information for another event. Match using the Correlation Id.                                                                                                                                                                                       
+11/16/2026 12:46:54 PM 3033 Error            Code Integrity determined that a process (\Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-fw-host.exe) attempted to load                                                                                                                        
+                                             \Device\HarddiskVolume3\Windows\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_d2ef2890f1d3b11c\igd10iumd64.dll that did not meet the Custom 3 / Antimalware signing level requirements.                                                               
+11/16/2026 12:46:54 PM 3089 Information      Signature information for another event. Match using the Correlation Id.                                                                                                                                                                                       
+11/16/2026 12:46:54 PM 3089 Information      Signature information for another event. Match using the Correlation Id.                                                                                                                                                                                       
+11/16/2026 12:46:54 PM 3089 Information      Signature information for another event. Match using the Correlation Id.                                                                                                                                                                                       
+11/16/2026 12:46:54 PM 3089 Information      Signature information for another event. Match using the Correlation Id.                                                                                                                                                                                       
+11/16/2026 12:46:54 PM 3033 Error            Code Integrity determined that a process (\Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-fw-host.exe) attempted to load                                                                                                                        
+                                             \Device\HarddiskVolume3\Windows\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_d2ef2890f1d3b11c\igd10iumd64.dll that did not meet the Custom 3 / Antimalware signing level requirements.                                                               
+11/16/2026 12:46:54 PM 3089 Information      Signature information for another event. Match using the Correlation Id.                                                                                                                                                                                       
+11/16/2026 12:46:54 PM 3089 Information      Signature information for another event. Match using the Correlation Id.                                                                                                                                                                                       
+11/16/2026 12:46:54 PM 3089 Information      Signature information for another event. Match using the Correlation Id.                                                                                                                                                                                       
+11/16/2026 12:46:54 PM 3089 Information      Signature information for another event. Match using the Correlation Id.                                                                                                                                                                                       
+11/16/2026 12:46:54 PM 3033 Error            Code Integrity determined that a process (\Device\HarddiskVolume3\Program Files\McAfee\wps\16.6.0.159\mc-fw-host.exe) attempted to load                                                                                                                        
+                                             \Device\HarddiskVolume3\Windows\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_d2ef2890f1d3b11c\igd10iumd64.dll that did not meet the Custom 3 / Antimalware signing level requirements.                                                               
+11/16/2026 12:46:54 PM 3089 Information      Signature information for another event. Match using the Correlation Id.                                                                                                                                                                                       
+11/16/2026 12:46:54 PM 3089 Information      Signature information for another event. Match using the Correlation Id.                                                                                                                                                                                       
+
+
+
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "AppLocker events" to type "System.Int64". Error: 
+"Input string was not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-sac.ps1:6 char:3
++ H 'AppLocker events'; try{ Get-WinEvent -LogName 'Microsoft-Windows-A ...
++   ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+
+
+TimeCreated : 11/15/2026 6:57:45 PM
+Message     : The AppLocker policy was applied successfully to this computer.
+
+TimeCreated : 11/11/2026 5:13:03 PM
+Message     : The AppLocker policy was applied successfully to this computer.
+
+TimeCreated : 10/15/2026 7:17:58 AM
+Message     : The AppLocker policy was applied successfully to this computer.
+
+TimeCreated : 10/4/2026 1:12:35 AM
+Message     : The AppLocker policy was applied successfully to this computer.
+
+TimeCreated : 9/24/2026 8:16:03 PM
+Message     : The AppLocker policy was applied successfully to this computer.
+
+
+
+

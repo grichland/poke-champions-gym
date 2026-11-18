@@ -1,0 +1,31 @@
+ÿþ== restart
+bash.exe : Traceback (most recent call last):
+At line:1 char:1
++ & 'C:\Program Files\Git\bin\bash.exe' target/np2-real.sh 2>&1 | Tee-O ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Users\user\Code\pokemon_champions\champions-gym\bench\python\neural_pcsa_former.py", line 204, in <module>
+    main()
+  File "C:\Users\user\Code\pokemon_champions\champions-gym\bench\python\neural_pcsa_former.py", line 200, in main
+    {"load": part_load, "eval": part_eval, "equiv": part_equiv, "live": part_live, "restart": part_restart}[a.part](a)
+  File "C:\Users\user\Code\pokemon_champions\champions-gym\bench\python\neural_pcsa_former.py", line 151, in 
+part_restart
+    pol = policy(a)
+          ^^^^^^^^^
+  File "C:\Users\user\Code\pokemon_champions\champions-gym\bench\python\neural_pcsa_former.py", line 38, in policy
+    return N.make_policy(SPEC, a.ckpt, "cpu", dict(threads=a.threads, **kw))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Code\pokemon_champions\champions-gym\python\champions_gym\neural.py", line 956, in make_policy
+    return obj(**args)
+           ^^^^^^^^^^^
+  File "C:\Users\user\Code\pokemon_champions\champions-gym\docs\examples\pcsa_former_policy.py", line 66, in __init__
+    self.net, ck = ckpt.load(checkpoint, lay, cg_adapter.learnset(), device)  # LayoutMismatch on a difference
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Code\pokemon_champions\pcsa-former\pcsa_former\checkpoint.py", line 43, in load
+    raise LayoutMismatch(f"checkpoint contract {want.get('contract')!r} is not the current {have['contract']!r} 
+(allow_contract to load anyway)")
+pcsa_former.checkpoint.LayoutMismatch: checkpoint contract '0.5' is not the current '0.6' (allow_contract to load 
+anyway)
+PART-DONE

@@ -1,0 +1,5 @@
+{"name":"acc70_evap6","trials":40000,"counts":{"miss":30805,"hit":9195},"wall_s":63.388,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"crit_r3","trials":40000,"counts":{"no":20220,"crit":19780},"wall_s":78.261,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"speedtie_move","trials":40000,"counts":{"p2":19805,"p1":20195},"wall_s":56.853,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"protect_chain","trials":40000,"counts":{"FS":26576,"SF":11966,"SS":1458},"wall_s":96.821,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"ab_quickdraw","trials":40000,"counts":{"none":28027,"proc":11973},"wall_s":58.832,"showdown":"c0845f33d","format":"gen9championsbssregmc"}

@@ -1,0 +1,68 @@
+"""champions_gym (CG): a Pokémon Champions singles simulator with a batched Python interface."""
+
+__version__ = "0.4.0"
+
+from .env import (
+    KIND_PREVIEW,
+    KIND_REPLACE,
+    KIND_TURN,
+    N_ACTIONS,
+    N_TURN_ACTIONS,
+    PREVIEW0,
+    TEAMS,
+    BatchEnv,
+    CGError,
+    Game,
+    Labels,
+    Outcome,
+    Outcomes,
+    Results,
+    check_teams,
+    mix_seed,
+    preview_action,
+    preview_picks,
+)
+from .obs import DTYPES, FEATURES, SHAPES, VOCAB, Feature, Tensors, learnset_table, new_tensors, tensors
+from .player import BUILTIN_PLAYERS, Battle, BuiltinPlayer, Player, RandomPlayer, Request, builtin_player
+from .runner import GameRecord, MatchResult, play_games
+
+__all__ = [
+    "__version__",
+    "BUILTIN_PLAYERS",
+    "Battle",
+    "BatchEnv",
+    "BuiltinPlayer",
+    "CGError",
+    "DTYPES",
+    "FEATURES",
+    "Feature",
+    "Game",
+    "GameRecord",
+    "Labels",
+    "KIND_PREVIEW",
+    "KIND_REPLACE",
+    "KIND_TURN",
+    "MatchResult",
+    "N_ACTIONS",
+    "N_TURN_ACTIONS",
+    "Outcome",
+    "Outcomes",
+    "PREVIEW0",
+    "Player",
+    "RandomPlayer",
+    "Request",
+    "Results",
+    "SHAPES",
+    "TEAMS",
+    "Tensors",
+    "VOCAB",
+    "builtin_player",
+    "check_teams",
+    "learnset_table",
+    "mix_seed",
+    "new_tensors",
+    "play_games",
+    "preview_action",
+    "preview_picks",
+    "tensors",
+]

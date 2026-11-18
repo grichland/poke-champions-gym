@@ -1,0 +1,40 @@
+pools ['real', 'stage5'] seed 1119: steps 124170, steps with identical rows 124168
+kind                 both  sd_only  en_only   agree%
+ability             18676        0        0   100.00
+blocked               283        0        0   100.00
+boost               41735        0        0   100.00
+boost_limit          1307        0        0   100.00
+boost_reset          1041        0        0   100.00
+cant                 4880        0        0   100.00
+cure                 1566        0        0   100.00
+end                  5000        0        0   100.00
+enter               60501        0        0   100.00
+fail                17316        0        0   100.00
+faint               21354        0        0   100.00
+field                3964        0        0   100.00
+form                 1080        0        0   100.00
+hits                 2333        0        0   100.00
+hp                 149053        0        0   100.00
+item                25209        1        1   100.00
+mega                 5408        0        0   100.00
+mega_stone           5408        0        0   100.00
+miss                 4438        0        0   100.00
+move               157246        0        0   100.00
+once                 7163        0        0   100.00
+pp                    201        0        0   100.00
+prepare              1995        0        0   100.00
+protect              1378        0        0   100.00
+result              48824        0        0   100.00
+revive                 54        0        0   100.00
+side                 4304        0        0   100.00
+status               4862        0        0   100.00
+transform             199        0        0   100.00
+turn               100885        0        0   100.00
+types                1768        0        0   100.00
+volatile             9254        0        0   100.00
+volatile_acted       2260        0        0   100.00
+volatile_end         1797        0        0   100.00
+weather              5499        0        0   100.00
+disagreements: {"showdown_only|item|mentalherb": 1, "engine_only|item|airballoon": 1}
+showdown lines dropped: {"t:": 129131, "gametype": 5000, "player": 10000, "gen": 5000, "tier": 5000, "rule": 10000, "clearpoke": 5000, "poke": 60000, "teampreview": 5000, "": 225390, "teamsize": 10000, "start": 5000, "-crit": 4713, "upkeep": 95960, "detailschange (mega)": 5408, "-heal Regenerator [silent]": 354, "-weather [upkeep]": 11687, "-start [silent]": 555, "-end [silent]": 1602, "-anim": 368, "-hint": 379, "-singlemove [silent]": 279, "-clearnegativeboost [silent]": 61, "replace": 161, "-curestatus [silent]": 3, "-enditem [silent]": 80, "-swapsideconditions": 33}
+engine rows dropped: {"withdraw": 32729, "ability_change (mummy)": 49}

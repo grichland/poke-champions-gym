@@ -1,0 +1,117 @@
+identical      synchronize passes toxic back to an immunity holder: immune row
+identical      synchronize passes paralysis back to a limber holder: immune row
+identical      synchronize passes a burn back to a water veil holder: immune row
+identical      synchronize passes a burn back to a water bubble holder: immune row
+identical      synchronize passes a burn back to a thermal exchange holder: immune row
+identical      synchronize passes toxic back to a pastel veil holder: its ally handler's block row
+identical      synchronize passes toxic back to a purifying salt holder: immune row
+identical      synchronize passes toxic back to a comatose holder: immune row
+identical      synchronize passes toxic back to a leaf guard holder in sun: immune row
+identical      synchronize passes a burn back to a flower veil grass holder: silent (the effect has no name)
+identical      two synchronize holders: the second pass fails with the status row
+identical      synchronize passes toxic back to a steel type: immune row
+identical      synchronize passes paralysis back to an electric type: immune row
+identical      synchronize passes a burn back to a fire type: immune row
+identical      corrosion poisons a steel synchronize holder; the poison goes back to the poison type: immune row
+identical      synchronize's poison into misty terrain on a grounded user: misty terrain row
+identical      synchronize's poison into safeguard: safeguard row
+identical      synchronize against a paralysed user: the failure row names the synchronize holder
+identical      synchronize against a user with the same status: the failure row names the user and the status
+identical      static paralyses a synchronize attacker; the paralysis goes back to the electric holder: immune row
+identical      static against a limber attacker: silent
+identical      poison point against an immunity attacker: silent
+identical      flame body against a water veil attacker: silent
+identical      effect spore against a vital spirit attacker: silent
+identical      toxic chain against an immunity target: silent
+identical      static against an attacker under safeguard: silent
+identical      static against an attacker in misty terrain: silent
+identical      toxic spikes on an immunity switch-in: silent; on a poison type: absorbed
+identical      toxic spikes into safeguard and misty terrain: silent
+identical      yawn's sleep into electric terrain: terrain row
+identical      yawn's sleep into misty terrain: terrain row
+identical      yawn's sleep goes through safeguard set after it
+identical      yawn's sleep against leaf guard in sun set after it: silent
+identical      rest: insomnia and vital spirit fail with their rows
+identical      rest in electric terrain: terrain row; in misty terrain: silent
+identical      rest with leaf guard in sun: silent failure
+identical      wide guard against piercing drill's spread contact move: broken, a quarter of the damage
+identical      wide guard against unseen fist's spread contact move
+identical      quick guard against unseen fist's priority contact move; a non-contact one is blocked
+identical      future sight hits a red card holder: the user is dragged out at the end of the turn
+identical      dragon tail from mold breaker brings in fairy aura and dark aura holders: not announced
+identical      dragon tail from mold breaker brings in ruin ability holders: not announced
+identical      magic guard against rough skin and iron barbs: the attacker's ability row only
+identical      magic guard against aftermath
+identical      sturdy against an ohko move: immune row
+identical      an ohko move against a substitute: the ohko row and the doll breaks
+identical      own tempo against confuse ray: immune row naming confusion
+identical      oblivious against taunt and attract: immune rows
+identical      mold breaker statuses limber, water veil, insomnia and pastel veil holders: cured at once with the ability row
+identical      mold breaker toxic on pastel veil and immunity holders: cured at once
+identical      mold breaker taunt, attract and confuse ray on oblivious and own tempo holders: cured at once
+identical      damp stops explosion: the cant row names the damp holder
+identical      armor tail, queenly majesty and dazzling stop priority moves
+identical      guard dog and suction cups against roar and dragon tail
+identical      guard dog, rattled and mirror armor against intimidate
+identical      intimidate against a substitute: immune row
+identical      supersweet syrup against a substitute: immune row
+identical      sap sipper at +6: the boost fails and the immune row is written
+identical      motor drive at +6: the boost fails and the immune row is written
+identical      lightning rod at +6: the boost fails and the immune row is written
+identical      storm drain at +6: the boost fails and the immune row is written
+identical      well-baked body at +6: the boost fails and the immune row is written
+identical      wind rider at +6: the boost fails and the immune row is written
+identical      volt absorb at full hp: immune row
+identical      water absorb at full hp: immune row
+identical      earth eater at full hp: immune row
+identical      dry skin at full hp: immune row
+identical      flash fire twice: the start row, then the immune row
+identical      perish song and teatime against a pokemon in the air: miss rows
+identical      gravity grounds a flier, a levitate holder and an air balloon holder; magnet rise disabled: struggle
+identical      cotton down against clear body; gooey and tangling hair against mirror armor
+identical      perish body on contact, and not again when the attacker already has perish song
+identical      toxic debris with two layers already: no row
+identical      hydration in rain and shed skin cure at the end of the turn
+identical      comatose: sleep talk and snore work, rest fails, hex doubles
+identical      forewarn, anticipation and frisk on entry
+identical      disguise busted, then the forme row and its damage
+identical      zero to hero: the switch back in shows hero form
+identical      hunger switch changes form each turn
+identical      stance change and king's shield
+identical      battle bond after a knock out
+identical      truant loafs every other turn
+identical      imposter transforms on entry
+identical      wandering spirit and mummy and lingering aroma swap on contact
+identical      parental bond steel beam into protect: no cost; a plain user pays half its hp
+identical      feint breaks protect
+identical      lock-on then an ohko move
+identical      guard split, power split and speed swap
+identical      tidy up clears hazards and substitutes
+identical      heal bell: a soundproof team member keeps its status
+identical      ingrain stops roar; fairy lock
+identical      court change swaps the hazards
+identical      electrify makes the next move electric
+identical      endure, focus punch interrupted, beak blast burns on contact
+identical      destiny bond takes the attacker down
+identical      skill swap, role play, entrainment, simple beam, worry seed, gastro acid
+identical      instruct, quash and after you fail in singles; copycat copies
+identical      castform's forecast in sun, rain and snow, then cloud nine
+identical      healing wish and wish
+identical      pain split, spite and eerie spell
+identical      poltergeist against no item fails; corrosive gas; sticky web
+identical      imprison, disable, taunt, torment and throat chop refuse moves
+identical      psychic noise blocks healing; syrup bomb; salt cure; octolock
+identical      uproar wakes and keeps awake
+identical      revival blessing brings back a fainted member
+identical      transform copies, then the copied moves
+identical      soundproof against perish song and uproar
+identical      bulletproof against shadow ball and sludge bomb
+identical      good as gold against taunt and toxic
+identical      magic bounce reflects toxic, taunt and stealth rock
+identical      wonder guard against neutral hits and toxic damage
+identical      overcoat and a grass type against spore and sleep powder
+identical      psychic terrain blocks priority on a grounded target; dazzling blocks prankster's status move
+identical      prankster's status move against a dark type: immune row
+identical      levitate and air balloon against ground moves; earth eater heals
+{"scenarios": 115, "identical": 115}
+{"rows_steps": 536, "rows_steps_equal": 536, "disagreements": {}}

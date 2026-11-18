@@ -1,0 +1,84 @@
+# Items audit 03 (CSV lines 113-167)
+
+Slice: ITEMS, `03-coverage-items.csv` lines 113 to 167 (55 rows). Rows audited: 55. Not audited: none.
+
+Build: Cargo features `champions` + `bss` (no gen feature) so `genx` is compiled (`lib.rs:14-16`). `genx/items.rs` has no `cfg(champions)` arms; Champions item overrides in Showdown (`data/mods/champions/items.ts`) only change `isNonstandard` (plus Eject Button), so the base `data/items.ts` entry is the reference for every row here.
+
+Counts: MATCH 17, LOGIC 26, PARTIAL 3, MISSING 9, PLAIN 0, DATA 0, CORE 0, UNSURE 0.
+
+Five most important findings:
+1. Resist berries (Coba, Passho, Occa, Babiri, Charti, Chilan, Haban, Kasib, Payapa, Rindo, Roseli, Tanga, Wacan, Yache: 14 rows) are consumed in `item_before_move` (`items.rs:471-621`, called from `before_move` `generate_instructions.rs:1687`) BEFORE sleep/para/flinch/confusion checks, accuracy, Protect, immunity and Substitute. The berry is eaten (and a ChangeItem instruction is kept) when the attacker is asleep, fully paralysed, misses, is blocked, hits a Substitute, or uses a Status move of that type (Thunder Wave on a Water Wacan holder). Showdown eats it only inside `onSourceModifyDamage` on an actual damaging hit, never on a Substitute hit. It also reads `choice.move_type` before `modify_choice` and ability type changes (Pixilate, Aerilate, Weather Ball, Judgment), so Chilan can fire on a move that becomes Fairy/Flying.
+2. Wide Lens accuracy x4505/4096 is not implemented anywhere; the only Wide Lens code is Population Bomb hit count 9 vs 6 (`generate_instructions.rs:2401`). Accuracy path `check_move_hit_or_miss` (1229-1233) ignores items.
+3. Mega stones (10 rows): stone to Mega form, types, ability and base stats all match Showdown, and `item_is_permanent` (`state.rs:596-708`) protects them from Knock Off, Thief, Pickpocket, Magician and from being Tricked away by the opponent. Hole: Trick/Switcheroo (`choice_effects.rs:1587`) checks only the TARGET's item, so a holder using Trick or Switcheroo gives away its own Mega stone. Showdown fails the move if either item is untakeable (`moves.ts:19876`, `19882`).
+4. Not in the `Items` enum, so they parse to UNKNOWNITEM and do nothing: Bright Powder, Binding Band, Focus Band, Icy Rock, Leppa Berry, Mental Herb, Metronome, Oran Berry, Persim Berry (9 rows; Bright Powder is used by our data).
+5. Iron Ball makes the holder grounded in `is_grounded`, but Ground-move immunity of Flying types (type chart) and Levitate (`abilities.rs:2630`) is not lifted, so a Flying or Levitate holder still takes no Ground damage. Showdown (`items.ts:3068-3072`, `pokemon.ts` isGrounded) makes them take neutral damage.
+
+## Table
+
+| id | used | verdict | Showdown (file:line, what it does) | engine (file:line, what it does) | difference | fix size | confidence |
+|---|---|---|---|---|---|---|---|
+| widelens | 1 | PARTIAL | items.ts:7743-7748 onSourceModifyAccuracy x4505/4096 (1.1) when accuracy is a number | generate_instructions.rs:2401 only Population Bomb hit_count 9 vs 6; accuracy at 1229-1233 never reads the item | the +10% accuracy is missing; PopBomb count is a fixed guess (K2 family) | M | high |
+| expertbelt | 1 | MATCH | items.ts:1919-1923 onModifyDamage x4915/4096 when typeMod > 0 | items.rs:1180-1188 base_power x1.2 when type_effectiveness_modifier > 1.0 | none beyond rounding (BP float vs final-damage chain, same family as K1) | | medium |
+| chestoberry | 1 | MATCH | items.ts:897-906 onUpdate: eat when status slp, cure sleep | items.rs:769-771 (before holder's move, before the sleep check) and 924-926 (end of turn): cure sleep, consume | timing approximation only (cured at next move/end of turn, not instantly); no residual damage for sleep so no visible effect | | medium |
+| magnet | 1 | MATCH | items.ts:3713-3718 onBasePower Electric x4915/4096 | items.rs:1395-1399 Electric x1.2 | none beyond rounding | | high |
+| scolipite | 1 | LOGIC | items.ts:5566-5577 megaStone Scolipede->Scolipede-Mega, onTakeItem false for Scolipede; pokedex.ts:10154 Bug/Poison, 60/140/149/75/99/62, Shell Armor | base_stats.rs:566-571 SCOLIPEDE+SCOLIPITE -> SCOLIPEDEMEGA Bug/Poison, same stats, SHELLARMOR; state.rs:703 permanent | form data matches; stone lost if holder uses Trick/Switcheroo (T1, choice_effects.rs:1587 checks only target); K8 applies to Mega turn speed | S | high |
+| ironball | 1 | LOGIC | items.ts:3068-3077 onEffectiveness: Ground hits Flying neutral; onModifySpe x0.5; grounded via pokemon.ts isGrounded (overrides Levitate/Flying) | state.rs:721 grounded true; generate_instructions.rs:2590 speed x0.5 | Flying-type and Levitate/Eelevate holder still immune to Ground (type chart; abilities.rs:2630 zeroes BP without checking item); Showdown makes them take neutral damage. Speed and grounded effects match | M | medium |
+| hawluchanite | 1 | LOGIC | items.ts:2801-2812 megaStone Hawlucha->Hawlucha-Mega; pokedex.ts:13149 Fighting/Flying, 78/137/100/74/93/118, No Guard | base_stats.rs:506-511 HAWLUCHA+HAWLUCHANITE -> HAWLUCHAMEGA same data; state.rs:679 permanent | form data matches; T1 (holder can Trick its stone away); K8 | S | high |
+| malamarite | 1 | LOGIC | items.ts:3772-3783 megaStone Malamar->Malamar-Mega; pokedex.ts:12915 Dark/Psychic, 86/102/88/98/120/88, Contrary | base_stats.rs:590-595 MALAMAR+MALAMARITE -> MALAMARMEGA same data, CONTRARY; state.rs:699 permanent | form data matches; T1; K8 | S | high |
+| cobaberry | 1 | LOGIC | items.ts:1129-1141 onSourceModifyDamage Flying, typeMod > 0, not if Substitute is hit, eat, x0.5 | items.rs:510-517 damage_reduction_berry Flying: consumed, base_power /2 | R1 (see Notes): eaten before accuracy/sleep/para/protect/Substitute/Status-move checks and on pre-type-change move_type | M | high |
+| metalcoat | 1 | MATCH | items.ts:3985-3990 Steel x4915/4096 | items.rs:1221-1225 Steel x1.2 | none beyond rounding | | high |
+| brightpowder | 1 | MISSING | items.ts:677-682 onModifyAccuracy x3686/4096 (0.9) against holder | not in Items enum (items.rs:22-284) -> UNKNOWNITEM; no code | holder gets no evasion | M | high |
+| sharpbeak | 1 | MATCH | items.ts:5636-5641 Flying x4915/4096 | items.rs:1267-1271 Flying x1.2 | none beyond rounding | | high |
+| passhoberry | 1 | LOGIC | items.ts:4475-4486 Water, same pattern as Coba | items.rs:558-565 Water | R1 | M | high |
+| crabominite | 0 | LOGIC | items.ts:1226-1237 megaStone Crabominable; pokedex.ts:13977 Fighting/Ice, 97/157/122/62/107/33, Iron Fist | base_stats.rs:464-469 CRABOMINABLE+CRABOMINITE -> CRABOMINABLEMEGA same data, IRONFIST; state.rs:672 permanent | form data matches; T1; K8 | S | high |
+| chimechite | 0 | LOGIC | items.ts:950-961 megaStone Chimecho; pokedex.ts:6680 Psychic/Steel, 75/50/110/135/120/65, Levitate | base_stats.rs:548-553 CHIMECHO+CHIMECHITE -> CHIMECHOMEGA same data, LEVITATE; state.rs:685 permanent | form data matches; T1; K8 | S | high |
+| muscleband | 0 | MATCH | items.ts:4263-4268 Physical x4505/4096 | items.rs:1226-1230 Physical x1.1 | none beyond rounding | | high |
+| manectite | 0 | LOGIC | items.ts:3793-3804 megaStone Manectric; pokedex.ts:5952 Electric, 70/75/80/135/80/135, Intimidate | base_stats.rs:308-313 MANECTRIC+MANECTITE -> MANECTRICMEGA same data, INTIMIDATE; state.rs:646 permanent | form data matches; T1; K8 | S | high |
+| occaberry | 0 | LOGIC | items.ts:4373-4384 Fire pattern | items.rs:550-557 Fire | R1 | M | high |
+| aspearberry | 0 | MATCH | items.ts:300-309 eat when frz, cure | items.rs:763-765, 918-920: cure freeze at holder's move / end of turn | timing approximation only; freeze has no residual damage | | medium |
+| babiriberry | 0 | LOGIC | items.ts:363-374 Steel pattern | items.rs:480-487 Steel | R1 | M | high |
+| bindingband | 0 | MISSING | items.ts:498-507 "implemented in statuses": partial trapping damage 1/6 instead of 1/8 | not in enum -> UNKNOWNITEM | no extra trap damage (partial trapping itself is K5) | M | medium |
+| charcoal | 0 | MATCH | items.ts:785-799 Fire x4915/4096 | items.rs:1160-1164 Fire x1.2 | none beyond rounding | | high |
+| chartiberry | 0 | LOGIC | items.ts:832-843 Rock pattern | items.rs:488-495 Rock | R1 | M | high |
+| cheriberry | 0 | MATCH | items.ts:856-865 eat when par, cure | items.rs:766-768, 921-923 cure paralysis before holder's move (before full-para check) / end of turn | timing approximation only | | medium |
+| chilanberry | 0 | LOGIC | items.ts:918-930 Normal move, no type-effectiveness test, not if Substitute is hit, x0.5 | items.rs:496-509 Normal, no effectiveness test, base_power /2 | R1; also reads move_type before Pixilate/Aerilate/Refrigerate/Galvanize change (ability_modify_attack_being_used runs after) | M | high |
+| focusband | 0 | MISSING | items.ts:2271-2277 onDamage: 10% chance to survive a lethal move hit at 1 HP | not in enum -> UNKNOWNITEM | no 10% survive branch (K10: two branches needed) | M | high |
+| garchompite | 0 | LOGIC | items.ts:2418-2429 megaStone Garchomp; pokedex.ts:8169 Dragon/Ground, 108/170/115/120/95/92, Sand Force | base_stats.rs:380-385 GARCHOMP+GARCHOMPITE -> GARCHOMPMEGA same data, SANDFORCE; state.rs:658 permanent | form data matches; T1; K8 | S | high |
+| golurkite | 0 | LOGIC | items.ts:2553-2564 megaStone Golurk; pokedex.ts:11447 Ground/Ghost, 89/159/105/70/105/55, Unseen Fist | base_stats.rs:470-475 GOLURK+GOLURKITE -> GOLURKMEGA same data, UNSEENFIST; state.rs:673 permanent | form data matches; T1; K8 | S | high |
+| grassyseed | 0 | PARTIAL | items.ts:2613-2623 onStart if Grassy Terrain AND onTerrainChange if Grassy Terrain: use item, +1 Def (consumed even if the boost is capped) | items.rs:837-857 only at switch-in (called generate_instructions.rs:571, 4032); consumed only if apply_boost_instruction succeeds | no trigger when Grassy Terrain is set after the holder is already out; not consumed when Def already +6 | M | high |
+| habanberry | 0 | LOGIC | items.ts:2770-2781 Dragon pattern | items.rs:526-533 Dragon | R1 | M | high |
+| hardstone | 0 | MATCH | items.ts:2792-2797 Rock x4915/4096 | items.rs:1385-1389 Rock x1.2 | none beyond rounding | | high |
+| icyrock | 0 | MISSING | items.ts:3022-3030 no battle effect in base data (Hail/Snow extension is not defined for this mod entry) | not in enum -> UNKNOWNITEM | none in Showdown data read; check weather duration code before calling this a gap | S | low |
+| kasibberry | 0 | LOGIC | items.ts:3149-3160 Ghost pattern | items.rs:534-541 Ghost | R1 | M | high |
+| leppaberry | 0 | MISSING | items.ts:3378-3391 onUpdate: when any move has 0 PP eat, restore 10 PP (20 with Ripen) to that move | not in enum -> UNKNOWNITEM | no effect (also moot while K6 PP only decrements below 10) | M | high |
+| mentalherb | 0 | MISSING | items.ts:3927-3941 onUpdate: use item to remove attract, taunt, encore, torment, disable, healblock | not in enum -> UNKNOWNITEM | holder is never cured of Taunt/Encore/Disable | M | high |
+| meowsticite | 0 | LOGIC | items.ts:3945-3960 megaStone Meowstic->M-Mega, Meowstic-F->F-Mega; pokedex.ts:12743, 12760 Psychic, 74/48/76/143/101/124, Trace | base_stats.rs:518-529 MEOWSTIC and MEOWSTICF -> MEOWSTICMMEGA / MEOWSTICFMEGA same data, TRACE; state.rs:681 permanent | form data matches; T1; K8 | S | high |
+| metronome | 0 | MISSING | items.ts:4017-4050 volatile counting consecutive uses of the same move, damage x4096/4915/5734/6553/7372/8192 over 4096, cap 5 | not in enum -> UNKNOWNITEM | no boost | M | high |
+| mistyseed | 0 | PARTIAL | items.ts:4224-4234 onStart / onTerrainChange Misty Terrain: +1 SpD | items.rs:858-878 switch-in only | same as Grassy Seed: no trigger on terrain set after switch-in | M | high |
+| oranberry | 0 | MISSING | items.ts:4423-4435 at hp <= 1/2: heal fixed 10 HP | not in enum -> UNKNOWNITEM | no heal | S | high |
+| payapaberry | 0 | LOGIC | items.ts:4499-4510 Psychic pattern | items.rs:566-573 Psychic | R1 | M | high |
+| persimberry | 0 | MISSING | items.ts:4550-4557 eat when confused, remove confusion | not in enum -> UNKNOWNITEM | holder stays confused (confusion itself never expires, K3) | S | high |
+| poisonbarb | 0 | MATCH | items.ts:4677-4682 Poison x4915/4096 | items.rs:1251-1255 Poison x1.2 | none beyond rounding | | high |
+| raichunitex | 0 | LOGIC | items.ts:5059-5070 megaStone Raichu->Raichu-Mega-X; pokedex.ts:837 Electric, 60/135/95/90/95/110, Electric Surge | base_stats.rs:614-619 RAICHU+RAICHUNITEX -> RAICHUMEGAX same data, ELECTRICSURGE; state.rs:701 permanent | form data matches; T1; K8 | S | high |
+| rawstberry | 0 | LOGIC | items.ts:5100-5109 eat when brn, cure instantly (no burn residual) | items.rs:778-780 before holder's move; 933-935 end of turn | status damage block (generate_instructions.rs:3117-3149) runs BEFORE item_end_of_turn (3212), so a burn inflicted after the holder moved takes one 1/16 tick before the cure; Showdown takes none | M | medium |
+| rindoberry | 0 | LOGIC | items.ts:5235-5246 Grass pattern | items.rs:574-581 Grass | R1 | M | high |
+| roseliberry | 0 | LOGIC | items.ts:5392-5403 Fairy pattern | items.rs:582-589 Fairy | R1 | M | high |
+| shedshell | 0 | MATCH | items.ts:5663-5670 trapped = false, maybeTrapped = false (beats Shadow Tag, Arena Trap, Magnet Pull, trapping moves) | state.rs:1129 holder is never trapped by partial trap, TRAPPED, Shadow Tag, Arena Trap, Magnet Pull | engine checks LOCKEDMOVE/NORETREAT first (1121-1128) so Shed Shell does not free a No Retreat user; Showdown's priority -10 handler would; not checked further | | medium |
+| silkscarf | 0 | MATCH | items.ts:5744-5749 Normal x4915/4096 | items.rs:1275-1279 Normal x1.2 | none beyond rounding | | high |
+| silverpowder | 0 | MATCH | items.ts:5759-5764 Bug x4915/4096 | items.rs:1280-1284 Bug x1.2 | none beyond rounding | | high |
+| softsand | 0 | MATCH | items.ts:5887-5892 Ground x4915/4096 | items.rs:1285-1289 Ground x1.2 | none beyond rounding | | high |
+| tangaberry | 0 | LOGIC | items.ts:6254-6265 Bug pattern | items.rs:598-605 Bug | R1 | M | high |
+| twistedspoon | 0 | MATCH | items.ts:7407-7412 Psychic x4915/4096 | items.rs:1380-1384 Psychic x1.2 | none beyond rounding | | high |
+| wacanberry | 0 | LOGIC | items.ts:7525-7537 Electric pattern | items.rs:606-613 Electric | R1 | M | high |
+| wiseglasses | 0 | MATCH | items.ts:7784-7789 Special x4505/4096 | items.rs:1400-1404 Special x1.1 | none beyond rounding | | high |
+| yacheberry | 0 | LOGIC | items.ts:7801-7811 Ice pattern | items.rs:614-621 Ice | R1 | M | high |
+
+## Notes
+
+- R1 (resist berries, shared by 14 rows). One fix covers all: move the berry from `item_before_move` to the point where damage is known to land (after accuracy, protect, immunity, Substitute checks, after the final move type), only for damaging moves, and skip when the Substitute is hit. Engine halves base power; Showdown halves final damage (equal result up to rounding, K1 family). Type-effectiveness test and berry-to-type mapping were checked for all 14 and are correct (Chilan correctly has none).
+- T1 (Mega stones, shared): `choice_effects.rs:1587` should also require `attacker.item_can_be_removed()`. Knock Off (841-855, damage boost 515-521 uses `item_is_permanent`), Thief (859), Pickpocket/Magician (`abilities.rs:753`) and the opponent's Trick all respect `item_is_permanent` (`state.rs:596-708`, all 10 stones present). The check ignores holder species (Showdown allows taking a stone from a non-matching holder); irrelevant for legal teams.
+- Mega evolution mechanics themselves (`generate_instructions.rs:3916-3986`): FormeChange, stat recalculation, ability and type change, ability on switch-in; K8 (pre-Mega speed) already known. Stone map keyed by (species, item), and `panic!` if no entry, so an illegal pairing crashes the engine rather than being ignored.
+- All 12 type-boost and category-boost items (Magnet, Metal Coat, Sharp Beak, Charcoal, Hard Stone, Poison Barb, Silk Scarf, Silver Powder, Soft Sand, Twisted Spoon at 4915/4096 = 1.19995; Muscle Band, Wise Glasses at 4505/4096 = 1.0999) use plain 1.2 / 1.1 on a float base power; Showdown chains modifiers then rounds to an integer base power. Marked MATCH; any residual error belongs to K1.
+- Not implemented anywhere (other slices may repeat): Unnerve (enum entry only, berries are still eaten against it), Klutz, Embargo, Magic Room (item effects never suppressed); berries ignore Ripen. Status-cure and Sitrus-type berries run only before the holder's own move and at end of turn, not immediately when the status or damage lands.
+- Mega Raichu-X types are (ELECTRIC, TYPELESS) in the engine, equal to Showdown's single Electric type.
+- Icy Rock row: Showdown's base data gives it no handler at all; the weather extension is normally implemented in the weather condition `durationCallback`. I did not audit weather (other slice); confidence low.

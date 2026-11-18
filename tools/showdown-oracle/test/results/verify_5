@@ -1,0 +1,136 @@
+{
+ "targeted": {
+  "damage": {
+   "crit=false roll=0": {
+    "got": 118,
+    "want": 118
+   },
+   "crit=false roll=15": {
+    "got": 100,
+    "want": 100
+   },
+   "crit=true roll=0": {
+    "got": 177,
+    "want": 177
+   },
+   "crit=false roll=7": {
+    "got": 109,
+    "want": 109
+   }
+  },
+  "miss": "ok",
+  "fullpara": "ok",
+  "sleep": {
+   "2": {
+    "turnsWithoutMoving": 1,
+    "woke": true
+   },
+   "3": {
+    "turnsWithoutMoving": 2,
+    "woke": true
+   }
+  },
+  "secondary10": "ok",
+  "speedtie": {
+   "p1": [
+    "p1",
+    "p2"
+   ],
+   "p2": [
+    "p2",
+    "p1"
+   ]
+  },
+  "hits": "ok",
+  "mega": "ok",
+  "tapeErrors": "ok"
+ },
+ "protocol": {
+  "replies": 5,
+  "errors": [
+   "p1: must switch",
+   "bad json"
+  ]
+ },
+ "roundTrip": {
+  "battles": 100,
+  "finished": 100,
+  "steps": 1888,
+  "events": 3972,
+  "mismatchedBattles": 0,
+  "recordStepsPerSecond": 1889,
+  "forceStepsPerSecond": 1787,
+  "eventsByKey": {
+   "roll": 1407,
+   "crit": 1393,
+   "secondary": 447,
+   "accuracy": 274,
+   "speedtie": 219,
+   "proc": 57,
+   "sleepturns": 40,
+   "fullpara": 23,
+   "pick": 22,
+   "confusionhit": 20,
+   "lockturns": 18,
+   "confusionturns": 17,
+   "protect": 13,
+   "thaw": 11,
+   "trapturns": 6,
+   "hits": 5
+  },
+  "rawShare": 0,
+  "eventsByEffect": {
+   "speedtie|pokemon": 122,
+   "speedtie|protect+stall": 38,
+   "proc|cursedbody": 21,
+   "pick|moody": 16,
+   "proc|flamebody": 12,
+   "proc|quickclaw": 9,
+   "proc|cutecharm": 7,
+   "speedtie|phantomforce+twoturnmove": 7,
+   "speedtie|lightscreen+reflect": 7,
+   "speedtie|banefulbunker+stall": 5,
+   "proc|static": 5,
+   "proc|quickdraw": 3,
+   "speedtie|insert": 3,
+   "pick|roar": 2,
+   "pick|whirlwind": 2,
+   "speedtie|choicelock+encore": 2,
+   "speedtie|choicelock+taunt": 2,
+   "speedtie|leftovers+leftovers": 1,
+   "speedtie|counter+stall": 1,
+   "pick|dragontail": 1,
+   "pick|direclaw": 1
+  },
+  "rawSites": {},
+  "volatilesSeen": {
+   "yawn": "left",
+   "choicelock": "move",
+   "stall": "left,counter",
+   "leechseed": "",
+   "lockedmove": "left,move,trueDuration",
+   "confusion": "left",
+   "destinybond": "",
+   "glaiverush": "",
+   "substitute": "hp",
+   "taunt": "left",
+   "electroshot": "",
+   "twoturnmove": "left,move",
+   "encore": "left,move",
+   "partiallytrapped": "left,boundDivisor,move",
+   "charge": "",
+   "curse": "",
+   "phantomforce": "left",
+   "flashfire": "",
+   "disable": "left,move",
+   "healblock": "left",
+   "protect": "left",
+   "noretreat": "",
+   "trapped": "",
+   "solarbeam": ""
+  },
+  "mismatchExamples": []
+ },
+ "failures": [],
+ "seconds": 2.497
+}

@@ -1,0 +1,14 @@
+[package]
+name = "emit"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "Emission: what the resolver did in a step, as each seat's contract events (contracts/LIVE.md)."
+
+[lib]
+name = "emit"
+path = "src/lib.rs"
+
+[dependencies]
+cg-engine = { path = "../engine" }
+battle = { path = "../battle" }

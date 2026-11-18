@@ -1,0 +1,19 @@
+[package]
+name = "cg-bindings"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "pyo3 extension for champions_gym: the batched environment and per-game trees, arrays in and out."
+
+[lib]
+name = "_cg"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.29.3", features = ["extension-module"] }
+env = { path = "../env" }
+cg-engine = { path = "../engine" }
+battle = { path = "../battle" }
+players = { path = "../players" }
+obs = { path = "../obs" }

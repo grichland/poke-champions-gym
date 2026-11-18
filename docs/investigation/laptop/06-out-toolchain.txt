@@ -1,0 +1,118 @@
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "cargo/rustc/rustup on PATH" to type "System.Int64". 
+Error: "Input string was not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-toolchain.ps1:2 char:3
++ H 'cargo/rustc/rustup on PATH'
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+cargo: -
+rustc: -
+rustup: -
+maturin: -
+link: -
+cl: -
+gcc: -
+clang: -
+node: -
+npm: -
+git: C:\Program Files\Git\cmd\git.exe
+python: -
+wsl: C:\WINDOWS\system32\wsl.exe
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "dirs" to type "System.Int64". Error: "Input string was 
+not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-toolchain.ps1:4 char:3
++ H 'dirs'
++   ~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+C:\Users\grich\.cargo: False
+C:\Users\grich\.rustup: False
+C:\Users\grich\.rustup\toolchains: False
+C:\Program Files\Rust stable MSVC 1.80: False
+C:\Program Files (x86)\Microsoft Visual Studio: False
+C:\Program Files\Microsoft Visual Studio: False
+C:\Users\grich\Code\pcsa\research\pcsa-rl\poke-engine-eval: False
+C:\Users\grich\Code\pcsa\research\pcsa-rl\poke-engine-eval\_dl: False
+C:\Users\grich\Code\pcsa\research\pcsa-rl\node_modules\pokemon-showdown: False
+C:\Users\grich\Code\pcsa\research\pcsa-rl\.venv: True
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "vswhere" to type "System.Int64". Error: "Input string 
+was not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-toolchain.ps1:6 char:3
++ H 'vswhere'; $vw="${env:ProgramFiles(x86)}\Microsoft Visual Studio\In ...
++   ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+no vswhere
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "versions" to type "System.Int64". Error: "Input string 
+was not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-toolchain.ps1:7 char:3
++ H 'versions'
++   ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+Python 3.12.10
+C:\Users\grich\Code\pcsa\research\pcsa-rl\.venv\Scripts\python.exe: No module named pip
+node : The term 'node' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-toolchain.ps1:9 char:1
++ node --version
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (node:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "pip list" to type "System.Int64". Error: "Input string 
+was not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-toolchain.ps1:10 char:3
++ H 'pip list'
++   ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "torch cuda" to type "System.Int64". Error: "Input 
+string was not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-toolchain.ps1:12 char:3
++ H 'torch cuda'
++   ~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+poke_env
+poke_env-0.16.1.dist-info
+torch-2.14.1+cu130.dist-info
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "showdown" to type "System.Int64". Error: "Input string 
+was not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-toolchain.ps1:14 char:3
++ H 'showdown'
++   ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+.venv
+bench
+configs
+docs
+notes
+opponents_style
+rl
+rl2
+runs
+scripts
+script_v2
+script_v4
+pcsa
+poke-engine-investigation
+research
+tools
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "wsl" to type "System.Int64". Error: "Input string was 
+not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-toolchain.ps1:19 char:3
++ H 'wsl'; wsl --status 2>&1 | Out-String
++   ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+Binary file (standard input) matches

@@ -1,0 +1,46 @@
+{
+ "rosters": 488,
+ "kept": 430,
+ "rejected": 1,
+ "noBuild": 57,
+ "setRejects": 23,
+ "missing": {
+  "Conkeldurr": 1,
+  "Umbreon": 10,
+  "Jolteon": 2,
+  "Runerigus": 1,
+  "Vivillon High Plains Pattern": 5,
+  "Golurk": 1,
+  "Samurott": 2,
+  "Hydreigon": 1,
+  "Ditto": 1,
+  "Maushold": 2,
+  "Mudsdale": 2,
+  "Toxapex": 6,
+  "Thievul": 1,
+  "Maushold-Four": 1,
+  "Trevenant": 3,
+  "Hippowdon": 1,
+  "Arcanine": 1,
+  "Zoroark": 1,
+  "Rotom-Fan": 1,
+  "Primarina": 5,
+  "Pawmot": 1,
+  "Decidueye": 1,
+  "Pincurchin": 1,
+  "Furfrou-Dandy": 1,
+  "Passimian": 1,
+  "Garganacl": 1,
+  "Persian-Alola": 2,
+  "Tauros-Paldea-Blaze": 1
+ },
+ "rejections": [
+  {
+   "row": 203,
+   "problems": [
+    "You are limited to one of each Pokemon by Species Clause.",
+    "(You have more than one Chesnaught)"
+   ]
+  }
+ ]
+}

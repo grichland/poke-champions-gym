@@ -1,0 +1,318 @@
+name,id,used,legal,pool_share,live_share,ladder_share,team_share,in_gold,status,confidence,reason
+Rough Skin,roughskin,1,1,0.080933,0.068786,0.043435,,1,a,medium,referenced in abilities.rs
+Levitate,levitate,1,1,0.07912,0.082856,0.033641,,1,a,medium,"referenced in abilities.rs,state.rs"
+Tough Claws,toughclaws,1,1,0.065902,0.062011,0.065173,,1,a,medium,referenced in abilities.rs
+Torrent,torrent,1,1,0.053516,0.053153,0.053652,,1,a,medium,referenced in abilities.rs
+Intimidate,intimidate,1,1,0.053508,0.062011,0.056443,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Sand Stream,sandstream,1,1,0.047439,0.028661,0.032699,,0,a,medium,referenced in abilities.rs
+Protean,protean,1,1,0.045358,0.033872,0.033032,,0,a,medium,referenced in abilities.rs
+Multiscale,multiscale,1,1,0.039438,0.039083,0.016034,,0,a,medium,referenced in abilities.rs
+Adaptability,adaptability,1,1,0.035338,0.033872,0.032848,,0,a,medium,referenced in abilities.rs
+Blaze,blaze,1,1,0.034396,0.042209,0.020282,,0,a,medium,referenced in abilities.rs
+Stamina,stamina,1,1,0.032613,0.030745,0.029548,,0,a,medium,referenced in abilities.rs
+Speed Boost,speedboost,1,1,0.030521,0.045336,0.02646,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Emergency Exit,emergencyexit,1,1,0.030178,0.031266,0.034485,,1,c,medium,"in enum, no code reference; Showdown handlers onEmergencyExit (+mega table only)"
+Disguise,disguise,1,1,0.030178,0.025013,0.026399,,0,a,medium,referenced in abilities.rs
+Thermal Exchange,thermalexchange,1,1,0.025405,0.022929,0.016668,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Good as Gold,goodasgold,1,1,0.024691,0.015633,0.031518,,1,a,medium,"referenced in abilities.rs,choice_effects.rs"
+Aerilate,aerilate,1,1,0.024676,0.02345,0.033513,,0,a,medium,referenced in abilities.rs
+Aura Guard,auraguard,1,1,0.023311,0.018239,0.016298,,0,d,high,not in Abilities enum (name silently becomes NONE)
+Pressure,pressure,1,1,0.021464,0.021886,0.023768,,0,a,medium,referenced in generate_instructions.rs
+Grassy Surge,grassysurge,1,1,0.020919,0.020844,0.023776,,0,a,medium,referenced in abilities.rs
+Justified,justified,1,1,0.019179,0.015633,0.005869,,0,a,medium,referenced in abilities.rs
+Regenerator,regenerator,1,1,0.018724,0.018239,0.019755,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Drought,drought,1,1,0.018357,0.024492,0.004052,,0,a,medium,referenced in abilities.rs
+Inner Focus,innerfocus,1,1,0.017499,0.009901,0.014199,,0,a,medium,"referenced in abilities.rs,state.rs"
+Clear Body,clearbody,1,1,0.017384,0.011464,0.015454,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs,state.rs"
+Toxic Debris,toxicdebris,1,1,0.017147,0.013028,0.014687,,0,a,medium,referenced in abilities.rs
+Sharpness,sharpness,1,1,0.016598,0.016675,0.018053,,0,a,medium,referenced in abilities.rs
+Cursed Body,cursedbody,1,1,0.016098,0.016154,0.013906,,0,c,medium,"in enum, no code reference; Showdown handlers onDamagingHit"
+Snow Warning,snowwarning,1,1,0.015677,0.015112,0.016973,,0,a,medium,referenced in abilities.rs
+Mold Breaker,moldbreaker,1,1,0.015574,0.019281,0.00761,,0,a,medium,"referenced in abilities.rs,damage_calc.rs"
+Psychic Surge,psychicsurge,1,1,0.015432,0.01876,0.017289,,0,a,medium,referenced in abilities.rs
+Unaware,unaware,1,1,0.014403,0.011464,0.014344,,0,a,medium,"referenced in abilities.rs,damage_calc.rs"
+Magic Bounce,magicbounce,1,1,0.014349,0.009901,0.014355,,0,a,medium,referenced in abilities.rs
+Flame Body,flamebody,1,1,0.013717,0.011464,0.009558,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Prankster,prankster,1,1,0.013228,0.012507,0.018881,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Huge Power,hugepower,1,1,0.012231,0.019281,0.0117,,0,a,medium,referenced in abilities.rs
+Libero,libero,1,1,0.012003,0.018239,0.010557,,1,a,medium,referenced in abilities.rs
+Contrary,contrary,1,1,0.012003,0.013549,0.006425,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+No Guard,noguard,1,1,0.012003,0.006774,0.011273,,0,a,medium,referenced in abilities.rs
+Supreme Overlord,supremeoverlord,1,1,0.011317,0.00938,0.013937,,0,a,medium,referenced in abilities.rs
+Mega Launcher,megalauncher,1,1,0.010974,0.006253,0.018808,,0,a,medium,referenced in abilities.rs
+Static,static,1,1,0.010974,0.006253,0.007955,,0,a,medium,referenced in abilities.rs
+Technician,technician,1,1,0.010802,0.006253,0.011164,,0,a,medium,referenced in abilities.rs
+Iron Fist,ironfist,1,1,0.010288,0.013028,0.013705,,0,a,medium,referenced in abilities.rs
+Drizzle,drizzle,1,1,0.009602,0.013028,0.014205,,0,a,medium,referenced in abilities.rs
+Unburden,unburden,1,1,0.009602,0.007295,0.017069,,0,a,medium,referenced in generate_instructions.rs
+Weak Armor,weakarmor,1,1,0.009026,0.00938,0.011534,,0,a,medium,referenced in abilities.rs
+Stance Change,stancechange,1,1,0.008573,0.006774,0.01373,,0,c,medium,"in enum, no code reference; Showdown handlers onModifyMove"
+Pixilate,pixilate,1,1,0.007839,0.007817,0.008421,,0,a,medium,referenced in abilities.rs
+Thick Fat,thickfat,1,1,0.007545,0.015112,0.005217,,1,a,medium,referenced in abilities.rs
+Swift Swim,swiftswim,1,1,0.007385,0.010422,0.000199,,0,a,medium,referenced in generate_instructions.rs
+Steadfast,steadfast,1,1,0.006669,0.00469,0.014411,,0,c,medium,"in enum, no code reference; Showdown handlers onFlinch (+mega table only)"
+Scrappy,scrappy,1,1,0.006271,0.008338,0.008107,,0,a,medium,"referenced in abilities.rs,damage_calc.rs"
+Shadow Tag,shadowtag,1,1,0.005434,0.004169,0,,0,a,medium,referenced in state.rs
+Sturdy,sturdy,1,1,0.005396,0.006774,0.009616,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Overgrow,overgrow,1,1,0.00534,0.006253,0.004259,,0,a,medium,referenced in abilities.rs
+Cute Charm,cutecharm,1,1,0.005287,0.006774,0.002714,,0,c,medium,"in enum, no code reference; Showdown handlers onDamagingHit"
+Illuminate,illuminate,1,1,0.005163,0.00938,0.003126,,0,a,medium,referenced in abilities.rs
+Electromorphosis,electromorphosis,1,1,0.004801,0.004169,0.003704,,0,c,medium,"in enum, no code reference; Showdown handlers onDamagingHit"
+Gooey,gooey,1,1,0.004767,0.003648,0.001015,,0,a,medium,referenced in abilities.rs
+Illusion,illusion,1,1,0.004115,0.00938,0.004203,,0,c,medium,"in enum, no code reference; Showdown handlers onBeforeSwitchIn,onDamagingHit,onEnd,onFaint"
+Frisk,frisk,1,1,0.004115,0.003648,0.003992,,0,c,medium,"in enum, no code reference; Showdown handlers onStart"
+Chlorophyll,chlorophyll,1,1,0.004047,0.00469,0.004631,,0,a,medium,referenced in generate_instructions.rs
+Limber,limber,1,1,0.003576,0.005211,0.003246,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Competitive,competitive,1,1,0.003482,0.006253,0.006188,,0,a,medium,referenced in generate_instructions.rs
+Defiant,defiant,1,1,0.003429,0.005211,0.004512,,0,a,medium,referenced in generate_instructions.rs
+Trace,trace,1,1,0.003331,0.003127,0.001727,,0,a,medium,referenced in abilities.rs
+Flash Fire,flashfire,1,1,0.003248,0.003648,0.002006,,0,a,medium,referenced in abilities.rs
+Mega Sol,megasol,1,1,0.003086,0.003648,0.004855,,0,a,medium,"referenced in choice_effects.rs,damage_calc.rs"
+Piercing Drill,piercingdrill,1,1,0.003018,0.003127,0,,0,a,medium,referenced in abilities.rs
+Imposter,imposter,1,1,0.002743,0.004169,0.006637,,0,c,medium,"in enum, no code reference; Showdown handlers onSwitchIn"
+Skill Link,skilllink,1,1,0.002743,0.001563,0.002131,,0,a,medium,referenced in generate_instructions.rs
+Natural Cure,naturalcure,1,1,0.002724,0.004169,0.004641,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Sap Sipper,sapsipper,1,1,0.002549,0.002606,0.000617,,0,a,medium,referenced in abilities.rs
+Leaf Guard,leafguard,1,1,0.002548,0.003127,0.003641,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Oblivious,oblivious,1,1,0.002401,0.002606,0.003889,,0,a,medium,referenced in abilities.rs
+Shell Armor,shellarmor,1,1,0.002401,0.001563,0.002058,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Mirror Armor,mirrorarmor,1,1,0.002198,0.002084,0.004793,,0,a,medium,referenced in abilities.rs
+Moxie,moxie,1,1,0.00208,0.001563,0.007118,,0,a,medium,referenced in abilities.rs
+Water Bubble,waterbubble,1,1,0.002058,0.002084,0.003987,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Swarm,swarm,1,1,0.002058,0.002084,0.003673,,0,a,medium,referenced in abilities.rs
+Rock Head,rockhead,1,1,0.002058,0.001563,0.003475,,0,a,medium,referenced in abilities.rs
+Innards Out,innardsout,1,1,0.002058,0.001563,0.002051,,0,a,medium,referenced in abilities.rs
+Bulletproof,bulletproof,1,1,0.002058,0,0.000664,,0,a,medium,referenced in abilities.rs
+Spicy Spray,spicyspray,1,1,0.001852,0.002084,6.6e-05,,0,a,medium,referenced in abilities.rs
+Compound Eyes,compoundeyes,1,1,0.001715,0.002606,0.000852,,0,a,medium,referenced in abilities.rs
+Unnerve,unnerve,1,1,0.001715,0.001042,0.000777,,0,c,medium,"in enum, no code reference; Showdown handlers onStart,onEnd,onFoeTryEatItem"
+Moody,moody,1,1,0.001578,0.001042,0.002299,,0,c,medium,"in enum, no code reference; Showdown handlers onResidual"
+Harvest,harvest,1,1,0.001543,0.000521,0.000557,,0,c,medium,"in enum, no code reference; Showdown handlers onResidual"
+Synchronize,synchronize,1,1,0.00147,0.001563,0.005809,,0,c,medium,"in enum, no code reference; Showdown handlers onAfterSetStatus"
+Poison Point,poisonpoint,1,1,0.001372,0.002606,0.003717,,0,a,medium,referenced in abilities.rs
+Eelevate,eelevate,1,1,0.001372,0.002606,0.001402,,0,a,medium,"referenced in abilities.rs,state.rs"
+Water Absorb,waterabsorb,1,1,0.001372,0.002084,0.001615,,0,a,medium,referenced in abilities.rs
+Quick Draw,quickdraw,1,1,0.001372,0.002084,0,,0,b,medium,"in enum, no code, no Showdown handler"
+Keen Eye,keeneye,1,1,0.001176,0.002084,0.000746,,0,a,medium,"referenced in abilities.rs,state.rs"
+Sniper,sniper,1,1,0.001029,0.003127,0.002286,,0,a,medium,referenced in damage_calc.rs
+Punk Rock,punkrock,1,1,0.001029,0.001563,0.002387,,0,a,medium,referenced in abilities.rs
+Earth Eater,eartheater,1,1,0.001029,0.001042,0.001278,,0,a,medium,referenced in abilities.rs
+Magic Guard,magicguard,1,1,0.001029,0.001042,0.001168,,0,a,medium,"referenced in evaluate.rs,generate_instructions.rs,items.rs"
+Fire Mane,firemane,1,1,0.001029,0.000521,0.001147,,0,a,medium,referenced in abilities.rs
+Refrigerate,refrigerate,1,1,0.001029,0.000521,0,,0,a,medium,referenced in abilities.rs
+Early Bird,earlybird,1,1,0.000931,0.003648,0.001931,,0,b,medium,"in enum, no code, no Showdown handler"
+Super Luck,superluck,1,1,0.000892,0.000521,0.001593,,0,c,medium,"in enum, no code reference; Showdown handlers onModifyCritRatio"
+Infiltrator,infiltrator,1,1,0.000818,0.003648,0.006875,,0,a,medium,"referenced in damage_calc.rs,generate_instructions.rs"
+Parental Bond,parentalbond,1,1,0.000735,0.002084,0.001854,,0,c,medium,"in enum, no code reference; Showdown handlers onPrepareHit,onSourceModifySecondaries (+mega table only)"
+Berserk,berserk,1,1,0.000686,0.002084,0.000652,,0,a,medium,referenced in abilities.rs
+Sheer Force,sheerforce,1,1,0.000686,0.001563,0.001213,,0,a,medium,referenced in abilities.rs
+Lightning Rod,lightningrod,1,1,0.000686,0.001042,0.005008,,0,a,medium,referenced in abilities.rs
+Dragonize,dragonize,1,1,0.000686,0.001042,0.000374,,0,a,medium,referenced in abilities.rs
+Dry Skin,dryskin,1,1,0.000686,0.001042,0.000362,,0,a,medium,referenced in abilities.rs
+Sand Rush,sandrush,1,1,0.000686,0.000521,0.000849,,0,a,medium,referenced in generate_instructions.rs
+Purifying Salt,purifyingsalt,1,1,0.000686,0.000521,0.000707,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Zero to Hero,zerotohero,1,1,0.000686,0.000521,0,,0,a,medium,referenced in abilities.rs
+Corrosion,corrosion,1,1,0.000686,0,0.00074,,0,a,medium,referenced in generate_instructions.rs
+Healer,healer,1,1,0.000686,0,0.00037,,0,c,medium,"in enum, no code reference; Showdown handlers onResidual (+mega table only)"
+Telepathy,telepathy,1,1,0.000686,0,0.000121,,0,a,medium,referenced in abilities.rs
+Insomnia,insomnia,1,1,0.000549,0.001042,0.001618,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Hyper Cutter,hypercutter,1,1,0.000539,0.000521,0.004446,,0,a,medium,"referenced in abilities.rs,state.rs"
+Seed Sower,seedsower,1,1,0.000514,0.000521,0.001115,,0,a,medium,referenced in abilities.rs
+Filter,filter,1,1,0.000514,0,0.000601,,0,a,medium,referenced in abilities.rs
+Heavy Metal,heavymetal,1,1,0.000514,0,0.000601,,0,a,medium,"referenced in abilities.rs,choice_effects.rs"
+Strong Jaw,strongjaw,1,1,0.000343,0.001042,0,,0,a,medium,referenced in abilities.rs
+Hydration,hydration,1,1,0.000343,0.000521,0.000793,,0,a,medium,referenced in abilities.rs
+Tangled Feet,tangledfeet,1,1,0.000343,0.000521,0.000155,,0,a,medium,referenced in abilities.rs
+Motor Drive,motordrive,1,1,0.000343,0.000521,8.8e-05,,0,a,medium,referenced in abilities.rs
+Heatproof,heatproof,1,1,0.000343,0,0.00202,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Mimicry,mimicry,1,1,0.000343,0,9.3e-05,,0,c,medium,"in enum, no code reference; Showdown handlers onStart,onTerrainChange"
+Fur Coat,furcoat,1,1,0.000343,0,6.7e-05,,0,a,medium,referenced in abilities.rs
+Electric Surge,electricsurge,1,1,0.000343,0,0,,0,a,medium,referenced in abilities.rs
+Stakeout,stakeout,1,1,0.000343,0,0,,0,a,medium,referenced in abilities.rs
+Snow Cloak,snowcloak,1,1,0.000294,0.000521,0.001972,,0,a,medium,referenced in abilities.rs
+Stalwart,stalwart,1,1,0.000229,0.000521,0.000605,,0,c,medium,"in enum, no code reference; Showdown handlers onModifyMove (+mega table only)"
+Armor Tail,armortail,1,1,0.000171,0,0.000859,,0,a,medium,referenced in abilities.rs
+Cud Chew,cudchew,1,1,0.000171,0,0.000859,,0,c,medium,"in enum, no code reference; Showdown handlers onEatItem,onResidual"
+Fairy Aura,fairyaura,1,1,0,0.003648,0.002264,,0,a,medium,referenced in abilities.rs
+Flower Veil,flowerveil,1,1,0,0.003648,0.002264,,0,a,medium,referenced in abilities.rs
+Pure Power,purepower,1,1,0,0.002084,0.000754,,0,a,medium,referenced in abilities.rs
+Sand Force,sandforce,1,1,0,0.001563,0.000299,,0,a,medium,referenced in abilities.rs
+Mummy,mummy,1,1,0,0.001042,0.000463,,0,a,medium,referenced in abilities.rs
+Sand Spit,sandspit,1,1,0,0.001042,0,,0,a,medium,referenced in abilities.rs
+Symbiosis,symbiosis,1,1,0,0.000521,0.00571,,0,c,medium,"in enum, no code reference; Showdown handlers onAllyAfterUseItem"
+Solar Power,solarpower,1,1,0,0.000521,0.001072,,0,a,medium,referenced in abilities.rs
+Gale Wings,galewings,1,1,0,0.000521,0.000963,,0,a,medium,referenced in generate_instructions.rs
+Effect Spore,effectspore,1,1,0,0.000521,0.00049,,0,a,medium,referenced in abilities.rs
+Hunger Switch,hungerswitch,1,1,0,0.000521,0.000361,,0,a,medium,referenced in abilities.rs
+Magma Armor,magmaarmor,1,1,0,0.000521,0.00027,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Aroma Veil,aromaveil,1,1,0,0.000521,0.00018,,0,a,medium,"referenced in abilities.rs,state.rs"
+Queenly Majesty,queenlymajesty,1,1,0,0.000521,0.000114,,0,a,medium,referenced in abilities.rs
+Marvel Scale,marvelscale,1,1,0,0,0.001039,,0,a,medium,"referenced in abilities.rs,evaluate.rs"
+Poison Heal,poisonheal,1,1,0,0,0.00096,,0,a,medium,"referenced in abilities.rs,evaluate.rs,generate_instructions.rs"
+Damp,damp,1,1,0,0,0.000876,,0,a,medium,"referenced in abilities.rs,choice_effects.rs"
+Soundproof,soundproof,1,1,0,0,0.000726,,0,a,medium,"referenced in abilities.rs,choice_effects.rs"
+Shed Skin,shedskin,1,1,0,0,0.000633,,0,a,medium,referenced in abilities.rs
+Poison Touch,poisontouch,1,1,0,0,0.00063,,0,a,medium,referenced in abilities.rs
+Rivalry,rivalry,1,1,0,0,0.000574,,0,c,medium,"in enum, no code reference; Showdown handlers onBasePower"
+Gluttony,gluttony,1,1,0,0,0.00041,,0,a,medium,referenced in items.rs
+Guts,guts,1,1,0,0,0.000398,,0,a,medium,"referenced in abilities.rs,damage_calc.rs,evaluate.rs"
+Sweet Veil,sweetveil,1,1,0,0,0.000343,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Ice Body,icebody,1,1,0,0,0.00023,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Fluffy,fluffy,1,1,0,0,0.00019,,0,a,medium,referenced in abilities.rs
+Rain Dish,raindish,1,1,0,0,0.00017,,0,a,medium,referenced in abilities.rs
+Sand Veil,sandveil,1,1,0,0,0.000138,,0,a,medium,referenced in abilities.rs
+Solid Rock,solidrock,1,1,0,0,0.000135,,0,a,medium,referenced in abilities.rs
+Liquid Ooze,liquidooze,1,1,0,0,0.000134,,0,a,medium,"referenced in abilities.rs,choice_effects.rs"
+Volt Absorb,voltabsorb,1,1,0,0,0.000102,,0,a,medium,referenced in abilities.rs
+Slush Rush,slushrush,1,1,0,0,0,,0,a,medium,referenced in generate_instructions.rs
+Wandering Spirit,wanderingspirit,1,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Surge Surfer,surgesurfer,0,1,0,0,0.000388,,0,a,medium,referenced in generate_instructions.rs
+Cheek Pouch,cheekpouch,0,1,0,0,0.000121,,0,c,medium,"in enum, no code reference; Showdown handlers onEatItem"
+Analytic,analytic,0,1,0,0,6.7e-05,,0,a,medium,referenced in abilities.rs
+Aftermath,aftermath,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Air Lock,airlock,0,1,0,0,0,,0,a,medium,"referenced in damage_calc.rs,state.rs"
+Anger Point,angerpoint,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onHit"
+Anger Shell,angershell,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onDamage,onTryEatItem,onAfterMoveSecondary"
+Anticipation,anticipation,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onStart"
+Arena Trap,arenatrap,0,1,0,0,0,,0,a,medium,referenced in state.rs
+As One (Glastrier),asoneglastrier,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+As One (Spectrier),asonespectrier,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Aura Break,aurabreak,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Bad Dreams,baddreams,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Ball Fetch,ballfetch,0,1,0,0,0,,0,b,medium,"in enum, no code, no Showdown handler"
+Battery,battery,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Battle Armor,battlearmor,0,1,0,0,0,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Battle Bond,battlebond,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Beads of Ruin,beadsofruin,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Beast Boost,beastboost,0,1,0,0,0,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Big Pecks,bigpecks,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Chilling Neigh,chillingneigh,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Cloud Nine,cloudnine,0,1,0,0,0,,0,a,medium,"referenced in damage_calc.rs,state.rs"
+Color Change,colorchange,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Comatose,comatose,0,1,0,0,0,,0,a,medium,referenced in generate_instructions.rs
+Commander,commander,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onAnySwitchIn,onStart,onUpdate (+mega table only)"
+Costar,costar,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onStart"
+Cotton Down,cottondown,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Curious Medicine,curiousmedicine,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onStart"
+Dancer,dancer,0,1,0,0,0,,0,b,medium,"in enum, no code, no Showdown handler"
+Dark Aura,darkaura,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Dauntless Shield,dauntlessshield,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Dazzling,dazzling,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Defeatist,defeatist,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Delta Stream,deltastream,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Desolate Land,desolateland,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Download,download,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Dragon's Maw,dragonsmaw,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Embody Aspect (Cornerstone),embodyaspectcornerstone,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Embody Aspect (Hearthflame),embodyaspecthearthflame,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Embody Aspect (Teal),embodyaspectteal,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Embody Aspect (Wellspring),embodyaspectwellspring,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Flare Boost,flareboost,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Flower Gift,flowergift,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Forecast,forecast,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onStart,onWeatherChange"
+Forewarn,forewarn,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onStart"
+Friend Guard,friendguard,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Full Metal Body,fullmetalbody,0,1,0,0,0,,0,a,medium,referenced in state.rs
+Galvanize,galvanize,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Gorilla Tactics,gorillatactics,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Grass Pelt,grasspelt,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Grim Neigh,grimneigh,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Guard Dog,guarddog,0,1,0,0,0,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Gulp Missile,gulpmissile,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Hadron Engine,hadronengine,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Honey Gather,honeygather,0,1,0,0,0,,0,b,medium,"in enum, no code, no Showdown handler"
+Hospitality,hospitality,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onStart"
+Hustle,hustle,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Ice Face,iceface,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Ice Scales,icescales,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Immunity,immunity,0,1,0,0,0,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Intrepid Sword,intrepidsword,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Iron Barbs,ironbarbs,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Klutz,klutz,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onStart"
+Light Metal,lightmetal,0,1,0,0,0,,0,a,medium,"referenced in abilities.rs,choice_effects.rs"
+Lingering Aroma,lingeringaroma,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Liquid Voice,liquidvoice,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Long Reach,longreach,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Magician,magician,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Magnet Pull,magnetpull,0,1,0,0,0,,0,a,medium,referenced in state.rs
+Merciless,merciless,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onModifyCritRatio"
+Mind's Eye,mindseye,0,1,0,0,0,,0,a,medium,"referenced in abilities.rs,damage_calc.rs"
+Minus,minus,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onModifySpA"
+Misty Surge,mistysurge,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Multitype,multitype,0,1,0,0,0,,0,b,medium,"in enum, no code, no Showdown handler"
+Mycelium Might,myceliummight,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Neuroforce,neuroforce,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Neutralizing Gas,neutralizinggas,0,1,0,0,0,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Normalize,normalize,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Opportunist,opportunist,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onFoeAfterBoost,onAnySwitchIn,onAnyAfterMega,onAnyAfterTerastallization,onAnyAfterMove"
+Orichalcum Pulse,orichalcumpulse,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Overcoat,overcoat,0,1,0,0,0,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Own Tempo,owntempo,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Pastel Veil,pastelveil,0,1,0,0,0,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Perish Body,perishbody,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Pickpocket,pickpocket,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Pickup,pickup,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onResidual"
+Plus,plus,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onModifySpA"
+Poison Puppeteer,poisonpuppeteer,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onAnyAfterSetStatus"
+Power Construct,powerconstruct,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onResidual"
+Power Spot,powerspot,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onAllyBasePower"
+Power of Alchemy,powerofalchemy,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onAllyFaint"
+Primordial Sea,primordialsea,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Prism Armor,prismarmor,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Propeller Tail,propellertail,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onModifyMove"
+Protosynthesis,protosynthesis,0,1,0,0,0,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Quark Drive,quarkdrive,0,1,0,0,0,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Quick Feet,quickfeet,0,1,0,0,0,,0,a,medium,"referenced in evaluate.rs,generate_instructions.rs"
+RKS System,rkssystem,0,1,0,0,0,,0,b,medium,"in enum, no code, no Showdown handler"
+Rattled,rattled,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Receiver,receiver,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onAllyFaint"
+Reckless,reckless,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Ripen,ripen,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onTryHeal,onChangeBoost,onSourceModifyDamage,onTryEatItem,onEatItem"
+Rocky Payload,rockypayload,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Run Away,runaway,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onTrapPokemon,onMaybeTrapPokemon"
+Schooling,schooling,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Screen Cleaner,screencleaner,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Serene Grace,serenegrace,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Shadow Shield,shadowshield,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Shield Dust,shielddust,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Shields Down,shieldsdown,0,1,0,0,0,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Simple,simple,0,1,0,0,0,,0,a,medium,"referenced in abilities.rs,state.rs"
+Slow Start,slowstart,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Soul-Heart,soulheart,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onAnyFaint (+mega table only)"
+Stall,stall,0,1,0,0,0,,0,b,medium,"in enum, no code, no Showdown handler"
+Steam Engine,steamengine,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Steelworker,steelworker,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Steely Spirit,steelyspirit,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Stench,stench,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Sticky Hold,stickyhold,0,1,0,0,0,,0,a,medium,"referenced in abilities.rs,state.rs"
+Storm Drain,stormdrain,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Suction Cups,suctioncups,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Supersweet Syrup,supersweetsyrup,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onStart"
+Sword of Ruin,swordofruin,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Tablets of Ruin,tabletsofruin,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Tangling Hair,tanglinghair,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Tera Shell,terashell,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Tera Shift,terashift,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onSwitchIn"
+Teraform Zero,teraformzero,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onAfterTerastallization"
+Teravolt,teravolt,0,1,0,0,0,,0,a,medium,"referenced in abilities.rs,damage_calc.rs"
+Tinted Lens,tintedlens,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Toxic Boost,toxicboost,0,1,0,0,0,,0,a,medium,"referenced in abilities.rs,evaluate.rs"
+Toxic Chain,toxicchain,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Transistor,transistor,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Triage,triage,0,1,0,0,0,,0,a,medium,referenced in generate_instructions.rs
+Truant,truant,0,1,0,0,0,,0,a,medium,referenced in choice_effects.rs
+Turboblaze,turboblaze,0,1,0,0,0,,0,a,medium,"referenced in abilities.rs,damage_calc.rs"
+Unseen Fist,unseenfist,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Vessel of Ruin,vesselofruin,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Victory Star,victorystar,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Vital Spirit,vitalspirit,0,1,0,0,0,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Water Compaction,watercompaction,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Water Veil,waterveil,0,1,0,0,0,,0,a,medium,"referenced in abilities.rs,generate_instructions.rs"
+Well-Baked Body,wellbakedbody,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+White Smoke,whitesmoke,0,1,0,0,0,,0,a,medium,"referenced in abilities.rs,state.rs"
+Wimp Out,wimpout,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onEmergencyExit"
+Wind Power,windpower,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onDamagingHit,onSideConditionStart"
+Wind Rider,windrider,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Wonder Guard,wonderguard,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Wonder Skin,wonderskin,0,1,0,0,0,,0,a,medium,referenced in abilities.rs
+Zen Mode,zenmode,0,1,0,0,0,,0,c,medium,"in enum, no code reference; Showdown handlers onResidual,onEnd,condition"

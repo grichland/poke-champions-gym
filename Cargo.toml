@@ -1,0 +1,6 @@
+[workspace]
+resolver = "2"
+members = ["engine", "bench", "rig", "env", "bindings", "battle", "players", "emit", "obs"]
+
+[profile.release]
+debug = 1

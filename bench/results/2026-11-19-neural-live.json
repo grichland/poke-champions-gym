@@ -1,0 +1,34 @@
+{
+ "warmup_ms": [
+  15.8,
+  9.4
+ ],
+ "phone": {
+  "answers": 17,
+  "illegal_or_fallback": 0,
+  "anomalies": []
+ },
+ "streams": {
+  "streams": 20,
+  "answers": 187,
+  "illegal_or_fallback": 0
+ },
+ "handle_ms": {
+  "n": 204,
+  "median": 7.4,
+  "p99": 17.6,
+  "max": 25.4
+ },
+ "stats": {
+  "decisions": 204,
+  "policy_calls": 204,
+  "cached": 0,
+  "fallbacks": 0,
+  "slow": 0,
+  "replace_stale": 38,
+  "replace_fresh": 0,
+  "mask_mismatch": 0,
+  "policy_ms": 1584.456600005069,
+  "reasons": {}
+ }
+}

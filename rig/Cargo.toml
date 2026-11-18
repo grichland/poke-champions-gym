@@ -1,0 +1,17 @@
+[package]
+name = "rig"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "Engine side of the Showdown test rig (tools/rig/CONTRACT.md). Development only."
+
+[lib]
+name = "rig"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rig"
+path = "src/main.rs"
+
+[dependencies]
+cg-engine = { path = "../engine" }

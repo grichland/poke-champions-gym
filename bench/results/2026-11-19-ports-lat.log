@@ -1,0 +1,23 @@
+ÿþthreads 1 random                     1219955 decisions/s     0.82 us/decision  (4.7 s measured)
+threads 1 max_damage                  223334 decisions/s     4.48 us/decision  (10.0 s measured)
+threads 1 tower                       201924 decisions/s     4.95 us/decision  (10.0 s measured)
+threads 1 best_matchup_max_damage     190855 decisions/s     5.24 us/decision  (10.0 s measured)
+threads 1 disciplined                 177871 decisions/s     5.62 us/decision  (10.0 s measured)
+threads 1 endgame                     114207 decisions/s     8.76 us/decision  (10.0 s measured)
+threads 1 pilot_encore                187205 decisions/s     5.34 us/decision  (10.0 s measured)
+threads 1 pilot_weather               178526 decisions/s     5.60 us/decision  (10.0 s measured)
+threads 1 pilot_hazard                181804 decisions/s     5.50 us/decision  (10.0 s measured)
+threads 1 pilot_priority              187793 decisions/s     5.33 us/decision  (10.0 s measured)
+threads 1: other CPU load 34.3%, 1241 of 1394 rounds over 10%
+threads 24 random                     4016205 decisions/s     0.25 us/decision  (10.0 s measured)
+threads 24 max_damage                 1656361 decisions/s     0.60 us/decision  (10.0 s measured)
+threads 24 tower                      1481798 decisions/s     0.67 us/decision  (10.0 s measured)
+threads 24 best_matchup_max_damage    1445788 decisions/s     0.69 us/decision  (10.0 s measured)
+threads 24 disciplined                1310682 decisions/s     0.76 us/decision  (10.0 s measured)
+threads 24 endgame                     806857 decisions/s     1.24 us/decision  (10.0 s measured)
+threads 24 pilot_encore               1369932 decisions/s     0.73 us/decision  (10.0 s measured)
+threads 24 pilot_weather              1299120 decisions/s     0.77 us/decision  (10.0 s measured)
+threads 24 pilot_hazard               1328189 decisions/s     0.75 us/decision  (10.0 s measured)
+threads 24 pilot_priority             1360688 decisions/s     0.73 us/decision  (10.0 s measured)
+threads 24: other CPU load 32.5%, 6983 of 9806 rounds over 10%
+LAT_DONE

@@ -1,0 +1,713 @@
+{
+ "recorded_events": 44349,
+ "cg_events": 392706,
+ "kinds_cg_only": [],
+ "kinds_recorded_only": [
+  "end",
+  "gap",
+  "refused",
+  "unread"
+ ],
+ "shapes_cg_only": [
+  [
+   "fail",
+   [
+    "mon",
+    "reason",
+    "side"
+   ],
+   642
+  ]
+ ],
+ "shapes_recorded_only": [
+  [
+   "blocked",
+   [
+    "effect",
+    "side",
+    "what"
+   ],
+   2
+  ],
+  [
+   "fail",
+   [
+    "mon",
+    "side"
+   ],
+   28
+  ],
+  [
+   "once",
+   [
+    "effect"
+   ],
+   3
+  ]
+ ],
+ "values": [
+  {
+   "kind": "blocked",
+   "field": "effect",
+   "cg_only": {},
+   "recorded_only": {
+    "unnerve": 2
+   }
+  },
+  {
+   "kind": "blocked",
+   "field": "what",
+   "cg_only": {},
+   "recorded_only": {
+    "berries": 2
+   }
+  },
+  {
+   "kind": "boost",
+   "field": "by",
+   "cg_only": {
+    "6": 6
+   },
+   "recorded_only": {}
+  },
+  {
+   "kind": "cant",
+   "field": "reason",
+   "cg_only": {
+    "disable": 4,
+    "frz": 86
+   },
+   "recorded_only": {}
+  },
+  {
+   "kind": "cure",
+   "field": "status",
+   "cg_only": {
+    "brn": 2
+   },
+   "recorded_only": {}
+  },
+  {
+   "kind": "fail",
+   "field": "reason",
+   "cg_only": {
+    "brn": 84,
+    "burnup": 42,
+    "doubleshock": 238,
+    "hpfull": 224,
+    "par": 6,
+    "substitute": 34,
+    "tox": 14
+   },
+   "recorded_only": {}
+  },
+  {
+   "kind": "gap",
+   "field": "what",
+   "cg_only": {},
+   "recorded_only": {
+    "rows": 315,
+    "turn": 624
+   }
+  },
+  {
+   "kind": "item",
+   "field": "item",
+   "cg_only": {
+    "banettite": 2,
+    "baxcalibrite": 8,
+    "blackglasses": 2,
+    "blazikenite": 12,
+    "charizarditex": 2,
+    "charizarditey": 10,
+    "clefablite": 22,
+    "damprock": 6,
+    "dragoninite": 10,
+    "excadrite": 4,
+    "fairyfeather": 4,
+    "feraligite": 4,
+    "glimmoranite": 4,
+    "heatrock": 2,
+    "kingsrock": 2,
+    "lightclay": 8,
+    "lucarionitez": 26,
+    "metagrossite": 8,
+    "miracleseed": 4,
+    "mysticwater": 8,
+    "nevermeltice": 2,
+    "raichunitey": 2,
+    "salamencite": 10,
+    "scovillainite": 2,
+    "slowbronite": 4,
+    "spelltag": 10,
+    "staraptite": 8,
+    "starminite": 6,
+    "terrainextender": 6,
+    "tyranitarite": 10,
+    "victreebelite": 2
+   },
+   "recorded_only": {
+    "dragonfang": 1,
+    "grassyseed": 2,
+    "habanberry": 4
+   }
+  },
+  {
+   "kind": "item",
+   "field": "what",
+   "cg_only": {
+    "received": 26
+   },
+   "recorded_only": {}
+  },
+  {
+   "kind": "once",
+   "field": "effect",
+   "cg_only": {
+    "futuresight": 88,
+    "phantomforce": 2,
+    "trick": 14
+   },
+   "recorded_only": {
+    "perishsong": 3
+   }
+  },
+  {
+   "kind": "types",
+   "field": "type",
+   "cg_only": {
+    "psychic": 8
+   },
+   "recorded_only": {}
+  },
+  {
+   "kind": "volatile",
+   "field": "effect",
+   "cg_only": {
+    "attract": 8,
+    "focusenergy": 6
+   },
+   "recorded_only": {
+    "perishsong": 11,
+    "smackdown": 1
+   }
+  },
+  {
+   "kind": "volatile_end",
+   "field": "effect",
+   "cg_only": {
+    "disable": 6,
+    "firespin": 2
+   },
+   "recorded_only": {}
+  }
+ ],
+ "order_differences": [
+  {
+   "label": "ability_change",
+   "recorded_next": [
+    [
+     "ability",
+     4
+    ]
+   ],
+   "cg_next": [
+    [
+     "turn",
+     56
+    ],
+    [
+     "move",
+     24
+    ],
+    [
+     "mega_stone",
+     8
+    ]
+   ]
+  },
+  {
+   "label": "blocked:stat_drop",
+   "recorded_next": [
+    [
+     "mega_stone",
+     1
+    ]
+   ],
+   "cg_next": [
+    [
+     "move",
+     12
+    ],
+    [
+     "turn",
+     8
+    ],
+    [
+     "mega_stone",
+     8
+    ]
+   ]
+  },
+  {
+   "label": "boost",
+   "recorded_next": [
+    [
+     "turn",
+     395
+    ],
+    [
+     "move",
+     374
+    ],
+    [
+     "item:activated",
+     199
+    ]
+   ],
+   "cg_next": [
+    [
+     "move",
+     3708
+    ],
+    [
+     "turn",
+     3008
+    ],
+    [
+     "faint",
+     2092
+    ]
+   ]
+  },
+  {
+   "label": "cause:was_hurt",
+   "recorded_next": [
+    [
+     "faint",
+     4
+    ],
+    [
+     "hp:lost",
+     2
+    ]
+   ],
+   "cg_next": [
+    [
+     "hp:lost",
+     10
+    ],
+    [
+     "faint",
+     8
+    ]
+   ]
+  },
+  {
+   "label": "hits",
+   "recorded_next": [
+    [
+     "move",
+     44
+    ],
+    [
+     "turn",
+     32
+    ],
+    [
+     "enter",
+     21
+    ]
+   ],
+   "cg_next": [
+    [
+     "boost",
+     170
+    ],
+    [
+     "item:activated",
+     162
+    ],
+    [
+     "move",
+     96
+    ]
+   ]
+  },
+  {
+   "label": "item:activated",
+   "recorded_next": [
+    [
+     "hp:restored",
+     1403
+    ],
+    [
+     "hp:lost",
+     236
+    ],
+    [
+     "item:activated",
+     201
+    ]
+   ],
+   "cg_next": [
+    [
+     "hp:lost",
+     8840
+    ],
+    [
+     "hp:restored",
+     7436
+    ],
+    [
+     "item:used",
+     1082
+    ]
+   ]
+  },
+  {
+   "label": "item:removed",
+   "recorded_next": [
+    [
+     "turn",
+     42
+    ],
+    [
+     "move",
+     36
+    ],
+    [
+     "faint",
+     19
+    ]
+   ],
+   "cg_next": [
+    [
+     "faint",
+     248
+    ],
+    [
+     "move",
+     212
+    ],
+    [
+     "turn",
+     110
+    ]
+   ]
+  },
+  {
+   "label": "item:used",
+   "recorded_next": [
+    [
+     "move",
+     48
+    ],
+    [
+     "turn",
+     32
+    ],
+    [
+     "boost",
+     21
+    ]
+   ],
+   "cg_next": [
+    [
+     "ability",
+     274
+    ],
+    [
+     "turn",
+     174
+    ],
+    [
+     "move",
+     140
+    ]
+   ]
+  },
+  {
+   "label": "prepare",
+   "recorded_next": [
+    [
+     "hp:lost",
+     29
+    ],
+    [
+     "boost",
+     9
+    ],
+    [
+     "ability",
+     3
+    ]
+   ],
+   "cg_next": [
+    [
+     "move",
+     382
+    ],
+    [
+     "boost",
+     332
+    ],
+    [
+     "hp:lost",
+     168
+    ]
+   ]
+  },
+  {
+   "label": "transform",
+   "recorded_next": [
+    [
+     "turn",
+     4
+    ],
+    [
+     "move",
+     2
+    ]
+   ],
+   "cg_next": [
+    [
+     "move",
+     20
+    ],
+    [
+     "turn",
+     20
+    ],
+    [
+     "mega_stone",
+     8
+    ]
+   ]
+  },
+  {
+   "label": "volatile:charge",
+   "recorded_next": [
+    [
+     "item:activated",
+     14
+    ],
+    [
+     "move",
+     9
+    ],
+    [
+     "cause:recoil",
+     1
+    ]
+   ],
+   "cg_next": [
+    [
+     "move",
+     46
+    ],
+    [
+     "item:activated",
+     38
+    ],
+    [
+     "cause:hp_restored",
+     8
+    ]
+   ]
+  },
+  {
+   "label": "volatile:curse",
+   "recorded_next": [
+    [
+     "hp:lost",
+     8
+    ]
+   ],
+   "cg_next": [
+    [
+     "move",
+     10
+    ],
+    [
+     "item:activated",
+     6
+    ],
+    [
+     "faint",
+     6
+    ]
+   ]
+  },
+  {
+   "label": "volatile:firespin",
+   "recorded_next": [
+    [
+     "hp:lost",
+     2
+    ],
+    [
+     "move",
+     1
+    ]
+   ],
+   "cg_next": [
+    [
+     "move",
+     6
+    ]
+   ]
+  },
+  {
+   "label": "volatile:taunt",
+   "recorded_next": [
+    [
+     "cant",
+     3
+    ],
+    [
+     "turn",
+     1
+    ],
+    [
+     "move",
+     1
+    ]
+   ],
+   "cg_next": [
+    [
+     "item:activated",
+     34
+    ],
+    [
+     "move",
+     18
+    ],
+    [
+     "turn",
+     12
+    ]
+   ]
+  },
+  {
+   "label": "volatile_end:substitute",
+   "recorded_next": [
+    [
+     "turn",
+     12
+    ],
+    [
+     "move",
+     6
+    ],
+    [
+     "ability",
+     6
+    ]
+   ],
+   "cg_next": [
+    [
+     "item:activated",
+     22
+    ],
+    [
+     "turn",
+     20
+    ],
+    [
+     "move",
+     14
+    ]
+   ]
+  },
+  {
+   "label": "volatile_hit:endured_hit",
+   "recorded_next": [
+    [
+     "boost",
+     2
+    ],
+    [
+     "item:activated",
+     2
+    ],
+    [
+     "turn",
+     1
+    ]
+   ],
+   "cg_next": [
+    [
+     "ability",
+     6
+    ],
+    [
+     "item:activated",
+     2
+    ],
+    [
+     "volatile_hit:endured_hit",
+     2
+    ]
+   ]
+  },
+  {
+   "label": "volatile_hit:substitute",
+   "recorded_next": [
+    [
+     "volatile_end:substitute",
+     30
+    ],
+    [
+     "turn",
+     5
+    ],
+    [
+     "cause:energy_drained",
+     5
+    ]
+   ],
+   "cg_next": [
+    [
+     "move",
+     4
+    ],
+    [
+     "item:activated",
+     4
+    ]
+   ]
+  },
+  {
+   "label": "weather",
+   "recorded_next": [
+    [
+     "move",
+     104
+    ],
+    [
+     "turn",
+     89
+    ],
+    [
+     "enter",
+     39
+    ]
+   ],
+   "cg_next": [
+    [
+     "turn",
+     1104
+    ],
+    [
+     "move",
+     824
+    ],
+    [
+     "enter",
+     232
+    ]
+   ]
+  }
+ ]
+}

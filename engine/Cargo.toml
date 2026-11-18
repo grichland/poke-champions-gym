@@ -1,0 +1,11 @@
+[package]
+name = "cg-engine"
+version = "0.1.0"
+edition = "2018"
+publish = false
+description = "CG's resolver: Pokémon Champions singles, from Showdown's source."
+
+[lib]
+name = "cg_engine"
+path = "src/lib.rs"
+crate-type = ["lib"]

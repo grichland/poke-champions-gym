@@ -1,0 +1,1 @@
+{"battles": 100000, "states": 200, "per_state": 500, "seed": 1000, "wall_s": 7.458, "process_s": 7.459, "battles_per_s": 13408.1, "steps": 2459873, "steps_per_s": 329822.9, "steps_per_battle": 24.60, "branches_per_step": 2.074, "s1_wins": 47660, "s2_wins": 52146, "unfinished": 194, "time_capped": false}

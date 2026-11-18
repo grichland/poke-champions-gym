@@ -1,0 +1,8 @@
+{"bench":"obs","mode":"full","battles":5000,"calls":1000000,"seconds":15.097,"calls_per_s":66240,"us_per_call":15.097,"capped":false,"seed":1,"note":"first version, before the static move-fact table and the per-call speed cache"}
+{"bench":"obs","mode":"no_damage","battles":5000,"calls":1000000,"seconds":5.936,"calls_per_s":168477,"us_per_call":5.936,"capped":false,"seed":1,"note":"first version"}
+{"bench":"obs","mode":"legal_only","battles":5000,"calls":1000000,"seconds":0.713,"calls_per_s":1402770,"us_per_call":0.713,"capped":false,"seed":1,"note":"first version"}
+{"bench":"obs","mode":"fill_only","battles":5000,"calls":1000000,"seconds":0.294,"calls_per_s":3401970,"us_per_call":0.294,"capped":false,"seed":1,"note":"first version"}
+{"bench":"obs","mode":"full","battles":5000,"calls":1000000,"seconds":10.661,"calls_per_s":93796,"us_per_call":10.661,"capped":false,"seed":1,"sink":906416.2}
+{"bench":"obs","mode":"no_damage","battles":5000,"calls":1000000,"seconds":2.914,"calls_per_s":343215,"us_per_call":2.914,"capped":false,"seed":1,"sink":906416.2}
+{"bench":"obs","mode":"legal_only","battles":5000,"calls":1000000,"seconds":0.265,"calls_per_s":3769760,"us_per_call":0.265,"capped":false,"seed":1,"sink":5725400.0}
+{"bench":"obs","mode":"fill_only","battles":5000,"calls":1000000,"seconds":0.092,"calls_per_s":10870617,"us_per_call":0.092,"capped":false,"seed":1,"sink":876600.0}

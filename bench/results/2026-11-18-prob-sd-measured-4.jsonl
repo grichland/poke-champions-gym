@@ -1,0 +1,5 @@
+{"name":"acc_widelens","trials":40000,"counts":{"hit":30788,"miss":9212},"wall_s":69.651,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"hits_2to5","trials":40000,"counts":{"2":13950,"3":14101,"4":5950,"5":5999},"wall_s":85.176,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"speedtie_entry","trials":40000,"counts":{"p2":19948,"p1":20052},"wall_s":28.942,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"lock_turns","trials":40000,"counts":{"2":19920,"3":20080},"wall_s":168.359,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"ab_shedskin","trials":40000,"counts":{"none":26802,"cure":13198},"wall_s":32.55,"showdown":"c0845f33d","format":"gen9championsbssregmc"}

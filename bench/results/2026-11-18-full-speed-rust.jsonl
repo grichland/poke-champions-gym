@@ -1,0 +1,8 @@
+{"bench":"obs_env_speed","where":"rust","mode":"no_obs","n":256,"threads":1,"rounds":6,"alternating":true,"seconds":24.01,"decisions":1535744,"decisions_per_s":63959,"battles_per_s":1555.4,"us_per_observation":null}
+{"bench":"obs_env_speed","where":"rust","mode":"obs","n":256,"threads":1,"rounds":6,"alternating":true,"seconds":24.02,"decisions":761856,"decisions_per_s":31717,"battles_per_s":769.2,"us_per_observation":15.143}
+{"bench":"obs_env_speed","where":"rust","mode":"no_obs","n":4096,"threads":1,"rounds":6,"alternating":true,"seconds":24.25,"decisions":1327104,"decisions_per_s":54729,"battles_per_s":1260.9,"us_per_observation":null}
+{"bench":"obs_env_speed","where":"rust","mode":"obs","n":4096,"threads":1,"rounds":6,"alternating":true,"seconds":24.39,"decisions":733184,"decisions_per_s":30062,"battles_per_s":727.5,"us_per_observation":16.056}
+{"bench":"obs_env_speed","where":"rust","mode":"no_obs","n":256,"threads":24,"rounds":6,"alternating":true,"seconds":24.01,"decisions":1765888,"decisions_per_s":73539,"battles_per_s":1788.2,"us_per_observation":null}
+{"bench":"obs_env_speed","where":"rust","mode":"obs","n":256,"threads":24,"rounds":6,"alternating":true,"seconds":24.03,"decisions":855808,"decisions_per_s":35614,"battles_per_s":866.6,"us_per_observation":12.326}
+{"bench":"obs_env_speed","where":"rust","mode":"no_obs","n":4096,"threads":24,"rounds":6,"alternating":true,"seconds":24.16,"decisions":1798144,"decisions_per_s":74432,"battles_per_s":1731.7,"us_per_observation":null}
+{"bench":"obs_env_speed","where":"rust","mode":"obs","n":4096,"threads":24,"rounds":6,"alternating":true,"seconds":24.23,"decisions":1388544,"decisions_per_s":57303,"battles_per_s":1384.1,"us_per_observation":1.953}

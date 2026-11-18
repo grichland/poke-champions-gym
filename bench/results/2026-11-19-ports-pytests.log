@@ -1,0 +1,37 @@
+ÿþ   Compiling cg-bindings v0.1.0 (C:\Users\user\Code\pokemon_champions\champions-gym\bindings)
+    Finished `release` profile [optimized + debuginfo] target(s) in 12.66s
+python-ext.sh: wrote python/champions_gym/_cg.cp312-win_amd64.pyd
+== python/tests/test_battle_view.py
+PASS test_battle_view_fields
+PASS test_builtin_players_play
+PASS test_state_rule_still_available
+3 passed, 0 failed
+== python/tests/test_env.py
+PASS test_100k_random_decisions_inside_mask
+PASS test_enumerate_sums_to_one
+PASS test_errors_are_exceptions
+PASS test_fork_reproduces
+PASS test_preview_layout
+PASS test_same_seed_same_games
+PASS test_threads_same_games
+7 passed, 0 failed
+== python/tests/test_obs.py
+PASS test_bad_buffers_are_refused
+PASS test_batch_matches_battle_view_and_ranges
+PASS test_labels_follow_decisions
+PASS test_layout_covers_every_column
+PASS test_same_seed_same_tensors
+PASS test_shapes_and_dtypes
+6 passed, 0 failed
+== python/tests/test_teams_builtin.py
+PASS test_act_with_opponent
+PASS test_builtin_actions_after_refusals
+PASS test_builtin_actions_match_builtin_player
+PASS test_dropped_teams_have_reasons
+PASS test_ported_players_everywhere
+PASS test_shipped_pool_accepted_fast
+PASS test_unweighted_stream_unchanged
+PASS test_weighted_draws_follow_weights
+PASS test_weights_are_validated
+9 passed, 0 failed
+PYTESTS_DONE

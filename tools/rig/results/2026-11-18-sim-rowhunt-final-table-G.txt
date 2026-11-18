@@ -1,0 +1,5 @@
+run                                          battles   ident    steps   rowsEq   secs
+G-focus5-98211                                  2000    2000    61227    61227  269.0
+G-real-98221                                    2000    2000    41545    41545   86.8
+G-stage5-98201                                  2000    2000    61731    61731  274.6
+{"battles": 6000, "identical": 6000, "steps": 164503, "rows_steps": 164503, "rows_equal": 164503}

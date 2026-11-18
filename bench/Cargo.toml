@@ -1,0 +1,43 @@
+[package]
+name = "bench"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "Benchmarks and long checks: battles per second, the players' runs, environment speed. Development only."
+
+[[bin]]
+name = "sim_play"
+path = "src/sim_play.rs"
+
+[[bin]]
+name = "env_play"
+path = "src/env_play.rs"
+
+[[bin]]
+name = "players_run"
+path = "src/players_run.rs"
+
+[dependencies]
+cg-engine = { path = "../engine" }
+rig = { path = "../rig" }
+env = { path = "../env" }
+battle = { path = "../battle" }
+emit = { path = "../emit" }
+players = { path = "../players" }
+obs = { path = "../obs" }
+
+[[bin]]
+name = "obs_env"
+path = "src/obs_env.rs"
+
+[[bin]]
+name = "row_dump"
+path = "src/row_dump.rs"
+
+[[bin]]
+name = "env_threads"
+path = "src/env_threads.rs"
+
+[[bin]]
+name = "prob_check"
+path = "src/prob_check.rs"

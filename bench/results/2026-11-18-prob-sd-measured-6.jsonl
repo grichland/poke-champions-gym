@@ -1,0 +1,5 @@
+{"name":"acc_thunder_sun","trials":40000,"counts":{"hit":20207,"miss":19793},"wall_s":70.607,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"sec_bodyslam_sg","trials":40000,"counts":{"par":24115,"none":15885},"wall_s":75.934,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"sleep_turns","trials":40000,"counts":{"1":13313,"2":26687},"wall_s":137.042,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"drag_roar","trials":40000,"counts":{"1":19989,"2":20011},"wall_s":49.584,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"attract_cant","trials":40000,"counts":{"cant":19975,"moves":20025},"wall_s":41.351,"showdown":"c0845f33d","format":"gen9championsbssregmc"}

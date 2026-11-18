@@ -1,0 +1,393 @@
+name,id,used,legal,pool_share,live_share,ladder_share,team_share,in_gold,status,confidence,reason
+Garchomp,garchomp,1,1,0.080933,0.068786,0.043435,0.4856,1,b,medium,enum entry only (stats/types are supplied by the caller)
+Garchomp-Mega-Z,garchompmegaz,1,1,0.044826,0.03752,0,0,1,c,high,Mega data differs: ability engine SANDFORCE vs SD levitate
+Primarina,primarina,1,1,0.042867,0.039604,0.045696,0.2572,1,b,medium,enum entry only (stats/types are supplied by the caller)
+Archaludon,archaludon,1,1,0.033951,0.032308,0.035611,0.2037,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Hippowdon,hippowdon,1,1,0.031893,0.021365,0.027949,0.1914,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Charizard,charizard,1,1,0.030864,0.036998,0.013973,0.1852,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Golisopod,golisopod,1,1,0.030178,0.031266,0.034485,0.1811,1,b,medium,enum entry only (stats/types are supplied by the caller)
+Golisopod-Mega,golisopodmega,1,1,0.030178,0.031266,0.034485,0,1,c,high,Mega data differs: ability engine EMERGENCYEXIT vs SD toughclaws
+Mimikyu,mimikyu,1,1,0.030178,0.025013,0.026399,0.1811,0,a,medium,species-specific code in abilities.rs
+Lucario,lucario,1,1,0.027435,0.020844,0.023846,0.1646,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Salamence,salamence,1,1,0.025377,0.024492,0.044288,0.1523,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Gholdengo,gholdengo,1,1,0.024691,0.015633,0.031518,0.1481,1,b,medium,enum entry only (stats/types are supplied by the caller)
+Meowscarada,meowscarada,1,1,0.024348,0.018239,0.021979,0.1461,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Salamence-Mega,salamencemega,1,1,0.02399,0.02345,0.033216,0,0,a,high,mega_evolve_target arm SALAMENCE+SALAMENCITE
+Corviknight,corviknight,1,1,0.023663,0.022929,0.025899,0.142,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Lucario-Mega-Z,lucariomegaz,1,1,0.023311,0.018239,0.016298,0,0,c,high,Mega data differs: ability engine ADAPTABILITY vs SD auraguard
+Basculegion,basculegion,1,1,0.021262,0.02345,0.023076,0.1276,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Rillaboom,rillaboom,1,1,0.020919,0.020844,0.023776,0.1255,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Dragonite,dragonite,1,1,0.020233,0.020323,0.008017,0.1214,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Dragonite-Mega,dragonitemega,1,1,0.019204,0.01876,0.008017,0,0,a,high,mega_evolve_target arm DRAGONITE+DRAGONINITE
+Charizard-Mega-Y,charizardmegay,1,1,0.017328,0.021886,0.001747,0,0,a,high,mega_evolve_target arm CHARIZARD+CHARIZARDITEY
+Glimmora,glimmora,1,1,0.017147,0.013028,0.014687,0.1029,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Metagross,metagross,1,1,0.017147,0.010943,0.014396,0.1029,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Metagross-Mega,metagrossmega,1,1,0.017147,0.010943,0.014396,0,0,a,high,mega_evolve_target arm METAGROSS+METAGROSSITE
+Indeedee,indeedee,1,1,0.015089,0.01876,0.014254,0.0905,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Baxcalibur,baxcalibur,1,1,0.014746,0.013028,0.014471,0.0885,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Greninja,greninja,1,1,0.014403,0.010422,0.005903,0.0864,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Rotom-Wash,rotomwash,1,1,0.01406,0.017718,0.011306,0.0844,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Charizard-Mega-X,charizardmegax,1,1,0.013536,0.015112,0.012227,0,0,a,high,mega_evolve_target arm CHARIZARD+CHARIZARDITEX
+Volcarona,volcarona,1,1,0.013374,0.010943,0.011524,0.0802,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Blaziken,blaziken,1,1,0.012689,0.017196,0.009365,0.0761,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Blaziken-Mega,blazikenmega,1,1,0.012689,0.017196,0.009365,0,0,a,high,mega_evolve_target arm BLAZIKEN+BLAZIKENITE
+Gyarados,gyarados,1,1,0.012346,0.016154,0.005347,0.0741,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Umbreon,umbreon,1,1,0.012346,0.005732,0.010057,0.0741,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Cinderace,cinderace,1,1,0.012003,0.018239,0.010557,0.072,1,b,medium,enum entry only (stats/types are supplied by the caller)
+Kingambit,kingambit,1,1,0.011317,0.00938,0.014782,0.0679,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Baxcalibur-Mega,baxcaliburmega,1,1,0.010658,0.009901,0.002197,0,0,a,high,mega_evolve_target arm BAXCALIBUR+BAXCALIBRITE
+Staraptor,staraptor,1,1,0.010631,0.012507,0.003754,0.0638,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Staraptor-Mega,staraptormega,1,1,0.010631,0.012507,0.003754,0,0,a,high,mega_evolve_target arm STARAPTOR+STARAPTITE
+Ceruledge,ceruledge,1,1,0.010631,0.008859,0.00765,0.0638,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Raichu,raichu,1,1,0.010631,0.005732,0.009973,0.0638,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Raichu-Mega-Y,raichumegay,1,1,0.010631,0.005732,0.009973,0,0,a,high,mega_evolve_target arm RAICHU+RAICHUNITEY
+Glimmora-Mega,glimmoramega,1,1,0.010231,0.007295,0,0,0,a,high,mega_evolve_target arm GLIMMORA+GLIMMORANITE
+Gengar,gengar,1,1,0.009945,0.007295,0.009348,0.0597,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Tyranitar,tyranitar,1,1,0.009945,0.00469,0.003439,0.0597,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Ninetales-Alola,ninetalesalola,1,1,0.009259,0.010422,0.012586,0.0556,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Clefable,clefable,1,1,0.009259,0.006253,0.00643,0.0556,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Pawmot,pawmot,1,1,0.008916,0.011464,0.011326,0.0535,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Sneasler,sneasler,1,1,0.008916,0.006253,0.016043,0.0535,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Toxapex,toxapex,1,1,0.008573,0.008859,0.009195,0.0514,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Aegislash,aegislash,1,1,0.008573,0.006774,0.01373,0.0514,0,c,medium,has battle-only forme(s) Aegislash-Blade with no engine code switching to them
+Greninja-Mega,greninjamega,1,1,0.008339,0.006253,0.005448,0,0,a,high,mega_evolve_target arm GRENINJA+GRENINJITE
+Clefable-Mega,clefablemega,1,1,0.008265,0.005211,0.004822,0,0,a,high,mega_evolve_target arm CLEFABLE+CLEFABLITE
+Swampert,swampert,1,1,0.00823,0.011985,0.00705,0.0494,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Samurott-Hisui,samurotthisui,1,1,0.007545,0.006774,0.007828,0.0453,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Gyarados-Mega,gyaradosmega,1,1,0.007407,0.009901,0,0,0,a,high,mega_evolve_target arm GYARADOS+GYARADOSITE
+Swampert-Mega,swampertmega,1,1,0.006927,0.009901,0,0,0,a,high,mega_evolve_target arm SWAMPERT+SWAMPERTITE
+Starmie,starmie,1,1,0.006859,0.011985,0.006252,0.0412,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Starmie-Mega,starmiemega,1,1,0.006859,0.011985,0.006252,0,0,c,high,"Mega data differs: stats engine (60, 140, 105, 130, 105, 120) vs SD (60, 100, 105, 130, 105, 120)"
+Goodra-Hisui,goodrahisui,1,1,0.006859,0.005732,0.00203,0.0412,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Hydreigon,hydreigon,1,1,0.006516,0.00938,0.008641,0.0391,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Pelipper,pelipper,1,1,0.006516,0.008859,0.012316,0.0391,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Delphox,delphox,1,1,0.006516,0.008859,0.007037,0.0391,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Delphox-Mega,delphoxmega,1,1,0.006516,0.008859,0.006157,0,0,a,high,mega_evolve_target arm DELPHOX+DELPHOXITE
+Grimmsnarl,grimmsnarl,1,1,0.006516,0.005211,0.008028,0.0391,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Scizor,scizor,1,1,0.006516,0.003127,0.005466,0.0391,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Blastoise,blastoise,1,1,0.00583,0.003127,0.009673,0.035,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Tyranitar-Mega,tyranitarmega,1,1,0.005601,0.002606,0.001312,0,0,a,high,mega_evolve_target arm TYRANITAR+TYRANITARITE
+Rotom-Heat,rotomheat,1,1,0.005487,0.006253,0.005069,0.0329,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Slowking-Galar,slowkinggalar,1,1,0.005487,0.00469,0.004345,0.0329,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Gengar-Mega,gengarmega,1,1,0.005434,0.004169,0,0,0,a,high,mega_evolve_target arm GENGAR+GENGARITE
+Lopunny,lopunny,1,1,0.005144,0.007295,0.004465,0.0309,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Lopunny-Mega,lopunnymega,1,1,0.005144,0.007295,0.004465,0,0,a,high,mega_evolve_target arm LOPUNNY+LOPUNNITE
+Dragapult,dragapult,1,1,0.005144,0.006774,0.008462,0.0309,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Skeledirge,skeledirge,1,1,0.005144,0.005211,0.007914,0.0309,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Blastoise-Mega,blastoisemega,1,1,0.005144,0.002606,0.009673,0,0,a,high,mega_evolve_target arm BLASTOISE+BLASTOISINITE
+Bellibolt,bellibolt,1,1,0.004801,0.004169,0.003704,0.0288,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Vanilluxe,vanilluxe,1,1,0.004801,0.003127,0.002028,0.0288,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Milotic,milotic,1,1,0.004458,0.006774,0.003553,0.0267,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Venusaur,venusaur,1,1,0.004458,0.005732,0.004304,0.0267,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Lucario-Mega,lucariomega,1,1,0.004124,0.002606,0.007549,0,0,a,high,mega_evolve_target arm LUCARIO+LUCARIONITE
+Excadrill,excadrill,1,1,0.004115,0.005211,0.004556,0.0247,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Gardevoir,gardevoir,1,1,0.004115,0.003648,0.002016,0.0247,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Snorlax,snorlax,1,1,0.003772,0.010422,0.002658,0.0226,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Venusaur-Mega,venusaurmega,1,1,0.003772,0.00469,0.002379,0,0,a,high,mega_evolve_target arm VENUSAUR+VENUSAURITE
+Sylveon,sylveon,1,1,0.003772,0.003648,0.006335,0.0226,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Zoroark-Hisui,zoroarkhisui,1,1,0.003429,0.008859,0.004203,0.0206,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Kleavor,kleavor,1,1,0.003429,0.004169,0.00233,0.0206,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Absol,absol,1,1,0.003429,0.002606,0.006371,0.0206,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Banette,banette,1,1,0.003429,0.002606,0.005126,0.0206,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Banette-Mega,banettemega,1,1,0.003429,0.002606,0.005126,0,0,a,high,mega_evolve_target arm BANETTE+BANETTITE
+Gardevoir-Mega,gardevoirmega,1,1,0.00338,0.003127,0.000949,0,0,a,high,mega_evolve_target arm GARDEVOIR+GARDEVOIRITE
+Scizor-Mega,scizormega,1,1,0.003258,0.001563,0.004456,0,0,a,high,mega_evolve_target arm SCIZOR+SCIZORITE
+Politoed,politoed,1,1,0.003086,0.004169,0.001889,0.0185,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Hatterene,hatterene,1,1,0.003086,0.003648,0.006549,0.0185,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Meganium,meganium,1,1,0.003086,0.003648,0.004855,0.0185,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Meganium-Mega,meganiummega,1,1,0.003086,0.003648,0.004855,0,0,a,high,mega_evolve_target arm MEGANIUM+MEGANIUMITE
+Gallade,gallade,1,1,0.003086,0.003648,0.002321,0.0185,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Excadrill-Mega,excadrillmega,1,1,0.003018,0.003127,0,0,0,a,high,mega_evolve_target arm EXCADRILL+EXCADRITE
+Espathra,espathra,1,1,0.002743,0.006774,0.004722,0.0165,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Ditto,ditto,1,1,0.002743,0.004169,0.006637,0.0165,0,a,medium,species-specific code in items.rs
+Empoleon,empoleon,1,1,0.002743,0.004169,0.004833,0.0165,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Skarmory,skarmory,1,1,0.002743,0.003127,0.002084,0.0165,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Absol-Mega-Z,absolmegaz,1,1,0.002538,0.002084,0.005575,0,0,c,high,Mega data differs: ability engine MAGICBOUNCE vs SD sharpness
+Annihilape,annihilape,1,1,0.002401,0.003648,0.003284,0.0144,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Mawile,mawile,1,1,0.002401,0.003648,0.003033,0.0144,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Mawile-Mega,mawilemega,1,1,0.002401,0.003648,0.003033,0,0,a,high,mega_evolve_target arm MAWILE+MAWILITE
+Azumarill,azumarill,1,1,0.002401,0.003648,0.001985,0.0144,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Mamoswine,mamoswine,1,1,0.002401,0.002606,0.00398,0.0144,1,b,medium,enum entry only (stats/types are supplied by the caller)
+Scovillain,scovillain,1,1,0.002401,0.002606,0.001871,0.0144,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Slowbro,slowbro,1,1,0.002401,0.001042,0.00095,0.0144,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Slowbro-Mega,slowbromega,1,1,0.002401,0.001042,0.000594,0,0,a,high,mega_evolve_target arm SLOWBRO+SLOWBRONITE
+Sableye,sableye,1,1,0.002058,0.004169,0.002166,0.0123,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Polteageist,polteageist,1,1,0.002058,0.004169,0.001633,0.0123,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Scolipede,scolipede,1,1,0.002058,0.002606,0.003009,0.0123,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Araquanid,araquanid,1,1,0.002058,0.002084,0.003987,0.0123,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Whimsicott,whimsicott,1,1,0.002058,0.002084,0.003325,0.0123,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Arcanine-Hisui,arcaninehisui,1,1,0.002058,0.001563,0.003199,0.0123,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Victreebel,victreebel,1,1,0.002058,0.001563,0.002051,0.0123,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Victreebel-Mega,victreebelmega,1,1,0.002058,0.001563,0.002051,0,0,a,high,mega_evolve_target arm VICTREEBEL+VICTREEBELITE
+Scovillain-Mega,scovillainmega,1,1,0.001852,0.002084,6.6e-05,0,0,a,high,mega_evolve_target arm SCOVILLAIN+SCOVILLAINITE
+Vivillon,vivillon,1,1,0.001715,0.002606,0.000852,0.0103,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Heracross,heracross,1,1,0.001715,0.001042,0.001394,0.0103,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Heracross-Mega,heracrossmega,1,1,0.001715,0.001042,0.001195,0,0,a,high,mega_evolve_target arm HERACROSS+HERACRONITE
+Tinkaton,tinkaton,1,1,0.001715,0.000521,0.001796,0.0103,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Espeon,espeon,1,1,0.001715,0,0.002116,0.0103,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Dragalge,dragalge,1,1,0.001372,0.002606,0.00332,0.0082,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Eelektross,eelektross,1,1,0.001372,0.002606,0.001402,0.0082,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Eelektross-Mega,eelektrossmega,1,1,0.001372,0.002606,0.001402,0,0,a,high,mega_evolve_target arm EELEKTROSS+EELEKTROSSITE
+Vaporeon,vaporeon,1,1,0.001372,0.002084,0.002153,0.0082,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Slowbro-Galar,slowbrogalar,1,1,0.001372,0.002084,0,0.0082,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Reuniclus,reuniclus,1,1,0.001372,0.001042,0.000532,0.0082,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Chesnaught,chesnaught,1,1,0.001372,0,0.000443,0.0062,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Dragalge-Mega,dragalgemega,1,1,0.001235,0.002084,0.00332,0,0,a,high,mega_evolve_target arm DRAGALGE+DRAGALGITE
+Kangaskhan,kangaskhan,1,1,0.001029,0.003648,0.001854,0.0062,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Armarouge,armarouge,1,1,0.001029,0.002084,0.003871,0.0062,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Torkoal,torkoal,1,1,0.001029,0.002084,0.001985,0.0062,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Incineroar,incineroar,1,1,0.001029,0.001563,0.004678,0.0062,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Overqwil,overqwil,1,1,0.001029,0.001563,0.000993,0.0062,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Basculegion-F,basculegionf,1,1,0.001029,0.001563,0.000859,0.0062,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Gallade-Mega,gallademega,1,1,0.001029,0.001563,0.0002,0,0,a,high,mega_evolve_target arm GALLADE+GALLADITE
+Arboliva,arboliva,1,1,0.001029,0.001042,0.001672,0.0062,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Orthworm,orthworm,1,1,0.001029,0.001042,0.001278,0.0062,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Conkeldurr,conkeldurr,1,1,0.001029,0.001042,0.001108,0.0062,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Diggersby,diggersby,1,1,0.001029,0.001042,0.000794,0.0062,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Quaquaval,quaquaval,1,1,0.001029,0.000521,0.001234,0.0062,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Pyroar,pyroar,1,1,0.001029,0.000521,0.001147,0.0062,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Pyroar-Mega,pyroarmega,1,1,0.001029,0.000521,0.001147,0,0,a,high,mega_evolve_target arm PYROAR+PYROARITE
+Toucannon,toucannon,1,1,0.001029,0.000521,0.000936,0.0062,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Glalie,glalie,1,1,0.001029,0.000521,0.000494,0.0062,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Glalie-Mega,glaliemega,1,1,0.001029,0.000521,0,0,0,a,high,mega_evolve_target arm GLALIE+GLALITITE
+Aggron,aggron,1,1,0.001029,0,0.001202,0.0062,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Krookodile,krookodile,1,1,0.001029,0,0.001136,0.0062,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Trevenant,trevenant,1,1,0.001029,0,0,0.0062,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Absol-Mega,absolmega,1,1,0.000892,0.000521,0,0,0,a,high,mega_evolve_target arm ABSOL+ABSOLITE
+Kangaskhan-Mega,kangaskhanmega,1,1,0.000735,0.002084,0.001854,0,0,a,high,mega_evolve_target arm KANGASKHAN+KANGASKHANITE
+Inteleon,inteleon,1,1,0.000686,0.002606,0.001831,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Beedrill,beedrill,1,1,0.000686,0.001563,0.001364,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Beedrill-Mega,beedrillmega,1,1,0.000686,0.001563,0.001364,0,0,a,high,mega_evolve_target arm BEEDRILL+BEEDRILLITE
+Grapploct,grapploct,1,1,0.000686,0.001563,0.001242,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Maushold,maushold,1,1,0.000686,0.001563,0,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Alakazam,alakazam,1,1,0.000686,0.001042,0.001651,0.0041,0,a,medium,species-specific code in state.rs
+Sceptile,sceptile,1,1,0.000686,0.001042,0.001219,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Sceptile-Mega,sceptilemega,1,1,0.000686,0.001042,0.001219,0,0,a,high,mega_evolve_target arm SCEPTILE+SCEPTILITE
+Slurpuff,slurpuff,1,1,0.000686,0.001042,0.0012,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Altaria,altaria,1,1,0.000686,0.001042,0.001137,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Altaria-Mega,altariamega,1,1,0.000686,0.001042,0.001137,0,0,a,high,mega_evolve_target arm ALTARIA+ALTARIANITE
+Heliolisk,heliolisk,1,1,0.000686,0.001042,0.000797,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Feraligatr,feraligatr,1,1,0.000686,0.001042,0.000748,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Feraligatr-Mega,feraligatrmega,1,1,0.000686,0.001042,0.000374,0,0,a,high,mega_evolve_target arm FERALIGATR+FERALIGITE
+Tauros-Paldea-Blaze,taurospaldeablaze,1,1,0.000686,0.001042,0,0.0041,0,a,medium,species-specific code in choice_effects.rs
+Toxtricity-Low-Key,toxtricitylowkey,1,1,0.000686,0.001042,0,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Typhlosion-Hisui,typhlosionhisui,1,1,0.000686,0.001042,0,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Serperior,serperior,1,1,0.000686,0.000521,0.001895,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Garganacl,garganacl,1,1,0.000686,0.000521,0.000707,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Aerodactyl,aerodactyl,1,1,0.000686,0.000521,0.000609,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Houndstone,houndstone,1,1,0.000686,0.000521,0.000571,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Decidueye-Hisui,decidueyehisui,1,1,0.000686,0.000521,0.000556,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Malamar,malamar,1,1,0.000686,0.000521,0.000518,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Aerodactyl-Mega,aerodactylmega,1,1,0.000686,0.000521,0.000406,0,0,a,high,mega_evolve_target arm AERODACTYL+AERODACTYLITE
+Jolteon,jolteon,1,1,0.000686,0.000521,0,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Palafin,palafin,1,1,0.000686,0.000521,0,0.0041,0,a,medium,species-specific code in abilities.rs
+Zoroark,zoroark,1,1,0.000686,0.000521,0,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Froslass,froslass,1,1,0.000686,0,0.002218,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Salazzle,salazzle,1,1,0.000686,0,0.00074,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Pinsir,pinsir,1,1,0.000686,0,0.000297,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Pinsir-Mega,pinsirmega,1,1,0.000686,0,0.000297,0,0,a,high,mega_evolve_target arm PINSIR+PINSIRITE
+Chesnaught-Mega,chesnaughtmega,1,1,0.000686,0,0.000221,0,0,a,high,mega_evolve_target arm CHESNAUGHT+CHESNAUGHTITE
+Musharna,musharna,1,1,0.000686,0,0.000121,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Mudsdale,mudsdale,1,1,0.000686,0,0,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Samurott,samurott,1,1,0.000686,0,0,0.0041,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Froslass-Mega,froslassmega,1,1,0.000588,0,0.001901,0,0,a,high,mega_evolve_target arm FROSLASS+FROSLASSITE
+Aggron-Mega,aggronmega,1,1,0.000514,0,0.000601,0,0,a,high,mega_evolve_target arm AGGRON+AGGRONITE
+Sableye-Mega,sableyemega,1,1,0.000392,0.000521,0.000866,0,0,a,high,mega_evolve_target arm SABLEYE+SABLENITE
+Sharpedo,sharpedo,1,1,0.000343,0.001563,0,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Slowking,slowking,1,1,0.000343,0.001042,0.001178,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Talonflame,talonflame,1,1,0.000343,0.001042,0.000963,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Drampa,drampa,1,1,0.000343,0.001042,0.000326,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Drampa-Mega,drampamega,1,1,0.000343,0.001042,0.000326,0,0,c,high,"Mega data differs: stats engine (78, 85, 110, 160, 114, 36) vs SD (78, 85, 110, 160, 116, 36)"
+Sharpedo-Mega,sharpedomega,1,1,0.000343,0.001042,0,0,0,a,high,mega_evolve_target arm SHARPEDO+SHARPEDONITE
+Toxtricity,toxtricity,1,1,0.000343,0.000521,0.002387,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Forretress,forretress,1,1,0.000343,0.000521,0.000822,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Alakazam-Mega,alakazammega,1,1,0.000343,0.000521,0.00066,0,0,a,high,mega_evolve_target arm ALAKAZAM+ALAKAZITE
+Infernape,infernape,1,1,0.000343,0.000521,0.000618,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Falinks,falinks,1,1,0.000343,0.000521,0.000392,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Falinks-Mega,falinksmega,1,1,0.000343,0.000521,0.000392,0,0,a,high,mega_evolve_target arm FALINKS+FALINKSITE
+Roserade,roserade,1,1,0.000343,0.000521,0.000378,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Pidgeot,pidgeot,1,1,0.000343,0.000521,0.000313,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Pidgeot-Mega,pidgeotmega,1,1,0.000343,0.000521,0.000313,0,0,a,high,mega_evolve_target arm PIDGEOT+PIDGEOTITE
+Goodra,goodra,1,1,0.000343,0.000521,0.000255,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Abomasnow,abomasnow,1,1,0.000343,0.000521,0.000229,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Abomasnow-Mega,abomasnowmega,1,1,0.000343,0.000521,0.000229,0,0,a,high,mega_evolve_target arm ABOMASNOW+ABOMASITE
+Farfetch’d,farfetchd,1,1,0.000343,0.000521,0.000191,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Mr. Rime,mrrime,1,1,0.000343,0.000521,0.000155,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Emolga,emolga,1,1,0.000343,0.000521,8.8e-05,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Lycanroc-Midnight,lycanrocmidnight,1,1,0.000343,0.000521,6.5e-05,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Arcanine,arcanine,1,1,0.000343,0.000521,0,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Aurorus,aurorus,1,1,0.000343,0.000521,0,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Passimian,passimian,1,1,0.000343,0.000521,0,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Runerigus,runerigus,1,1,0.000343,0.000521,0,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Indeedee-F,indeedeef,1,1,0.000343,0,0.003035,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Sirfetch’d,sirfetchd,1,1,0.000343,0,0.002423,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Sinistcha,sinistcha,1,1,0.000343,0,0.00202,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Farigiraf,farigiraf,1,1,0.000343,0,0.001717,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Emboar,emboar,1,1,0.000343,0,0.000608,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Emboar-Mega,emboarmega,1,1,0.000343,0,0.000608,0,0,a,high,mega_evolve_target arm EMBOAR+EMBOARITE
+Barbaracle,barbaracle,1,1,0.000343,0,0.00059,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Barbaracle-Mega,barbaraclemega,1,1,0.000343,0,0.00059,0,0,a,high,mega_evolve_target arm BARBARACLE+BARBARACITE
+Pikachu,pikachu,1,1,0.000343,0,0.000458,0.0021,0,a,medium,species-specific code in pokemon.rs
+Machamp,machamp,1,1,0.000343,0,0.000341,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Audino,audino,1,1,0.000343,0,0.000185,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Audino-Mega,audinomega,1,1,0.000343,0,0.000185,0,0,a,high,mega_evolve_target arm AUDINO+AUDINITE
+Golurk,golurk,1,1,0.000343,0,0.000125,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Simisear,simisear,1,1,0.000343,0,9.8e-05,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Stunfisk-Galar,stunfiskgalar,1,1,0.000343,0,9.3e-05,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Furfrou,furfrou,1,1,0.000343,0,6.7e-05,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Decidueye,decidueye,1,1,0.000343,0,0,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Maushold-Four,mausholdfour,1,1,0.000343,0,0,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Pincurchin,pincurchin,1,1,0.000343,0,0,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Rotom-Fan,rotomfan,1,1,0.000343,0,0,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Thievul,thievul,1,1,0.000343,0,0,0.0021,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Skarmory-Mega,skarmorymega,1,1,0.000229,0.000521,0.000605,0,0,a,high,mega_evolve_target arm SKARMORY+SKARMORITE
+Floette-Eternal,floetteeternal,1,1,0,0.004169,0.007974,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Floette-Mega,floettemega,1,1,0,0.003648,0.002264,0,0,a,high,mega_evolve_target arm FLOETTEETERNAL+FLOETTITE
+Chandelure,chandelure,1,1,0,0.002084,0.001106,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Steelix,steelix,1,1,0,0.001563,0.000299,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Steelix-Mega,steelixmega,1,1,0,0.001563,0.000299,0,0,a,high,mega_evolve_target arm STEELIX+STEELIXITE
+Weavile,weavile,1,1,0,0.001042,0.001663,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Scrafty,scrafty,1,1,0,0.001042,0.000815,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Scrafty-Mega,scraftymega,1,1,0,0.001042,0.000815,0,0,a,high,mega_evolve_target arm SCRAFTY+SCRAFTINITE
+Vileplume,vileplume,1,1,0,0.001042,0.00073,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Cofagrigus,cofagrigus,1,1,0,0.001042,0.000463,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Chandelure-Mega,chandeluremega,1,1,0,0.001042,0.000409,0,0,a,high,mega_evolve_target arm CHANDELURE+CHANDELURITE
+Medicham,medicham,1,1,0,0.001042,0.000377,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Medicham-Mega,medichammega,1,1,0,0.001042,0.000377,0,0,a,high,mega_evolve_target arm MEDICHAM+MEDICHAMITE
+Sandaconda,sandaconda,1,1,0,0.001042,0.000276,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Ampharos,ampharos,1,1,0,0.000521,0.001118,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Ampharos-Mega,ampharosmega,1,1,0,0.000521,0.001118,0,0,a,high,mega_evolve_target arm AMPHAROS+AMPHAROSITE
+Glaceon,glaceon,1,1,0,0.000521,0.001021,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Lycanroc-Dusk,lycanrocdusk,1,1,0,0.000521,0.000732,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Houndoom,houndoom,1,1,0,0.000521,0.000541,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Houndoom-Mega,houndoommega,1,1,0,0.000521,0.000541,0,0,a,high,mega_evolve_target arm HOUNDOOM+HOUNDOOMINITE
+Clawitzer,clawitzer,1,1,0,0.000521,0.000485,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Tsareena,tsareena,1,1,0,0.000521,0.000457,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Camerupt,camerupt,1,1,0,0.000521,0.000405,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Camerupt-Mega,cameruptmega,1,1,0,0.000521,0.000405,0,0,a,high,mega_evolve_target arm CAMERUPT+CAMERUPTITE
+Spiritomb,spiritomb,1,1,0,0.000521,0.000391,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Morpeko,morpeko,1,1,0,0.000521,0.000361,0,0,a,medium,species-specific code in abilities.rs
+Ninetales,ninetales,1,1,0,0.000521,0.00032,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Ariados,ariados,1,1,0,0.000521,0.000304,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Rotom-Frost,rotomfrost,1,1,0,0.000521,0.000208,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Avalugg-Hisui,avalugghisui,1,1,0,0.000521,0.000191,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Alcremie,alcremie,1,1,0,0.000521,0.00018,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Simipour,simipour,1,1,0,0.000521,0.000116,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Florges,florges,1,1,0,0.000521,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Luxray,luxray,1,1,0,0.000521,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Mr. Mime,mrmime,1,1,0,0.000521,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Rampardos,rampardos,1,1,0,0.000521,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Stunfisk,stunfisk,1,1,0,0.000521,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Gliscor,gliscor,1,1,0,0,0.002399,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Hawlucha,hawlucha,1,1,0,0,0.000911,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Kommo-o,kommoo,1,1,0,0,0.000726,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Klefki,klefki,1,1,0,0,0.000668,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Noivern,noivern,1,1,0,0,0.00042,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Hydrapple,hydrapple,1,1,0,0,0.000412,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Avalugg,avalugg,1,1,0,0,0.000391,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Torterra,torterra,1,1,0,0,0.000303,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Typhlosion,typhlosion,1,1,0,0,0.000216,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Wyrdeer,wyrdeer,1,1,0,0,0.000148,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Swalot,swalot,1,1,0,0,0.000134,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Tauros,tauros,1,1,0,0,6e-05,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Alcremie-Lemon-Cream,alcremielemoncream,1,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Beartic,beartic,1,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Leafeon,leafeon,1,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Lycanroc,lycanroc,1,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Meowstic,meowstic,1,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Persian-Alola,persianalola,1,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Rotom,rotom,1,1,0,0,0,0,0,c,medium,"has battle-only forme(s) Rotom-Heat,Rotom-Wash,Rotom-Frost,Rotom-Fan,Rotom-Mow with no engine code switching to them"
+Scolipede-Mega,scolipedemega,0,1,0,0,0.000551,0,0,a,high,mega_evolve_target arm SCOLIPEDE+SCOLIPITE
+Arbok,arbok,0,1,0,0,0.000495,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Hawlucha-Mega,hawluchamega,0,1,0,0,0.000456,0,0,a,high,mega_evolve_target arm HAWLUCHA+HAWLUCHANITE
+Crabominable,crabominable,0,1,0,0,0.000434,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Crabominable-Mega,crabominablemega,0,1,0,0,0.000434,0,0,a,high,mega_evolve_target arm CRABOMINABLE+CRABOMINITE
+Chimecho,chimecho,0,1,0,0,0.000429,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Chimecho-Mega,chimechomega,0,1,0,0,0.000429,0,0,a,high,mega_evolve_target arm CHIMECHO+CHIMECHITE
+Pangoro,pangoro,0,1,0,0,0.0004,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Wigglytuff,wigglytuff,0,1,0,0,0.000398,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Raichu-Alola,raichualola,0,1,0,0,0.000388,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Malamar-Mega,malamarmega,0,1,0,0,0.000259,0,0,a,high,mega_evolve_target arm MALAMAR+MALAMARITE
+Tyrantrum,tyrantrum,0,1,0,0,0.000199,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Manectric,manectric,0,1,0,0,0.000195,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Tauros-Paldea-Aqua,taurospaldeaaqua,0,1,0,0,0.000154,0,0,a,medium,species-specific code in choice_effects.rs
+Gourgeist-Super,gourgeistsuper,0,1,0,0,0.000147,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Manectric-Mega,manectricmega,0,1,0,0,0.000147,0,0,a,high,mega_evolve_target arm MANECTRIC+MANECTITE
+Dedenne,dedenne,0,1,0,0,0.000121,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Toxicroak,toxicroak,0,1,0,0,9.6e-05,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Appletun,appletun,0,1,0,0,8.8e-05,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Simisage,simisage,0,1,0,0,8.8e-05,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Watchog,watchog,0,1,0,0,6.7e-05,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Aegislash-Blade,aegislashblade,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Alcremie-Caramel-Swirl,alcremiecaramelswirl,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Alcremie-Matcha-Cream,alcremiematchacream,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Alcremie-Mint-Cream,alcremiemintcream,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Alcremie-Rainbow-Swirl,alcremierainbowswirl,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Alcremie-Ruby-Cream,alcremierubycream,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Alcremie-Ruby-Swirl,alcremierubyswirl,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Aromatisse,aromatisse,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Bastiodon,bastiodon,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Castform,castform,0,1,0,0,0,0,0,c,medium,"has battle-only forme(s) Castform-Sunny,Castform-Rainy,Castform-Snowy with no engine code switching to them"
+Castform-Rainy,castformrainy,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Castform-Snowy,castformsnowy,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Castform-Sunny,castformsunny,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Cramorant-Gorging,cramorantgorging,0,1,0,0,0,0,0,a,medium,species-specific code in abilities.rs
+Cramorant-Gulping,cramorantgulping,0,1,0,0,0,0,0,a,medium,species-specific code in abilities.rs
+Eiscue-Noice,eiscuenoice,0,1,0,0,0,0,0,a,medium,species-specific code in abilities.rs
+Flapple,flapple,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Flareon,flareon,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Garbodor,garbodor,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Garchomp-Mega,garchompmega,0,1,0,0,0,0,0,a,high,mega_evolve_target arm GARCHOMP+GARCHOMPITE
+Gogoat,gogoat,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Golurk-Mega,golurkmega,0,1,0,0,0,0,0,a,high,mega_evolve_target arm GOLURK+GOLURKITE
+Gourgeist,gourgeist,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Gourgeist-Large,gourgeistlarge,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Gourgeist-Small,gourgeistsmall,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Liepard,liepard,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Mabosstiff,mabosstiff,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Meloetta-Pirouette,meloettapirouette,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Meowstic-F,meowsticf,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Meowstic-F-Mega,meowsticfmega,0,1,0,0,0,0,0,a,high,mega_evolve_target arm MEOWSTICF+MEOWSTICITE
+Meowstic-M-Mega,meowsticmmega,0,1,0,0,0,0,0,a,high,mega_evolve_target arm MEOWSTIC+MEOWSTICITE
+Mimikyu-Busted,mimikyubusted,0,1,0,0,0,0,0,a,medium,species-specific code in abilities.rs
+Minior-Meteor,miniormeteor,0,1,0,0,0,0,0,a,medium,species-specific code in abilities.rs
+Morpeko-Hangry,morpekohangry,0,1,0,0,0,0,0,a,medium,"species-specific code in abilities.rs,choice_effects.rs"
+Ogerpon-Cornerstone-Tera,ogerponcornerstonetera,0,1,0,0,0,0,0,a,medium,"species-specific code in items.rs,state.rs"
+Ogerpon-Hearthflame-Tera,ogerponhearthflametera,0,1,0,0,0,0,0,a,medium,"species-specific code in items.rs,state.rs"
+Ogerpon-Teal-Tera,ogerpontealtera,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Ogerpon-Wellspring-Tera,ogerponwellspringtera,0,1,0,0,0,0,0,a,medium,"species-specific code in items.rs,state.rs"
+Oranguru,oranguru,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Palafin-Hero,palafinhero,0,1,0,0,0,0,0,a,medium,species-specific code in abilities.rs
+Perrserker,perrserker,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Persian,persian,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Polteageist-Antique,polteageistantique,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Qwilfish,qwilfish,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Raichu-Mega-X,raichumegax,0,1,0,0,0,0,0,a,high,mega_evolve_target arm RAICHU+RAICHUNITEX
+Rhyperior,rhyperior,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Rotom-Mow,rotommow,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Sinistcha-Masterpiece,sinistchamasterpiece,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Squawkabilly,squawkabilly,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Squawkabilly-Blue,squawkabillyblue,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Squawkabilly-White,squawkabillywhite,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Squawkabilly-Yellow,squawkabillyyellow,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Tauros-Paldea-Combat,taurospaldeacombat,0,1,0,0,0,0,0,a,medium,species-specific code in choice_effects.rs
+Terapagos-Terastal,terapagosterastal,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Vivillon-Archipelago,vivillonarchipelago,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Vivillon-Continental,vivilloncontinental,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Vivillon-Elegant,vivillonelegant,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Vivillon-Fancy,vivillonfancy,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Vivillon-Garden,vivillongarden,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Vivillon-High Plains,vivillonhighplains,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Vivillon-Icy Snow,vivillonicysnow,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Vivillon-Jungle,vivillonjungle,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Vivillon-Marine,vivillonmarine,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Vivillon-Modern,vivillonmodern,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Vivillon-Monsoon,vivillonmonsoon,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Vivillon-Ocean,vivillonocean,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Vivillon-Pokeball,vivillonpokeball,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Vivillon-Polar,vivillonpolar,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Vivillon-River,vivillonriver,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Vivillon-Sandstorm,vivillonsandstorm,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Vivillon-Savanna,vivillonsavanna,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Vivillon-Sun,vivillonsun,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)
+Vivillon-Tundra,vivillontundra,0,1,0,0,0,0,0,b,medium,enum entry only (stats/types are supplied by the caller)

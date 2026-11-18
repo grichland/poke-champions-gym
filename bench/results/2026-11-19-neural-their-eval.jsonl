@@ -1,0 +1,2 @@
+EVAL {"opponent": "tower", "games": 2000, "wins": 1430, "losses": 570, "ties": 0, "win_rate": 0.715, "mean_turns": 8.4, "decisions": 72226, "iteration": 92, "run": "league-20261118-f", "phase": "snapshots", "mode": "greedy", "seconds": 6.4, "device": "cuda"}
+EVAL {"opponent": "max_damage", "games": 2000, "wins": 1460, "losses": 540, "ties": 0, "win_rate": 0.73, "mean_turns": 8.0, "decisions": 60866, "iteration": 92, "run": "league-20261118-f", "phase": "snapshots", "mode": "greedy", "seconds": 4.1, "device": "cuda"}

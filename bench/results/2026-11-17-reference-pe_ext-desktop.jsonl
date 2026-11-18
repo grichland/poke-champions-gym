@@ -1,0 +1,1 @@
+{"source": "pe_ext.random_battles (8 Nov build)", "battles": 100000, "seed": 1000, "wall_s": 4.396, "battles_per_s": 22745.8, "steps": 2459873, "steps_per_s": 559516.9, "steps_per_battle": 24.6, "s1_wins": 47660, "s2_wins": 52146, "unfinished": 194}

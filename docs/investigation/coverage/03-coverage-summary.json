@@ -1,0 +1,260 @@
+{
+ "species": {
+  "used": 298,
+  "by_status": {
+   "b": 218,
+   "c": 8,
+   "a": 72
+  },
+  "legal_by_status": {
+   "b": 288,
+   "c": 9,
+   "a": 95
+  },
+  "pool_share_total": 1.364,
+  "pool_share_covered_ab": 1.2473,
+  "pool_share_status_share": {
+   "a": 0.2912,
+   "b": 0.9561,
+   "c": 0.1166,
+   "d": 0
+  },
+  "live_share_total": 1.3616,
+  "live_share_covered_ab": 1.2527,
+  "live_share_status_share": {
+   "a": 0.2918,
+   "b": 0.9609,
+   "c": 0.1089,
+   "d": 0
+  },
+  "ladder_share_total": 1.2444,
+  "ladder_share_covered_ab": 1.1677,
+  "ladder_share_status_share": {
+   "a": 0.2206,
+   "b": 0.9471,
+   "c": 0.0767,
+   "d": 0
+  }
+ },
+ "moves": {
+  "used": 366,
+  "by_status": {
+   "a": 171,
+   "b": 138,
+   "c": 57
+  },
+  "legal_by_status": {
+   "a": 220,
+   "b": 175,
+   "c": 120
+  },
+  "pool_share_total": 3.9904,
+  "pool_share_covered_ab": 3.745,
+  "pool_share_status_share": {
+   "a": 1.9123,
+   "b": 1.8327,
+   "c": 0.2453,
+   "d": 0
+  },
+  "live_share_total": 3.9786,
+  "live_share_covered_ab": 3.752,
+  "live_share_status_share": {
+   "a": 1.8947,
+   "b": 1.8572,
+   "c": 0.2267,
+   "d": 0
+  },
+  "ladder_share_total": 3.9793,
+  "ladder_share_covered_ab": 3.708,
+  "ladder_share_status_share": {
+   "a": 1.9045,
+   "b": 1.8035,
+   "c": 0.2713,
+   "d": 0
+  }
+ },
+ "items": {
+  "used": 124,
+  "by_status": {
+   "a": 110,
+   "d": 14
+  },
+  "legal_by_status": {
+   "a": 144,
+   "d": 22
+  },
+  "pool_share_total": 0.9976,
+  "pool_share_covered_ab": 0.942,
+  "pool_share_status_share": {
+   "a": 0.942,
+   "b": 0,
+   "c": 0,
+   "d": 0.0556
+  },
+  "live_share_total": 0.9953,
+  "live_share_covered_ab": 0.9317,
+  "live_share_status_share": {
+   "a": 0.9317,
+   "b": 0,
+   "c": 0,
+   "d": 0.0636
+  },
+  "ladder_share_total": 0.9986,
+  "ladder_share_covered_ab": 0.9379,
+  "ladder_share_status_share": {
+   "a": 0.9379,
+   "b": 0,
+   "c": 0,
+   "d": 0.0607
+  }
+ },
+ "abilities": {
+  "used": 167,
+  "by_status": {
+   "a": 143,
+   "c": 21,
+   "d": 1,
+   "b": 2
+  },
+  "legal_by_status": {
+   "a": 256,
+   "c": 52,
+   "d": 1,
+   "b": 8
+  },
+  "pool_share_total": 1.3619,
+  "pool_share_covered_ab": 1.2467,
+  "pool_share_status_share": {
+   "a": 1.2443,
+   "b": 0.0023,
+   "c": 0.0919,
+   "d": 0.0233
+  },
+  "live_share_total": 1.357,
+  "live_share_covered_ab": 1.2439,
+  "live_share_status_share": {
+   "a": 1.2381,
+   "b": 0.0057,
+   "c": 0.0948,
+   "d": 0.0182
+  },
+  "ladder_share_total": 1.2498,
+  "ladder_share_covered_ab": 1.1146,
+  "ladder_share_status_share": {
+   "a": 1.1127,
+   "b": 0.0019,
+   "c": 0.1189,
+   "d": 0.0163
+  }
+ },
+ "_explore": {
+  "used_species_union": 298,
+  "used_species_excl_megaforms": 227,
+  "pool_species": 242,
+  "live_species": 243,
+  "all_ladder_roster_species": 219,
+  "top_builds_species": 209,
+  "frozen_species": 29,
+  "moves_pool": 313,
+  "moves_live": 302,
+  "moves_gold": 24,
+  "moves_union_pool_live_gold": 324,
+  "moves_catalog_of_used_species": 340,
+  "moves_seen_all_ladders": 302,
+  "moves_frozen_of_used": 92,
+  "moves_union_all": 366,
+  "items_pool": 102,
+  "items_live": 97,
+  "items_gold": 6,
+  "items_union_pool_live_gold": 111,
+  "items_catalog_of_used_species": 112,
+  "items_seen_all_ladders": 97,
+  "items_frozen_of_used": 11,
+  "items_union_all": 125,
+  "abilities_pool": 134,
+  "abilities_live": 136,
+  "abilities_gold": 8,
+  "abilities_union_pool_live_gold": 149,
+  "abilities_catalog_of_used_species": 143,
+  "abilities_seen_all_ladders": 117,
+  "abilities_frozen_of_used": 23,
+  "abilities_union_all": 168,
+  "species_union_incl_catalog_species": 313,
+  "species_union_incl_catalog_and_frozen": 316
+ },
+ "_pool": {
+  "rosters": 488,
+  "complete": 486,
+  "slots": 2916,
+  "tiers": {
+   "seen": 1852,
+   "catalog": 36,
+   "exact": 1026,
+   "frozen": 12,
+   "none": 2
+  }
+ },
+ "_live": {
+  "builds": 558,
+  "observations": 1919,
+  "battles_listed": 795
+ },
+ "_ladder": {
+  "ladder_battles": 157310,
+  "species": 209,
+  "usage_total": 1765799
+ },
+ "_ladders_files": {
+  "ladder-20261110.json": 59,
+  "ladder-20261111.json": 85,
+  "ladder-20261112-m8.json": 312,
+  "ladder-20261114.json": 325,
+  "ladder-20261114b-pivot.json": 84,
+  "ladder-20261114b-stall.json": 42,
+  "ladder-20261114b-sun.json": 83,
+  "ladder-20261114b.json": 337,
+  "ladder-20261114c.json": 344,
+  "ladder-20261115-encore.json": 83,
+  "ladder-20261115-exploit.json": 324,
+  "ladder-20261115-hazard.json": 99,
+  "ladder-20261115-pivot.json": 32,
+  "ladder-20261115-priority.json": 209,
+  "ladder-20261115-setup.json": 209,
+  "ladder-20261115-stall.json": 84,
+  "ladder-20261115-weather.json": 201,
+  "ladder-20261115-yawn.json": 41,
+  "ladder-20261115.json": 432,
+  "ladder-20261116.json": 488
+ },
+ "_engine": {
+  "enum_sizes": {
+   "Choices": 885,
+   "Abilities": 322,
+   "Items": 254,
+   "PokemonName": 1469
+  },
+  "move_table": 885,
+  "overrides": 32,
+  "mega_arms": 96,
+  "logic_refs": {
+   "Choices": 287,
+   "Abilities": 259,
+   "Items": 254,
+   "PokemonName": 99,
+   "PokemonVolatileStatus": 69,
+   "PokemonSideCondition": 19
+  }
+ },
+ "_legal": {
+  "species": 392,
+  "moves": 515,
+  "items": 166,
+  "abilities": 317
+ },
+ "_unmapped": {
+  "Florges-Orange": 2,
+  "Furfrou-Dandy": 7,
+  "Vivillon High Plains Pattern": 47,
+  "Florges Orange Flower": 1
+ }
+}

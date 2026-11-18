@@ -1,0 +1,4149 @@
+{
+ "showdown": "c0845f33d381402dfcb18ce324c20a94f18af075",
+ "generator": "tools/showdown-oracle/make_stage4.js",
+ "rule": "legal species without Megas and battle-only forms, each with its legal abilities that the resolver implements; moves: the stage-3 pool plus the ability-changing moves and Imprison; items off",
+ "abilities": [
+  "adaptability",
+  "aerilate",
+  "aftermath",
+  "airlock",
+  "analytic",
+  "angerpoint",
+  "angershell",
+  "anticipation",
+  "arenatrap",
+  "armortail",
+  "aromaveil",
+  "asoneglastrier",
+  "asonespectrier",
+  "aurabreak",
+  "auraguard",
+  "baddreams",
+  "ballfetch",
+  "battery",
+  "battlearmor",
+  "battlebond",
+  "beadsofruin",
+  "beastboost",
+  "berserk",
+  "bigpecks",
+  "blaze",
+  "bulletproof",
+  "cheekpouch",
+  "chillingneigh",
+  "chlorophyll",
+  "clearbody",
+  "cloudnine",
+  "colorchange",
+  "comatose",
+  "commander",
+  "competitive",
+  "compoundeyes",
+  "contrary",
+  "corrosion",
+  "costar",
+  "cottondown",
+  "cudchew",
+  "curiousmedicine",
+  "cursedbody",
+  "cutecharm",
+  "damp",
+  "dancer",
+  "darkaura",
+  "dauntlessshield",
+  "dazzling",
+  "defeatist",
+  "defiant",
+  "disguise",
+  "download",
+  "dragonize",
+  "dragonsmaw",
+  "drizzle",
+  "drought",
+  "dryskin",
+  "earlybird",
+  "eartheater",
+  "eelevate",
+  "effectspore",
+  "electricsurge",
+  "electromorphosis",
+  "embodyaspectcornerstone",
+  "embodyaspecthearthflame",
+  "embodyaspectteal",
+  "embodyaspectwellspring",
+  "emergencyexit",
+  "fairyaura",
+  "filter",
+  "firemane",
+  "flamebody",
+  "flareboost",
+  "flashfire",
+  "flowerveil",
+  "fluffy",
+  "forecast",
+  "forewarn",
+  "friendguard",
+  "frisk",
+  "fullmetalbody",
+  "furcoat",
+  "galewings",
+  "galvanize",
+  "gluttony",
+  "goodasgold",
+  "gooey",
+  "gorillatactics",
+  "grasspelt",
+  "grassysurge",
+  "grimneigh",
+  "guarddog",
+  "guts",
+  "hadronengine",
+  "harvest",
+  "healer",
+  "heatproof",
+  "heavymetal",
+  "honeygather",
+  "hospitality",
+  "hugepower",
+  "hungerswitch",
+  "hustle",
+  "hydration",
+  "hypercutter",
+  "icebody",
+  "icescales",
+  "illuminate",
+  "illusion",
+  "immunity",
+  "imposter",
+  "infiltrator",
+  "innardsout",
+  "innerfocus",
+  "insomnia",
+  "intimidate",
+  "intrepidsword",
+  "ironbarbs",
+  "ironfist",
+  "justified",
+  "keeneye",
+  "klutz",
+  "leafguard",
+  "levitate",
+  "libero",
+  "lightmetal",
+  "lightningrod",
+  "limber",
+  "lingeringaroma",
+  "liquidooze",
+  "liquidvoice",
+  "longreach",
+  "magicbounce",
+  "magicguard",
+  "magician",
+  "magmaarmor",
+  "magnetpull",
+  "marvelscale",
+  "megalauncher",
+  "megasol",
+  "merciless",
+  "mimicry",
+  "mindseye",
+  "minus",
+  "mirrorarmor",
+  "mistysurge",
+  "moldbreaker",
+  "moody",
+  "motordrive",
+  "moxie",
+  "multiscale",
+  "mummy",
+  "myceliummight",
+  "naturalcure",
+  "neuroforce",
+  "noguard",
+  "normalize",
+  "oblivious",
+  "orichalcumpulse",
+  "overcoat",
+  "overgrow",
+  "owntempo",
+  "parentalbond",
+  "pastelveil",
+  "perishbody",
+  "pickpocket",
+  "pickup",
+  "piercingdrill",
+  "pixilate",
+  "plus",
+  "poisonheal",
+  "poisonpoint",
+  "poisonpuppeteer",
+  "poisontouch",
+  "powerofalchemy",
+  "powerspot",
+  "prankster",
+  "pressure",
+  "prismarmor",
+  "protean",
+  "protosynthesis",
+  "psychicsurge",
+  "punkrock",
+  "purepower",
+  "purifyingsalt",
+  "quarkdrive",
+  "queenlymajesty",
+  "quickdraw",
+  "quickfeet",
+  "raindish",
+  "rattled",
+  "receiver",
+  "reckless",
+  "refrigerate",
+  "regenerator",
+  "ripen",
+  "rivalry",
+  "rockhead",
+  "rockypayload",
+  "roughskin",
+  "runaway",
+  "sandforce",
+  "sandrush",
+  "sandspit",
+  "sandstream",
+  "sandveil",
+  "sapsipper",
+  "scrappy",
+  "screencleaner",
+  "seedsower",
+  "serenegrace",
+  "shadowshield",
+  "shadowtag",
+  "sharpness",
+  "shedskin",
+  "sheerforce",
+  "shellarmor",
+  "shielddust",
+  "simple",
+  "skilllink",
+  "slowstart",
+  "slushrush",
+  "sniper",
+  "snowcloak",
+  "snowwarning",
+  "solarpower",
+  "solidrock",
+  "soulheart",
+  "soundproof",
+  "speedboost",
+  "spicyspray",
+  "stakeout",
+  "stall",
+  "stamina",
+  "stancechange",
+  "static",
+  "steadfast",
+  "steamengine",
+  "steelworker",
+  "steelyspirit",
+  "stench",
+  "stickyhold",
+  "stormdrain",
+  "strongjaw",
+  "sturdy",
+  "suctioncups",
+  "superluck",
+  "supersweetsyrup",
+  "supremeoverlord",
+  "surgesurfer",
+  "swarm",
+  "sweetveil",
+  "swiftswim",
+  "swordofruin",
+  "symbiosis",
+  "synchronize",
+  "tabletsofruin",
+  "tangledfeet",
+  "tanglinghair",
+  "technician",
+  "telepathy",
+  "teraformzero",
+  "teravolt",
+  "thermalexchange",
+  "thickfat",
+  "tintedlens",
+  "torrent",
+  "toughclaws",
+  "toxicboost",
+  "toxicchain",
+  "toxicdebris",
+  "trace",
+  "transistor",
+  "triage",
+  "truant",
+  "turboblaze",
+  "unaware",
+  "unburden",
+  "unnerve",
+  "unseenfist",
+  "vesselofruin",
+  "victorystar",
+  "vitalspirit",
+  "voltabsorb",
+  "wanderingspirit",
+  "waterabsorb",
+  "waterbubble",
+  "watercompaction",
+  "waterveil",
+  "weakarmor",
+  "wellbakedbody",
+  "whitesmoke",
+  "wimpout",
+  "windpower",
+  "windrider",
+  "wonderguard",
+  "wonderskin",
+  "zerotohero"
+ ],
+ "legal_abilities": [
+  "adaptability",
+  "aerilate",
+  "aftermath",
+  "analytic",
+  "angerpoint",
+  "anticipation",
+  "armortail",
+  "aromaveil",
+  "auraguard",
+  "battlearmor",
+  "battlebond",
+  "berserk",
+  "bigpecks",
+  "blaze",
+  "bulletproof",
+  "cheekpouch",
+  "chlorophyll",
+  "clearbody",
+  "cloudnine",
+  "competitive",
+  "compoundeyes",
+  "contrary",
+  "corrosion",
+  "cudchew",
+  "curiousmedicine",
+  "cursedbody",
+  "cutecharm",
+  "damp",
+  "defiant",
+  "disguise",
+  "dragonize",
+  "drizzle",
+  "drought",
+  "dryskin",
+  "earlybird",
+  "eartheater",
+  "eelevate",
+  "effectspore",
+  "electricsurge",
+  "electromorphosis",
+  "embodyaspectcornerstone",
+  "embodyaspecthearthflame",
+  "embodyaspectteal",
+  "embodyaspectwellspring",
+  "emergencyexit",
+  "fairyaura",
+  "filter",
+  "firemane",
+  "flamebody",
+  "flashfire",
+  "flowerveil",
+  "fluffy",
+  "forecast",
+  "forewarn",
+  "friendguard",
+  "frisk",
+  "furcoat",
+  "galewings",
+  "gluttony",
+  "goodasgold",
+  "gooey",
+  "grasspelt",
+  "grassysurge",
+  "guarddog",
+  "gulpmissile",
+  "guts",
+  "harvest",
+  "healer",
+  "heatproof",
+  "heavymetal",
+  "hospitality",
+  "hugepower",
+  "hungerswitch",
+  "hustle",
+  "hydration",
+  "hypercutter",
+  "icebody",
+  "iceface",
+  "illuminate",
+  "illusion",
+  "immunity",
+  "imposter",
+  "infiltrator",
+  "innardsout",
+  "innerfocus",
+  "insomnia",
+  "intimidate",
+  "ironfist",
+  "justified",
+  "keeneye",
+  "klutz",
+  "leafguard",
+  "levitate",
+  "libero",
+  "lightmetal",
+  "lightningrod",
+  "limber",
+  "liquidooze",
+  "liquidvoice",
+  "longreach",
+  "magicbounce",
+  "magicguard",
+  "magician",
+  "magmaarmor",
+  "marvelscale",
+  "megalauncher",
+  "megasol",
+  "merciless",
+  "mimicry",
+  "minus",
+  "mirrorarmor",
+  "moldbreaker",
+  "moody",
+  "motordrive",
+  "moxie",
+  "multiscale",
+  "mummy",
+  "naturalcure",
+  "noguard",
+  "oblivious",
+  "opportunist",
+  "overcoat",
+  "overgrow",
+  "owntempo",
+  "parentalbond",
+  "pickpocket",
+  "pickup",
+  "piercingdrill",
+  "pixilate",
+  "plus",
+  "poisonheal",
+  "poisonpoint",
+  "poisontouch",
+  "prankster",
+  "pressure",
+  "protean",
+  "psychicsurge",
+  "punkrock",
+  "purepower",
+  "purifyingsalt",
+  "queenlymajesty",
+  "quickdraw",
+  "quickfeet",
+  "raindish",
+  "rattled",
+  "receiver",
+  "reckless",
+  "refrigerate",
+  "regenerator",
+  "ripen",
+  "rivalry",
+  "rockhead",
+  "roughskin",
+  "runaway",
+  "sandforce",
+  "sandrush",
+  "sandspit",
+  "sandstream",
+  "sandveil",
+  "sapsipper",
+  "scrappy",
+  "screencleaner",
+  "seedsower",
+  "serenegrace",
+  "shadowtag",
+  "sharpness",
+  "shedskin",
+  "sheerforce",
+  "shellarmor",
+  "shielddust",
+  "shieldsdown",
+  "skilllink",
+  "slushrush",
+  "sniper",
+  "snowcloak",
+  "snowwarning",
+  "solarpower",
+  "solidrock",
+  "soundproof",
+  "speedboost",
+  "spicyspray",
+  "stakeout",
+  "stall",
+  "stalwart",
+  "stamina",
+  "stancechange",
+  "static",
+  "steadfast",
+  "steelyspirit",
+  "stench",
+  "stickyhold",
+  "strongjaw",
+  "sturdy",
+  "suctioncups",
+  "superluck",
+  "supersweetsyrup",
+  "supremeoverlord",
+  "surgesurfer",
+  "swarm",
+  "sweetveil",
+  "swiftswim",
+  "symbiosis",
+  "synchronize",
+  "tangledfeet",
+  "technician",
+  "telepathy",
+  "terashell",
+  "thermalexchange",
+  "thickfat",
+  "torrent",
+  "toughclaws",
+  "toxicdebris",
+  "trace",
+  "unaware",
+  "unburden",
+  "unnerve",
+  "unseenfist",
+  "vitalspirit",
+  "voltabsorb",
+  "wanderingspirit",
+  "waterabsorb",
+  "waterbubble",
+  "weakarmor",
+  "whitesmoke",
+  "zerotohero"
+ ],
+ "unimplemented": [
+  "gulpmissile",
+  "iceface",
+  "opportunist",
+  "shieldsdown",
+  "stalwart",
+  "terashell"
+ ],
+ "species": [
+  {
+   "species": "Garchomp",
+   "id": "garchomp",
+   "gender": "",
+   "abilities": [
+    "sandveil",
+    "roughskin"
+   ]
+  },
+  {
+   "species": "Primarina",
+   "id": "primarina",
+   "gender": "",
+   "abilities": [
+    "torrent",
+    "liquidvoice"
+   ]
+  },
+  {
+   "species": "Archaludon",
+   "id": "archaludon",
+   "gender": "",
+   "abilities": [
+    "stamina",
+    "sturdy",
+    "stalwart"
+   ]
+  },
+  {
+   "species": "Hippowdon",
+   "id": "hippowdon",
+   "gender": "",
+   "abilities": [
+    "sandstream",
+    "sandforce"
+   ]
+  },
+  {
+   "species": "Charizard",
+   "id": "charizard",
+   "gender": "",
+   "abilities": [
+    "blaze",
+    "solarpower"
+   ]
+  },
+  {
+   "species": "Golisopod",
+   "id": "golisopod",
+   "gender": "",
+   "abilities": [
+    "emergencyexit"
+   ]
+  },
+  {
+   "species": "Mimikyu",
+   "id": "mimikyu",
+   "gender": "",
+   "abilities": [
+    "disguise"
+   ]
+  },
+  {
+   "species": "Lucario",
+   "id": "lucario",
+   "gender": "",
+   "abilities": [
+    "steadfast",
+    "innerfocus",
+    "justified"
+   ]
+  },
+  {
+   "species": "Salamence",
+   "id": "salamence",
+   "gender": "",
+   "abilities": [
+    "intimidate",
+    "moxie"
+   ]
+  },
+  {
+   "species": "Gholdengo",
+   "id": "gholdengo",
+   "gender": "N",
+   "abilities": [
+    "goodasgold"
+   ]
+  },
+  {
+   "species": "Meowscarada",
+   "id": "meowscarada",
+   "gender": "",
+   "abilities": [
+    "overgrow",
+    "protean"
+   ]
+  },
+  {
+   "species": "Corviknight",
+   "id": "corviknight",
+   "gender": "",
+   "abilities": [
+    "pressure",
+    "unnerve",
+    "mirrorarmor"
+   ]
+  },
+  {
+   "species": "Basculegion",
+   "id": "basculegion",
+   "gender": "M",
+   "abilities": [
+    "swiftswim",
+    "adaptability",
+    "moldbreaker"
+   ]
+  },
+  {
+   "species": "Rillaboom",
+   "id": "rillaboom",
+   "gender": "",
+   "abilities": [
+    "overgrow",
+    "grassysurge"
+   ]
+  },
+  {
+   "species": "Dragonite",
+   "id": "dragonite",
+   "gender": "",
+   "abilities": [
+    "innerfocus",
+    "multiscale"
+   ]
+  },
+  {
+   "species": "Glimmora",
+   "id": "glimmora",
+   "gender": "",
+   "abilities": [
+    "toxicdebris",
+    "corrosion"
+   ]
+  },
+  {
+   "species": "Metagross",
+   "id": "metagross",
+   "gender": "N",
+   "abilities": [
+    "clearbody",
+    "lightmetal"
+   ]
+  },
+  {
+   "species": "Indeedee",
+   "id": "indeedee",
+   "gender": "M",
+   "abilities": [
+    "innerfocus",
+    "synchronize",
+    "psychicsurge"
+   ]
+  },
+  {
+   "species": "Baxcalibur",
+   "id": "baxcalibur",
+   "gender": "",
+   "abilities": [
+    "thermalexchange",
+    "icebody"
+   ]
+  },
+  {
+   "species": "Greninja",
+   "id": "greninja",
+   "gender": "",
+   "abilities": [
+    "torrent",
+    "protean",
+    "battlebond"
+   ]
+  },
+  {
+   "species": "Rotom-Wash",
+   "id": "rotomwash",
+   "gender": "N",
+   "abilities": [
+    "levitate"
+   ]
+  },
+  {
+   "species": "Volcarona",
+   "id": "volcarona",
+   "gender": "",
+   "abilities": [
+    "flamebody",
+    "swarm"
+   ]
+  },
+  {
+   "species": "Blaziken",
+   "id": "blaziken",
+   "gender": "",
+   "abilities": [
+    "blaze",
+    "speedboost"
+   ]
+  },
+  {
+   "species": "Gyarados",
+   "id": "gyarados",
+   "gender": "",
+   "abilities": [
+    "intimidate",
+    "moxie"
+   ]
+  },
+  {
+   "species": "Umbreon",
+   "id": "umbreon",
+   "gender": "",
+   "abilities": [
+    "synchronize",
+    "innerfocus"
+   ]
+  },
+  {
+   "species": "Cinderace",
+   "id": "cinderace",
+   "gender": "",
+   "abilities": [
+    "blaze",
+    "libero"
+   ]
+  },
+  {
+   "species": "Kingambit",
+   "id": "kingambit",
+   "gender": "",
+   "abilities": [
+    "defiant",
+    "supremeoverlord",
+    "pressure"
+   ]
+  },
+  {
+   "species": "Staraptor",
+   "id": "staraptor",
+   "gender": "",
+   "abilities": [
+    "intimidate",
+    "reckless"
+   ]
+  },
+  {
+   "species": "Ceruledge",
+   "id": "ceruledge",
+   "gender": "",
+   "abilities": [
+    "flashfire",
+    "weakarmor"
+   ]
+  },
+  {
+   "species": "Raichu",
+   "id": "raichu",
+   "gender": "",
+   "abilities": [
+    "static",
+    "lightningrod"
+   ]
+  },
+  {
+   "species": "Gengar",
+   "id": "gengar",
+   "gender": "",
+   "abilities": [
+    "cursedbody"
+   ]
+  },
+  {
+   "species": "Tyranitar",
+   "id": "tyranitar",
+   "gender": "",
+   "abilities": [
+    "sandstream",
+    "unnerve"
+   ]
+  },
+  {
+   "species": "Ninetales-Alola",
+   "id": "ninetalesalola",
+   "gender": "",
+   "abilities": [
+    "snowcloak",
+    "snowwarning"
+   ]
+  },
+  {
+   "species": "Clefable",
+   "id": "clefable",
+   "gender": "",
+   "abilities": [
+    "cutecharm",
+    "magicguard",
+    "unaware"
+   ]
+  },
+  {
+   "species": "Pawmot",
+   "id": "pawmot",
+   "gender": "",
+   "abilities": [
+    "voltabsorb",
+    "naturalcure",
+    "ironfist"
+   ]
+  },
+  {
+   "species": "Sneasler",
+   "id": "sneasler",
+   "gender": "",
+   "abilities": [
+    "pressure",
+    "unburden",
+    "poisontouch"
+   ]
+  },
+  {
+   "species": "Toxapex",
+   "id": "toxapex",
+   "gender": "",
+   "abilities": [
+    "merciless",
+    "limber",
+    "regenerator"
+   ]
+  },
+  {
+   "species": "Aegislash",
+   "id": "aegislash",
+   "gender": "",
+   "abilities": [
+    "stancechange"
+   ]
+  },
+  {
+   "species": "Swampert",
+   "id": "swampert",
+   "gender": "",
+   "abilities": [
+    "torrent",
+    "damp"
+   ]
+  },
+  {
+   "species": "Samurott-Hisui",
+   "id": "samurotthisui",
+   "gender": "",
+   "abilities": [
+    "torrent",
+    "sharpness"
+   ]
+  },
+  {
+   "species": "Starmie",
+   "id": "starmie",
+   "gender": "N",
+   "abilities": [
+    "illuminate",
+    "naturalcure",
+    "analytic"
+   ]
+  },
+  {
+   "species": "Goodra-Hisui",
+   "id": "goodrahisui",
+   "gender": "",
+   "abilities": [
+    "sapsipper",
+    "shellarmor",
+    "gooey"
+   ]
+  },
+  {
+   "species": "Hydreigon",
+   "id": "hydreigon",
+   "gender": "",
+   "abilities": [
+    "levitate"
+   ]
+  },
+  {
+   "species": "Pelipper",
+   "id": "pelipper",
+   "gender": "",
+   "abilities": [
+    "keeneye",
+    "drizzle",
+    "raindish"
+   ]
+  },
+  {
+   "species": "Delphox",
+   "id": "delphox",
+   "gender": "",
+   "abilities": [
+    "blaze",
+    "magician"
+   ]
+  },
+  {
+   "species": "Grimmsnarl",
+   "id": "grimmsnarl",
+   "gender": "M",
+   "abilities": [
+    "prankster",
+    "frisk",
+    "pickpocket"
+   ]
+  },
+  {
+   "species": "Scizor",
+   "id": "scizor",
+   "gender": "",
+   "abilities": [
+    "swarm",
+    "technician",
+    "lightmetal"
+   ]
+  },
+  {
+   "species": "Blastoise",
+   "id": "blastoise",
+   "gender": "",
+   "abilities": [
+    "torrent",
+    "raindish"
+   ]
+  },
+  {
+   "species": "Rotom-Heat",
+   "id": "rotomheat",
+   "gender": "N",
+   "abilities": [
+    "levitate"
+   ]
+  },
+  {
+   "species": "Slowking-Galar",
+   "id": "slowkinggalar",
+   "gender": "",
+   "abilities": [
+    "curiousmedicine",
+    "owntempo",
+    "regenerator"
+   ]
+  },
+  {
+   "species": "Lopunny",
+   "id": "lopunny",
+   "gender": "",
+   "abilities": [
+    "cutecharm",
+    "klutz",
+    "limber"
+   ]
+  },
+  {
+   "species": "Dragapult",
+   "id": "dragapult",
+   "gender": "",
+   "abilities": [
+    "clearbody",
+    "infiltrator",
+    "cursedbody"
+   ]
+  },
+  {
+   "species": "Skeledirge",
+   "id": "skeledirge",
+   "gender": "",
+   "abilities": [
+    "blaze",
+    "unaware"
+   ]
+  },
+  {
+   "species": "Bellibolt",
+   "id": "bellibolt",
+   "gender": "",
+   "abilities": [
+    "electromorphosis",
+    "static",
+    "damp"
+   ]
+  },
+  {
+   "species": "Vanilluxe",
+   "id": "vanilluxe",
+   "gender": "",
+   "abilities": [
+    "icebody",
+    "snowwarning",
+    "weakarmor"
+   ]
+  },
+  {
+   "species": "Milotic",
+   "id": "milotic",
+   "gender": "",
+   "abilities": [
+    "marvelscale",
+    "competitive",
+    "cutecharm"
+   ]
+  },
+  {
+   "species": "Venusaur",
+   "id": "venusaur",
+   "gender": "",
+   "abilities": [
+    "overgrow",
+    "chlorophyll"
+   ]
+  },
+  {
+   "species": "Excadrill",
+   "id": "excadrill",
+   "gender": "",
+   "abilities": [
+    "sandrush",
+    "sandforce",
+    "moldbreaker"
+   ]
+  },
+  {
+   "species": "Gardevoir",
+   "id": "gardevoir",
+   "gender": "",
+   "abilities": [
+    "synchronize",
+    "trace",
+    "telepathy"
+   ]
+  },
+  {
+   "species": "Snorlax",
+   "id": "snorlax",
+   "gender": "",
+   "abilities": [
+    "immunity",
+    "thickfat",
+    "gluttony"
+   ]
+  },
+  {
+   "species": "Sylveon",
+   "id": "sylveon",
+   "gender": "",
+   "abilities": [
+    "cutecharm",
+    "pixilate"
+   ]
+  },
+  {
+   "species": "Zoroark-Hisui",
+   "id": "zoroarkhisui",
+   "gender": "",
+   "abilities": [
+    "illusion"
+   ]
+  },
+  {
+   "species": "Kleavor",
+   "id": "kleavor",
+   "gender": "",
+   "abilities": [
+    "swarm",
+    "sheerforce",
+    "sharpness"
+   ]
+  },
+  {
+   "species": "Absol",
+   "id": "absol",
+   "gender": "",
+   "abilities": [
+    "pressure",
+    "superluck",
+    "justified"
+   ]
+  },
+  {
+   "species": "Banette",
+   "id": "banette",
+   "gender": "",
+   "abilities": [
+    "insomnia",
+    "frisk",
+    "cursedbody"
+   ]
+  },
+  {
+   "species": "Politoed",
+   "id": "politoed",
+   "gender": "",
+   "abilities": [
+    "waterabsorb",
+    "damp",
+    "drizzle"
+   ]
+  },
+  {
+   "species": "Hatterene",
+   "id": "hatterene",
+   "gender": "F",
+   "abilities": [
+    "healer",
+    "anticipation",
+    "magicbounce"
+   ]
+  },
+  {
+   "species": "Meganium",
+   "id": "meganium",
+   "gender": "",
+   "abilities": [
+    "overgrow",
+    "leafguard"
+   ]
+  },
+  {
+   "species": "Gallade",
+   "id": "gallade",
+   "gender": "M",
+   "abilities": [
+    "steadfast",
+    "sharpness",
+    "justified"
+   ]
+  },
+  {
+   "species": "Espathra",
+   "id": "espathra",
+   "gender": "",
+   "abilities": [
+    "opportunist",
+    "frisk",
+    "speedboost"
+   ]
+  },
+  {
+   "species": "Ditto",
+   "id": "ditto",
+   "gender": "N",
+   "abilities": [
+    "limber",
+    "imposter"
+   ]
+  },
+  {
+   "species": "Empoleon",
+   "id": "empoleon",
+   "gender": "",
+   "abilities": [
+    "torrent",
+    "competitive"
+   ]
+  },
+  {
+   "species": "Skarmory",
+   "id": "skarmory",
+   "gender": "",
+   "abilities": [
+    "keeneye",
+    "sturdy",
+    "weakarmor"
+   ]
+  },
+  {
+   "species": "Annihilape",
+   "id": "annihilape",
+   "gender": "",
+   "abilities": [
+    "vitalspirit",
+    "innerfocus",
+    "defiant"
+   ]
+  },
+  {
+   "species": "Mawile",
+   "id": "mawile",
+   "gender": "",
+   "abilities": [
+    "hypercutter",
+    "intimidate",
+    "sheerforce"
+   ]
+  },
+  {
+   "species": "Azumarill",
+   "id": "azumarill",
+   "gender": "",
+   "abilities": [
+    "thickfat",
+    "hugepower",
+    "sapsipper"
+   ]
+  },
+  {
+   "species": "Mamoswine",
+   "id": "mamoswine",
+   "gender": "",
+   "abilities": [
+    "oblivious",
+    "snowcloak",
+    "thickfat"
+   ]
+  },
+  {
+   "species": "Scovillain",
+   "id": "scovillain",
+   "gender": "",
+   "abilities": [
+    "chlorophyll",
+    "insomnia",
+    "moody"
+   ]
+  },
+  {
+   "species": "Slowbro",
+   "id": "slowbro",
+   "gender": "",
+   "abilities": [
+    "oblivious",
+    "owntempo",
+    "regenerator"
+   ]
+  },
+  {
+   "species": "Sableye",
+   "id": "sableye",
+   "gender": "",
+   "abilities": [
+    "keeneye",
+    "stall",
+    "prankster"
+   ]
+  },
+  {
+   "species": "Polteageist",
+   "id": "polteageist",
+   "gender": "N",
+   "abilities": [
+    "weakarmor",
+    "cursedbody"
+   ]
+  },
+  {
+   "species": "Scolipede",
+   "id": "scolipede",
+   "gender": "",
+   "abilities": [
+    "poisonpoint",
+    "swarm",
+    "speedboost"
+   ]
+  },
+  {
+   "species": "Araquanid",
+   "id": "araquanid",
+   "gender": "",
+   "abilities": [
+    "waterbubble",
+    "waterabsorb"
+   ]
+  },
+  {
+   "species": "Whimsicott",
+   "id": "whimsicott",
+   "gender": "",
+   "abilities": [
+    "prankster",
+    "infiltrator",
+    "chlorophyll"
+   ]
+  },
+  {
+   "species": "Arcanine-Hisui",
+   "id": "arcaninehisui",
+   "gender": "",
+   "abilities": [
+    "intimidate",
+    "flashfire",
+    "rockhead"
+   ]
+  },
+  {
+   "species": "Victreebel",
+   "id": "victreebel",
+   "gender": "",
+   "abilities": [
+    "chlorophyll",
+    "gluttony"
+   ]
+  },
+  {
+   "species": "Vivillon",
+   "id": "vivillon",
+   "gender": "",
+   "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "friendguard"
+   ]
+  },
+  {
+   "species": "Heracross",
+   "id": "heracross",
+   "gender": "",
+   "abilities": [
+    "swarm",
+    "guts",
+    "moxie"
+   ]
+  },
+  {
+   "species": "Tinkaton",
+   "id": "tinkaton",
+   "gender": "F",
+   "abilities": [
+    "moldbreaker",
+    "owntempo",
+    "pickpocket"
+   ]
+  },
+  {
+   "species": "Espeon",
+   "id": "espeon",
+   "gender": "",
+   "abilities": [
+    "synchronize",
+    "magicbounce"
+   ]
+  },
+  {
+   "species": "Dragalge",
+   "id": "dragalge",
+   "gender": "",
+   "abilities": [
+    "poisonpoint",
+    "poisontouch",
+    "adaptability"
+   ]
+  },
+  {
+   "species": "Eelektross",
+   "id": "eelektross",
+   "gender": "",
+   "abilities": [
+    "levitate"
+   ]
+  },
+  {
+   "species": "Vaporeon",
+   "id": "vaporeon",
+   "gender": "",
+   "abilities": [
+    "waterabsorb",
+    "hydration"
+   ]
+  },
+  {
+   "species": "Slowbro-Galar",
+   "id": "slowbrogalar",
+   "gender": "",
+   "abilities": [
+    "quickdraw",
+    "owntempo",
+    "regenerator"
+   ]
+  },
+  {
+   "species": "Reuniclus",
+   "id": "reuniclus",
+   "gender": "",
+   "abilities": [
+    "overcoat",
+    "magicguard",
+    "regenerator"
+   ]
+  },
+  {
+   "species": "Chesnaught",
+   "id": "chesnaught",
+   "gender": "",
+   "abilities": [
+    "overgrow",
+    "bulletproof"
+   ]
+  },
+  {
+   "species": "Kangaskhan",
+   "id": "kangaskhan",
+   "gender": "F",
+   "abilities": [
+    "earlybird",
+    "scrappy",
+    "innerfocus"
+   ]
+  },
+  {
+   "species": "Armarouge",
+   "id": "armarouge",
+   "gender": "",
+   "abilities": [
+    "flashfire",
+    "weakarmor"
+   ]
+  },
+  {
+   "species": "Torkoal",
+   "id": "torkoal",
+   "gender": "",
+   "abilities": [
+    "whitesmoke",
+    "drought",
+    "shellarmor"
+   ]
+  },
+  {
+   "species": "Incineroar",
+   "id": "incineroar",
+   "gender": "",
+   "abilities": [
+    "blaze",
+    "intimidate"
+   ]
+  },
+  {
+   "species": "Overqwil",
+   "id": "overqwil",
+   "gender": "",
+   "abilities": [
+    "poisonpoint",
+    "swiftswim",
+    "intimidate"
+   ]
+  },
+  {
+   "species": "Basculegion-F",
+   "id": "basculegionf",
+   "gender": "F",
+   "abilities": [
+    "swiftswim",
+    "adaptability",
+    "moldbreaker"
+   ]
+  },
+  {
+   "species": "Arboliva",
+   "id": "arboliva",
+   "gender": "",
+   "abilities": [
+    "seedsower",
+    "harvest"
+   ]
+  },
+  {
+   "species": "Orthworm",
+   "id": "orthworm",
+   "gender": "",
+   "abilities": [
+    "eartheater",
+    "sandveil"
+   ]
+  },
+  {
+   "species": "Conkeldurr",
+   "id": "conkeldurr",
+   "gender": "",
+   "abilities": [
+    "guts",
+    "sheerforce",
+    "ironfist"
+   ]
+  },
+  {
+   "species": "Diggersby",
+   "id": "diggersby",
+   "gender": "",
+   "abilities": [
+    "pickup",
+    "cheekpouch",
+    "hugepower"
+   ]
+  },
+  {
+   "species": "Quaquaval",
+   "id": "quaquaval",
+   "gender": "",
+   "abilities": [
+    "torrent",
+    "moxie"
+   ]
+  },
+  {
+   "species": "Pyroar",
+   "id": "pyroar",
+   "gender": "",
+   "abilities": [
+    "rivalry",
+    "unnerve",
+    "moxie"
+   ]
+  },
+  {
+   "species": "Toucannon",
+   "id": "toucannon",
+   "gender": "",
+   "abilities": [
+    "keeneye",
+    "skilllink",
+    "sheerforce"
+   ]
+  },
+  {
+   "species": "Glalie",
+   "id": "glalie",
+   "gender": "",
+   "abilities": [
+    "innerfocus",
+    "icebody",
+    "moody"
+   ]
+  },
+  {
+   "species": "Aggron",
+   "id": "aggron",
+   "gender": "",
+   "abilities": [
+    "sturdy",
+    "rockhead",
+    "heavymetal"
+   ]
+  },
+  {
+   "species": "Krookodile",
+   "id": "krookodile",
+   "gender": "",
+   "abilities": [
+    "intimidate",
+    "moxie",
+    "angerpoint"
+   ]
+  },
+  {
+   "species": "Trevenant",
+   "id": "trevenant",
+   "gender": "",
+   "abilities": [
+    "naturalcure",
+    "frisk",
+    "harvest"
+   ]
+  },
+  {
+   "species": "Inteleon",
+   "id": "inteleon",
+   "gender": "",
+   "abilities": [
+    "torrent",
+    "sniper"
+   ]
+  },
+  {
+   "species": "Beedrill",
+   "id": "beedrill",
+   "gender": "",
+   "abilities": [
+    "swarm",
+    "sniper"
+   ]
+  },
+  {
+   "species": "Grapploct",
+   "id": "grapploct",
+   "gender": "",
+   "abilities": [
+    "limber",
+    "technician"
+   ]
+  },
+  {
+   "species": "Maushold",
+   "id": "maushold",
+   "gender": "N",
+   "abilities": [
+    "friendguard",
+    "cheekpouch",
+    "technician"
+   ]
+  },
+  {
+   "species": "Alakazam",
+   "id": "alakazam",
+   "gender": "",
+   "abilities": [
+    "synchronize",
+    "innerfocus",
+    "magicguard"
+   ]
+  },
+  {
+   "species": "Sceptile",
+   "id": "sceptile",
+   "gender": "",
+   "abilities": [
+    "overgrow",
+    "unburden"
+   ]
+  },
+  {
+   "species": "Slurpuff",
+   "id": "slurpuff",
+   "gender": "",
+   "abilities": [
+    "sweetveil",
+    "unburden"
+   ]
+  },
+  {
+   "species": "Altaria",
+   "id": "altaria",
+   "gender": "",
+   "abilities": [
+    "naturalcure",
+    "cloudnine"
+   ]
+  },
+  {
+   "species": "Heliolisk",
+   "id": "heliolisk",
+   "gender": "",
+   "abilities": [
+    "dryskin",
+    "sandveil",
+    "solarpower"
+   ]
+  },
+  {
+   "species": "Feraligatr",
+   "id": "feraligatr",
+   "gender": "",
+   "abilities": [
+    "torrent",
+    "sheerforce"
+   ]
+  },
+  {
+   "species": "Tauros-Paldea-Blaze",
+   "id": "taurospaldeablaze",
+   "gender": "M",
+   "abilities": [
+    "intimidate",
+    "angerpoint",
+    "cudchew"
+   ]
+  },
+  {
+   "species": "Toxtricity-Low-Key",
+   "id": "toxtricitylowkey",
+   "gender": "",
+   "abilities": [
+    "punkrock",
+    "minus",
+    "technician"
+   ]
+  },
+  {
+   "species": "Typhlosion-Hisui",
+   "id": "typhlosionhisui",
+   "gender": "",
+   "abilities": [
+    "blaze",
+    "frisk"
+   ]
+  },
+  {
+   "species": "Serperior",
+   "id": "serperior",
+   "gender": "",
+   "abilities": [
+    "overgrow",
+    "contrary"
+   ]
+  },
+  {
+   "species": "Garganacl",
+   "id": "garganacl",
+   "gender": "",
+   "abilities": [
+    "purifyingsalt",
+    "sturdy",
+    "clearbody"
+   ]
+  },
+  {
+   "species": "Aerodactyl",
+   "id": "aerodactyl",
+   "gender": "",
+   "abilities": [
+    "rockhead",
+    "pressure",
+    "unnerve"
+   ]
+  },
+  {
+   "species": "Houndstone",
+   "id": "houndstone",
+   "gender": "",
+   "abilities": [
+    "sandrush",
+    "fluffy"
+   ]
+  },
+  {
+   "species": "Decidueye-Hisui",
+   "id": "decidueyehisui",
+   "gender": "",
+   "abilities": [
+    "overgrow",
+    "scrappy"
+   ]
+  },
+  {
+   "species": "Malamar",
+   "id": "malamar",
+   "gender": "",
+   "abilities": [
+    "contrary",
+    "suctioncups",
+    "infiltrator"
+   ]
+  },
+  {
+   "species": "Jolteon",
+   "id": "jolteon",
+   "gender": "",
+   "abilities": [
+    "voltabsorb",
+    "quickfeet"
+   ]
+  },
+  {
+   "species": "Palafin",
+   "id": "palafin",
+   "gender": "",
+   "abilities": [
+    "zerotohero"
+   ]
+  },
+  {
+   "species": "Zoroark",
+   "id": "zoroark",
+   "gender": "",
+   "abilities": [
+    "illusion"
+   ]
+  },
+  {
+   "species": "Froslass",
+   "id": "froslass",
+   "gender": "F",
+   "abilities": [
+    "snowcloak",
+    "cursedbody"
+   ]
+  },
+  {
+   "species": "Salazzle",
+   "id": "salazzle",
+   "gender": "F",
+   "abilities": [
+    "corrosion",
+    "oblivious"
+   ]
+  },
+  {
+   "species": "Pinsir",
+   "id": "pinsir",
+   "gender": "",
+   "abilities": [
+    "hypercutter",
+    "moldbreaker",
+    "moxie"
+   ]
+  },
+  {
+   "species": "Musharna",
+   "id": "musharna",
+   "gender": "",
+   "abilities": [
+    "forewarn",
+    "synchronize",
+    "telepathy"
+   ]
+  },
+  {
+   "species": "Mudsdale",
+   "id": "mudsdale",
+   "gender": "",
+   "abilities": [
+    "owntempo",
+    "stamina",
+    "innerfocus"
+   ]
+  },
+  {
+   "species": "Samurott",
+   "id": "samurott",
+   "gender": "",
+   "abilities": [
+    "torrent",
+    "shellarmor"
+   ]
+  },
+  {
+   "species": "Sharpedo",
+   "id": "sharpedo",
+   "gender": "",
+   "abilities": [
+    "roughskin",
+    "speedboost"
+   ]
+  },
+  {
+   "species": "Slowking",
+   "id": "slowking",
+   "gender": "",
+   "abilities": [
+    "oblivious",
+    "owntempo",
+    "regenerator"
+   ]
+  },
+  {
+   "species": "Talonflame",
+   "id": "talonflame",
+   "gender": "",
+   "abilities": [
+    "flamebody",
+    "galewings"
+   ]
+  },
+  {
+   "species": "Drampa",
+   "id": "drampa",
+   "gender": "",
+   "abilities": [
+    "berserk",
+    "sapsipper",
+    "cloudnine"
+   ]
+  },
+  {
+   "species": "Toxtricity",
+   "id": "toxtricity",
+   "gender": "",
+   "abilities": [
+    "punkrock",
+    "plus",
+    "technician"
+   ]
+  },
+  {
+   "species": "Forretress",
+   "id": "forretress",
+   "gender": "",
+   "abilities": [
+    "sturdy",
+    "overcoat"
+   ]
+  },
+  {
+   "species": "Infernape",
+   "id": "infernape",
+   "gender": "",
+   "abilities": [
+    "blaze",
+    "ironfist"
+   ]
+  },
+  {
+   "species": "Falinks",
+   "id": "falinks",
+   "gender": "N",
+   "abilities": [
+    "battlearmor",
+    "defiant"
+   ]
+  },
+  {
+   "species": "Roserade",
+   "id": "roserade",
+   "gender": "",
+   "abilities": [
+    "naturalcure",
+    "poisonpoint",
+    "technician"
+   ]
+  },
+  {
+   "species": "Pidgeot",
+   "id": "pidgeot",
+   "gender": "",
+   "abilities": [
+    "keeneye",
+    "tangledfeet",
+    "bigpecks"
+   ]
+  },
+  {
+   "species": "Goodra",
+   "id": "goodra",
+   "gender": "",
+   "abilities": [
+    "sapsipper",
+    "hydration",
+    "gooey"
+   ]
+  },
+  {
+   "species": "Abomasnow",
+   "id": "abomasnow",
+   "gender": "",
+   "abilities": [
+    "snowwarning",
+    "soundproof"
+   ]
+  },
+  {
+   "species": "Farfetch’d",
+   "id": "farfetchd",
+   "gender": "",
+   "abilities": [
+    "keeneye",
+    "innerfocus",
+    "defiant"
+   ]
+  },
+  {
+   "species": "Mr. Rime",
+   "id": "mrrime",
+   "gender": "",
+   "abilities": [
+    "tangledfeet",
+    "screencleaner",
+    "icebody"
+   ]
+  },
+  {
+   "species": "Emolga",
+   "id": "emolga",
+   "gender": "",
+   "abilities": [
+    "static",
+    "motordrive"
+   ]
+  },
+  {
+   "species": "Lycanroc-Midnight",
+   "id": "lycanrocmidnight",
+   "gender": "",
+   "abilities": [
+    "keeneye",
+    "vitalspirit",
+    "noguard"
+   ]
+  },
+  {
+   "species": "Arcanine",
+   "id": "arcanine",
+   "gender": "",
+   "abilities": [
+    "intimidate",
+    "flashfire",
+    "justified"
+   ]
+  },
+  {
+   "species": "Aurorus",
+   "id": "aurorus",
+   "gender": "",
+   "abilities": [
+    "refrigerate",
+    "snowwarning"
+   ]
+  },
+  {
+   "species": "Passimian",
+   "id": "passimian",
+   "gender": "",
+   "abilities": [
+    "receiver",
+    "defiant"
+   ]
+  },
+  {
+   "species": "Runerigus",
+   "id": "runerigus",
+   "gender": "",
+   "abilities": [
+    "wanderingspirit"
+   ]
+  },
+  {
+   "species": "Indeedee-F",
+   "id": "indeedeef",
+   "gender": "F",
+   "abilities": [
+    "owntempo",
+    "synchronize",
+    "psychicsurge"
+   ]
+  },
+  {
+   "species": "Sirfetch’d",
+   "id": "sirfetchd",
+   "gender": "",
+   "abilities": [
+    "steadfast",
+    "scrappy"
+   ]
+  },
+  {
+   "species": "Sinistcha",
+   "id": "sinistcha",
+   "gender": "N",
+   "abilities": [
+    "hospitality",
+    "heatproof"
+   ]
+  },
+  {
+   "species": "Farigiraf",
+   "id": "farigiraf",
+   "gender": "",
+   "abilities": [
+    "cudchew",
+    "armortail",
+    "sapsipper"
+   ]
+  },
+  {
+   "species": "Emboar",
+   "id": "emboar",
+   "gender": "",
+   "abilities": [
+    "blaze",
+    "reckless"
+   ]
+  },
+  {
+   "species": "Barbaracle",
+   "id": "barbaracle",
+   "gender": "",
+   "abilities": [
+    "toughclaws",
+    "sniper",
+    "pickpocket"
+   ]
+  },
+  {
+   "species": "Pikachu",
+   "id": "pikachu",
+   "gender": "",
+   "abilities": [
+    "static",
+    "lightningrod"
+   ]
+  },
+  {
+   "species": "Machamp",
+   "id": "machamp",
+   "gender": "",
+   "abilities": [
+    "guts",
+    "noguard",
+    "steadfast"
+   ]
+  },
+  {
+   "species": "Audino",
+   "id": "audino",
+   "gender": "",
+   "abilities": [
+    "healer",
+    "regenerator",
+    "klutz"
+   ]
+  },
+  {
+   "species": "Golurk",
+   "id": "golurk",
+   "gender": "N",
+   "abilities": [
+    "ironfist",
+    "klutz",
+    "noguard"
+   ]
+  },
+  {
+   "species": "Simisear",
+   "id": "simisear",
+   "gender": "",
+   "abilities": [
+    "gluttony",
+    "blaze"
+   ]
+  },
+  {
+   "species": "Stunfisk-Galar",
+   "id": "stunfiskgalar",
+   "gender": "",
+   "abilities": [
+    "mimicry"
+   ]
+  },
+  {
+   "species": "Furfrou",
+   "id": "furfrou",
+   "gender": "",
+   "abilities": [
+    "furcoat"
+   ]
+  },
+  {
+   "species": "Decidueye",
+   "id": "decidueye",
+   "gender": "",
+   "abilities": [
+    "overgrow",
+    "longreach"
+   ]
+  },
+  {
+   "species": "Maushold-Four",
+   "id": "mausholdfour",
+   "gender": "N",
+   "abilities": [
+    "friendguard",
+    "cheekpouch",
+    "technician"
+   ]
+  },
+  {
+   "species": "Pincurchin",
+   "id": "pincurchin",
+   "gender": "",
+   "abilities": [
+    "lightningrod",
+    "electricsurge"
+   ]
+  },
+  {
+   "species": "Rotom-Fan",
+   "id": "rotomfan",
+   "gender": "N",
+   "abilities": [
+    "levitate"
+   ]
+  },
+  {
+   "species": "Thievul",
+   "id": "thievul",
+   "gender": "",
+   "abilities": [
+    "runaway",
+    "unburden",
+    "stakeout"
+   ]
+  },
+  {
+   "species": "Floette-Eternal",
+   "id": "floetteeternal",
+   "gender": "F",
+   "abilities": [
+    "flowerveil",
+    "symbiosis"
+   ]
+  },
+  {
+   "species": "Chandelure",
+   "id": "chandelure",
+   "gender": "",
+   "abilities": [
+    "flashfire",
+    "flamebody",
+    "infiltrator"
+   ]
+  },
+  {
+   "species": "Steelix",
+   "id": "steelix",
+   "gender": "",
+   "abilities": [
+    "rockhead",
+    "sturdy",
+    "sheerforce"
+   ]
+  },
+  {
+   "species": "Weavile",
+   "id": "weavile",
+   "gender": "",
+   "abilities": [
+    "pressure",
+    "pickpocket"
+   ]
+  },
+  {
+   "species": "Scrafty",
+   "id": "scrafty",
+   "gender": "",
+   "abilities": [
+    "shedskin",
+    "moxie",
+    "intimidate"
+   ]
+  },
+  {
+   "species": "Vileplume",
+   "id": "vileplume",
+   "gender": "",
+   "abilities": [
+    "chlorophyll",
+    "effectspore"
+   ]
+  },
+  {
+   "species": "Cofagrigus",
+   "id": "cofagrigus",
+   "gender": "",
+   "abilities": [
+    "mummy"
+   ]
+  },
+  {
+   "species": "Medicham",
+   "id": "medicham",
+   "gender": "",
+   "abilities": [
+    "purepower",
+    "telepathy"
+   ]
+  },
+  {
+   "species": "Sandaconda",
+   "id": "sandaconda",
+   "gender": "",
+   "abilities": [
+    "sandspit",
+    "shedskin",
+    "sandveil"
+   ]
+  },
+  {
+   "species": "Ampharos",
+   "id": "ampharos",
+   "gender": "",
+   "abilities": [
+    "static",
+    "plus"
+   ]
+  },
+  {
+   "species": "Glaceon",
+   "id": "glaceon",
+   "gender": "",
+   "abilities": [
+    "snowcloak",
+    "icebody"
+   ]
+  },
+  {
+   "species": "Lycanroc-Dusk",
+   "id": "lycanrocdusk",
+   "gender": "",
+   "abilities": [
+    "toughclaws"
+   ]
+  },
+  {
+   "species": "Houndoom",
+   "id": "houndoom",
+   "gender": "",
+   "abilities": [
+    "earlybird",
+    "flashfire",
+    "unnerve"
+   ]
+  },
+  {
+   "species": "Clawitzer",
+   "id": "clawitzer",
+   "gender": "",
+   "abilities": [
+    "megalauncher"
+   ]
+  },
+  {
+   "species": "Tsareena",
+   "id": "tsareena",
+   "gender": "F",
+   "abilities": [
+    "leafguard",
+    "queenlymajesty",
+    "sweetveil"
+   ]
+  },
+  {
+   "species": "Camerupt",
+   "id": "camerupt",
+   "gender": "",
+   "abilities": [
+    "magmaarmor",
+    "solidrock",
+    "angerpoint"
+   ]
+  },
+  {
+   "species": "Spiritomb",
+   "id": "spiritomb",
+   "gender": "",
+   "abilities": [
+    "pressure",
+    "infiltrator"
+   ]
+  },
+  {
+   "species": "Morpeko",
+   "id": "morpeko",
+   "gender": "",
+   "abilities": [
+    "hungerswitch"
+   ]
+  },
+  {
+   "species": "Ninetales",
+   "id": "ninetales",
+   "gender": "",
+   "abilities": [
+    "flashfire",
+    "drought"
+   ]
+  },
+  {
+   "species": "Ariados",
+   "id": "ariados",
+   "gender": "",
+   "abilities": [
+    "swarm",
+    "insomnia",
+    "sniper"
+   ]
+  },
+  {
+   "species": "Rotom-Frost",
+   "id": "rotomfrost",
+   "gender": "N",
+   "abilities": [
+    "levitate"
+   ]
+  },
+  {
+   "species": "Avalugg-Hisui",
+   "id": "avalugghisui",
+   "gender": "",
+   "abilities": [
+    "strongjaw",
+    "icebody",
+    "sturdy"
+   ]
+  },
+  {
+   "species": "Alcremie",
+   "id": "alcremie",
+   "gender": "F",
+   "abilities": [
+    "sweetveil",
+    "aromaveil"
+   ]
+  },
+  {
+   "species": "Simipour",
+   "id": "simipour",
+   "gender": "",
+   "abilities": [
+    "gluttony",
+    "torrent"
+   ]
+  },
+  {
+   "species": "Florges",
+   "id": "florges",
+   "gender": "F",
+   "abilities": [
+    "flowerveil",
+    "symbiosis"
+   ]
+  },
+  {
+   "species": "Luxray",
+   "id": "luxray",
+   "gender": "",
+   "abilities": [
+    "rivalry",
+    "intimidate",
+    "guts"
+   ]
+  },
+  {
+   "species": "Mr. Mime",
+   "id": "mrmime",
+   "gender": "",
+   "abilities": [
+    "soundproof",
+    "filter",
+    "technician"
+   ]
+  },
+  {
+   "species": "Rampardos",
+   "id": "rampardos",
+   "gender": "",
+   "abilities": [
+    "moldbreaker",
+    "sheerforce"
+   ]
+  },
+  {
+   "species": "Stunfisk",
+   "id": "stunfisk",
+   "gender": "",
+   "abilities": [
+    "static",
+    "limber",
+    "sandveil"
+   ]
+  },
+  {
+   "species": "Gliscor",
+   "id": "gliscor",
+   "gender": "",
+   "abilities": [
+    "hypercutter",
+    "sandveil",
+    "poisonheal"
+   ]
+  },
+  {
+   "species": "Hawlucha",
+   "id": "hawlucha",
+   "gender": "",
+   "abilities": [
+    "limber",
+    "unburden",
+    "moldbreaker"
+   ]
+  },
+  {
+   "species": "Kommo-o",
+   "id": "kommoo",
+   "gender": "",
+   "abilities": [
+    "bulletproof",
+    "soundproof",
+    "overcoat"
+   ]
+  },
+  {
+   "species": "Klefki",
+   "id": "klefki",
+   "gender": "",
+   "abilities": [
+    "prankster",
+    "magician"
+   ]
+  },
+  {
+   "species": "Noivern",
+   "id": "noivern",
+   "gender": "",
+   "abilities": [
+    "frisk",
+    "infiltrator",
+    "telepathy"
+   ]
+  },
+  {
+   "species": "Hydrapple",
+   "id": "hydrapple",
+   "gender": "",
+   "abilities": [
+    "supersweetsyrup",
+    "regenerator",
+    "stickyhold"
+   ]
+  },
+  {
+   "species": "Avalugg",
+   "id": "avalugg",
+   "gender": "",
+   "abilities": [
+    "owntempo",
+    "icebody",
+    "sturdy"
+   ]
+  },
+  {
+   "species": "Torterra",
+   "id": "torterra",
+   "gender": "",
+   "abilities": [
+    "overgrow",
+    "shellarmor"
+   ]
+  },
+  {
+   "species": "Typhlosion",
+   "id": "typhlosion",
+   "gender": "",
+   "abilities": [
+    "blaze",
+    "flashfire"
+   ]
+  },
+  {
+   "species": "Wyrdeer",
+   "id": "wyrdeer",
+   "gender": "",
+   "abilities": [
+    "intimidate",
+    "frisk",
+    "sapsipper"
+   ]
+  },
+  {
+   "species": "Swalot",
+   "id": "swalot",
+   "gender": "",
+   "abilities": [
+    "liquidooze",
+    "stickyhold",
+    "gluttony"
+   ]
+  },
+  {
+   "species": "Tauros",
+   "id": "tauros",
+   "gender": "M",
+   "abilities": [
+    "intimidate",
+    "angerpoint",
+    "sheerforce"
+   ]
+  },
+  {
+   "species": "Alcremie-Lemon-Cream",
+   "id": "alcremielemoncream",
+   "gender": "F",
+   "abilities": [
+    "sweetveil",
+    "aromaveil"
+   ]
+  },
+  {
+   "species": "Beartic",
+   "id": "beartic",
+   "gender": "",
+   "abilities": [
+    "snowcloak",
+    "slushrush",
+    "swiftswim"
+   ]
+  },
+  {
+   "species": "Leafeon",
+   "id": "leafeon",
+   "gender": "",
+   "abilities": [
+    "leafguard",
+    "chlorophyll"
+   ]
+  },
+  {
+   "species": "Lycanroc",
+   "id": "lycanroc",
+   "gender": "",
+   "abilities": [
+    "keeneye",
+    "sandrush",
+    "steadfast"
+   ]
+  },
+  {
+   "species": "Meowstic",
+   "id": "meowstic",
+   "gender": "M",
+   "abilities": [
+    "keeneye",
+    "infiltrator",
+    "prankster"
+   ]
+  },
+  {
+   "species": "Persian-Alola",
+   "id": "persianalola",
+   "gender": "",
+   "abilities": [
+    "furcoat",
+    "technician",
+    "rattled"
+   ]
+  },
+  {
+   "species": "Rotom",
+   "id": "rotom",
+   "gender": "N",
+   "abilities": [
+    "levitate"
+   ]
+  },
+  {
+   "species": "Arbok",
+   "id": "arbok",
+   "gender": "",
+   "abilities": [
+    "intimidate",
+    "shedskin",
+    "unnerve"
+   ]
+  },
+  {
+   "species": "Crabominable",
+   "id": "crabominable",
+   "gender": "",
+   "abilities": [
+    "hypercutter",
+    "ironfist",
+    "angerpoint"
+   ]
+  },
+  {
+   "species": "Chimecho",
+   "id": "chimecho",
+   "gender": "",
+   "abilities": [
+    "levitate"
+   ]
+  },
+  {
+   "species": "Pangoro",
+   "id": "pangoro",
+   "gender": "",
+   "abilities": [
+    "ironfist",
+    "moldbreaker",
+    "scrappy"
+   ]
+  },
+  {
+   "species": "Wigglytuff",
+   "id": "wigglytuff",
+   "gender": "",
+   "abilities": [
+    "cutecharm",
+    "competitive",
+    "frisk"
+   ]
+  },
+  {
+   "species": "Raichu-Alola",
+   "id": "raichualola",
+   "gender": "",
+   "abilities": [
+    "surgesurfer"
+   ]
+  },
+  {
+   "species": "Tyrantrum",
+   "id": "tyrantrum",
+   "gender": "",
+   "abilities": [
+    "strongjaw",
+    "rockhead"
+   ]
+  },
+  {
+   "species": "Manectric",
+   "id": "manectric",
+   "gender": "",
+   "abilities": [
+    "static",
+    "lightningrod",
+    "minus"
+   ]
+  },
+  {
+   "species": "Tauros-Paldea-Aqua",
+   "id": "taurospaldeaaqua",
+   "gender": "M",
+   "abilities": [
+    "intimidate",
+    "angerpoint",
+    "cudchew"
+   ]
+  },
+  {
+   "species": "Gourgeist-Super",
+   "id": "gourgeistsuper",
+   "gender": "",
+   "abilities": [
+    "pickup",
+    "frisk",
+    "insomnia"
+   ]
+  },
+  {
+   "species": "Dedenne",
+   "id": "dedenne",
+   "gender": "",
+   "abilities": [
+    "cheekpouch",
+    "pickup",
+    "plus"
+   ]
+  },
+  {
+   "species": "Toxicroak",
+   "id": "toxicroak",
+   "gender": "",
+   "abilities": [
+    "anticipation",
+    "dryskin",
+    "poisontouch"
+   ]
+  },
+  {
+   "species": "Appletun",
+   "id": "appletun",
+   "gender": "",
+   "abilities": [
+    "ripen",
+    "gluttony",
+    "thickfat"
+   ]
+  },
+  {
+   "species": "Simisage",
+   "id": "simisage",
+   "gender": "",
+   "abilities": [
+    "gluttony",
+    "overgrow"
+   ]
+  },
+  {
+   "species": "Watchog",
+   "id": "watchog",
+   "gender": "",
+   "abilities": [
+    "illuminate",
+    "keeneye",
+    "analytic"
+   ]
+  },
+  {
+   "species": "Alcremie-Caramel-Swirl",
+   "id": "alcremiecaramelswirl",
+   "gender": "F",
+   "abilities": [
+    "sweetveil",
+    "aromaveil"
+   ]
+  },
+  {
+   "species": "Alcremie-Matcha-Cream",
+   "id": "alcremiematchacream",
+   "gender": "F",
+   "abilities": [
+    "sweetveil",
+    "aromaveil"
+   ]
+  },
+  {
+   "species": "Alcremie-Mint-Cream",
+   "id": "alcremiemintcream",
+   "gender": "F",
+   "abilities": [
+    "sweetveil",
+    "aromaveil"
+   ]
+  },
+  {
+   "species": "Alcremie-Rainbow-Swirl",
+   "id": "alcremierainbowswirl",
+   "gender": "F",
+   "abilities": [
+    "sweetveil",
+    "aromaveil"
+   ]
+  },
+  {
+   "species": "Alcremie-Ruby-Cream",
+   "id": "alcremierubycream",
+   "gender": "F",
+   "abilities": [
+    "sweetveil",
+    "aromaveil"
+   ]
+  },
+  {
+   "species": "Alcremie-Ruby-Swirl",
+   "id": "alcremierubyswirl",
+   "gender": "F",
+   "abilities": [
+    "sweetveil",
+    "aromaveil"
+   ]
+  },
+  {
+   "species": "Aromatisse",
+   "id": "aromatisse",
+   "gender": "",
+   "abilities": [
+    "healer",
+    "aromaveil"
+   ]
+  },
+  {
+   "species": "Bastiodon",
+   "id": "bastiodon",
+   "gender": "",
+   "abilities": [
+    "sturdy",
+    "soundproof"
+   ]
+  },
+  {
+   "species": "Castform",
+   "id": "castform",
+   "gender": "",
+   "abilities": [
+    "forecast"
+   ]
+  },
+  {
+   "species": "Flapple",
+   "id": "flapple",
+   "gender": "",
+   "abilities": [
+    "ripen",
+    "gluttony",
+    "hustle"
+   ]
+  },
+  {
+   "species": "Flareon",
+   "id": "flareon",
+   "gender": "",
+   "abilities": [
+    "flashfire",
+    "guts"
+   ]
+  },
+  {
+   "species": "Garbodor",
+   "id": "garbodor",
+   "gender": "",
+   "abilities": [
+    "stench",
+    "weakarmor",
+    "aftermath"
+   ]
+  },
+  {
+   "species": "Gogoat",
+   "id": "gogoat",
+   "gender": "",
+   "abilities": [
+    "sapsipper",
+    "grasspelt"
+   ]
+  },
+  {
+   "species": "Gourgeist",
+   "id": "gourgeist",
+   "gender": "",
+   "abilities": [
+    "pickup",
+    "frisk",
+    "insomnia"
+   ]
+  },
+  {
+   "species": "Gourgeist-Large",
+   "id": "gourgeistlarge",
+   "gender": "",
+   "abilities": [
+    "pickup",
+    "frisk",
+    "insomnia"
+   ]
+  },
+  {
+   "species": "Gourgeist-Small",
+   "id": "gourgeistsmall",
+   "gender": "",
+   "abilities": [
+    "pickup",
+    "frisk",
+    "insomnia"
+   ]
+  },
+  {
+   "species": "Liepard",
+   "id": "liepard",
+   "gender": "",
+   "abilities": [
+    "limber",
+    "unburden",
+    "prankster"
+   ]
+  },
+  {
+   "species": "Mabosstiff",
+   "id": "mabosstiff",
+   "gender": "",
+   "abilities": [
+    "intimidate",
+    "guarddog",
+    "stakeout"
+   ]
+  },
+  {
+   "species": "Meowstic-F",
+   "id": "meowsticf",
+   "gender": "F",
+   "abilities": [
+    "keeneye",
+    "infiltrator",
+    "competitive"
+   ]
+  },
+  {
+   "species": "Oranguru",
+   "id": "oranguru",
+   "gender": "",
+   "abilities": [
+    "innerfocus",
+    "telepathy",
+    "symbiosis"
+   ]
+  },
+  {
+   "species": "Perrserker",
+   "id": "perrserker",
+   "gender": "",
+   "abilities": [
+    "battlearmor",
+    "toughclaws",
+    "steelyspirit"
+   ]
+  },
+  {
+   "species": "Persian",
+   "id": "persian",
+   "gender": "",
+   "abilities": [
+    "limber",
+    "technician",
+    "unnerve"
+   ]
+  },
+  {
+   "species": "Polteageist-Antique",
+   "id": "polteageistantique",
+   "gender": "N",
+   "abilities": [
+    "weakarmor",
+    "cursedbody"
+   ]
+  },
+  {
+   "species": "Qwilfish",
+   "id": "qwilfish",
+   "gender": "",
+   "abilities": [
+    "poisonpoint",
+    "swiftswim",
+    "intimidate"
+   ]
+  },
+  {
+   "species": "Rhyperior",
+   "id": "rhyperior",
+   "gender": "",
+   "abilities": [
+    "lightningrod",
+    "solidrock",
+    "reckless"
+   ]
+  },
+  {
+   "species": "Rotom-Mow",
+   "id": "rotommow",
+   "gender": "N",
+   "abilities": [
+    "levitate"
+   ]
+  },
+  {
+   "species": "Sinistcha-Masterpiece",
+   "id": "sinistchamasterpiece",
+   "gender": "N",
+   "abilities": [
+    "hospitality",
+    "heatproof"
+   ]
+  },
+  {
+   "species": "Squawkabilly",
+   "id": "squawkabilly",
+   "gender": "",
+   "abilities": [
+    "intimidate",
+    "hustle",
+    "guts"
+   ]
+  },
+  {
+   "species": "Squawkabilly-Blue",
+   "id": "squawkabillyblue",
+   "gender": "",
+   "abilities": [
+    "intimidate",
+    "hustle",
+    "guts"
+   ]
+  },
+  {
+   "species": "Squawkabilly-White",
+   "id": "squawkabillywhite",
+   "gender": "",
+   "abilities": [
+    "intimidate",
+    "hustle",
+    "sheerforce"
+   ]
+  },
+  {
+   "species": "Squawkabilly-Yellow",
+   "id": "squawkabillyyellow",
+   "gender": "",
+   "abilities": [
+    "intimidate",
+    "hustle",
+    "sheerforce"
+   ]
+  },
+  {
+   "species": "Tauros-Paldea-Combat",
+   "id": "taurospaldeacombat",
+   "gender": "M",
+   "abilities": [
+    "intimidate",
+    "angerpoint",
+    "cudchew"
+   ]
+  },
+  {
+   "species": "Vivillon-Archipelago",
+   "id": "vivillonarchipelago",
+   "gender": "",
+   "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "friendguard"
+   ]
+  },
+  {
+   "species": "Vivillon-Continental",
+   "id": "vivilloncontinental",
+   "gender": "",
+   "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "friendguard"
+   ]
+  },
+  {
+   "species": "Vivillon-Elegant",
+   "id": "vivillonelegant",
+   "gender": "",
+   "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "friendguard"
+   ]
+  },
+  {
+   "species": "Vivillon-Fancy",
+   "id": "vivillonfancy",
+   "gender": "",
+   "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "friendguard"
+   ]
+  },
+  {
+   "species": "Vivillon-Garden",
+   "id": "vivillongarden",
+   "gender": "",
+   "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "friendguard"
+   ]
+  },
+  {
+   "species": "Vivillon-High Plains",
+   "id": "vivillonhighplains",
+   "gender": "",
+   "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "friendguard"
+   ]
+  },
+  {
+   "species": "Vivillon-Icy Snow",
+   "id": "vivillonicysnow",
+   "gender": "",
+   "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "friendguard"
+   ]
+  },
+  {
+   "species": "Vivillon-Jungle",
+   "id": "vivillonjungle",
+   "gender": "",
+   "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "friendguard"
+   ]
+  },
+  {
+   "species": "Vivillon-Marine",
+   "id": "vivillonmarine",
+   "gender": "",
+   "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "friendguard"
+   ]
+  },
+  {
+   "species": "Vivillon-Modern",
+   "id": "vivillonmodern",
+   "gender": "",
+   "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "friendguard"
+   ]
+  },
+  {
+   "species": "Vivillon-Monsoon",
+   "id": "vivillonmonsoon",
+   "gender": "",
+   "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "friendguard"
+   ]
+  },
+  {
+   "species": "Vivillon-Ocean",
+   "id": "vivillonocean",
+   "gender": "",
+   "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "friendguard"
+   ]
+  },
+  {
+   "species": "Vivillon-Pokeball",
+   "id": "vivillonpokeball",
+   "gender": "",
+   "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "friendguard"
+   ]
+  },
+  {
+   "species": "Vivillon-Polar",
+   "id": "vivillonpolar",
+   "gender": "",
+   "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "friendguard"
+   ]
+  },
+  {
+   "species": "Vivillon-River",
+   "id": "vivillonriver",
+   "gender": "",
+   "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "friendguard"
+   ]
+  },
+  {
+   "species": "Vivillon-Sandstorm",
+   "id": "vivillonsandstorm",
+   "gender": "",
+   "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "friendguard"
+   ]
+  },
+  {
+   "species": "Vivillon-Savanna",
+   "id": "vivillonsavanna",
+   "gender": "",
+   "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "friendguard"
+   ]
+  },
+  {
+   "species": "Vivillon-Sun",
+   "id": "vivillonsun",
+   "gender": "",
+   "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "friendguard"
+   ]
+  },
+  {
+   "species": "Vivillon-Tundra",
+   "id": "vivillontundra",
+   "gender": "",
+   "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "friendguard"
+   ]
+  }
+ ],
+ "moves": [
+  "accelerock",
+  "acidarmor",
+  "acidspray",
+  "acupressure",
+  "aerialace",
+  "afteryou",
+  "agility",
+  "aircutter",
+  "airslash",
+  "alluringvoice",
+  "allyswitch",
+  "amnesia",
+  "ancientpower",
+  "appleacid",
+  "aquacutter",
+  "aquajet",
+  "aquaring",
+  "aquastep",
+  "aquatail",
+  "armorcannon",
+  "aromaticmist",
+  "assurance",
+  "attract",
+  "aurasphere",
+  "aurawheel",
+  "auroraveil",
+  "avalanche",
+  "axekick",
+  "babydolleyes",
+  "banefulbunker",
+  "barbbarrage",
+  "batonpass",
+  "beakblast",
+  "beatup",
+  "bellydrum",
+  "bind",
+  "bite",
+  "bitterblade",
+  "bittermalice",
+  "blastburn",
+  "blazekick",
+  "blizzard",
+  "block",
+  "bodypress",
+  "bodyslam",
+  "bonerush",
+  "boomburst",
+  "bounce",
+  "bravebird",
+  "breakingswipe",
+  "brickbreak",
+  "brutalswing",
+  "bugbuzz",
+  "bulkup",
+  "bulldoze",
+  "bulletpunch",
+  "bulletseed",
+  "burningjealousy",
+  "burnup",
+  "calmmind",
+  "ceaselessedge",
+  "charge",
+  "chargebeam",
+  "charm",
+  "chillingwater",
+  "chillyreception",
+  "circlethrow",
+  "clangingscales",
+  "clangoroussoul",
+  "clearsmog",
+  "closecombat",
+  "coaching",
+  "coil",
+  "comeuppance",
+  "confuseray",
+  "copycat",
+  "cosmicpower",
+  "cottonguard",
+  "cottonspore",
+  "counter",
+  "courtchange",
+  "crabhammer",
+  "crosschop",
+  "crosspoison",
+  "crunch",
+  "crushclaw",
+  "curse",
+  "darkestlariat",
+  "darkpulse",
+  "dazzlinggleam",
+  "decorate",
+  "defog",
+  "destinybond",
+  "detect",
+  "dig",
+  "direclaw",
+  "disable",
+  "discharge",
+  "dive",
+  "doubleedge",
+  "doublehit",
+  "doubleshock",
+  "doubleteam",
+  "dracometeor",
+  "dragoncheer",
+  "dragonclaw",
+  "dragondance",
+  "dragondarts",
+  "dragonpulse",
+  "dragonrush",
+  "dragontail",
+  "drainingkiss",
+  "drainpunch",
+  "drillpeck",
+  "drillrun",
+  "drumbeating",
+  "dualwingbeat",
+  "dynamicpunch",
+  "earthpower",
+  "earthquake",
+  "eerieimpulse",
+  "eeriespell",
+  "electricterrain",
+  "electrify",
+  "electroball",
+  "electroshot",
+  "electroweb",
+  "encore",
+  "endeavor",
+  "endure",
+  "energyball",
+  "entrainment",
+  "eruption",
+  "expandingforce",
+  "explosion",
+  "extrasensory",
+  "extremespeed",
+  "facade",
+  "fairylock",
+  "fakeout",
+  "faketears",
+  "featherdance",
+  "feint",
+  "fellstinger",
+  "ficklebeam",
+  "fierydance",
+  "finalgambit",
+  "fireblast",
+  "firefang",
+  "firelash",
+  "firepunch",
+  "firespin",
+  "firstimpression",
+  "fissure",
+  "flail",
+  "flamecharge",
+  "flamethrower",
+  "flareblitz",
+  "flashcannon",
+  "flatter",
+  "flipturn",
+  "flowertrick",
+  "fly",
+  "flyingpress",
+  "focusblast",
+  "focusenergy",
+  "focuspunch",
+  "followme",
+  "forestscurse",
+  "foulplay",
+  "freezedry",
+  "frenzyplant",
+  "frostbreath",
+  "futuresight",
+  "gastroacid",
+  "gigadrain",
+  "gigaimpact",
+  "gigatonhammer",
+  "glaiverush",
+  "glare",
+  "grassknot",
+  "grassyglide",
+  "grassyterrain",
+  "gravapple",
+  "gravity",
+  "growth",
+  "guardsplit",
+  "guardswap",
+  "guillotine",
+  "gunkshot",
+  "gyroball",
+  "hammerarm",
+  "hardpress",
+  "haze",
+  "headlongrush",
+  "headsmash",
+  "healbell",
+  "healingwish",
+  "healpulse",
+  "heatcrash",
+  "heatwave",
+  "heavyslam",
+  "helpinghand",
+  "hex",
+  "highhorsepower",
+  "highjumpkick",
+  "horndrill",
+  "hornleech",
+  "howl",
+  "hurricane",
+  "hydrocannon",
+  "hydropump",
+  "hyperbeam",
+  "hypervoice",
+  "hypnosis",
+  "icebeam",
+  "icefang",
+  "icehammer",
+  "icepunch",
+  "iceshard",
+  "icespinner",
+  "iciclecrash",
+  "iciclespear",
+  "icywind",
+  "imprison",
+  "infernalparade",
+  "inferno",
+  "infestation",
+  "ingrain",
+  "instruct",
+  "irondefense",
+  "ironhead",
+  "irontail",
+  "jawlock",
+  "jetpunch",
+  "kingsshield",
+  "kowtowcleave",
+  "lashout",
+  "lastresort",
+  "lastrespects",
+  "lavaplume",
+  "leafblade",
+  "leafstorm",
+  "leechlife",
+  "leechseed",
+  "lifedew",
+  "lightofruin",
+  "lightscreen",
+  "liquidation",
+  "lockon",
+  "lowkick",
+  "lowsweep",
+  "luminacrash",
+  "lunge",
+  "machpunch",
+  "magicpowder",
+  "magicroom",
+  "magneticflux",
+  "magnetrise",
+  "makeitrain",
+  "matchagotcha",
+  "meanlook",
+  "megahorn",
+  "megakick",
+  "memento",
+  "metalburst",
+  "metalsound",
+  "meteorassault",
+  "meteorbeam",
+  "meteormash",
+  "milkdrink",
+  "minimize",
+  "mirrorcoat",
+  "mistyexplosion",
+  "mistyterrain",
+  "moonblast",
+  "moonlight",
+  "morningsun",
+  "mortalspin",
+  "mountaingale",
+  "muddywater",
+  "mudshot",
+  "mudslap",
+  "mysticalfire",
+  "nastyplot",
+  "nightdaze",
+  "nightshade",
+  "nightslash",
+  "nobleroar",
+  "noretreat",
+  "nuzzle",
+  "octolock",
+  "outrage",
+  "overdrive",
+  "overheat",
+  "painsplit",
+  "paraboliccharge",
+  "partingshot",
+  "payback",
+  "perishsong",
+  "petalblizzard",
+  "petaldance",
+  "phantomforce",
+  "pinmissile",
+  "playrough",
+  "poisonfang",
+  "poisonjab",
+  "poisonpowder",
+  "pollenpuff",
+  "populationbomb",
+  "pounce",
+  "pound",
+  "powergem",
+  "powershift",
+  "powersplit",
+  "powerswap",
+  "powertrick",
+  "powertrip",
+  "powerwhip",
+  "protect",
+  "psychic",
+  "psychicfangs",
+  "psychicnoise",
+  "psychicterrain",
+  "psychocut",
+  "psychup",
+  "psyshieldbash",
+  "psyshock",
+  "pyroball",
+  "quash",
+  "quickattack",
+  "quickguard",
+  "quiverdance",
+  "ragefist",
+  "ragepowder",
+  "ragingbull",
+  "ragingfury",
+  "raindance",
+  "rapidspin",
+  "razorshell",
+  "recover",
+  "reflect",
+  "reflecttype",
+  "rest",
+  "reversal",
+  "revivalblessing",
+  "risingvoltage",
+  "roar",
+  "rockblast",
+  "rockpolish",
+  "rockslide",
+  "rocktomb",
+  "rockwrecker",
+  "roleplay",
+  "roost",
+  "round",
+  "sacredsword",
+  "safeguard",
+  "saltcure",
+  "sandstorm",
+  "sandtomb",
+  "scald",
+  "scaleshot",
+  "scaryface",
+  "scorchingsands",
+  "screech",
+  "seedbomb",
+  "seismictoss",
+  "selfdestruct",
+  "shadowball",
+  "shadowclaw",
+  "shadowpunch",
+  "shadowsneak",
+  "shedtail",
+  "sheercold",
+  "shellsidearm",
+  "shellsmash",
+  "shelter",
+  "shiftgear",
+  "simplebeam",
+  "sing",
+  "skillswap",
+  "skittersmack",
+  "skyattack",
+  "slackoff",
+  "slash",
+  "sleeppowder",
+  "sleeptalk",
+  "sludgebomb",
+  "sludgewave",
+  "smackdown",
+  "smartstrike",
+  "snaptrap",
+  "snarl",
+  "snipeshot",
+  "snore",
+  "snowscape",
+  "soak",
+  "softboiled",
+  "solarbeam",
+  "solarblade",
+  "sparklingaria",
+  "speedswap",
+  "spicyextract",
+  "spikes",
+  "spikyshield",
+  "spiritbreak",
+  "spiritshackle",
+  "spite",
+  "spitup",
+  "spore",
+  "stealthrock",
+  "steelbeam",
+  "steelroller",
+  "steelwing",
+  "stickyweb",
+  "stockpile",
+  "stompingtantrum",
+  "stoneaxe",
+  "stoneedge",
+  "storedpower",
+  "stormthrow",
+  "strengthsap",
+  "stringshot",
+  "strugglebug",
+  "stunspore",
+  "substitute",
+  "suckerpunch",
+  "sunnyday",
+  "supercellslam",
+  "superfang",
+  "superpower",
+  "surf",
+  "swagger",
+  "swallow",
+  "sweetkiss",
+  "sweetscent",
+  "swordsdance",
+  "synthesis",
+  "syrupbomb",
+  "tailslap",
+  "tailwind",
+  "taunt",
+  "tearfullook",
+  "teeterdance",
+  "temperflare",
+  "terrainpulse",
+  "thrash",
+  "throatchop",
+  "thunder",
+  "thunderbolt",
+  "thunderfang",
+  "thunderpunch",
+  "thunderwave",
+  "tickle",
+  "tidyup",
+  "topsyturvy",
+  "torchsong",
+  "torment",
+  "toxic",
+  "toxicspikes",
+  "toxicthread",
+  "trailblaze",
+  "transform",
+  "triattack",
+  "trickortreat",
+  "trickroom",
+  "triplearrows",
+  "tripleaxel",
+  "tropkick",
+  "twinbeam",
+  "upperhand",
+  "uproar",
+  "uturn",
+  "vacuumwave",
+  "venoshock",
+  "voltswitch",
+  "volttackle",
+  "waterfall",
+  "waterpulse",
+  "watershuriken",
+  "waterspout",
+  "wavecrash",
+  "weatherball",
+  "whirlpool",
+  "whirlwind",
+  "wideguard",
+  "wildcharge",
+  "willowisp",
+  "wish",
+  "wonderroom",
+  "woodhammer",
+  "worryseed",
+  "wrap",
+  "xscissor",
+  "yawn",
+  "zapcannon",
+  "zenheadbutt",
+  "zingzap"
+ ],
+ "added": [
+  "skillswap",
+  "roleplay",
+  "entrainment",
+  "simplebeam",
+  "worryseed",
+  "gastroacid",
+  "imprison"
+ ],
+ "interacting": [
+  "accelerock",
+  "acidspray",
+  "aerialace",
+  "aircutter",
+  "airslash",
+  "alluringvoice",
+  "allyswitch",
+  "ancientpower",
+  "appleacid",
+  "aquacutter",
+  "aquajet",
+  "aquaring",
+  "aquastep",
+  "aromaticmist",
+  "attract",
+  "aurasphere",
+  "aurawheel",
+  "axekick",
+  "babydolleyes",
+  "banefulbunker",
+  "barbbarrage",
+  "beakblast",
+  "bind",
+  "bite",
+  "bitterblade",
+  "bittermalice",
+  "blazekick",
+  "blizzard",
+  "bodyslam",
+  "bonerush",
+  "boomburst",
+  "bounce",
+  "bravebird",
+  "breakingswipe",
+  "bugbuzz",
+  "bulldoze",
+  "bulletpunch",
+  "bulletseed",
+  "burningjealousy",
+  "ceaselessedge",
+  "charge",
+  "chargebeam",
+  "charm",
+  "chillingwater",
+  "chillyreception",
+  "clangingscales",
+  "clangoroussoul",
+  "coaching",
+  "confuseray",
+  "cottonspore",
+  "crosspoison",
+  "crunch",
+  "crushclaw",
+  "darkpulse",
+  "decorate",
+  "destinybond",
+  "detect",
+  "direclaw",
+  "disable",
+  "discharge",
+  "doubleedge",
+  "doublehit",
+  "doubleshock",
+  "dragoncheer",
+  "dragonclaw",
+  "dragondarts",
+  "dragonpulse",
+  "dragonrush",
+  "drainpunch",
+  "drumbeating",
+  "dualwingbeat",
+  "dynamicpunch",
+  "earthpower",
+  "eerieimpulse",
+  "eeriespell",
+  "electricterrain",
+  "electrify",
+  "electroball",
+  "electroweb",
+  "encore",
+  "endeavor",
+  "endure",
+  "energyball",
+  "entrainment",
+  "explosion",
+  "extrasensory",
+  "extremespeed",
+  "facade",
+  "fakeout",
+  "faketears",
+  "featherdance",
+  "feint",
+  "fierydance",
+  "fireblast",
+  "firefang",
+  "firelash",
+  "firepunch",
+  "firespin",
+  "firstimpression",
+  "flail",
+  "flamecharge",
+  "flamethrower",
+  "flareblitz",
+  "flashcannon",
+  "flatter",
+  "focusblast",
+  "focusenergy",
+  "focuspunch",
+  "followme",
+  "gastroacid",
+  "gigaimpact",
+  "glare",
+  "grassyterrain",
+  "gravapple",
+  "guillotine",
+  "gunkshot",
+  "gyroball",
+  "hammerarm",
+  "headlongrush",
+  "headsmash",
+  "healbell",
+  "healpulse",
+  "heatwave",
+  "helpinghand",
+  "highjumpkick",
+  "horndrill",
+  "howl",
+  "hurricane",
+  "hyperbeam",
+  "hypervoice",
+  "hypnosis",
+  "icebeam",
+  "icefang",
+  "icehammer",
+  "icepunch",
+  "iceshard",
+  "iciclecrash",
+  "iciclespear",
+  "icywind",
+  "imprison",
+  "infernalparade",
+  "inferno",
+  "infestation",
+  "ingrain",
+  "ironhead",
+  "irontail",
+  "jawlock",
+  "jetpunch",
+  "kingsshield",
+  "kowtowcleave",
+  "lastresort",
+  "lavaplume",
+  "leafblade",
+  "leechseed",
+  "lightofruin",
+  "liquidation",
+  "lowsweep",
+  "luminacrash",
+  "lunge",
+  "machpunch",
+  "magicpowder",
+  "magnetrise",
+  "matchagotcha",
+  "megakick",
+  "memento",
+  "metalsound",
+  "meteormash",
+  "minimize",
+  "mistyterrain",
+  "moonblast",
+  "mortalspin",
+  "mountaingale",
+  "muddywater",
+  "mudshot",
+  "mudslap",
+  "mysticalfire",
+  "nightdaze",
+  "nightslash",
+  "nobleroar",
+  "noretreat",
+  "nuzzle",
+  "octolock",
+  "overdrive",
+  "partingshot",
+  "perishsong",
+  "petalblizzard",
+  "pinmissile",
+  "playrough",
+  "poisonfang",
+  "poisonjab",
+  "poisonpowder",
+  "pollenpuff",
+  "populationbomb",
+  "pounce",
+  "pound",
+  "powershift",
+  "powertrick",
+  "protect",
+  "psychic",
+  "psychicfangs",
+  "psychicnoise",
+  "psychicterrain",
+  "psychocut",
+  "psyshieldbash",
+  "pyroball",
+  "quickattack",
+  "quickguard",
+  "ragefist",
+  "ragepowder",
+  "ragingbull",
+  "raindance",
+  "rapidspin",
+  "razorshell",
+  "roar",
+  "rockblast",
+  "rockslide",
+  "rocktomb",
+  "rockwrecker",
+  "roleplay",
+  "round",
+  "sacredsword",
+  "saltcure",
+  "sandstorm",
+  "sandtomb",
+  "scald",
+  "scaleshot",
+  "scaryface",
+  "scorchingsands",
+  "screech",
+  "seedbomb",
+  "selfdestruct",
+  "shadowball",
+  "shadowclaw",
+  "shadowpunch",
+  "shadowsneak",
+  "shedtail",
+  "shellsidearm",
+  "simplebeam",
+  "sing",
+  "skillswap",
+  "skittersmack",
+  "skyattack",
+  "slash",
+  "sleeppowder",
+  "sludgebomb",
+  "sludgewave",
+  "smackdown",
+  "snaptrap",
+  "snarl",
+  "snore",
+  "snowscape",
+  "solarblade",
+  "sparklingaria",
+  "spicyextract",
+  "spikyshield",
+  "spiritbreak",
+  "spiritshackle",
+  "spitup",
+  "spore",
+  "steelwing",
+  "stockpile",
+  "stoneaxe",
+  "stringshot",
+  "strugglebug",
+  "stunspore",
+  "substitute",
+  "suckerpunch",
+  "sunnyday",
+  "supercellslam",
+  "superfang",
+  "swagger",
+  "sweetkiss",
+  "sweetscent",
+  "syrupbomb",
+  "tailslap",
+  "tailwind",
+  "taunt",
+  "tearfullook",
+  "teeterdance",
+  "terrainpulse",
+  "thrash",
+  "throatchop",
+  "thunder",
+  "thunderbolt",
+  "thunderfang",
+  "thunderpunch",
+  "thunderwave",
+  "tickle",
+  "torchsong",
+  "torment",
+  "toxic",
+  "toxicthread",
+  "trailblaze",
+  "triattack",
+  "triplearrows",
+  "tripleaxel",
+  "tropkick",
+  "twinbeam",
+  "upperhand",
+  "uproar",
+  "vacuumwave",
+  "volttackle",
+  "waterfall",
+  "waterpulse",
+  "watershuriken",
+  "wavecrash",
+  "weatherball",
+  "whirlpool",
+  "whirlwind",
+  "wideguard",
+  "wildcharge",
+  "willowisp",
+  "woodhammer",
+  "worryseed",
+  "wrap",
+  "xscissor",
+  "yawn",
+  "zapcannon",
+  "zenheadbutt",
+  "zingzap"
+ ]
+}

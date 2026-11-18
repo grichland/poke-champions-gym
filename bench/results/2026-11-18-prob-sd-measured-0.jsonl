@@ -1,0 +1,5 @@
+{"name":"popbomb","trials":40000,"counts":{"0":4120,"1":3545,"2":3201,"3":2941,"4":2665,"5":2343,"6":2045,"7":1910,"8":1693,"9":1557,"10":13980},"wall_s":107.472,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"sec_kingsrock_sg","trials":40000,"counts":{"none":32194,"flinch":7806},"wall_s":82.662,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"confusion_hit","trials":40000,"counts":{"none":26815,"hit":13185},"wall_s":58,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"ab_static","trials":40000,"counts":{"none":27898,"par":12102},"wall_s":52.065,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"item_focusband","trials":40000,"counts":{"proc":4071,"none":35929},"wall_s":47.82,"showdown":"c0845f33d","format":"gen9championsbssregmc"}

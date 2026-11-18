@@ -1,0 +1,80 @@
+ÿþbash.exe : + cargo build --offline --release --workspace
+At line:1 char:1
++ & 'C:\Program Files\Git\bin\bash.exe' target/verify_pkg.sh 2>&1 | Tee ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (+ cargo build -...ase --workspace:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
++ tail -1
+    Finished `release` profile [optimized + debuginfo] target(s) in 9.14s
++ cargo test --offline --release --workspace
++ grep -E '^test result|FAILED|failed|panicked'
++ awk '{p+=$4; f+=$6} END {print "rust passed",p,"failed",f}'
+rust passed 304 failed 0
++ bash tools/build/python-ext.sh
++ tail -1
+python-ext.sh: wrote python/champions_gym/_cg.cp312-win_amd64.pyd
++ '/c/Program Files/Python312/python.exe' tools/build/wheel.py
++ tail -2
+wheel.py: wrote C:\Users\user\Code\pokemon_champions\poke-engine\dist\champions_gym-0.1.0-cp312-cp312-win_amd64.whl (1978276 bytes, 12 files)
++ python tools/rig/driver.py --sim --real --rows --battles 800 --seed 99501 --out target/vp-real.jsonl.gz
++ tail -2
++ cut -c1-200
+{"battles": 800, "battles_identical": 800, "steps": 16993, "options_identical": 16993, "states_identical": 16993, "events_identical": 16993, "tape_errors": 0, "engine_errors": 0, "oracle_errors": 0, "
+{"rows_steps": 16993, "rows_steps_equal": 16993, "kinds": {"enter": {"both": 8763, "showdown_only": 0, "engine_only": 0}, "turn": {"both": 13157, "showdown_only": 0, "engine_only": 0}, "move": {"both"
++ ./target/release/players_run.exe --a tower --b max_damage --games 50000 --seed 7901 --threads 24 --cap 300 --label 
+pkg-verify --out bench/results/2026-11-18-pkg-verify.jsonl
++ tail -1
+tower vs max_damage: 50000 games, A 50.2% (A seat0 49.9%, A seat1 50.5%), turns mean 6.1 max 64, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 100000/100000, prior0 0, truth 0, hidden 0 (12528 games, 70713 steps), refused trapped 0, steps 474563, 22894 battles/s, 395392 decisions/s
++ for p in field charges turn_end calls
++ ./target/release/players_run.exe --a random --b random --games 9600 --seed 7902 --threads 24 --cap 300 --teams 
+bench/data/pools/field.json --label pkg-verify-field --out bench/results/2026-11-18-pkg-verify.jsonl
++ tail -1
+random vs random: 9600 games, A 50.0% (A seat0 49.0%, A seat1 51.0%), turns mean 36.6 max 133, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 19200/19200, prior0 0, truth 0, hidden 0 (2400 games, 50010 steps), refused trapped 0, steps 400346, 5807 battles/s, 466679 decisions/s
++ for p in field charges turn_end calls
++ ./target/release/players_run.exe --a random --b random --games 9600 --seed 7902 --threads 24 --cap 300 --teams 
+bench/data/pools/charges.json --label pkg-verify-charges --out bench/results/2026-11-18-pkg-verify.jsonl
++ tail -1
+random vs random: 9600 games, A 50.0% (A seat0 49.7%, A seat1 50.3%), turns mean 28.3 max 106, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 19200/19200, prior0 0, truth 0, hidden 0 (2400 games, 40080 steps), refused trapped 0, steps 305410, 7879 battles/s, 440724 decisions/s
++ for p in field charges turn_end calls
++ ./target/release/players_run.exe --a random --b random --games 9600 --seed 7902 --threads 24 --cap 300 --teams 
+bench/data/pools/turn_end.json --label pkg-verify-turn_end --out bench/results/2026-11-18-pkg-verify.jsonl
++ tail -1
+random vs random: 9600 games, A 50.0% (A seat0 49.3%, A seat1 50.7%), turns mean 64.2 max 197, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 19200/19200, prior0 0, truth 0, hidden 0 (2400 games, 83766 steps), refused trapped 0, steps 679766, 3231 battles/s, 442778 decisions/s
++ for p in field charges turn_end calls
++ ./target/release/players_run.exe --a random --b random --games 9600 --seed 7902 --threads 24 --cap 300 --teams 
+bench/data/pools/calls.json --label pkg-verify-calls --out bench/results/2026-11-18-pkg-verify.jsonl
++ tail -1
+random vs random: 9600 games, A 50.0% (A seat0 49.6%, A seat1 50.4%), turns mean 58.6 max 265, truncated 0, refusals 216, anomalies 0, check a 0, check b 0.9989, rebuild 19200/19200, prior0 0, truth 0, hidden 0 (2400 games, 79038 steps), refused trapped 0, steps 603780, 4167 battles/s, 514939 decisions/s
++ V=/c/Users/user/AppData/Local/Temp/cg-mgr-venv
++ rm -rf /c/Users/user/AppData/Local/Temp/cg-mgr-venv
++ '/c/Program Files/Python312/python.exe' -m venv /c/Users/user/AppData/Local/Temp/cg-mgr-venv
++ /c/Users/user/AppData/Local/Temp/cg-mgr-venv/Scripts/python.exe -m pip install --no-index --no-deps 
+dist/champions_gym-0.1.0-cp312-cp312-win_amd64.whl
++ tail -1
+Successfully installed champions-gym-0.1.0
++ cp python/tests/test_battle_view.py python/tests/test_env.py python/tests/test_obs.py 
+/c/Users/user/AppData/Local/Temp/cg-mgr-venv/
++ cd /c/Users/user/AppData/Local/Temp/cg-mgr-venv
++ for t in test_*.py
++ ./Scripts/python.exe -I test_battle_view.py
++ tail -1
+3 passed, 0 failed
++ for t in test_*.py
++ ./Scripts/python.exe -I test_env.py
++ tail -1
+7 passed, 0 failed
++ for t in test_*.py
++ ./Scripts/python.exe -I test_obs.py
++ tail -1
+6 passed, 0 failed
++ ./Scripts/python.exe -I -c $'\nimport champions_gym as cg, random\nprint(cg.__file__)\nenv = cg.BatchEnv(None, 256, 
+seed=991, threads=4)\nn = 0\nrandom.seed(5)\nwhile n < 60000:\n    m = env.legal_actions() if 
+hasattr(env,\'legal_actions\') else None\n    acts = []\n    for row in m:\n        ok = [i for i,x in enumerate(row) 
+if x]\n        acts.append(random.choice(ok))\n    env.act(acts); n += len(acts)\nprint(\'decisions\', n, \'ok\')\n'
+Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+TypeError: BatchEnv.legal_actions() missing 1 required positional argument: 'g'
+C:\Users\user\AppData\Local\Temp\cg-mgr-venv\Lib\site-packages\champions_gym\__init__.py
+VERIFY_DONE
++ echo VERIFY_DONE

@@ -1,0 +1,153 @@
+AWL
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "host/os" to type "System.Int64". Error: "Input string 
+was not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-survey.ps1:3 char:3
++ H 'host/os'; hostname; (Get-CimInstance Win32_OperatingSystem | Selec ...
++   ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+
+
+Caption                : Microsoft Windows 11 Home
+Version                : 10.0.26200
+BuildNumber            : 26200
+FreePhysicalMemory     : 17534356
+TotalVisibleMemorySize : 32985808
+
+
+
+
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "cpu" to type "System.Int64". Error: "Input string was 
+not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-survey.ps1:4 char:3
++ H 'cpu'; (Get-CimInstance Win32_Processor | Select Name,NumberOfCores ...
++   ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+
+
+Name                      : Intel(R) Core(TM) Ultra 9 275HX
+NumberOfCores             : 24
+NumberOfLogicalProcessors : 24
+
+
+
+
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "disk" to type "System.Int64". Error: "Input string was 
+not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-survey.ps1:5 char:3
++ H 'disk'; (Get-PSDrive C | Select Used,Free | Format-List | Out-Strin ...
++   ~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+
+
+Used : 1199797219328
+Free : 815430582272
+
+
+
+
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "gpu" to type "System.Int64". Error: "Input string was 
+not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-survey.ps1:6 char:3
++ H 'gpu'; $n="$env:SystemRoot\System32\nvidia-smi.exe"; if(Test-Path $ ...
++   ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+name, memory.used [MiB], memory.total [MiB], driver_version, utilization.gpu [%]
+NVIDIA GeForce RTX 5070 Laptop GPU, 0 MiB, 8151 MiB, 610.88, 0 %
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "processes (python/node/cargo/rustc/etc)" to type 
+"System.Int64". Error: "Input string was not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-survey.ps1:7 char:3
++ H 'processes (python/node/cargo/rustc/etc)'
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+powershell.exe pid=25448 ws=62MB
+   "powershell.exe" -NoExit -ExecutionPolicy Bypass -File C:\Users\grich\Code\pcsa\research\pcsa-rl-low-latency\configs\laptop\ll_bench_window.ps1 -Jobs "time-ll:time-ll:2500:2500,parts:parts:2500:2500,time-base:time-base:2500:2500,time-belief:time-belief:2500:2500,dmg-live:dmg:100000:0,dmg-sim:dmg:0:3000,parity:parity:100000:6000"
+python.exe pid=5200 ws=4MB
+   "C:\Users\grich\Code\pcsa\research\pcsa-rl\.venv\Scripts\python.exe" -u -m rl2.scripts.ll_bench parity --live C:\Users\grich\Code\pcsa\research\ll-data\live --sim C:\Users\grich\Code\pcsa\research\pcsa-rl\runs\exploiter-1116\archive\u000[3-7]*.jsonl.gz --n-live 100000 --n-sim 6000 --out C:\Users\grich\Code\pcsa\research\pcsa-rl-low-latency\runs\low-latency\parity.json 
+python.exe pid=36236 ws=1126MB
+   "C:\Users\grich\Code\pcsa\tools\python312\python.exe" -u -m rl2.scripts.ll_bench parity --live C:\Users\grich\Code\pcsa\research\ll-data\live --sim C:\Users\grich\Code\pcsa\research\pcsa-rl\runs\exploiter-1116\archive\u000[3-7]*.jsonl.gz --n-live 100000 --n-sim 6000 --out C:\Users\grich\Code\pcsa\research\pcsa-rl-low-latency\runs\low-latency\parity.json 
+powershell.exe pid=30188 ws=87MB
+   powershell  -NoProfile -ExecutionPolicy Bypass -File C:\Users\grich\Code\pcsa\poke-engine-investigation\06-survey.ps1
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "top mem" to type "System.Int64". Error: "Input string 
+was not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-survey.ps1:9 char:3
++ H 'top mem'; Get-Process | Sort WS -desc | Select -First 8 Name,Id,@{ ...
++   ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+
+Name                                     Id   MB
+----                                     --   --
+python                                36236 1127
+SupportAssistAgent                    13460  783
+Memory Compression                     4196  749
+mc-fw-host                             5668  609
+Dell.TechHub.Instrumentation.SubAgent 12184  415
+explorer                              11184  302
+AWPerformance.SCSubAgent              13236  298
+Dell.CoreServices.Client               2448  256
+
+
+
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "cpu load" to type "System.Int64". Error: "Input string 
+was not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-survey.ps1:10 char:3
++ H 'cpu load'; (Get-CimInstance Win32_Processor).LoadPercentage
++   ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+8
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "whoami" to type "System.Int64". Error: "Input string 
+was not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-survey.ps1:11 char:3
++ H 'whoami'; whoami; Get-Date
++   ~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+awl\pcsa
+
+Monday, November 16, 2026 3:12:35 PM
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "scheduled tasks" to type "System.Int64". Error: "Input 
+string was not in a correct format."
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-survey.ps1:12 char:3
++ H 'scheduled tasks'; Get-ScheduledTask | Where-Object {$_.TaskPath -e ...
++   ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHistoryCommand
+ 
+
+TaskName                                                                       State
+--------                                                                       -----
+Dell SupportAssistAgent AutoUpdate                                             Ready
+iGoAudioTask                                                                 Running
+iGoAudioTaskSession                                                          Running
+ll-bench                                                                     Running
+MicrosoftEdgeUpdateTaskMachineCore{B549D179-43FA-45BC-B56A-498FF155DA6D}     Running
+MicrosoftEdgeUpdateTaskMachineUA{52ABBC02-6292-4D1D-8750-3E091A2B2678}         Ready
+NVIDIA App SelfUpdate_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}                   Ready
+OneDrive Reporting Task-S-1-5-21-2871042230-491216435-291009728-1001           Ready
+OneDrive Standalone Update Task-S-1-5-21-2871042230-491216435-291009728-1001   Ready
+OneDrive Startup Task-S-1-5-21-2871042230-491216435-291009728-1001             Ready
+x1116-base                                                                     Ready
+x1116-eval                                                                     Ready
+x1116-smoke                                                                    Ready
+x1116-train                                                                    Ready
+x1116b-train                                                                   Ready
+xcand-eval                                                                     Ready
+
+
+
+
+

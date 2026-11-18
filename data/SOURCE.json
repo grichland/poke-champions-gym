@@ -1,0 +1,6 @@
+{
+"counts": {"moves":515,"natures":25,"species":392},
+"generator": "tools/data/gen_data.js",
+"legality": "species and moves without isNonstandard in Dex.mod(\"champions\")",
+"showdown": {"commit":"c0845f33d381402dfcb18ce324c20a94f18af075","format":"gen9championsbssregmc","mod":"champions","repository":"https://github.com/smogon/pokemon-showdown"}
+}

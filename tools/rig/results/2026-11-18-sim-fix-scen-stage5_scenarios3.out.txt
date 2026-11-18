@@ -1,0 +1,21 @@
+identical      berserk + sitrus: the boost comes first, the berry then brings HP back above half
+identical      berserk + oran: boost, then the berry, still below half
+identical      anger shell + sitrus: five stages first, then the berry
+identical      anger shell + oran
+identical      berserk + sitrus: a multi-hit move crosses half on its first hit, the berry is eaten between hits
+identical      berserk + oran: a multi-hit move crosses half, the berry between hits, the last hit below half again
+identical      anger shell + sitrus: a three-hit move crosses half on a middle hit
+identical      berserk + sitrus behind a substitute: the hit on the doll changes nothing, the next hit boosts
+identical      berserk + sitrus: the substitute's own cost takes it below half, the berry at once, no boost
+identical      berserk + sitrus against sheer force: the berry still waits for the boost
+identical      berserk + sitrus: a confusion self-hit below half, the berry waits for the holder's next move
+identical      berserk + sitrus: a confusion self-hit while choosing a multi-hit move, the berry still waits
+identical      berserk + sitrus: rocky helmet takes it below half, the berry at once, no boost
+identical      berserk + sitrus against unnerve: boost, no berry
+identical      berserk + eject button: the boost, then out
+identical      berserk + red card: the boost, then the attacker is dragged out
+identical      emergency exit + sitrus: the berry at Update keeps it above half, no exit
+identical      wimp out + oran: the berry leaves it below half, out it goes
+identical      cheek pouch + sitrus below half; ripen + oran
+{"scenarios": 19, "identical": 19}
+{"rows_steps": 92, "rows_steps_equal": 92, "disagreements": {}}

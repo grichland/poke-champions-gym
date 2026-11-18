@@ -1,0 +1,9 @@
+ÿþpilot_encore vs tower: 10000 games, A 44.1% (A seat0 43.7%, A seat1 44.4%), turns mean 6.9 max 46, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 20000/20000, prior0 0, truth 0, hidden 0
+pilot_encore vs max_damage: 10000 games, A 43.8% (A seat0 43.8%, A seat1 43.7%), turns mean 6.4 max 61, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 20000/20000, prior0 0, truth 0, hidden 0
+pilot_weather vs tower: 10000 games, A 39.5% (A seat0 39.5%, A seat1 39.5%), turns mean 7.0 max 50, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 20000/20000, prior0 0, truth 0, hidden 0
+pilot_weather vs max_damage: 10000 games, A 38.1% (A seat0 38.1%, A seat1 38.1%), turns mean 6.4 max 60, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 20000/20000, prior0 0, truth 0, hidden 0
+pilot_hazard vs tower: 10000 games, A 40.2% (A seat0 39.9%, A seat1 40.5%), turns mean 7.5 max 75, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 20000/20000, prior0 0, truth 0, hidden 0
+pilot_hazard vs max_damage: 10000 games, A 40.8% (A seat0 40.9%, A seat1 40.7%), turns mean 7.0 max 61, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 20000/20000, prior0 0, truth 0, hidden 0
+pilot_priority vs tower: 10000 games, A 50.1% (A seat0 50.2%, A seat1 49.9%), turns mean 6.7 max 72, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 20000/20000, prior0 0, truth 0, hidden 0
+pilot_priority vs max_damage: 10000 games, A 52.1% (A seat0 51.6%, A seat1 52.7%), turns mean 6.3 max 61, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 20000/20000, prior0 0, truth 0, hidden 0
+POOLS_DONE

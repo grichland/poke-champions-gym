@@ -1,0 +1,5 @@
+{"name":"acc_sheercold","trials":40000,"counts":{"hit":7950,"miss":32050},"wall_s":56.736,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"sec_bodyslam","trials":40000,"counts":{"none":28117,"par":11883},"wall_s":76.144,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"speedtie_residual","trials":40000,"counts":{"p2":19884,"p1":20116},"wall_s":59.617,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"trap_turns","trials":40000,"counts":{"4":19886,"5":20114},"wall_s":239.684,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"ab_moody","trials":40000,"counts":{"def+spd-":1986,"spd+spa-":1920,"atk+def-":1980,"atk+spe-":2019,"spa+spe-":2046,"spd+atk-":1979,"spa+def-":2100,"spd+spe-":1990,"atk+spa-":1997,"spa+atk-":2002,"def+spe-":2011,"spe+spa-":1977,"spe+atk-":2017,"spe+spd-":1934,"def+spa-":1939,"def+atk-":2007,"atk+spd-":2024,"spe+def-":2036,"spd+def-":2000,"spa+spd-":2036},"wall_s":26.128,"showdown":"c0845f33d","format":"gen9championsbssregmc"}

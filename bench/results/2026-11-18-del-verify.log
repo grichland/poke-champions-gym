@@ -1,0 +1,76 @@
+ÿþbash.exe : + cargo build --offline --release --workspace
+At line:1 char:1
++ & 'C:\Program Files\Git\bin\bash.exe' target/verify_del.sh 2>&1 | Tee ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (+ cargo build -...ase --workspace:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
++ tail -2
+   Compiling cg-bindings v0.1.0 (C:\Users\user\Code\pokemon_champions\poke-engine\bindings)
+    Finished `release` profile [optimized + debuginfo] target(s) in 9.04s
++ cargo test --offline --release --workspace
++ grep -E '^test result|FAILED|failed|panicked'
++ awk '{p+=$4; f+=$6} END {print "rust passed",p,"failed",f}'
+rust passed 299 failed 0
++ bash tools/build/python-ext.sh
++ tail -1
+python-ext.sh: wrote python/champions_gym/_cg.cp312-win_amd64.pyd
++ for t in python/tests/*.py
++ PYTHONDONTWRITEBYTECODE=1
++ PYTHONPATH=python
++ '/c/Program Files/Python312/python.exe' python/tests/test_battle_view.py
++ tail -1
+3 passed, 0 failed
++ for t in python/tests/*.py
++ PYTHONDONTWRITEBYTECODE=1
++ PYTHONPATH=python
++ '/c/Program Files/Python312/python.exe' python/tests/test_env.py
++ tail -1
+7 passed, 0 failed
++ for t in python/tests/*.py
++ PYTHONDONTWRITEBYTECODE=1
++ PYTHONPATH=python
++ '/c/Program Files/Python312/python.exe' python/tests/test_obs.py
++ tail -1
+6 passed, 0 failed
++ python tools/rig/driver.py --sim --real --rows --battles 1500 --seed 99401 --out target/vd-real.jsonl.gz
++ tail -2
++ cut -c1-200
+{"battles": 1500, "battles_identical": 1500, "steps": 31714, "options_identical": 31714, "states_identical": 31714, "events_identical": 31714, "tape_errors": 0, "engine_errors": 0, "oracle_errors": 0,
+{"rows_steps": 31714, "rows_steps_equal": 31714, "kinds": {"enter": {"both": 16344, "showdown_only": 0, "engine_only": 0}, "turn": {"both": 24490, "showdown_only": 0, "engine_only": 0}, "mega_stone": 
++ python tools/rig/driver.py --sim --focus5 --rows --battles 1000 --seed 99402 --out target/vd-focus5.jsonl.gz
++ tail -2
++ cut -c1-200
+{"battles": 1000, "battles_identical": 1000, "steps": 30525, "options_identical": 30525, "states_identical": 30525, "events_identical": 30525, "tape_errors": 0, "engine_errors": 0, "oracle_errors": 0,
+{"rows_steps": 30525, "rows_steps_equal": 30525, "kinds": {"enter": {"both": 14191, "showdown_only": 0, "engine_only": 0}, "ability": {"both": 3857, "showdown_only": 0, "engine_only": 0}, "item": {"bo
++ for s in stage5_scenarios stage5_scenarios2 stage5_scenarios3 stage5_scenarios4
++ python tools/rig/scenarios.py tools/rig/data/stage5_scenarios.json --rows
++ tail -1
++ cut -c1-200
+{"rows_steps": 174, "rows_steps_equal": 174, "disagreements": {}}
++ for s in stage5_scenarios stage5_scenarios2 stage5_scenarios3 stage5_scenarios4
++ python tools/rig/scenarios.py tools/rig/data/stage5_scenarios2.json --rows
++ tail -1
++ cut -c1-200
+{"rows_steps": 139, "rows_steps_equal": 139, "disagreements": {}}
++ for s in stage5_scenarios stage5_scenarios2 stage5_scenarios3 stage5_scenarios4
++ python tools/rig/scenarios.py tools/rig/data/stage5_scenarios3.json --rows
++ tail -1
++ cut -c1-200
+{"rows_steps": 134, "rows_steps_equal": 134, "disagreements": {}}
++ for s in stage5_scenarios stage5_scenarios2 stage5_scenarios3 stage5_scenarios4
++ python tools/rig/scenarios.py tools/rig/data/stage5_scenarios4.json --rows
++ tail -1
++ cut -c1-200
+{"rows_steps": 536, "rows_steps_equal": 536, "disagreements": {}}
++ ./target/release/players_run.exe --a tower --b max_damage --games 20000 --seed 7801 --threads 24 --cap 300 --label 
+del-verify --out bench/results/2026-11-18-del-verify.jsonl
++ tail -1
+tower vs max_damage: 20000 games, A 50.5% (A seat0 49.7%, A seat1 51.2%), turns mean 6.0 max 57, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 40000/40000, prior0 0, truth 0, hidden 0 (5024 games, 28623 steps), refused trapped 0, steps 189433, 22860 battles/s, 394139 decisions/s
++ grep -rnE 'poke_engine::(state|instruction|choices|engine|io|pokemon)\b|random_play|pmariglia|license' 
+'--include=*.rs' '--include=*.toml' '--include=*.py' '--include=*.sh' '--include=*.js' .
++ grep -vE '^./(target|docs|bench/results|tools/rig/results|gaps)/'
++ head
+./bench/python/pyenv_play.py:58:        "phase": "runner_random_players",
+VERIFY_DONE
++ echo VERIFY_DONE

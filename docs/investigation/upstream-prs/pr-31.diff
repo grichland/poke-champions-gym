@@ -1,0 +1,360 @@
+diff --git a/src/genx/choice_effects.rs b/src/genx/choice_effects.rs
+index fd953b46..20a346cd 100644
+--- a/src/genx/choice_effects.rs
++++ b/src/genx/choice_effects.rs
+@@ -1,6 +1,8 @@
+ use super::abilities::Abilities;
+ use super::damage_calc::type_effectiveness_modifier;
+-use super::generate_instructions::{add_remove_status_instructions, apply_boost_instruction};
++use super::generate_instructions::{
++    add_remove_status_instructions, apply_boost_instruction, immune_to_status,
++};
+ use super::items::{get_choice_move_disable_instructions, Items};
+ use super::state::{PokemonVolatileStatus, Terrain, Weather};
+ use crate::choices::{
+@@ -74,23 +76,28 @@ pub fn modify_choice(
+         }
+         #[cfg(feature = "champions")]
+         Choices::DIRECLAW => {
+-            // percentages are a hack and are incorrect in situations
+-            // where one or more status effects are not possible
+-            attacker_choice.add_or_create_secondaries(Secondary {
+-                chance: 10.00,
+-                target: MoveTarget::Opponent,
+-                effect: Effect::Status(PokemonStatus::POISON),
+-            });
+-            attacker_choice.add_or_create_secondaries(Secondary {
+-                chance: 11.125,
+-                target: MoveTarget::Opponent,
+-                effect: Effect::Status(PokemonStatus::PARALYZE),
+-            });
+-            attacker_choice.add_or_create_secondaries(Secondary {
+-                chance: 12.25,
+-                target: MoveTarget::Opponent,
+-                effect: Effect::Status(PokemonStatus::SLEEP),
+-            });
++            // Champions (data/mods/champions/moves.ts): one 30% roll, then sample(psn, par, slp) - each
++            // status 10%, and a sampled status the target is immune to is wasted, not redrawn. Secondaries
++            // here are independent rolls applied in sequence, and a status that cannot land adds nothing,
++            // so the k-th status that CAN land (k = 0, 1, 2) needs conditional chance 10 / (100 - 10k):
++            // 10%, 100/9 %, 12.5%. Immunity is decided by the same check that applies the status.
++            let defending_side_ref = attacking_side_ref.get_other_side();
++            let mut possible = 0.0;
++            for status in [
++                PokemonStatus::POISON,
++                PokemonStatus::PARALYZE,
++                PokemonStatus::SLEEP,
++            ] {
++                if immune_to_status(state, &MoveTarget::Opponent, &defending_side_ref, &status) {
++                    continue;
++                }
++                attacker_choice.add_or_create_secondaries(Secondary {
++                    chance: 1000.0 / (100.0 - 10.0 * possible),
++                    target: MoveTarget::Opponent,
++                    effect: Effect::Status(status),
++                });
++                possible += 1.0;
++            }
+         }
+         Choices::DOUBLESHOCK => {
+             if !attacking_side
+diff --git a/src/genx/generate_instructions.rs b/src/genx/generate_instructions.rs
+index 2a8d2cd5..80a3b6b3 100644
+--- a/src/genx/generate_instructions.rs
++++ b/src/genx/generate_instructions.rs
+@@ -4303,10 +4303,16 @@ pub fn generate_instructions_from_move_pair(
+             side_one_moves_first_instruction.update_percentage(0.5);
+ 
+             // side_one moves first
++            // Both orders must start from the same, unmodified choices. handle_both_moves mutates its
++            // choices in place (before_move's modify_choice / ability / item changes on the first mover,
++            // `first_move = false` on the second), so the side_one-first branch runs on copies; without
++            // them the side_two-first branch below re-applied side_one's modifications (Dire Claw's
++            // secondaries twice, Tough Claws / Life Orb x1.3 twice) and treated side_two as having moved
++            // second (no flinch, Sucker Punch failing).
+             handle_both_moves(
+                 state,
+-                &mut side_one_choice,
+-                &mut side_two_choice,
++                &mut side_one_choice.clone(),
++                &mut side_two_choice.clone(),
+                 SideReference::SideOne,
+                 side_one_moves_first_instruction,
+                 &mut state_instructions_vec,
+diff --git a/tests/test_battle_mechanics.rs b/tests/test_battle_mechanics.rs
+index 8fe7ad9b..fe3367f4 100644
+--- a/tests/test_battle_mechanics.rs
++++ b/tests/test_battle_mechanics.rs
+@@ -13688,8 +13688,10 @@ fn test_direclaw() {
+         Choices::SPLASH,
+     );
+ 
++    // Champions: 30% then an even psn/par/slp pick - each 10% (Showdown). The previous values
++    // (70.18903, 9.79847, 10.0125, 9.999999) recorded the old 11.125/12.25 constants, not the rule.
+     let expected_percentages = if cfg!(feature = "champions") {
+-        (70.18903, 9.79847, 10.0125, 9.999999)
++        (70.0, 10.0, 9.999999, 10.000001)
+     } else {
+         (49.998, 16.666, 16.666, 16.67)
+     };
+diff --git a/tests/test_champions_dire_claw.rs b/tests/test_champions_dire_claw.rs
+new file mode 100644
+index 00000000..ef4b6234
+--- /dev/null
++++ b/tests/test_champions_dire_claw.rs
+@@ -0,0 +1,86 @@
++#![cfg(feature = "champions")]
++//! Dire Claw in Champions: one 30% roll, then sample(psn, par, slp). Each status lands 10% of the time;
++//! a sampled status the target is immune to is wasted (not redrawn), so it contributes 0% and the others
++//! stay at 10%. Expected values are Showdown's (data/mods/champions/moves.ts).
++
++use poke_engine::choices::Choices;
++use poke_engine::engine::generate_instructions::generate_instructions_from_move_pair;
++use poke_engine::engine::state::MoveChoice;
++use poke_engine::instruction::{Instruction, StateInstructions};
++use poke_engine::state::{PokemonMoveIndex, PokemonStatus, PokemonType, SideReference, State};
++
++fn status_probabilities(state: &mut State) -> [f32; 3] {
++    state
++        .side_one
++        .get_active()
++        .replace_move(PokemonMoveIndex::M0, Choices::DIRECLAW);
++    state
++        .side_two
++        .get_active()
++        .replace_move(PokemonMoveIndex::M0, Choices::SPLASH);
++    state.side_one.get_active().speed = 101; // strict order: Dire Claw first, no tie
++    state.side_two.get_active().speed = 100;
++    state.side_two.get_active().hp = 500;
++    state.side_two.get_active().maxhp = 500;
++    let branches: Vec<StateInstructions> = generate_instructions_from_move_pair(
++        state,
++        &MoveChoice::Move(PokemonMoveIndex::M0),
++        &MoveChoice::Move(PokemonMoveIndex::M0),
++        false,
++    );
++    let mut p = [0.0f32; 3];
++    for b in &branches {
++        for i in &b.instruction_list {
++            if let Instruction::ChangeStatus(c) = i {
++                if c.side_ref == SideReference::SideTwo {
++                    match c.new_status {
++                        PokemonStatus::POISON => p[0] += b.percentage,
++                        PokemonStatus::PARALYZE => p[1] += b.percentage,
++                        PokemonStatus::SLEEP => p[2] += b.percentage,
++                        _ => {}
++                    }
++                }
++            }
++        }
++    }
++    p
++}
++
++fn assert_close(expected: [f32; 3], actual: [f32; 3]) {
++    for k in 0..3 {
++        assert!(
++            (expected[k] - actual[k]).abs() < 1e-3,
++            "psn/par/slp expected {:?}, got {:?}",
++            expected,
++            actual
++        );
++    }
++}
++
++#[test]
++fn test_dire_claw_each_status_ten_percent() {
++    let mut s = State::default();
++    s.side_two.get_active().types = (PokemonType::NORMAL, PokemonType::TYPELESS);
++    assert_close([10.0, 10.0, 10.0], status_probabilities(&mut s));
++}
++
++#[test]
++fn test_dire_claw_poison_type_target_wastes_the_poison_pick() {
++    let mut s = State::default();
++    s.side_two.get_active().types = (PokemonType::POISON, PokemonType::TYPELESS);
++    assert_close([0.0, 10.0, 10.0], status_probabilities(&mut s));
++}
++
++#[test]
++fn test_dire_claw_electric_type_target_wastes_the_paralysis_pick() {
++    let mut s = State::default();
++    s.side_two.get_active().types = (PokemonType::ELECTRIC, PokemonType::TYPELESS);
++    assert_close([10.0, 0.0, 10.0], status_probabilities(&mut s));
++}
++
++#[test]
++fn test_dire_claw_already_statused_target_gets_nothing() {
++    let mut s = State::default();
++    s.side_two.get_active().status = PokemonStatus::BURN;
++    assert_close([0.0, 0.0, 0.0], status_probabilities(&mut s));
++}
+diff --git a/tests/test_speed_tie_choice_independence.rs b/tests/test_speed_tie_choice_independence.rs
+new file mode 100644
+index 00000000..881cb353
+--- /dev/null
++++ b/tests/test_speed_tie_choice_independence.rs
+@@ -0,0 +1,163 @@
++#![cfg(not(any(feature = "gen1", feature = "gen2", feature = "gen3")))]
++//! At a speed tie both move orders must be resolved from the SAME, unmodified choices.
++//!
++//! generate_instructions_from_move_pair resolves a tie by running "side one first" and then "side two
++//! first". handle_both_moves mutates its choices in place (before_move's modify_choice / ability / item
++//! changes on the first mover; `first_move = false` on the second), so if the first branch is not given
++//! copies, the second branch inherits its mutations: side one's modifications are applied twice and side
++//! two is treated as having moved second even when it moves first. Each test compares the tie against the
++//! same matchup with a strict speed order, which has no second branch to contaminate.
++
++use poke_engine::choices::Choices;
++use poke_engine::engine::abilities::Abilities;
++use poke_engine::engine::generate_instructions::generate_instructions_from_move_pair;
++use poke_engine::engine::state::{MoveChoice, PokemonVolatileStatus};
++use poke_engine::instruction::{Instruction, StateInstructions};
++use poke_engine::state::{PokemonMoveIndex, SideReference, State};
++
++fn run(state: &mut State, m1: Choices, m2: Choices) -> Vec<StateInstructions> {
++    state
++        .side_one
++        .get_active()
++        .replace_move(PokemonMoveIndex::M0, m1);
++    state
++        .side_two
++        .get_active()
++        .replace_move(PokemonMoveIndex::M0, m2);
++    let before = format!("{:?}", state);
++    let out = generate_instructions_from_move_pair(
++        state,
++        &MoveChoice::Move(PokemonMoveIndex::M0),
++        &MoveChoice::Move(PokemonMoveIndex::M0),
++        false,
++    );
++    assert_eq!(before, format!("{:?}", state));
++    out
++}
++
++fn bulky(speed_one: i16, speed_two: i16) -> State {
++    let mut state = State::default();
++    for side in [&mut state.side_one, &mut state.side_two] {
++        let p = side.get_active();
++        p.hp = 500;
++        p.maxhp = 500;
++    }
++    state.side_one.get_active().speed = speed_one;
++    state.side_two.get_active().speed = speed_two;
++    state
++}
++
++fn damage_to(si: &StateInstructions, side: SideReference) -> Vec<i16> {
++    si.instruction_list
++        .iter()
++        .filter_map(|i| match i {
++            Instruction::Damage(d) if d.side_ref == side => Some(d.damage_amount),
++            _ => None,
++        })
++        .collect()
++}
++
++fn side_one_moved_first(si: &StateInstructions) -> bool {
++    matches!(si.instruction_list.first(), Some(Instruction::Damage(d)) if d.side_ref == SideReference::SideTwo)
++}
++
++#[test]
++fn test_speed_tie_does_not_reapply_side_one_ability_modifier() {
++    // Tough Claws (x1.3 contact) on side one. With a strict order there is one value for its damage;
++    // at a tie, BOTH orders must deal exactly that value - the bug dealt x1.3 twice when side two moved first.
++    let mut reference = bulky(100, 101);
++    reference.side_one.get_active().ability = Abilities::TOUGHCLAWS;
++    let expected = damage_to(
++        &run(&mut reference, Choices::TACKLE, Choices::SPLASH)[0],
++        SideReference::SideTwo,
++    );
++
++    let mut tie = bulky(100, 100);
++    tie.side_one.get_active().ability = Abilities::TOUGHCLAWS;
++    let branches = run(&mut tie, Choices::TACKLE, Choices::SPLASH);
++    assert!(branches.len() >= 2, "a tie must produce both orders");
++    for b in &branches {
++        assert_eq!(
++            expected,
++            damage_to(b, SideReference::SideTwo),
++            "order changed side one's damage: {:?}",
++            b
++        );
++    }
++}
++
++#[test]
++fn test_speed_tie_sucker_punch_mirror_lands_in_both_orders() {
++    // Whoever moves first lands Sucker Punch; the reply fails. The bug left side two's Sucker Punch
++    // failing even when side two moved first, so half the tie dealt no damage at all.
++    let mut tie = bulky(100, 100);
++    let branches = run(&mut tie, Choices::SUCKERPUNCH, Choices::SUCKERPUNCH);
++    let mut p_side_one_hit = 0.0;
++    let mut p_side_two_hit = 0.0;
++    for b in &branches {
++        let to_two = damage_to(b, SideReference::SideTwo).len();
++        let to_one = damage_to(b, SideReference::SideOne).len();
++        assert_eq!(
++            1,
++            to_one + to_two,
++            "exactly one Sucker Punch must land: {:?}",
++            b
++        );
++        if to_two == 1 {
++            p_side_one_hit += b.percentage
++        } else {
++            p_side_two_hit += b.percentage
++        }
++    }
++    assert!(
++        (p_side_one_hit - 50.0).abs() < 1e-3,
++        "side one lands {}%",
++        p_side_one_hit
++    );
++    assert!(
++        (p_side_two_hit - 50.0).abs() < 1e-3,
++        "side two lands {}%",
++        p_side_two_hit
++    );
++}
++
++#[test]
++fn test_speed_tie_side_two_can_flinch_when_it_moves_first() {
++    // Flinch requires the user to move first. The bug carried first_move = false into the branch where
++    // side two moves first, so side two could never flinch side one at a tie.
++    let mut tie = bulky(100, 100);
++    let branches = run(&mut tie, Choices::IRONHEAD, Choices::IRONHEAD);
++    let flinched = |b: &StateInstructions, side: SideReference| {
++        b.instruction_list.iter().any(|i| matches!(i,
++            Instruction::ApplyVolatileStatus(v) if v.side_ref == side && v.volatile_status == PokemonVolatileStatus::FLINCH))
++    };
++    let p_one_flinches_two: f32 = branches
++        .iter()
++        .filter(|b| flinched(b, SideReference::SideTwo))
++        .map(|b| b.percentage)
++        .sum();
++    let p_two_flinches_one: f32 = branches
++        .iter()
++        .filter(|b| flinched(b, SideReference::SideOne))
++        .map(|b| b.percentage)
++        .sum();
++    assert!(
++        p_one_flinches_two > 0.0,
++        "control: side one flinches side two when it moves first"
++    );
++    assert!(
++        (p_one_flinches_two - p_two_flinches_one).abs() < 1e-3,
++        "a mirror tie must be symmetric: side one flinches {}%, side two {}%",
++        p_one_flinches_two,
++        p_two_flinches_one
++    );
++}
++
++#[test]
++fn test_control_strict_order_unaffected() {
++    // No tie: one order, nothing to contaminate - must give the same damage as before the fix.
++    let mut s = bulky(101, 100);
++    s.side_one.get_active().ability = Abilities::TOUGHCLAWS;
++    let branches = run(&mut s, Choices::TACKLE, Choices::SPLASH);
++    assert!(branches.iter().all(side_one_moved_first));
++}

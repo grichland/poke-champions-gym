@@ -1,0 +1,75 @@
+
+===== node =====
+v24.22.1
+
+===== showdown =====
+{
+  "name": "pokemon-showdown",
+  "description": "The server for the PokAcmon Showdown battle simulator",
+  "version": "0.11.11",
+  "main": "dist/sim/index.js",
+  "types": "dist/sim/index.d.ts",
+  "dependencies": {
+    "esbuild": "^0.25.0",
+    "mysql2": "^3.14.2",
+    "preact": "^10.5.15",
+    "preact-render-to-string": "^6.5.13",
+    "sockjs": "^0.3.21",
+c0845f33d381402dfcb18ce324c20a94f18af075 Fri Oct 23 15:15:41 2026 -0700
+pokemon-showdown
+node
+vendor
+MANIFEST.json
+
+===== start_visible.ps1 =====
+# Laptop AWL, run over ssh: opens launch_train.ps1 in a visible PowerShell window on grich's desktop (scheduled task,
+# Interactive logon = the logged-in session; no password stored). Needs grich logged in.
+param([Parameter(Mandatory)][string]$Config, [Parameter(Mandatory)][string]$Log, [string]$Name = 'pcsa-train')
+$old = Get-ScheduledTask -TaskName $Name -ErrorAction SilentlyContinue
+if ($old -and $old.State -eq "Running") { throw "task $Name is still running (its window is open): close that window or Stop-ScheduledTask -TaskName $Name first" }
+$arg = "-NoExit -ExecutionPolicy Bypass -File C:\Users\grich\Code\pcsa\tools\launch_train.ps1 -Config `"$Config`" -Log `"$Log`" -Title `"$Name`""
+$a = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument $arg -WorkingDirectory 'C:\Users\grich\Code\pcsa\research\pcsa-rl'
+$p = New-ScheduledTaskPrincipal -UserId 'AWL\grich' -LogonType Interactive -RunLevel Limited
+$s = New-ScheduledTaskSettingsSet -ExecutionTimeLimit ([TimeSpan]::Zero) -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries
+Register-ScheduledTask -TaskName $Name -Action $a -Principal $p -Settings $s -Force | Out-Null
+Start-ScheduledTask -TaskName $Name
+Start-Sleep 3
+Get-ScheduledTask -TaskName $Name | Select-Object TaskName, State
+
+===== dotnet csc =====
+True
+
+===== compile+run unsigned C# exe =====
+compile exit: 0
+RUN FAILED: Program 'hello.exe' failed to run: Unknown error (0xfffffffe)At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-test.ps1:12 char:108
++ ... lo.cs"; "compile exit: $LASTEXITCODE"; try { & "$d\hello.exe"; "run e ...
++                                                  ~~~~~~~~~~~~~~~~.
+
+===== copy of an unsigned native exe? (python-built none) signature of the new exe =====
+Get-AuthenticodeSignature : File C:\Users\grich\Code\pcsa\poke-engine-investigation\exetest\hello.exe was not found.
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-test.ps1:13 char:85
++ ... ure of the new exe'; Get-AuthenticodeSignature "$d\hello.exe" | Selec ...
++                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (:) [Get-AuthenticodeSignature], FileNotFoundException
+    + FullyQualifiedErrorId : SignatureCommandsBaseFileNotFound,Microsoft.PowerShell.Commands.GetAuthenticodeSignature 
+   Command
+ 
+
+
+===== pyd proxy test =====
+
+
+Status : NotSigned
+
+
+
+
+IMPORT OK C:\Users\grich\Code\pcsa\poke-engine-investigation\pydtest\pe_ext\__init__.py
+['battle_over', 'evaluate_state', 'options', 'pe_ext', 'random_battles', 'step']
+py exit: 0
+
+===== CodeIntegrity events since start =====
+
+
+===== cleanup note =====
+files left in C:\Users\grich\Code\pcsa\poke-engine-investigation (exetest, pydtest)

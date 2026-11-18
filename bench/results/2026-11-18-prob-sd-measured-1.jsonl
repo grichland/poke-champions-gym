@@ -1,0 +1,6 @@
+{"name":"acc70","trials":40000,"counts":{"hit":28262,"miss":11738},"wall_s":68.848,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"crit_r1","trials":40000,"counts":{"no":38356,"crit":1644},"wall_s":74.688,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"triattack","trials":40000,"counts":{"none":32012,"frz":2587,"par":2695,"brn":2706},"wall_s":65.026,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"par_full","trials":40000,"counts":{"moves":34977,"cant":5023},"wall_s":51.135,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"ab_effectspore","trials":40000,"counts":{"par":4052,"psn":3502,"none":27994,"slp":4452},"wall_s":52.619,"showdown":"c0845f33d","format":"gen9championsbssregmc"}
+{"name":"move_sleeptalk","trials":40000,"counts":{"swordsdance":13445,"curse":13327,"bodyslam":13228},"wall_s":57.441,"showdown":"c0845f33d","format":"gen9championsbssregmc"}

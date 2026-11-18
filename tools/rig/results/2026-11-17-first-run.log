@@ -1,0 +1,11 @@
+50 battles, 996 steps, 2s
+100 battles, 2064 steps, 5s
+150 battles, 3027 steps, 6s
+200 battles, 3973 steps, 8s
+250 battles, 4961 steps, 10s
+300 battles, 5965 steps, 12s
+350 battles, 6888 steps, 14s
+400 battles, 7939 steps, 16s
+450 battles, 8866 steps, 18s
+500 battles, 9848 steps, 20s
+{"battles": 500, "steps": 9848, "exact": 2340, "damage_only": 237, "mismatch": 6924, "skipped": 345, "engine_error": 2, "options_pass": 9484, "options_fail": 19, "load_roundtrip_diff": 2, "seconds": 20.0}

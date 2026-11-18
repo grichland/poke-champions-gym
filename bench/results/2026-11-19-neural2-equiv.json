@@ -1,0 +1,22 @@
+[
+ {
+  "opponent": "tower",
+  "games": 200,
+  "batched_decisions": 2247,
+  "single_decisions": 2247,
+  "identical_prefix": 2247,
+  "equal": true,
+  "same_count": 2247,
+  "first_difference": null
+ },
+ {
+  "opponent": "max_damage",
+  "games": 200,
+  "batched_decisions": 2107,
+  "single_decisions": 2107,
+  "identical_prefix": 2107,
+  "equal": true,
+  "same_count": 2107,
+  "first_difference": null
+ }
+]

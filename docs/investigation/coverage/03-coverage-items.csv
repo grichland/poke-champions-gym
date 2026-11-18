@@ -1,0 +1,167 @@
+name,id,used,legal,pool_share,live_share,ladder_share,team_share,in_gold,status,confidence,reason
+Leftovers,leftovers,1,1,0.191419,0.180823,0.097197,,1,a,medium,"referenced in generate_instructions.rs,items.rs"
+Life Orb,lifeorb,1,1,0.124222,0.128192,0.069984,,0,a,medium,referenced in items.rs
+Focus Sash,focussash,1,1,0.058655,0.062011,0.109939,,1,a,medium,referenced in generate_instructions.rs
+Choice Scarf,choicescarf,1,1,0.054525,0.06149,0.133613,,1,a,medium,"referenced in generate_instructions.rs,items.rs"
+Sitrus Berry,sitrusberry,1,1,0.048041,0.046378,0.130832,,0,a,medium,referenced in items.rs
+Rocky Helmet,rockyhelmet,1,1,0.045579,0.045857,0.030846,,0,a,medium,referenced in items.rs
+Garchompite Z,garchompitez,1,1,0.044826,0.03752,0,,1,a,high,mega stone arm in mega_evolve_target GARCHOMP
+Golisopite,golisopite,1,1,0.030178,0.031266,0.034485,,1,a,high,mega stone arm in mega_evolve_target GOLISOPOD
+Salamencite,salamencite,1,1,0.02399,0.02345,0.033216,,0,a,high,mega stone arm in mega_evolve_target SALAMENCE
+Lucarionite Z,lucarionitez,1,1,0.023311,0.018239,0.016298,,0,a,high,mega stone arm in mega_evolve_target LUCARIO
+Dragoninite,dragoninite,1,1,0.019204,0.01876,0.008017,,0,a,high,mega stone arm in mega_evolve_target DRAGONITE
+Light Clay,lightclay,1,1,0.018161,0.019281,0.023681,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Charizardite Y,charizarditey,1,1,0.017328,0.021886,0.001747,,0,a,high,mega stone arm in mega_evolve_target CHARIZARD
+Metagrossite,metagrossite,1,1,0.017147,0.010943,0.014396,,0,a,high,mega stone arm in mega_evolve_target METAGROSS
+Charizardite X,charizarditex,1,1,0.013536,0.015112,0.012227,,0,a,high,mega stone arm in mega_evolve_target CHARIZARD
+Terrain Extender,terrainextender,1,1,0.013102,0.016154,0.00782,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Blazikenite,blazikenite,1,1,0.012689,0.017196,0.009365,,0,a,high,mega stone arm in mega_evolve_target BLAZIKEN
+Air Balloon,airballoon,1,1,0.012174,0.008338,0.037364,,1,a,medium,"referenced in items.rs,state.rs"
+Baxcalibrite,baxcalibrite,1,1,0.010658,0.009901,0.002197,,0,a,high,mega stone arm in mega_evolve_target BAXCALIBUR
+Staraptite,staraptite,1,1,0.010631,0.012507,0.003754,,0,a,high,mega stone arm in mega_evolve_target STARAPTOR
+Raichunite Y,raichunitey,1,1,0.010631,0.005732,0.009973,,0,a,high,mega stone arm in mega_evolve_target RAICHU
+Glimmoranite,glimmoranite,1,1,0.010231,0.007295,0,,0,a,high,mega stone arm in mega_evolve_target GLIMMORA
+Black Glasses,blackglasses,1,1,0.009376,0.008338,0.016226,,0,a,medium,referenced in items.rs
+Greninjite,greninjite,1,1,0.008339,0.006253,0.005448,,0,a,high,mega stone arm in mega_evolve_target GRENINJA
+Clefablite,clefablite,1,1,0.008265,0.005211,0.004822,,0,a,high,mega stone arm in mega_evolve_target CLEFABLE
+Quick Claw,quickclaw,1,1,0.008219,0.007817,0.002522,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Gyaradosite,gyaradosite,1,1,0.007407,0.009901,0,,0,a,high,mega stone arm in mega_evolve_target GYARADOS
+Normal Gem,normalgem,1,1,0.007202,0.005732,0.007805,,0,a,medium,referenced in items.rs
+Shuca Berry,shucaberry,1,1,0.00703,0.005732,0.003957,,0,a,medium,referenced in items.rs
+Swampertite,swampertite,1,1,0.006927,0.009901,0,,0,a,high,mega stone arm in mega_evolve_target SWAMPERT
+Starminite,starminite,1,1,0.006859,0.011985,0.006252,,0,a,high,mega stone arm in mega_evolve_target STARMIE
+Delphoxite,delphoxite,1,1,0.006516,0.008859,0.006157,,0,a,high,mega stone arm in mega_evolve_target DELPHOX
+Damp Rock,damprock,1,1,0.006023,0.008338,0.01162,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Tyranitarite,tyranitarite,1,1,0.005601,0.002606,0.001312,,0,a,high,mega stone arm in mega_evolve_target TYRANITAR
+Gengarite,gengarite,1,1,0.005434,0.004169,0,,0,a,high,mega stone arm in mega_evolve_target GENGAR
+Lopunnite,lopunnite,1,1,0.005144,0.007295,0.004465,,0,a,high,mega stone arm in mega_evolve_target LOPUNNY
+Blastoisinite,blastoisinite,1,1,0.005144,0.002606,0.009673,,0,a,high,mega stone arm in mega_evolve_target BLASTOISE
+Lum Berry,lumberry,1,1,0.004841,0.003127,0.002481,,0,a,medium,"referenced in generate_instructions.rs,items.rs"
+Never-Melt Ice,nevermeltice,1,1,0.004801,0.003127,0.001554,,0,a,medium,referenced in items.rs
+Lucarionite,lucarionite,1,1,0.004124,0.002606,0.007549,,0,a,high,mega stone arm in mega_evolve_target LUCARIO
+Venusaurite,venusaurite,1,1,0.003772,0.00469,0.002379,,0,a,high,mega stone arm in mega_evolve_target VENUSAUR
+Banettite,banettite,1,1,0.003429,0.002606,0.005126,,0,a,high,mega stone arm in mega_evolve_target BANETTE
+Gardevoirite,gardevoirite,1,1,0.00338,0.003127,0.000949,,0,a,high,mega stone arm in mega_evolve_target GARDEVOIR
+Scizorite,scizorite,1,1,0.003258,0.001563,0.004456,,0,a,high,mega stone arm in mega_evolve_target SCIZOR
+Meganiumite,meganiumite,1,1,0.003086,0.003648,0.004855,,0,a,high,mega stone arm in mega_evolve_target MEGANIUM
+Smooth Rock,smoothrock,1,1,0.003029,0.001042,0.001026,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Excadrite,excadrite,1,1,0.003018,0.003127,0,,0,a,high,mega stone arm in mega_evolve_target EXCADRILL
+Absolite Z,absolitez,1,1,0.002538,0.002084,0.005575,,0,a,high,mega stone arm in mega_evolve_target ABSOL
+Mawilite,mawilite,1,1,0.002401,0.003648,0.003033,,0,a,high,mega stone arm in mega_evolve_target MAWILE
+Slowbronite,slowbronite,1,1,0.002401,0.001042,0.000594,,0,a,high,mega stone arm in mega_evolve_target SLOWBRO
+White Herb,whiteherb,1,1,0.002346,0.004169,0.010348,,0,a,medium,referenced in generate_instructions.rs
+Victreebelite,victreebelite,1,1,0.002058,0.001563,0.002051,,0,a,high,mega stone arm in mega_evolve_target VICTREEBEL
+Scovillainite,scovillainite,1,1,0.001852,0.002084,6.6e-05,,0,a,high,mega stone arm in mega_evolve_target SCOVILLAIN
+Heracronite,heracronite,1,1,0.001715,0.001042,0.001195,,0,a,high,mega stone arm in mega_evolve_target HERACROSS
+Shell Bell,shellbell,1,1,0.001473,0.002606,0,,0,a,medium,referenced in items.rs
+Eject Button,ejectbutton,1,1,0.00147,0.003127,0.001755,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Spell Tag,spelltag,1,1,0.001451,0.001042,0.007765,,0,a,medium,referenced in items.rs
+Scope Lens,scopelens,1,1,0.001372,0.003127,0.005052,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Eelektrossite,eelektrossite,1,1,0.001372,0.002606,0.001402,,0,a,high,mega stone arm in mega_evolve_target EELEKTROSS
+Dragalgite,dragalgite,1,1,0.001235,0.002084,0.00332,,0,a,high,mega stone arm in mega_evolve_target DRAGALGE
+Galladite,galladite,1,1,0.001029,0.001563,0.0002,,0,a,high,mega stone arm in mega_evolve_target GALLADE
+Mystic Water,mysticwater,1,1,0.001029,0.001042,0.00118,,0,a,medium,referenced in items.rs
+Pyroarite,pyroarite,1,1,0.001029,0.000521,0.001147,,0,a,high,mega stone arm in mega_evolve_target PYROAR
+King's Rock,kingsrock,1,1,0.001029,0.000521,0.000225,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Glalitite,glalitite,1,1,0.001029,0.000521,0,,0,a,high,mega stone arm in mega_evolve_target GLALIE
+Heat Rock,heatrock,1,1,0.000943,0.001563,0.001323,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Absolite,absolite,1,1,0.000892,0.000521,0,,0,a,high,mega stone arm in mega_evolve_target ABSOL
+Kangaskhanite,kangaskhanite,1,1,0.000735,0.002084,0.001854,,0,a,high,mega stone arm in mega_evolve_target KANGASKHAN
+Beedrillite,beedrillite,1,1,0.000686,0.001563,0.001364,,0,a,high,mega stone arm in mega_evolve_target BEEDRILL
+Red Card,redcard,1,1,0.000686,0.001042,0.001458,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Sceptilite,sceptilite,1,1,0.000686,0.001042,0.001219,,0,a,high,mega stone arm in mega_evolve_target SCEPTILE
+Altarianite,altarianite,1,1,0.000686,0.001042,0.001137,,0,a,high,mega stone arm in mega_evolve_target ALTARIA
+Zoom Lens,zoomlens,1,1,0.000686,0.001042,0.000484,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Feraligite,feraligite,1,1,0.000686,0.001042,0.000374,,0,a,high,mega stone arm in mega_evolve_target FERALIGATR
+Leek,leek,1,1,0.000686,0.000521,0.002614,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Kebia Berry,kebiaberry,1,1,0.000686,0.000521,0.001895,,0,a,medium,referenced in items.rs
+Aerodactylite,aerodactylite,1,1,0.000686,0.000521,0.000406,,0,a,high,mega stone arm in mega_evolve_target AERODACTYL
+Pinsirite,pinsirite,1,1,0.000686,0,0.000297,,0,a,high,mega stone arm in mega_evolve_target PINSIR
+Chesnaughtite,chesnaughtite,1,1,0.000686,0,0.000221,,0,a,high,mega stone arm in mega_evolve_target CHESNAUGHT
+Pecha Berry,pechaberry,1,1,0.000686,0,0.000121,,0,a,medium,referenced in items.rs
+Fairy Feather,fairyfeather,1,1,0.000637,0.000521,0.001431,,0,a,medium,referenced in items.rs
+Froslassite,froslassite,1,1,0.000588,0,0.001901,,0,a,high,mega stone arm in mega_evolve_target FROSLASS
+Aggronite,aggronite,1,1,0.000514,0,0.000601,,0,a,high,mega stone arm in mega_evolve_target AGGRON
+Black Belt,blackbelt,1,1,0.000457,0.000521,0.000199,,0,a,medium,referenced in items.rs
+Sablenite,sablenite,1,1,0.000392,0.000521,0.000866,,0,a,high,mega stone arm in mega_evolve_target SABLEYE
+Drampanite,drampanite,1,1,0.000343,0.001042,0.000326,,0,a,high,mega stone arm in mega_evolve_target DRAMPA
+Sharpedonite,sharpedonite,1,1,0.000343,0.001042,0,,0,a,high,mega stone arm in mega_evolve_target SHARPEDO
+Alakazite,alakazite,1,1,0.000343,0.000521,0.00066,,0,a,high,mega stone arm in mega_evolve_target ALAKAZAM
+Falinksite,falinksite,1,1,0.000343,0.000521,0.000392,,0,a,high,mega stone arm in mega_evolve_target FALINKS
+Pidgeotite,pidgeotite,1,1,0.000343,0.000521,0.000313,,0,a,high,mega stone arm in mega_evolve_target PIDGEOT
+Abomasite,abomasite,1,1,0.000343,0.000521,0.000229,,0,a,high,mega stone arm in mega_evolve_target ABOMASNOW
+Chople Berry,chopleberry,1,1,0.000343,0,0.001687,,0,a,medium,referenced in items.rs
+Emboarite,emboarite,1,1,0.000343,0,0.000608,,0,a,high,mega stone arm in mega_evolve_target EMBOAR
+Barbaracite,barbaracite,1,1,0.000343,0,0.00059,,0,a,high,mega stone arm in mega_evolve_target BARBARACLE
+Light Ball,lightball,1,1,0.000343,0,0.000458,,0,a,medium,referenced in items.rs
+Audinite,audinite,1,1,0.000343,0,0.000185,,0,a,high,mega stone arm in mega_evolve_target AUDINO
+Dragon Fang,dragonfang,1,1,0.000237,0.000521,0.001058,,0,a,medium,referenced in items.rs
+Skarmorite,skarmorite,1,1,0.000229,0.000521,0.000605,,0,a,high,mega stone arm in mega_evolve_target SKARMORY
+Psychic Seed,psychicseed,1,1,0.000171,0,0.003408,,0,a,medium,referenced in items.rs
+Colbur Berry,colburberry,1,1,0.000171,0,0.001665,,0,a,medium,referenced in items.rs
+Big Root,bigroot,1,1,0.000171,0,0.00101,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Electric Seed,electricseed,1,1,0.000171,0,0,,0,a,medium,referenced in items.rs
+Floettite,floettite,1,1,0,0.003648,0.002264,,0,a,high,mega stone arm in mega_evolve_target FLOETTEETERNAL
+Steelixite,steelixite,1,1,0,0.001563,0.000299,,0,a,high,mega stone arm in mega_evolve_target STEELIX
+Scraftinite,scraftinite,1,1,0,0.001042,0.000815,,0,a,high,mega stone arm in mega_evolve_target SCRAFTY
+Chandelurite,chandelurite,1,1,0,0.001042,0.000409,,0,a,high,mega stone arm in mega_evolve_target CHANDELURE
+Medichamite,medichamite,1,1,0,0.001042,0.000377,,0,a,high,mega stone arm in mega_evolve_target MEDICHAM
+Ampharosite,ampharosite,1,1,0,0.000521,0.001118,,0,a,high,mega stone arm in mega_evolve_target AMPHAROS
+Houndoominite,houndoominite,1,1,0,0.000521,0.000541,,0,a,high,mega stone arm in mega_evolve_target HOUNDOOM
+Cameruptite,cameruptite,1,1,0,0.000521,0.000405,,0,a,high,mega stone arm in mega_evolve_target CAMERUPT
+Miracle Seed,miracleseed,1,1,0,0,0.008143,,0,a,medium,referenced in items.rs
+Wide Lens,widelens,1,1,0,0,0.002757,,0,a,medium,referenced in generate_instructions.rs
+Expert Belt,expertbelt,1,1,0,0,0.001736,,0,a,medium,referenced in items.rs
+Chesto Berry,chestoberry,1,1,0,0,0.001138,,0,a,medium,"referenced in generate_instructions.rs,items.rs"
+Magnet,magnet,1,1,0,0,0.000841,,0,a,medium,referenced in items.rs
+Scolipite,scolipite,1,1,0,0,0.000551,,0,a,high,mega stone arm in mega_evolve_target SCOLIPEDE
+Iron Ball,ironball,1,1,0,0,0.00052,,0,a,medium,"referenced in generate_instructions.rs,state.rs"
+Hawluchanite,hawluchanite,1,1,0,0,0.000456,,0,a,high,mega stone arm in mega_evolve_target HAWLUCHA
+Malamarite,malamarite,1,1,0,0,0.000259,,0,a,high,mega stone arm in mega_evolve_target MALAMAR
+Coba Berry,cobaberry,1,1,0,0,0.000199,,0,a,medium,referenced in items.rs
+Metal Coat,metalcoat,1,1,0,0,0.000162,,0,a,medium,referenced in items.rs
+Bright Powder,brightpowder,1,1,0,0,0.000138,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Sharp Beak,sharpbeak,1,1,0,0,6.4e-05,,0,a,medium,referenced in items.rs
+Passho Berry,passhoberry,1,1,0,0,0,,0,a,medium,referenced in items.rs
+Crabominite,crabominite,0,1,0,0,0.000434,,0,a,high,mega stone arm in mega_evolve_target CRABOMINABLE
+Chimechite,chimechite,0,1,0,0,0.000429,,0,a,high,mega stone arm in mega_evolve_target CHIMECHO
+Muscle Band,muscleband,0,1,0,0,0.0002,,0,a,medium,referenced in items.rs
+Manectite,manectite,0,1,0,0,0.000147,,0,a,high,mega stone arm in mega_evolve_target MANECTRIC
+Occa Berry,occaberry,0,1,0,0,0.000147,,0,a,medium,referenced in items.rs
+Aspear Berry,aspearberry,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Babiri Berry,babiriberry,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Binding Band,bindingband,0,1,0,0,0,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Charcoal,charcoal,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Charti Berry,chartiberry,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Cheri Berry,cheriberry,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Chilan Berry,chilanberry,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Focus Band,focusband,0,1,0,0,0,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Garchompite,garchompite,0,1,0,0,0,,0,a,high,mega stone arm in mega_evolve_target GARCHOMP
+Golurkite,golurkite,0,1,0,0,0,,0,a,high,mega stone arm in mega_evolve_target GOLURK
+Grassy Seed,grassyseed,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Haban Berry,habanberry,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Hard Stone,hardstone,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Icy Rock,icyrock,0,1,0,0,0,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Kasib Berry,kasibberry,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Leppa Berry,leppaberry,0,1,0,0,0,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Mental Herb,mentalherb,0,1,0,0,0,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Meowsticite,meowsticite,0,1,0,0,0,,0,a,high,mega stone arm in mega_evolve_target MEOWSTIC/MEOWSTICF
+Metronome,metronome,0,1,0,0,0,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Misty Seed,mistyseed,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Oran Berry,oranberry,0,1,0,0,0,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Payapa Berry,payapaberry,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Persim Berry,persimberry,0,1,0,0,0,,0,d,high,not in Items enum (becomes UNKNOWNITEM)
+Poison Barb,poisonbarb,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Raichunite X,raichunitex,0,1,0,0,0,,0,a,high,mega stone arm in mega_evolve_target RAICHU
+Rawst Berry,rawstberry,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Rindo Berry,rindoberry,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Roseli Berry,roseliberry,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Shed Shell,shedshell,0,1,0,0,0,,0,a,medium,referenced in state.rs
+Silk Scarf,silkscarf,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Silver Powder,silverpowder,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Soft Sand,softsand,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Tanga Berry,tangaberry,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Twisted Spoon,twistedspoon,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Wacan Berry,wacanberry,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Wise Glasses,wiseglasses,0,1,0,0,0,,0,a,medium,referenced in items.rs
+Yache Berry,yacheberry,0,1,0,0,0,,0,a,medium,referenced in items.rs

@@ -1,0 +1,16 @@
+ÿþ    Finished `release` profile [optimized + debuginfo] target(s) in 0.06s
+rust passed 395 failed 0 ignored 1
+python-ext.sh: wrote python/champions_gym/_cg.cp312-win_amd64.pyd
+3 passed, 0 failed
+7 passed, 0 failed
+28 passed, 0 failed
+6 passed, 0 failed
+9 passed, 0 failed
+tower vs max_damage: 20000 games, A 50.7% (A seat0 50.4%, A seat1 51.1%), turns mean 6.1 max 81, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 40000/40000, prior0 0, truth 0
+runs with any nonzero counter: 0 total games 157600
+{"rows_steps": 6151, "rows_steps_equal": 6151, "kinds": {"enter": {"both": 3208, "showdown_only": 0, "engine_o
+cross-thread orders 16 errors 0 notes {'anomalies': 0, 'corrections': 7}
+status keys ['anomalies', 'battle', 'contract', 'corrections', 'ended', 'held', 'messages', 'open_request', 'player', 'restarts', 'version'] 0.8 0.3.0 0.3.0
+subprocess lines 7 last has status True rc 0
+wheel.py: wrote C:\Users\user\Code\pokemon_champions\champions-gym\dist\champions_gym-0.3.0-cp312-cp312-win_amd64.whl (2198991 bytes, 13 files)
+VERIFY_DONE

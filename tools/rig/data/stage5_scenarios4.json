@@ -1,0 +1,5634 @@
+[
+ {
+  "name": "synchronize passes toxic back to an immunity holder: immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Immunity",
+     "item": "",
+     "moves": [
+      "Toxic"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Umbreon",
+     "ability": "Synchronize",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p1a: Mon0|[from] ability: Immunity"
+  ]
+ },
+ {
+  "name": "synchronize passes paralysis back to a limber holder: immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Persian",
+     "ability": "Limber",
+     "item": "",
+     "moves": [
+      "Thunder Wave"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Umbreon",
+     "ability": "Synchronize",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p1a: Mon0|[from] ability: Limber"
+  ]
+ },
+ {
+  "name": "synchronize passes a burn back to a water veil holder: immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Milotic",
+     "ability": "Water Veil",
+     "item": "",
+     "moves": [
+      "Will-O-Wisp"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Umbreon",
+     "ability": "Synchronize",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p1a: Mon0|[from] ability: Water Veil"
+  ]
+ },
+ {
+  "name": "synchronize passes a burn back to a water bubble holder: immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Milotic",
+     "ability": "Water Bubble",
+     "item": "",
+     "moves": [
+      "Will-O-Wisp"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Umbreon",
+     "ability": "Synchronize",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p1a: Mon0|[from] ability: Water Bubble"
+  ]
+ },
+ {
+  "name": "synchronize passes a burn back to a thermal exchange holder: immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Milotic",
+     "ability": "Thermal Exchange",
+     "item": "",
+     "moves": [
+      "Will-O-Wisp"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Umbreon",
+     "ability": "Synchronize",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p1a: Mon0|[from] ability: Thermal Exchange"
+  ]
+ },
+ {
+  "name": "synchronize passes toxic back to a pastel veil holder: its ally handler's block row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Pastel Veil",
+     "item": "",
+     "moves": [
+      "Toxic"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Umbreon",
+     "ability": "Synchronize",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-block|p1a: Mon0|ability: Pastel Veil"
+  ]
+ },
+ {
+  "name": "synchronize passes toxic back to a purifying salt holder: immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Garganacl",
+     "ability": "Purifying Salt",
+     "item": "",
+     "moves": [
+      "Toxic"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Umbreon",
+     "ability": "Synchronize",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p1a: Mon0|[from] ability: Purifying Salt"
+  ]
+ },
+ {
+  "name": "synchronize passes toxic back to a comatose holder: immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Comatose",
+     "item": "",
+     "moves": [
+      "Toxic"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Umbreon",
+     "ability": "Synchronize",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p1a: Mon0|[from] ability: Comatose"
+  ]
+ },
+ {
+  "name": "synchronize passes toxic back to a leaf guard holder in sun: immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Leafeon",
+     "ability": "Leaf Guard",
+     "item": "",
+     "moves": [
+      "Sunny Day",
+      "Toxic"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Umbreon",
+     "ability": "Synchronize",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p1a: Mon0|[from] ability: Leaf Guard"
+  ]
+ },
+ {
+  "name": "synchronize passes a burn back to a flower veil grass holder: silent (the effect has no name)",
+  "teams": {
+   "p1": [
+    {
+     "species": "Venusaur",
+     "ability": "Flower Veil",
+     "item": "",
+     "moves": [
+      "Will-O-Wisp"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Umbreon",
+     "ability": "Synchronize",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-activate|p2a: Mon0|ability: Synchronize"
+  ]
+ },
+ {
+  "name": "two synchronize holders: the second pass fails with the status row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Espeon",
+     "ability": "Synchronize",
+     "item": "",
+     "moves": [
+      "Toxic"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Umbreon",
+     "ability": "Synchronize",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-fail|p2a: Mon0|tox"
+  ]
+ },
+ {
+  "name": "synchronize passes toxic back to a steel type: immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "item": "",
+     "moves": [
+      "Toxic"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Umbreon",
+     "ability": "Synchronize",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p1a: Mon0"
+  ]
+ },
+ {
+  "name": "synchronize passes paralysis back to an electric type: immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Jolteon",
+     "ability": "Volt Absorb",
+     "item": "",
+     "moves": [
+      "Thunder Wave"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Umbreon",
+     "ability": "Synchronize",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p1a: Mon0"
+  ]
+ },
+ {
+  "name": "synchronize passes a burn back to a fire type: immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Arcanine",
+     "ability": "Justified",
+     "item": "",
+     "moves": [
+      "Will-O-Wisp"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Umbreon",
+     "ability": "Synchronize",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p1a: Mon0"
+  ]
+ },
+ {
+  "name": "corrosion poisons a steel synchronize holder; the poison goes back to the poison type: immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Salazzle",
+     "ability": "Corrosion",
+     "item": "",
+     "moves": [
+      "Toxic"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Synchronize",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p1a: Mon0"
+  ]
+ },
+ {
+  "name": "synchronize's poison into misty terrain on a grounded user: misty terrain row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Hatterene",
+     "ability": "Magic Bounce",
+     "item": "",
+     "moves": [
+      "Misty Terrain",
+      "Toxic"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Umbreon",
+     "ability": "Synchronize",
+     "item": "Air Balloon",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-activate|p1a: Mon0|move: Misty Terrain"
+  ]
+ },
+ {
+  "name": "synchronize's poison into safeguard: safeguard row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Safeguard",
+      "Toxic"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Umbreon",
+     "ability": "Synchronize",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-activate|p1a: Mon0|move: Safeguard"
+  ]
+ },
+ {
+  "name": "synchronize against a paralysed user: the failure row names the synchronize holder",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Toxic"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Umbreon",
+     "ability": "Synchronize",
+     "item": "",
+     "moves": [
+      "Thunder Wave",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-fail|p2a: Mon0"
+  ]
+ },
+ {
+  "name": "synchronize against a user with the same status: the failure row names the user and the status",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Toxic"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Umbreon",
+     "ability": "Synchronize",
+     "item": "",
+     "moves": [
+      "Toxic",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-fail|p1a: Mon0|tox"
+  ]
+ },
+ {
+  "name": "static paralyses a synchronize attacker; the paralysis goes back to the electric holder: immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Pikachu",
+     "ability": "Static",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Umbreon",
+     "ability": "Synchronize",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p1a: Mon0"
+  ]
+ },
+ {
+  "name": "static against a limber attacker: silent",
+  "teams": {
+   "p1": [
+    {
+     "species": "Pikachu",
+     "ability": "Static",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Persian",
+     "ability": "Limber",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": []
+ },
+ {
+  "name": "poison point against an immunity attacker: silent",
+  "teams": {
+   "p1": [
+    {
+     "species": "Toxapex",
+     "ability": "Poison Point",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Immunity",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": []
+ },
+ {
+  "name": "flame body against a water veil attacker: silent",
+  "teams": {
+   "p1": [
+    {
+     "species": "Arcanine",
+     "ability": "Flame Body",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Milotic",
+     "ability": "Water Veil",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": []
+ },
+ {
+  "name": "effect spore against a vital spirit attacker: silent",
+  "teams": {
+   "p1": [
+    {
+     "species": "Venusaur",
+     "ability": "Effect Spore",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Persian",
+     "ability": "Vital Spirit",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": []
+ },
+ {
+  "name": "toxic chain against an immunity target: silent",
+  "teams": {
+   "p1": [
+    {
+     "species": "Salazzle",
+     "ability": "Toxic Chain",
+     "item": "",
+     "moves": [
+      "Flamethrower"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Immunity",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": []
+ },
+ {
+  "name": "static against an attacker under safeguard: silent",
+  "teams": {
+   "p1": [
+    {
+     "species": "Pikachu",
+     "ability": "Static",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Safeguard",
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": []
+ },
+ {
+  "name": "static against an attacker in misty terrain: silent",
+  "teams": {
+   "p1": [
+    {
+     "species": "Pikachu",
+     "ability": "Static",
+     "item": "",
+     "moves": [
+      "Misty Terrain",
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": []
+ },
+ {
+  "name": "toxic spikes on an immunity switch-in: silent; on a poison type: absorbed",
+  "teams": {
+   "p1": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "item": "",
+     "moves": [
+      "Toxic Spikes",
+      "Roar"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Immunity",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    },
+    {
+     "species": "Toxapex",
+     "ability": "Regenerator",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-sidestart|p2: p2|move: Toxic Spikes"
+  ]
+ },
+ {
+  "name": "toxic spikes into safeguard and misty terrain: silent",
+  "teams": {
+   "p1": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "item": "",
+     "moves": [
+      "Toxic Spikes",
+      "Roar"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Hatterene",
+     "ability": "Magic Guard",
+     "item": "",
+     "moves": [
+      "Safeguard",
+      "Misty Terrain"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    },
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": []
+ },
+ {
+  "name": "yawn's sleep into electric terrain: terrain row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Electric Terrain"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Yawn",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-activate|p1a: Mon0|move: Electric Terrain"
+  ]
+ },
+ {
+  "name": "yawn's sleep into misty terrain: terrain row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Misty Terrain"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Yawn",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-activate|p1a: Mon0|move: Misty Terrain"
+  ]
+ },
+ {
+  "name": "yawn's sleep goes through safeguard set after it",
+  "teams": {
+   "p1": [
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Safeguard"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Yawn",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-status|p1a: Mon0|slp"
+  ]
+ },
+ {
+  "name": "yawn's sleep against leaf guard in sun set after it: silent",
+  "teams": {
+   "p1": [
+    {
+     "species": "Leafeon",
+     "ability": "Leaf Guard",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Sunny Day"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Yawn",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": []
+ },
+ {
+  "name": "rest: insomnia and vital spirit fail with their rows",
+  "teams": {
+   "p1": [
+    {
+     "species": "Persian",
+     "ability": "Insomnia",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Rest"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Vital Spirit",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Rest"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "[from] ability: Insomnia",
+   "[from] ability: Vital Spirit"
+  ]
+ },
+ {
+  "name": "rest in electric terrain: terrain row; in misty terrain: silent",
+  "teams": {
+   "p1": [
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Electric Terrain",
+      "Misty Terrain",
+      "Rest"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 2",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 2",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-activate|p1a: Mon0|move: Electric Terrain"
+  ]
+ },
+ {
+  "name": "rest with leaf guard in sun: silent failure",
+  "teams": {
+   "p1": [
+    {
+     "species": "Leafeon",
+     "ability": "Leaf Guard",
+     "item": "",
+     "moves": [
+      "Sunny Day",
+      "Rest"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": []
+ },
+ {
+  "name": "wide guard against piercing drill's spread contact move: broken, a quarter of the damage",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Wide Guard",
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Excadrill",
+     "ability": "Piercing Drill",
+     "item": "",
+     "moves": [
+      "Mortal Spin",
+      "Brutal Swing"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-zbroken|p1a: Mon0"
+  ]
+ },
+ {
+  "name": "wide guard against unseen fist's spread contact move",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Wide Guard"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Kingambit",
+     "ability": "Unseen Fist",
+     "item": "",
+     "moves": [
+      "Brutal Swing"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-zbroken|p1a: Mon0"
+  ]
+ },
+ {
+  "name": "quick guard against unseen fist's priority contact move; a non-contact one is blocked",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Quick Guard",
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Kingambit",
+     "ability": "Unseen Fist",
+     "item": "",
+     "moves": [
+      "Quick Attack",
+      "Vacuum Wave"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-zbroken|p1a: Mon0",
+   "|-activate|p1a: Mon0|move: Quick Guard"
+  ]
+ },
+ {
+  "name": "future sight hits a red card holder: the user is dragged out at the end of the turn",
+  "teams": {
+   "p1": [
+    {
+     "species": "Slowbro",
+     "ability": "Oblivious",
+     "item": "",
+     "moves": [
+      "Future Sight",
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "Red Card",
+     "moves": [
+      "Swords Dance"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|drag|p1a:"
+  ]
+ },
+ {
+  "name": "dragon tail from mold breaker brings in fairy aura and dark aura holders: not announced",
+  "teams": {
+   "p1": [
+    {
+     "species": "Excadrill",
+     "ability": "Mold Breaker",
+     "item": "",
+     "moves": [
+      "Dragon Tail"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Sylveon",
+     "ability": "Fairy Aura",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Umbreon",
+     "ability": "Dark Aura",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|drag|p2a:"
+  ]
+ },
+ {
+  "name": "dragon tail from mold breaker brings in ruin ability holders: not announced",
+  "teams": {
+   "p1": [
+    {
+     "species": "Excadrill",
+     "ability": "Mold Breaker",
+     "item": "",
+     "moves": [
+      "Dragon Tail"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Kingambit",
+     "ability": "Sword of Ruin",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Umbreon",
+     "ability": "Beads of Ruin",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|drag|p2a:"
+  ]
+ },
+ {
+  "name": "magic guard against rough skin and iron barbs: the attacker's ability row only",
+  "teams": {
+   "p1": [
+    {
+     "species": "Clefable",
+     "ability": "Magic Guard",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Iron Barbs",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-activate|p2a: Mon0|ability: Rough Skin"
+  ]
+ },
+ {
+  "name": "magic guard against aftermath",
+  "teams": {
+   "p1": [
+    {
+     "species": "Clefable",
+     "ability": "Magic Guard",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Persian",
+     "ability": "Aftermath",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": []
+ },
+ {
+  "name": "sturdy against an ohko move: immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Sturdy",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "",
+     "moves": [
+      "Fissure",
+      "Sheer Cold"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-immune|p1a: Mon0|[from] ability: Sturdy"
+  ]
+ },
+ {
+  "name": "an ohko move against a substitute: the ohko row and the doll breaks",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Substitute",
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Glaceon",
+     "ability": "Snow Cloak",
+     "item": "",
+     "moves": [
+      "Sheer Cold"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": []
+ },
+ {
+  "name": "own tempo against confuse ray: immune row naming confusion",
+  "teams": {
+   "p1": [
+    {
+     "species": "Slowbro",
+     "ability": "Own Tempo",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Gengar",
+     "ability": "Cursed Body",
+     "item": "",
+     "moves": [
+      "Confuse Ray"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p1a: Mon0|confusion|[from] ability: Own Tempo"
+  ]
+ },
+ {
+  "name": "oblivious against taunt and attract: immune rows",
+  "teams": {
+   "p1": [
+    {
+     "species": "Slowbro",
+     "ability": "Oblivious",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Gengar",
+     "ability": "Cursed Body",
+     "item": "",
+     "moves": [
+      "Taunt",
+      "Attract"
+     ],
+     "gender": "F"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-immune|p1a: Mon0|[from] ability: Oblivious"
+  ]
+ },
+ {
+  "name": "mold breaker statuses limber, water veil, insomnia and pastel veil holders: cured at once with the ability row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Excadrill",
+     "ability": "Mold Breaker",
+     "item": "",
+     "moves": [
+      "Thunder Wave",
+      "Will-O-Wisp",
+      "Spore",
+      "Toxic"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Persian",
+     "ability": "Limber",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Milotic",
+     "ability": "Water Veil",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Insomnia",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 2",
+    "p2": "switch 2"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-activate|p2a: Mon0|ability: Limber",
+   "|-activate|p2a: Mon2|ability: Insomnia"
+  ]
+ },
+ {
+  "name": "mold breaker toxic on pastel veil and immunity holders: cured at once",
+  "teams": {
+   "p1": [
+    {
+     "species": "Excadrill",
+     "ability": "Mold Breaker",
+     "item": "",
+     "moves": [
+      "Toxic"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Persian",
+     "ability": "Pastel Veil",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Immunity",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-activate|p2a: Mon0|ability: Pastel Veil",
+   "|-activate|p2a: Mon1|ability: Immunity"
+  ]
+ },
+ {
+  "name": "mold breaker taunt, attract and confuse ray on oblivious and own tempo holders: cured at once",
+  "teams": {
+   "p1": [
+    {
+     "species": "Excadrill",
+     "ability": "Mold Breaker",
+     "item": "",
+     "moves": [
+      "Taunt",
+      "Attract",
+      "Confuse Ray"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Slowbro",
+     "ability": "Oblivious",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ],
+     "gender": "F"
+    },
+    {
+     "species": "Slowking",
+     "ability": "Own Tempo",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 2",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 2",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-activate|p2a: Mon0|ability: Oblivious",
+   "|-activate|p2a: Mon1|ability: Own Tempo"
+  ]
+ },
+ {
+  "name": "damp stops explosion: the cant row names the damp holder",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Explosion",
+      "Misty Explosion"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Slowbro",
+     "ability": "Damp",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "ability: Damp"
+  ]
+ },
+ {
+  "name": "armor tail, queenly majesty and dazzling stop priority moves",
+  "teams": {
+   "p1": [
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Quick Attack",
+      "Sucker Punch"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Farigiraf",
+     "ability": "Armor Tail",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Tsareena",
+     "ability": "Queenly Majesty",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Slowking",
+     "ability": "Dazzling",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "switch 2"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "ability: Armor Tail"
+  ]
+ },
+ {
+  "name": "guard dog and suction cups against roar and dragon tail",
+  "teams": {
+   "p1": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "",
+     "moves": [
+      "Roar",
+      "Dragon Tail"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Arcanine",
+     "ability": "Guard Dog",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Vaporeon",
+     "ability": "Suction Cups",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-activate|p2a: Mon0|ability: Guard Dog",
+   "|-activate|p2a: Mon1|ability: Suction Cups"
+  ]
+ },
+ {
+  "name": "guard dog, rattled and mirror armor against intimidate",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Gyarados",
+     "ability": "Intimidate",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Arcanine",
+     "ability": "Guard Dog",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Persian",
+     "ability": "Rattled",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Corviknight",
+     "ability": "Mirror Armor",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "switch 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 0",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 0",
+    "p2": "switch 2"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "Mirror Armor",
+   "Guard Dog"
+  ]
+ },
+ {
+  "name": "intimidate against a substitute: immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Gyarados",
+     "ability": "Intimidate",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Substitute",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-immune|p2a: Mon0"
+  ]
+ },
+ {
+  "name": "supersweet syrup against a substitute: immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Persian",
+     "ability": "Supersweet Syrup",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Substitute",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "Supersweet Syrup"
+  ]
+ },
+ {
+  "name": "sap sipper at +6: the boost fails and the immune row is written",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Energy Ball",
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Dragonite",
+     "ability": "Sap Sipper",
+     "item": "",
+     "moves": [
+      "Swords Dance"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p2a: Mon0|[from] ability: Sap Sipper"
+  ]
+ },
+ {
+  "name": "motor drive at +6: the boost fails and the immune row is written",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Thunderbolt",
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Dragonite",
+     "ability": "Motor Drive",
+     "item": "",
+     "moves": [
+      "Agility"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p2a: Mon0|[from] ability: Motor Drive"
+  ]
+ },
+ {
+  "name": "lightning rod at +6: the boost fails and the immune row is written",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Thunderbolt",
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Dragonite",
+     "ability": "Lightning Rod",
+     "item": "",
+     "moves": [
+      "Nasty Plot"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p2a: Mon0|[from] ability: Lightning Rod"
+  ]
+ },
+ {
+  "name": "storm drain at +6: the boost fails and the immune row is written",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Surf",
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Dragonite",
+     "ability": "Storm Drain",
+     "item": "",
+     "moves": [
+      "Nasty Plot"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p2a: Mon0|[from] ability: Storm Drain"
+  ]
+ },
+ {
+  "name": "well-baked body at +6: the boost fails and the immune row is written",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Flamethrower",
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Dragonite",
+     "ability": "Well-Baked Body",
+     "item": "",
+     "moves": [
+      "Iron Defense"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p2a: Mon0|[from] ability: Well-Baked Body"
+  ]
+ },
+ {
+  "name": "wind rider at +6: the boost fails and the immune row is written",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Heat Wave",
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Dragonite",
+     "ability": "Wind Rider",
+     "item": "",
+     "moves": [
+      "Swords Dance"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p2a: Mon0|[from] ability: Wind Rider"
+  ]
+ },
+ {
+  "name": "volt absorb at full hp: immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Thunderbolt"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Dragonite",
+     "ability": "Volt Absorb",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p2a: Mon0|[from] ability: Volt Absorb"
+  ]
+ },
+ {
+  "name": "water absorb at full hp: immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Surf"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Dragonite",
+     "ability": "Water Absorb",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p2a: Mon0|[from] ability: Water Absorb"
+  ]
+ },
+ {
+  "name": "earth eater at full hp: immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Earthquake"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Dragonite",
+     "ability": "Earth Eater",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p2a: Mon0|[from] ability: Earth Eater"
+  ]
+ },
+ {
+  "name": "dry skin at full hp: immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Surf"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Dragonite",
+     "ability": "Dry Skin",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p2a: Mon0|[from] ability: Dry Skin"
+  ]
+ },
+ {
+  "name": "flash fire twice: the start row, then the immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Flamethrower"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Arcanine",
+     "ability": "Flash Fire",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p2a: Mon0|[from] ability: Flash Fire"
+  ]
+ },
+ {
+  "name": "perish song and teatime against a pokemon in the air: miss rows",
+  "teams": {
+   "p1": [
+    {
+     "species": "Gengar",
+     "ability": "Cursed Body",
+     "item": "",
+     "moves": [
+      "Perish Song",
+      "Teatime"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Charizard",
+     "ability": "Blaze",
+     "item": "Sitrus Berry",
+     "moves": [
+      "Fly",
+      "Dig"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-miss|p1a: Mon0|p2a: Mon0"
+  ]
+ },
+ {
+  "name": "gravity grounds a flier, a levitate holder and an air balloon holder; magnet rise disabled: struggle",
+  "teams": {
+   "p1": [
+    {
+     "species": "Slowbro",
+     "ability": "Oblivious",
+     "item": "",
+     "moves": [
+      "Gravity",
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Charizard",
+     "ability": "Blaze",
+     "item": "",
+     "moves": [
+      "Fly",
+      "Magnet Rise"
+     ]
+    },
+    {
+     "species": "Gengar",
+     "ability": "Levitate",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-activate|p2a: Mon0|move: Gravity"
+  ]
+ },
+ {
+  "name": "cotton down against clear body; gooey and tangling hair against mirror armor",
+  "teams": {
+   "p1": [
+    {
+     "species": "Metagross",
+     "ability": "Clear Body",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    },
+    {
+     "species": "Corviknight",
+     "ability": "Mirror Armor",
+     "item": "",
+     "moves": [
+      "Drill Peck"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Sylveon",
+     "ability": "Cotton Down",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Goodra",
+     "ability": "Gooey",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Kingambit",
+     "ability": "Tangling Hair",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "switch 2"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "Cotton Down",
+   "Mirror Armor"
+  ]
+ },
+ {
+  "name": "perish body on contact, and not again when the attacker already has perish song",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Crunch"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Gengar",
+     "ability": "Perish Body",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "Perish Body"
+  ]
+ },
+ {
+  "name": "toxic debris with two layers already: no row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Glimmora",
+     "ability": "Toxic Debris",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "ability: Toxic Debris"
+  ]
+ },
+ {
+  "name": "hydration in rain and shed skin cure at the end of the turn",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Rain Dance",
+      "Toxic"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Vaporeon",
+     "ability": "Hydration",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Dragonite",
+     "ability": "Shed Skin",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-activate|p2a: Mon0|ability: Hydration"
+  ]
+ },
+ {
+  "name": "comatose: sleep talk and snore work, rest fails, hex doubles",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Comatose",
+     "item": "",
+     "moves": [
+      "Sleep Talk",
+      "Snore",
+      "Rest",
+      "Facade"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Gengar",
+     "ability": "Cursed Body",
+     "item": "",
+     "moves": [
+      "Hex"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 2",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "Comatose"
+  ]
+ },
+ {
+  "name": "forewarn, anticipation and frisk on entry",
+  "teams": {
+   "p1": [
+    {
+     "species": "Slowbro",
+     "ability": "Forewarn",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Persian",
+     "ability": "Anticipation",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Gengar",
+     "ability": "Frisk",
+     "item": "Leftovers",
+     "moves": [
+      "Shadow Ball",
+      "Sheer Cold"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "switch 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "Forewarn"
+  ]
+ },
+ {
+  "name": "disguise busted, then the forme row and its damage",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Crunch"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Mimikyu",
+     "ability": "Disguise",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "ability: Disguise"
+  ]
+ },
+ {
+  "name": "zero to hero: the switch back in shows hero form",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Palafin",
+     "ability": "Zero to Hero",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "switch 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "Zero to Hero"
+  ]
+ },
+ {
+  "name": "hunger switch changes form each turn",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Morpeko",
+     "ability": "Hunger Switch",
+     "item": "",
+     "moves": [
+      "Aura Wheel"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": []
+ },
+ {
+  "name": "stance change and king's shield",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Aegislash",
+     "ability": "Stance Change",
+     "item": "",
+     "moves": [
+      "King's Shield",
+      "Shadow Ball"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "Aegislash-Blade"
+  ]
+ },
+ {
+  "name": "battle bond after a knock out",
+  "teams": {
+   "p1": [
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Greninja",
+     "ability": "Battle Bond",
+     "item": "",
+     "moves": [
+      "Hydro Pump"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": []
+ },
+ {
+  "name": "truant loafs every other turn",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Persian",
+     "ability": "Truant",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "ability: Truant"
+  ]
+ },
+ {
+  "name": "imposter transforms on entry",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Ditto",
+     "ability": "Imposter",
+     "item": "",
+     "moves": [
+      "Transform"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "-transform"
+  ]
+ },
+ {
+  "name": "wandering spirit and mummy and lingering aroma swap on contact",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Runerigus",
+     "ability": "Wandering Spirit",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Cofagrigus",
+     "ability": "Mummy",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Garchomp",
+     "ability": "Lingering Aroma",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "switch 2"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": []
+ },
+ {
+  "name": "parental bond steel beam into protect: no cost; a plain user pays half its hp",
+  "teams": {
+   "p1": [
+    {
+     "species": "Kangaskhan",
+     "ability": "Parental Bond",
+     "item": "",
+     "moves": [
+      "Steel Beam"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Steel Beam"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Slowbro",
+     "ability": "Oblivious",
+     "item": "",
+     "moves": [
+      "Protect",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-activate|p2a: Mon0|move: Protect"
+  ]
+ },
+ {
+  "name": "feint breaks protect",
+  "teams": {
+   "p1": [
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Feint",
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Protect",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "move: Feint"
+  ]
+ },
+ {
+  "name": "lock-on then an ohko move",
+  "teams": {
+   "p1": [
+    {
+     "species": "Glaceon",
+     "ability": "Snow Cloak",
+     "item": "",
+     "moves": [
+      "Lock-On",
+      "Sheer Cold"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "move: Lock-On"
+  ]
+ },
+ {
+  "name": "guard split, power split and speed swap",
+  "teams": {
+   "p1": [
+    {
+     "species": "Slowbro",
+     "ability": "Oblivious",
+     "item": "",
+     "moves": [
+      "Guard Split",
+      "Power Split",
+      "Speed Swap"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 2",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "move: Guard Split",
+   "move: Power Split",
+   "move: Speed Swap"
+  ]
+ },
+ {
+  "name": "tidy up clears hazards and substitutes",
+  "teams": {
+   "p1": [
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Tidy Up",
+      "Substitute"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "",
+     "moves": [
+      "Stealth Rock",
+      "Spikes"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "move: Tidy Up"
+  ]
+ },
+ {
+  "name": "heal bell: a soundproof team member keeps its status",
+  "teams": {
+   "p1": [
+    {
+     "species": "Clefable",
+     "ability": "Magic Guard",
+     "item": "",
+     "moves": [
+      "Heal Bell",
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Soundproof",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Gengar",
+     "ability": "Cursed Body",
+     "item": "",
+     "moves": [
+      "Toxic",
+      "Will-O-Wisp"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "switch 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "move: Heal Bell"
+  ]
+ },
+ {
+  "name": "ingrain stops roar; fairy lock",
+  "teams": {
+   "p1": [
+    {
+     "species": "Venusaur",
+     "ability": "Overgrow",
+     "item": "",
+     "moves": [
+      "Ingrain",
+      "Fairy Lock"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "",
+     "moves": [
+      "Roar"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "move: Ingrain"
+  ]
+ },
+ {
+  "name": "court change swaps the hazards",
+  "teams": {
+   "p1": [
+    {
+     "species": "Cinderace",
+     "ability": "Blaze",
+     "item": "",
+     "moves": [
+      "Court Change",
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "",
+     "moves": [
+      "Stealth Rock",
+      "Spikes"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "move: Court Change"
+  ]
+ },
+ {
+  "name": "electrify makes the next move electric",
+  "teams": {
+   "p1": [
+    {
+     "species": "Jolteon",
+     "ability": "Volt Absorb",
+     "item": "",
+     "moves": [
+      "Electrify",
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "Electrify"
+  ]
+ },
+ {
+  "name": "endure, focus punch interrupted, beak blast burns on contact",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Endure",
+      "Focus Punch",
+      "Beak Blast"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "",
+     "moves": [
+      "Facade",
+      "Earth Power"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 2",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "Endure",
+   "Focus Punch",
+   "Beak Blast"
+  ]
+ },
+ {
+  "name": "destiny bond takes the attacker down",
+  "teams": {
+   "p1": [
+    {
+     "species": "Gengar",
+     "ability": "Cursed Body",
+     "item": "",
+     "moves": [
+      "Destiny Bond"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "",
+     "moves": [
+      "Crunch"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "Destiny Bond"
+  ]
+ },
+ {
+  "name": "skill swap, role play, entrainment, simple beam, worry seed, gastro acid",
+  "teams": {
+   "p1": [
+    {
+     "species": "Slowbro",
+     "ability": "Oblivious",
+     "item": "",
+     "moves": [
+      "Skill Swap",
+      "Role Play",
+      "Entrainment",
+      "Simple Beam"
+     ]
+    },
+    {
+     "species": "Slowking",
+     "ability": "Own Tempo",
+     "item": "",
+     "moves": [
+      "Worry Seed",
+      "Gastro Acid"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 2",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 3",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "Skill Swap"
+  ]
+ },
+ {
+  "name": "instruct, quash and after you fail in singles; copycat copies",
+  "teams": {
+   "p1": [
+    {
+     "species": "Slowbro",
+     "ability": "Oblivious",
+     "item": "",
+     "moves": [
+      "Instruct",
+      "Quash",
+      "After You",
+      "Copycat"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 2",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 3",
+    "p2": "move 0"
+   }
+  ],
+  "expect": []
+ },
+ {
+  "name": "castform's forecast in sun, rain and snow, then cloud nine",
+  "teams": {
+   "p1": [
+    {
+     "species": "Castform",
+     "ability": "Forecast",
+     "item": "",
+     "moves": [
+      "Sunny Day",
+      "Rain Dance",
+      "Snowscape",
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Slowking",
+     "ability": "Cloud Nine",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 2",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 3",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "Castform-Sunny"
+  ]
+ },
+ {
+  "name": "healing wish and wish",
+  "teams": {
+   "p1": [
+    {
+     "species": "Clefable",
+     "ability": "Magic Guard",
+     "item": "",
+     "moves": [
+      "Wish",
+      "Healing Wish"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "Healing Wish"
+  ]
+ },
+ {
+  "name": "pain split, spite and eerie spell",
+  "teams": {
+   "p1": [
+    {
+     "species": "Gengar",
+     "ability": "Cursed Body",
+     "item": "",
+     "moves": [
+      "Pain Split",
+      "Spite"
+     ]
+    },
+    {
+     "species": "Slowking",
+     "ability": "Own Tempo",
+     "item": "",
+     "moves": [
+      "Eerie Spell"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "",
+     "moves": [
+      "Facade"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "Pain Split",
+   "move: Spite"
+  ]
+ },
+ {
+  "name": "poltergeist against no item fails; corrosive gas; sticky web",
+  "teams": {
+   "p1": [
+    {
+     "species": "Gengar",
+     "ability": "Cursed Body",
+     "item": "",
+     "moves": [
+      "Poltergeist",
+      "Corrosive Gas",
+      "Sticky Web"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "Leftovers",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 2",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "Corrosive Gas"
+  ]
+ },
+ {
+  "name": "imprison, disable, taunt, torment and throat chop refuse moves",
+  "teams": {
+   "p1": [
+    {
+     "species": "Slowbro",
+     "ability": "Oblivious",
+     "item": "",
+     "moves": [
+      "Imprison",
+      "Disable",
+      "Taunt",
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "",
+     "moves": [
+      "Calm Mind",
+      "Swords Dance",
+      "Facade",
+      "Throat Chop"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 2"
+   },
+   {
+    "p1": "move 2",
+    "p2": "move 2"
+   },
+   {
+    "p1": "move 3",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 3",
+    "p2": "move 3"
+   }
+  ],
+  "expect": [
+   "Imprison"
+  ]
+ },
+ {
+  "name": "psychic noise blocks healing; syrup bomb; salt cure; octolock",
+  "teams": {
+   "p1": [
+    {
+     "species": "Slowbro",
+     "ability": "Oblivious",
+     "item": "",
+     "moves": [
+      "Psychic Noise",
+      "Syrup Bomb",
+      "Salt Cure",
+      "Octolock"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Rest",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 2",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 3",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "Syrup Bomb"
+  ]
+ },
+ {
+  "name": "uproar wakes and keeps awake",
+  "teams": {
+   "p1": [
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Uproar"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Rest",
+      "Yawn"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "Uproar"
+  ]
+ },
+ {
+  "name": "revival blessing brings back a fainted member",
+  "teams": {
+   "p1": [
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Revival Blessing",
+      "Memento"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": []
+ },
+ {
+  "name": "transform copies, then the copied moves",
+  "teams": {
+   "p1": [
+    {
+     "species": "Ditto",
+     "ability": "Limber",
+     "item": "",
+     "moves": [
+      "Transform"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "",
+     "moves": [
+      "Swords Dance",
+      "Earthquake"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "-transform"
+  ]
+ },
+ {
+  "name": "soundproof against perish song and uproar",
+  "teams": {
+   "p1": [
+    {
+     "species": "Gengar",
+     "ability": "Cursed Body",
+     "item": "",
+     "moves": [
+      "Perish Song",
+      "Uproar"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Soundproof",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p2a: Mon0|[from] ability: Soundproof"
+  ]
+ },
+ {
+  "name": "bulletproof against shadow ball and sludge bomb",
+  "teams": {
+   "p1": [
+    {
+     "species": "Gengar",
+     "ability": "Cursed Body",
+     "item": "",
+     "moves": [
+      "Shadow Ball",
+      "Sludge Bomb"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Bulletproof",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p2a: Mon0|[from] ability: Bulletproof"
+  ]
+ },
+ {
+  "name": "good as gold against taunt and toxic",
+  "teams": {
+   "p1": [
+    {
+     "species": "Gengar",
+     "ability": "Cursed Body",
+     "item": "",
+     "moves": [
+      "Taunt",
+      "Toxic"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Gholdengo",
+     "ability": "Good as Gold",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p2a: Mon0|[from] ability: Good as Gold"
+  ]
+ },
+ {
+  "name": "magic bounce reflects toxic, taunt and stealth rock",
+  "teams": {
+   "p1": [
+    {
+     "species": "Gengar",
+     "ability": "Cursed Body",
+     "item": "",
+     "moves": [
+      "Toxic",
+      "Taunt",
+      "Stealth Rock"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Hatterene",
+     "ability": "Magic Bounce",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 2",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "[from] ability: Magic Bounce"
+  ]
+ },
+ {
+  "name": "wonder guard against neutral hits and toxic damage",
+  "teams": {
+   "p1": [
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Facade",
+      "Toxic"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Garchomp",
+     "ability": "Wonder Guard",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p2a: Mon0|[from] ability: Wonder Guard"
+  ]
+ },
+ {
+  "name": "overcoat and a grass type against spore and sleep powder",
+  "teams": {
+   "p1": [
+    {
+     "species": "Venusaur",
+     "ability": "Overgrow",
+     "item": "",
+     "moves": [
+      "Spore",
+      "Sleep Powder"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Snorlax",
+     "ability": "Overcoat",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Leafeon",
+     "ability": "Leaf Guard",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p2a: Mon0|[from] ability: Overcoat"
+  ]
+ },
+ {
+  "name": "psychic terrain blocks priority on a grounded target; dazzling blocks prankster's status move",
+  "teams": {
+   "p1": [
+    {
+     "species": "Hatterene",
+     "ability": "Magic Bounce",
+     "item": "",
+     "moves": [
+      "Psychic Terrain",
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Persian",
+     "ability": "Technician",
+     "item": "",
+     "moves": [
+      "Quick Attack"
+     ]
+    },
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-activate|p1a: Mon0|move: Psychic Terrain"
+  ]
+ },
+ {
+  "name": "prankster's status move against a dark type: immune row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Sableye",
+     "ability": "Prankster",
+     "item": "",
+     "moves": [
+      "Taunt",
+      "Thunder Wave"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Umbreon",
+     "ability": "Inner Focus",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p2a: Mon0"
+  ]
+ },
+ {
+  "name": "levitate and air balloon against ground moves; earth eater heals",
+  "teams": {
+   "p1": [
+    {
+     "species": "Garchomp",
+     "ability": "Rough Skin",
+     "item": "",
+     "moves": [
+      "Earthquake"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Gengar",
+     "ability": "Levitate",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "item": "Air Balloon",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "switch 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-immune|p2a: Mon0|[from] ability: Levitate"
+  ]
+ }
+]

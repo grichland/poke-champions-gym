@@ -1,0 +1,19 @@
+ÿþ    Finished `release` profile [optimized + debuginfo] target(s) in 11.74s
+rust passed 309 failed 0
+python-ext.sh: wrote python/champions_gym/_cg.cp312-win_amd64.pyd
+3 passed, 0 failed
+7 passed, 0 failed
+6 passed, 0 failed
+8 passed, 0 failed
+tower vs max_damage: 20000 games, A 50.7% (A seat0 50.4%, A seat1 51.1%), turns mean 6.1 max 81, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 40000/40000, prior0 0, truth 0, hidden 0 (5024 games, 28593 steps), refused trapped 0, ste
+random vs random: 20000 games, A 50.0% (A seat0 49.6%, A seat1 50.4%), turns mean 17.7 max 100, truncated 0, refusals 0, anomalies 0, check a 0, check b 1.0000, rebuild 40000/40000, prior0 0, truth 0, hidden 0 (5024 games, 57558 steps), refused trapped 0, step
+{"battles": 300, "battles_identical": 300, "steps": 6164, "options_identical": 6164, "states_identical": 6164, "events_i
+{"rows_steps": 6164, "rows_steps_equal": 6164, "kinds": {"enter": {"both": 3303, "showdown_only": 0, "engine_only": 0}, 
+check 430 0
+bad (38, [(5, '4 sets, need 6'), (9, 'set 2 (Grimmsnarl): unknown move "notamove"')])
+strict raises: target/vt_bad.json: 2 of 40 teams not accepted: team 5: 4 sets, need 6; team 9: set 2 (Grimmsnarl): unknown move "notamo
+warned 1 count 38 idx6-> 6
+agent share 0.605 other seat has it 1 mirrors 0
+builtin legal on 7800
+random learner vs tower opponent: [181, 2861] 0.94
+VERIFY_DONE

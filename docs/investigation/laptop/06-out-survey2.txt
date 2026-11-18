@@ -1,0 +1,296 @@
+
+===== tools dir =====
+
+Name               Mode  
+----               ----  
+downloads          d-----
+python             d-----
+python-bin         d-----
+python312          d-----
+uv                 d-----
+uv-cache           d-----
+check_sim.py       -a----
+env.ps1            -a----
+install_python.ps1 -a----
+install_uv.ps1     -a----
+launch_train.ps1   -a----
+make_venv.ps1      -a----
+ray_versions.ps1   -a----
+start_visible.ps1  -a----
+
+
+
+
+===== pyvenv.cfg =====
+home = C:\Users\grich\Code\pcsa\tools\python312
+implementation = CPython
+uv = 0.13.8
+version_info = 3.12.10
+include-system-site-packages = false
+prompt = pcsa-rl
+
+===== site-packages dirs =====
+aiohappyeyeballs-2.7.1.dist-info
+aiohttp-3.14.5.dist-info
+aiohttp_cors-0.8.1.dist-info
+aiosignal-1.4.0.dist-info
+annotated_types-0.8.0.dist-info
+anyio-4.16.0.dist-info
+attrs-26.1.0.dist-info
+certifi-2026.10.23.dist-info
+cffi-2.1.1.dist-info
+charset_normalizer-3.5.2.dist-info
+click-8.5.1.dist-info
+cloudpickle-3.1.2.dist-info
+colorama-0.4.6.dist-info
+colorful-0.5.8.dist-info
+colorlog-6.12.0.dist-info
+cryptography-50.0.2.dist-info
+distlib-0.4.4.dist-info
+farama_notifications-0.0.6.dist-info
+filelock-4.2.9.dist-info
+flatbuffers-25.12.19.dist-info
+frozenlist-1.8.0.dist-info
+fsspec-2026.9.0.dist-info
+googleapis_common_protos-1.76.0.dist-info
+google_api_core-2.44.0.dist-info
+google_auth-2.62.1.dist-info
+grpcio-1.85.1.dist-info
+gymnasium-1.3.0.dist-info
+h11-0.16.0.dist-info
+httpcore2-2.16.0.dist-info
+httpx2-2.16.0.dist-info
+idna-3.20.dist-info
+iniconfig-2.3.1.dist-info
+jinja2-3.1.6.dist-info
+jiter-0.19.0.dist-info
+jsonschema-4.26.0.dist-info
+jsonschema_specifications-2025.9.1.dist-info
+markupsafe-3.0.4.dist-info
+mpmath-1.3.0.dist-info
+msgpack-1.2.4.dist-info
+multidict-7.2.1.dist-info
+networkx-3.7.dist-info
+numpy-2.5.4.dist-info
+omegaconf-2.4.0.dist-info
+onnxruntime-1.31.1.dist-info
+openai-3.46.0.dist-info
+opencensus-0.11.4.dist-info
+opencensus_context-0.1.3.dist-info
+opencv_python_headless-5.0.0.93.dist-info
+opentelemetry_api-1.45.2.dist-info
+opentelemetry_exporter_prometheus-0.66b2.dist-info
+opentelemetry_proto-1.45.2.dist-info
+opentelemetry_sdk-1.45.2.dist-info
+opentelemetry_semantic_conventions-0.66b2.dist-info
+orjson-3.13.0.dist-info
+packaging-26.3.dist-info
+pcsa-0.1.0.dist-info
+pettingzoo-1.27.0.dist-info
+pillow-13.0.0.dist-info
+platformdirs-4.14.5.dist-info
+pluggy-1.7.0.dist-info
+poke_env-0.16.1.dist-info
+prometheus_client-0.26.0.dist-info
+propcache-0.5.4.dist-info
+protobuf-7.36.2.dist-info
+proto_plus-1.29.0.dist-info
+pyasn1-0.6.5.dist-info
+pyasn1_modules-0.4.2.dist-info
+pyclipper-1.4.0.dist-info
+pycparser-3.12.dist-info
+pydantic-2.14.3.dist-info
+pydantic_core-2.50.4.dist-info
+pygments-2.21.0.dist-info
+pytest-9.2.0.dist-info
+python_discovery-1.9.5.dist-info
+pyyaml-6.0.3.dist-info
+py_spy-0.4.3.dist-info
+rapidocr-3.10.0.dist-info
+ray-2.60.0.dist-info
+referencing-0.37.0.dist-info
+requests-2.34.2.dist-info
+rpds_py-2026.9.1.dist-info
+ruff-0.17.4.dist-info
+setuptools-84.2.1.dist-info
+shapely-2.2.0.dist-info
+six-1.17.0.dist-info
+smart_open-9.0.2.dist-info
+sniffio-1.3.1.dist-info
+sympy-1.14.0.dist-info
+tabulate-0.10.0.dist-info
+torch-2.14.1+cu130.dist-info
+tqdm-4.70.1.dist-info
+truststore-0.10.5.dist-info
+typing_extensions-4.16.0.dist-info
+typing_inspection-0.4.5.dist-info
+urllib3-2.8.0.dist-info
+virtualenv-21.15.6.dist-info
+websockets-16.1.1.dist-info
+wrapt-2.5.2.dist-info
+yarl-1.25.1.dist-info
+
+===== node search =====
+C:\Users\grich\Code\pcsa\pcsa\.tools\node\node.exe
+
+===== showdown search =====
+C:\Users\grich\Code\pcsa\pcsa\.tools\vendor\pokemon-showdown
+
+===== wsl status =====
+wsl : The Windows Subsystem for Linux is not installed. You 
+can install by running 'wsl.exe --install'.
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-survey2.ps1:8 char:25
++ Sec 'wsl status'; $o = (wsl --status 2>&1 | Out-String) -replace "`0" ...
++                         ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (The Wind...stall'.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+
+For more information please visit https://aka.ms/wslinstall
+
+
+
+
+
+===== wsl list =====
+wsl : The Windows Subsystem for Linux is not installed. You 
+can install by running 'wsl.exe --install'.
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-survey2.ps1:9 char:23
++ Sec 'wsl list'; $o = (wsl -l -v 2>&1 | Out-String) -replace "`0",'';  ...
++                       ~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (The Wind...stall'.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+
+For more information please visit https://aka.ms/wslinstall
+
+
+
+
+
+===== git/other toolchain dirs =====
+Alienware
+Common Files
+Dell
+dotnet
+Git
+Intel
+Internet Explorer
+McAfee
+Microsoft GameInput
+Microsoft Office
+Microsoft Office 15
+ModifiableWindowsApps
+MSBuild
+NVIDIA Corporation
+Reference Assemblies
+Riot Vanguard
+Windows Defender
+Windows Mail
+Windows Media Player
+Windows NT
+Windows Photo Viewer
+WindowsPowerShell
+XboxService
+Alienware
+Common Files
+Dell
+EasyAntiCheat_EOS
+InstallShield Installation Information
+Internet Explorer
+Microsoft
+Microsoft.NET
+MSBuild
+NVIDIA Corporation
+Razer
+Reference Assemblies
+Steam
+Windows Defender
+Windows Mail
+Windows Media Player
+Windows NT
+Windows Photo Viewer
+WindowsPowerShell
+
+===== pcsa git =====
+
+===== rust files anywhere =====
+.claude
+.codex
+.copilot
+git : fatal: not a git repository (or any of the parent directories): .git
+At C:\Users\grich\Code\pcsa\poke-engine-investigation\06-survey2.ps1:11 char:17
++ Sec 'pcsa git'; git -C $root log -1 --format="%h %ad %s" 2>&1
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (fatal: not a gi...ectories): .git:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+.ray
+.vscode
+.vscode-shared
+AppData
+Application Data
+Code
+Contacts
+Cookies
+Documents
+Downloads
+Favorites
+Links
+Local Settings
+Music
+My Documents
+NetHood
+OneDrive
+PrintHood
+Recent
+Saved Games
+Searches
+SendTo
+Start Menu
+Templates
+Videos
+backups
+ide
+plugins
+sessions
+.sandbox
+.sandbox-bin
+.sandbox-secrets
+.tmp
+cache
+plugins
+skills
+tmp
+logs
+cli
+extensions
+sharedStorage
+Local
+LocalLow
+Roaming
+pcsa
+My Music
+My Pictures
+My Videos
+Alienware
+Links
+Desktop
+Documents
+Pictures
+CD Projekt Red
+Captures
+NVIDIA
+
+===== ll-bench logs tail =====
+
+Name        LastWriteTime        
+----        -------------        
+dmg-sim.log 11/16/2026 3:12:14 PM
+parity.log  11/16/2026 3:12:35 PM
+jobs.log    11/16/2026 3:12:35 PM
+
+
+

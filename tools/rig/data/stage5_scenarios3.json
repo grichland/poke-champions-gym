@@ -1,0 +1,1367 @@
+[
+ {
+  "name": "berserk + sitrus: the boost comes first, the berry then brings HP back above half",
+  "teams": {
+   "p1": [
+    {
+     "species": "Drampa",
+     "ability": "Berserk",
+     "item": "Sitrus Berry",
+     "moves": [
+      "Calm Mind",
+      "Substitute"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "moves": [
+      "Seismic Toss",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-ability|p1a: Mon0|Berserk|boost",
+   "Sitrus Berry|[eat]"
+  ]
+ },
+ {
+  "name": "berserk + oran: boost, then the berry, still below half",
+  "teams": {
+   "p1": [
+    {
+     "species": "Drampa",
+     "ability": "Berserk",
+     "item": "Oran Berry",
+     "moves": [
+      "Calm Mind",
+      "Substitute"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "moves": [
+      "Seismic Toss",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-ability|p1a: Mon0|Berserk|boost",
+   "Oran Berry|[eat]"
+  ]
+ },
+ {
+  "name": "anger shell + sitrus: five stages first, then the berry",
+  "teams": {
+   "p1": [
+    {
+     "species": "Drampa",
+     "ability": "Anger Shell",
+     "item": "Sitrus Berry",
+     "moves": [
+      "Calm Mind",
+      "Substitute"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "moves": [
+      "Seismic Toss",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-ability|p1a: Mon0|Anger Shell|boost",
+   "Sitrus Berry|[eat]"
+  ]
+ },
+ {
+  "name": "anger shell + oran",
+  "teams": {
+   "p1": [
+    {
+     "species": "Drampa",
+     "ability": "Anger Shell",
+     "item": "Oran Berry",
+     "moves": [
+      "Calm Mind",
+      "Substitute"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "moves": [
+      "Seismic Toss",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-ability|p1a: Mon0|Anger Shell|boost",
+   "Oran Berry|[eat]"
+  ]
+ },
+ {
+  "name": "berserk + sitrus: a multi-hit move crosses half on its first hit, the berry is eaten between hits",
+  "teams": {
+   "p1": [
+    {
+     "species": "Drampa",
+     "ability": "Berserk",
+     "item": "Sitrus Berry",
+     "moves": [
+      "Calm Mind",
+      "Substitute"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "moves": [
+      "Super Fang",
+      "Double Hit",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 2"
+   }
+  ],
+  "expect": [
+   "Sitrus Berry|[eat]",
+   "|-hitcount|p1a: Mon0|2"
+  ]
+ },
+ {
+  "name": "berserk + oran: a multi-hit move crosses half, the berry between hits, the last hit below half again",
+  "teams": {
+   "p1": [
+    {
+     "species": "Drampa",
+     "ability": "Berserk",
+     "item": "Oran Berry",
+     "moves": [
+      "Calm Mind",
+      "Substitute"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "moves": [
+      "Super Fang",
+      "Double Hit",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 2"
+   }
+  ],
+  "expect": [
+   "Oran Berry|[eat]",
+   "|-hitcount|p1a: Mon0|2"
+  ]
+ },
+ {
+  "name": "anger shell + sitrus: a three-hit move crosses half on a middle hit",
+  "teams": {
+   "p1": [
+    {
+     "species": "Drampa",
+     "ability": "Anger Shell",
+     "item": "Sitrus Berry",
+     "moves": [
+      "Calm Mind",
+      "Substitute"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "moves": [
+      "Seismic Toss",
+      "Triple Axel",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 2"
+   }
+  ],
+  "expect": [
+   "Sitrus Berry|[eat]"
+  ]
+ },
+ {
+  "name": "berserk + sitrus behind a substitute: the hit on the doll changes nothing, the next hit boosts",
+  "teams": {
+   "p1": [
+    {
+     "species": "Drampa",
+     "ability": "Berserk",
+     "item": "Sitrus Berry",
+     "moves": [
+      "Calm Mind",
+      "Substitute"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "moves": [
+      "Seismic Toss",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-end|p1a: Mon0|Substitute",
+   "|-ability|p1a: Mon0|Berserk|boost",
+   "Sitrus Berry|[eat]"
+  ]
+ },
+ {
+  "name": "berserk + sitrus: the substitute's own cost takes it below half, the berry at once, no boost",
+  "teams": {
+   "p1": [
+    {
+     "species": "Drampa",
+     "ability": "Berserk",
+     "item": "Sitrus Berry",
+     "moves": [
+      "Calm Mind",
+      "Substitute"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "moves": [
+      "Seismic Toss",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "Sitrus Berry|[eat]"
+  ]
+ },
+ {
+  "name": "berserk + sitrus against sheer force: the berry still waits for the boost",
+  "teams": {
+   "p1": [
+    {
+     "species": "Drampa",
+     "ability": "Berserk",
+     "item": "Sitrus Berry",
+     "moves": [
+      "Calm Mind",
+      "Substitute"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Sheer Force",
+     "moves": [
+      "Crunch",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-ability|p1a: Mon0|Berserk|boost",
+   "Sitrus Berry|[eat]"
+  ]
+ },
+ {
+  "name": "berserk + sitrus: a confusion self-hit below half, the berry waits for the holder's next move",
+  "seed": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "teams": {
+   "p1": [
+    {
+     "species": "Drampa",
+     "ability": "Berserk",
+     "item": "Sitrus Berry",
+     "moves": [
+      "Calm Mind",
+      "Belly Drum"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "moves": [
+      "Confuse Ray",
+      "Calm Mind",
+      "Seismic Toss"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 2"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-damage|p1a: Mon0|30/153|[from] confusion",
+   "Sitrus Berry|[eat]"
+  ]
+ },
+ {
+  "name": "berserk + sitrus: a confusion self-hit while choosing a multi-hit move, the berry still waits",
+  "seed": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "teams": {
+   "p1": [
+    {
+     "species": "Drampa",
+     "ability": "Berserk",
+     "item": "Sitrus Berry",
+     "moves": [
+      "Double Hit",
+      "Belly Drum"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "moves": [
+      "Confuse Ray",
+      "Calm Mind",
+      "Seismic Toss"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "[from] confusion"
+  ]
+ },
+ {
+  "name": "berserk + sitrus: rocky helmet takes it below half, the berry at once, no boost",
+  "teams": {
+   "p1": [
+    {
+     "species": "Drampa",
+     "ability": "Berserk",
+     "item": "Sitrus Berry",
+     "moves": [
+      "Crunch",
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "item": "Rocky Helmet",
+     "moves": [
+      "Super Fang",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "Rocky Helmet",
+   "Sitrus Berry|[eat]"
+  ]
+ },
+ {
+  "name": "berserk + sitrus against unnerve: boost, no berry",
+  "teams": {
+   "p1": [
+    {
+     "species": "Drampa",
+     "ability": "Berserk",
+     "item": "Sitrus Berry",
+     "moves": [
+      "Calm Mind",
+      "Substitute"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Unnerve",
+     "moves": [
+      "Seismic Toss",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-ability|p1a: Mon0|Berserk|boost"
+  ]
+ },
+ {
+  "name": "berserk + eject button: the boost, then out",
+  "teams": {
+   "p1": [
+    {
+     "species": "Drampa",
+     "ability": "Berserk",
+     "item": "Eject Button",
+     "moves": [
+      "Calm Mind",
+      "Belly Drum"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "moves": [
+      "Rest"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "moves": [
+      "Seismic Toss",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-ability|p1a: Mon0|Berserk|boost",
+   "Eject Button"
+  ]
+ },
+ {
+  "name": "berserk + red card: the boost, then the attacker is dragged out",
+  "teams": {
+   "p1": [
+    {
+     "species": "Drampa",
+     "ability": "Berserk",
+     "item": "Red Card",
+     "moves": [
+      "Calm Mind",
+      "Belly Drum"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "moves": [
+      "Seismic Toss",
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "moves": [
+      "Rest"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-ability|p1a: Mon0|Berserk|boost",
+   "Red Card"
+  ]
+ },
+ {
+  "name": "emergency exit + sitrus: the berry at Update keeps it above half, no exit",
+  "teams": {
+   "p1": [
+    {
+     "species": "Golisopod",
+     "ability": "Emergency Exit",
+     "item": "Sitrus Berry",
+     "moves": [
+      "Swords Dance",
+      "Substitute"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "moves": [
+      "Rest"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "moves": [
+      "Seismic Toss",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "Sitrus Berry|[eat]"
+  ]
+ },
+ {
+  "name": "wimp out + oran: the berry leaves it below half, out it goes",
+  "teams": {
+   "p1": [
+    {
+     "species": "Golisopod",
+     "ability": "Wimp Out",
+     "item": "Oran Berry",
+     "moves": [
+      "Swords Dance",
+      "Substitute"
+     ]
+    },
+    {
+     "species": "Snorlax",
+     "ability": "Thick Fat",
+     "moves": [
+      "Rest"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "moves": [
+      "Seismic Toss",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "Oran Berry|[eat]",
+   "Wimp Out"
+  ]
+ },
+ {
+  "name": "cheek pouch + sitrus below half; ripen + oran",
+  "teams": {
+   "p1": [
+    {
+     "species": "Drampa",
+     "ability": "Cheek Pouch",
+     "item": "Sitrus Berry",
+     "moves": [
+      "Calm Mind"
+     ]
+    },
+    {
+     "species": "Drampa",
+     "ability": "Ripen",
+     "item": "Oran Berry",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "moves": [
+      "Seismic Toss",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "switch 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "Cheek Pouch",
+   "Ripen",
+   "Oran Berry|[eat]"
+  ]
+ },
+ {
+  "name": "slow start ends after five turns",
+  "teams": {
+   "p1": [
+    {
+     "species": "Slowking",
+     "ability": "Slow Start",
+     "moves": [
+      "Slack Off"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-end|p1a: Mon0|Slow Start"
+  ]
+ },
+ {
+  "name": "pastel veil: silent against baneful bunker's poison and sludge bomb's; immune to toxic",
+  "seed": [
+   3,
+   4,
+   5,
+   6
+  ],
+  "teams": {
+   "p1": [
+    {
+     "species": "Slowking",
+     "ability": "Pastel Veil",
+     "moves": [
+      "Poison Jab",
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "item": "",
+     "moves": [
+      "Baneful Bunker",
+      "Toxic",
+      "Sludge Bomb",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 2"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 2"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 2"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 2"
+   }
+  ],
+  "expect": [
+   "Pastel Veil"
+  ]
+ },
+ {
+  "name": "flower veil on a grass holder: shown for glare, silent for body slam's paralysis",
+  "teams": {
+   "p1": [
+    {
+     "species": "Venusaur",
+     "ability": "Flower Veil",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "item": "",
+     "moves": [
+      "Toxic",
+      "Glare",
+      "Body Slam",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 2"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 2"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 2"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 2"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 2"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 2"
+   }
+  ],
+  "expect": [
+   "Flower Veil"
+  ]
+ },
+ {
+  "name": "dancer copies a dance with its activation row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Slowking",
+     "ability": "Dancer",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "item": "",
+     "moves": [
+      "Swords Dance",
+      "Quiver Dance"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-activate|p1a: Mon0|ability: Dancer"
+  ]
+ },
+ {
+  "name": "soundproof user of heal bell shows its immunity",
+  "teams": {
+   "p1": [
+    {
+     "species": "Slowking",
+     "ability": "Soundproof",
+     "moves": [
+      "Heal Bell"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "item": "",
+     "moves": [
+      "Toxic",
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 1"
+   }
+  ],
+  "expect": [
+   "|-immune|p1a: Mon0|[from] ability: Soundproof"
+  ]
+ },
+ {
+  "name": "innards out against magic guard: the ability shows, no damage",
+  "teams": {
+   "p1": [
+    {
+     "species": "Slowking",
+     "ability": "Innards Out",
+     "moves": [
+      "Calm Mind"
+     ],
+     "evs": {
+      "hp": 0
+     }
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Magic Guard",
+     "item": "",
+     "moves": [
+      "Seismic Toss"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-activate|p1a: Mon0|ability: Innards Out"
+  ]
+ },
+ {
+  "name": "recycle a misty seed in misty terrain: the item row, then the seed is used",
+  "teams": {
+   "p1": [
+    {
+     "species": "Slowking",
+     "ability": "Oblivious",
+     "item": "Misty Seed",
+     "moves": [
+      "Recycle",
+      "Misty Terrain"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "item": "",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-item|p1a: Mon0|Misty Seed|[from] move: Recycle"
+  ]
+ },
+ {
+  "name": "pickup takes a misty seed in misty terrain and uses it at once",
+  "teams": {
+   "p1": [
+    {
+     "species": "Slowking",
+     "ability": "Pickup",
+     "moves": [
+      "Misty Terrain",
+      "Calm Mind"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Pressure",
+     "item": "Misty Seed",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 1",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "[from] ability: Pickup"
+  ]
+ },
+ {
+  "name": "trick an air balloon onto a klutz holder: no balloon row",
+  "teams": {
+   "p1": [
+    {
+     "species": "Slowking",
+     "ability": "Oblivious",
+     "item": "Air Balloon",
+     "moves": [
+      "Trick"
+     ]
+    }
+   ],
+   "p2": [
+    {
+     "species": "Corviknight",
+     "ability": "Klutz",
+     "item": "Heat Rock",
+     "moves": [
+      "Calm Mind"
+     ]
+    }
+   ]
+  },
+  "steps": [
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   },
+   {
+    "p1": "move 0",
+    "p2": "move 0"
+   }
+  ],
+  "expect": [
+   "|-item|p2a: Mon0|Air Balloon|[from] move: Trick"
+  ]
+ }
+]
