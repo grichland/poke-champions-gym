@@ -3,7 +3,8 @@
 Use: python tools/build/wheel.py [OUT_DIR]   (default dist/)
 Run tools/build/python-ext.sh first with the same Python: the wheel's tag comes from that interpreter
 and the extension's file name must match it. When llvm-strip is on PATH (after `source tools/build/env.sh`)
-the extension's debug information is left out of the wheel.
+the extension's debug information is left out of the wheel. CG_EXT names another built extension file
+to pack in place of the one in python/champions_gym.
 """
 
 import base64
@@ -25,7 +26,7 @@ METADATA = f"""Metadata-Version: 2.1
 Name: champions-gym
 Version: {VERSION}
 Summary: CG: a Pokémon Champions Ranked Singles simulator (Rust) with a batched Python environment.
-License: Private; not licensed for redistribution.
+License: MIT
 Requires-Python: >=3.12,<3.13
 Provides-Extra: numpy
 Requires-Dist: numpy; extra == "numpy"
@@ -77,12 +78,16 @@ def files():
                 pass
             elif n == "_cg" + ext:
                 found_ext = True
-                out.append((rel, stripped(full)))
+                if not os.environ.get("CG_EXT"):
+                    out.append((rel, stripped(full)))
                 continue
             else:
                 continue
             with open(full, "rb") as f:
                 out.append((rel, f.read()))
+    if os.environ.get("CG_EXT"):
+        found_ext = True
+        out.append((f"{NAME}/_cg{ext}", stripped(os.environ["CG_EXT"])))
     if not found_ext:
         sys.exit(f"wheel.py: {PKG}/_cg{ext} not found; run tools/build/python-ext.sh with this Python first")
     return out
@@ -97,11 +102,14 @@ def main():
     entries = files()
     with open(os.path.join(REPO, "THIRD_PARTY_NOTICES.md"), "rb") as f:
         notices = f.read()
+    with open(os.path.join(REPO, "LICENSE"), "rb") as f:
+        licence = f.read()
     entries += [
         (f"{info}/METADATA", METADATA.encode("utf-8")),
         (f"{info}/WHEEL", f"Wheel-Version: 1.0\nGenerator: champions_gym tools/build/wheel.py\nRoot-Is-Purelib: false\nTag: {t}\n".encode()),
         (f"{info}/top_level.txt", f"{NAME}\n".encode()),
         (f"{info}/THIRD_PARTY_NOTICES.md", notices),
+        (f"{info}/LICENSE", licence),
     ]
     record = [record_line(p, d) for p, d in entries] + [f"{info}/RECORD,,"]
     entries.append((f"{info}/RECORD", ("\n".join(record) + "\n").encode()))
