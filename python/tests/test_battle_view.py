@@ -40,7 +40,7 @@ def test_battle_view_fields():
 
 def test_builtin_players_play():
     assert list(cg.BUILTIN_PLAYERS) == ["random", "max_damage", "tower", "best_matchup_max_damage", "disciplined", "endgame",
-                                        "pilot_encore", "pilot_weather", "pilot_hazard", "pilot_priority"]
+                                        "pilot_encore", "pilot_weather", "pilot_hazard", "pilot_priority", "lookahead", "lookahead2"]
     r = cg.play_games("max_damage", "random", 40, TEAMS, seed=3, batch=20)
     assert len(r.games) == 40
     assert r.wins[0] > r.wins[1], r.wins

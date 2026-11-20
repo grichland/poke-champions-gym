@@ -14,7 +14,8 @@
 //! (None unknown), `types`, `active`, `revealed`.
 
 use battle::{legal, Battle, ItemState, ReqKind, Side, Who, N_ACTIONS as B_ACTIONS, ROOMS, SIDE_CONDS};
-use players::{by_name, Player, Rng};
+use env::builtin::by_name;
+use players::{Player, Rng};
 use cg_engine::sim::data::BOOST_IDS;
 use pyo3::prelude::*;
 use pyo3::types::PyDict;
@@ -287,7 +288,7 @@ impl PyBattle {
     }
 }
 
-/// One of CG's Rust Players (`players::NAMES`) with its own seeded source. Any thread may call it, one call
+/// One of CG's Rust Players (`env::builtin::NAMES`) with its own seeded source. Any thread may call it, one call
 /// at a time (the lock only makes it `Sync`).
 #[pyclass(name = "RustPlayer", module = "champions_gym._cg", skip_from_py_object)]
 pub struct PyRustPlayer {
@@ -302,7 +303,7 @@ impl PyRustPlayer {
     #[new]
     #[pyo3(signature = (name, seed = 0))]
     fn new(name: &str, seed: u64) -> PyResult<Self> {
-        let p = by_name(name).ok_or_else(|| super::err(format!("no built-in player {:?} ({})", name, players::NAMES.join(", "))))?;
+        let p = by_name(name).ok_or_else(|| super::err(format!("no built-in player {:?} ({})", name, env::builtin::NAMES.join(", "))))?;
         Ok(PyRustPlayer { p: Mutex::new(p), rng: Rng::new(seed), name: name.to_string() })
     }
     /// Three team indices, lead first.

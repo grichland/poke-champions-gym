@@ -105,11 +105,13 @@ class Labels(NamedTuple):
 
 @dataclass
 class Outcome:
-    """One outcome of a step: its probability, the forced path that reproduces it, and the game after it."""
+    """One outcome of a step: its probability (a sample's weight), the forced path that reproduces it, and
+    the game after it. `leaves`: how many enumerated leaves (or sampled draws) were merged into it."""
 
     p: float
     path: list
     game: "Game"
+    leaves: int = 1
 
 
 @dataclass
@@ -117,13 +119,38 @@ class Outcomes:
     outcomes: list
     covered: float  # probability of the outcomes listed (1 unless capped)
     capped: bool
-    leaves: int  # replays run
+    leaves: int  # replays run (draws for `Game.sample`)
+    sampled: bool = False  # from `Game.sample`: `p` is the share of the draws
+
+
+class Readout(NamedTuple):
+    """Both sides' Pokémon from the State, by side and team slot (the picks, lead first; switch action
+    8 + i is slot i)."""
+
+    hp: Any  # float32 [2, 3]: HP fraction
+    fainted: Any  # uint8 [2, 3]
+    status: Any  # uint8 [2, 3]: 0 none, 1 brn, 2 par, 3 slp, 4 frz, 5 psn, 6 tox
+    active: Any  # int8 [2]: the slot on the field, -1 none (fainted and not yet replaced)
+
+
+#: `kind` of a seat with no open request in `Game.tensors` and `Game.battle`.
+KIND_NONE: int = _cg.KIND_NO_REQUEST
+
+#: What a Game built from a live Battle (`game_from_battle`, `Session.game`) cannot know: (piece, rule used).
+UNKNOWN: list = list(_cg.GAME_UNKNOWN)
 
 
 class Game:
     """One game for trees: both seats choose together and the engine resolves the step.
 
-    Actions are turn/replace actions 0..10, or None for a seat with no decision.
+    Actions are turn/replace actions 0..10, or None for a seat with no decision; `masks()` (the State's)
+    says what `step` accepts.
+
+    A Game with views (`has_views`: from `BatchEnv.snapshot/fork(..., views=True)` or `game_from_battle`)
+    carries each seat's Battle: what that seat knew when the Game was taken plus the rows of every step
+    since, delivered as the environment it came from delivers them (`replace_before_rows`). `battle(seat)`
+    and `tensors(seat)` are then what `BatchEnv` shows that seat had it played the same actions with the
+    same random outcomes. The rows are emitted lazily, when a view is first asked for after steps.
     """
 
     __slots__ = ("_g",)
@@ -143,6 +170,16 @@ class Game:
     def winner(self) -> Optional[int]:
         """0 or 1 once ended; None while playing or for a tie."""
         return self._g.winner
+
+    @property
+    def has_views(self) -> bool:
+        return self._g.has_views
+
+    @property
+    def restorable(self) -> bool:
+        """Whether `BatchEnv.restore` takes it: from ``BatchEnv.snapshot(g, views=True)`` (or its
+        `snapshot`/`fork`), not stepped."""
+        return self._g.restorable
 
     def kinds(self) -> Tuple[int, int]:
         """Each seat's decision: 1 turn, 2 replace, -1 none."""
@@ -168,13 +205,57 @@ class Game:
         self._g.step_forced(a0, a1, list(path))
 
     def outcomes(self, a0: Optional[int], a1: Optional[int], merge: bool = True, max_branches: int = 100_000) -> Outcomes:
-        """Every outcome of the next step with these actions, with its probability."""
+        """Every outcome of the next step with these actions, with its probability. Children keep the
+        views (built on first use from this Game's views and the outcome's path; a merged outcome follows
+        its kept path)."""
         lst, covered, capped, leaves = self._g.outcomes(a0, a1, merge, max_branches)
-        return Outcomes([Outcome(p, path, Game(g)) for p, path, g in lst], covered, capped, leaves)
+        return Outcomes([Outcome(p, path, Game(g), n) for p, path, n, g in lst], covered, capped, leaves)
+
+    def sample(self, a0: Optional[int], a1: Optional[int], n: int, seed: int = 0, merge: bool = True) -> Outcomes:
+        """`n` independent outcomes of the next step drawn with the engine's probabilities (draw k seeded
+        ``mix_seed(seed, k)``), for steps too large to enumerate. Each draw weighs 1/n; with `merge`, draws
+        with equal States are one outcome whose `p` is their share and `leaves` their count. `path`
+        reproduces an outcome with `step_forced`; children keep the views as in `outcomes`."""
+        lst, covered, capped, leaves = self._g.sample(a0, a1, n, seed, merge)
+        return Outcomes([Outcome(p, path, Game(g), k) for p, path, k, g in lst], covered, capped, leaves, True)
 
     def same_state(self, other: "Game") -> bool:
         """Whether both games hold the same State (seed state not compared)."""
         return self._g.same_state(other._g)
+
+    def battle(self, seat: int) -> Any:
+        """What `seat` knows now: its `Battle`, with its open request's kind, decision and mask (kind
+        `KIND_NONE`, decision -1 and an empty mask when it has none: not deciding, locked, already
+        answered at the fork, or the game ended). Raises CGError without views."""
+        return self._g.battle(seat)
+
+    def tensors(self, seat: int, damage: bool = True) -> Any:
+        """`seat`'s observation (`champions_gym.Tensors` of one game: no N axis; seat, kind and decision
+        are ints). For a seat with an open request: exactly what `BatchEnv.observe_tensors` gives it.
+        Otherwise its Battle as it last saw it, observed as for a turn, with `mask` and `action_mask` 0,
+        kind `KIND_NONE` and decision -1."""
+        from .obs import Tensors, _empty
+
+        names = ("rows", "row_ids", "field", "last", "last_ids", "mask", "action_mask", "opp_prior")
+        t = {k: _empty(k, ()) for k in names}
+        seat_, kind, decision = self._g.tensors_into(seat, *(t[k] for k in names), damage=damage)
+        return Tensors(t["rows"], t["row_ids"], t["field"], t["last"], t["last_ids"], t["mask"], t["action_mask"], seat_, kind, decision, t["opp_prior"])
+
+    def readout(self) -> Readout:
+        """The State's HP fractions, faints, statuses and active slots for both sides (`Readout`)."""
+        hp, fainted, status, active = self._g.readout()
+        return Readout(_wrap(hp, "f", (2, 3)), _wrap(fainted, "B", (2, 3)), _wrap(status, "B", (2, 3)), _wrap(active, "b", (2,)))
+
+
+def game_tensors(games: Sequence[Game], seats: Sequence[int], out: Any = None, threads: int = 1, damage: bool = True) -> Any:
+    """The observations of ``(games[i], seats[i])`` as one batch: a `Tensors` of [N, ...] arrays (N =
+    len(games)), each entry what `Game.tensors` gives. `out`: arrays from `new_tensors(N)` to write into.
+    The views are built first, under the GIL; the arrays are written without it, on `threads` threads."""
+    n = len(games)
+    if out is None:
+        out = new_tensors(n)
+    _cg.games_tensors_into([g._g for g in games], [int(x) for x in seats], *out, threads=threads, damage=damage)
+    return out
 
 
 def check_teams(path_or_text: str) -> Tuple[int, list]:
@@ -393,10 +474,37 @@ class BatchEnv:
     def legal_actions(self, g: int) -> list:
         return self._e.legal_actions(g)
 
-    def snapshot(self, g: int) -> Game:
-        """An exact copy of game g (not during team preview)."""
-        return Game(self._e.snapshot(g))
+    def snapshot(self, g: int, views: bool = False) -> Game:
+        """An exact copy of game g (not during team preview). `views=True`: the Game also carries both
+        seats' Battles (`Game.battle`, `Game.tensors`); that copy costs a few microseconds, so it is asked
+        for. Games forked or stepped from it keep the views at no cost until a view is read. A snapshot with
+        views also carries its slot for `restore` (about 2 microseconds more)."""
+        return Game(self._e.snapshot(g, views))
 
-    def fork(self, g: int, seed: int) -> Game:
-        """A copy of game g with its own seed."""
-        return Game(self._e.fork(g, seed))
+    def fork(self, g: int, seed: int, views: bool = False) -> Game:
+        """A copy of game g with its own seed (`views` as in `snapshot`)."""
+        return Game(self._e.fork(g, seed, views))
+
+    def restore(self, slot: int, game: Game, seed: int) -> None:
+        """Puts a copy of `game` (from ``snapshot(g, views=True)``, not stepped since; it stays usable and
+        can be restored again) into `slot`, waiting on its pending decision (turn or replace, either seat),
+        with all its luck from then on drawn from `seed` alone, as ``game.fork(seed)``: the same game for
+        any slot and any `threads` (built-in players are still seeded by slot and decision). Both seats'
+        Battles, the decision ids, the labels' records, `team_ids` and `agent_seat` come with it (the
+        slot's own agent seat returns when the game ends); no preview is asked and no start is reported.
+        Its turn count and step cap count from the original game's first turn; `results()` reports it
+        once when it ends, under the slot's episode number, and the slot then restarts as usual.
+        `results()` and `labels()` keep the last act's until the next act.
+        Only into a slot whose game has not started (it just ended, or the environment is new), from an
+        environment with the same settings (rule, team_mode, replace_before_rows) and teams; anything else
+        raises CGError."""
+        self._e.restore(slot, game._g, seed)
+def game_from_battle(
+    battle: Any, opponent: Sequence[dict], seat: int = 0, genders: Optional[Sequence[Optional[str]]] = None, seed: int = 0
+) -> Tuple[Game, list]:
+    """An engine `Game` at a Battle's open turn or replace request: ``(game, rejected)``. Prefer
+    `champions_gym.live.Session.game`, which uses the Session's whole Builder (this one rebuilds it from
+    the Battle). See `Session.game` for `opponent`, `genders`, `seat` and what is set where the Battle
+    cannot tell."""
+    g, rejected = _cg.game_from_battle(battle, list(opponent), seat, None if genders is None else list(genders), seed)
+    return Game(g), rejected

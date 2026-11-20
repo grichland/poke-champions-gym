@@ -1,4 +1,4 @@
-//! N games between two named Players (`players::NAMES`) on the engine, each seeing only its own
+//! N games between two named Players (`env::builtin::NAMES`) on the engine, each seeing only its own
 //! Battle. Half the games with A in seat 0, half with A in seat 1, on the same seeds (so the same team
 //! draws). Team preview goes through `Player::teampreview`. Seeded and repeatable for a given thread count.
 //!
@@ -20,7 +20,8 @@ use env::batch::preview_action;
 use env::teams::{mix, TeamMode, TeamPool};
 use env::{BatchEnv, Counters, EnvConfig, RequestKind, Rule};
 use emit::check::Tally;
-use players::{by_name, Rng, NAMES};
+use env::builtin::{by_name, NAMES};
+use players::Rng;
 use std::collections::BTreeMap;
 use std::io::Write;
 use std::sync::Arc;

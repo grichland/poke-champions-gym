@@ -7,7 +7,7 @@ pub mod fmt;
 pub mod view;
 
 use battle::{Body, Builder, Event, Input, Message, Picks, ReqKind, CONTRACT_VERSION};
-use cg_engine::sim::outcome::Seeded;
+use cg_engine::sim::outcome::{Outcomes, Seeded};
 use cg_engine::sim::state::{State, Winner, SIDES};
 use cg_engine::sim::{Choice, MonSpec, Row};
 pub use view::{Emitter, Names};
@@ -127,8 +127,8 @@ impl Seats {
         Ok(rows)
     }
 
-    /// `step`, writing the rows into `rows` (cleared first).
-    pub fn step_into(&mut self, state: &mut State, rng: &mut Seeded, choices: [Option<Choice>; SIDES], rows: &mut Vec<Row>) -> Result<(), String> {
+    /// `step`, writing the rows into `rows` (cleared first), with any outcome source.
+    pub fn step_into<O: Outcomes>(&mut self, state: &mut State, rng: &mut O, choices: [Option<Choice>; SIDES], rows: &mut Vec<Row>) -> Result<(), String> {
         let t0 = self.profile.then(std::time::Instant::now);
         let s0 = *state;
         rows.clear();

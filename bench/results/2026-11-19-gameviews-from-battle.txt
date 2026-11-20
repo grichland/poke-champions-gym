@@ -1,0 +1,226 @@
+GV-2 pp pool, disciplined vs tower: built 2965 (turn 2622, replace 343), not built 0; our State legal within the Battle's 2965, equal 2965; steppable 2965; with a rejected guess 0; turn requests vs truth: both seats' State legal equal 2614 of 2622, exact on every compared part 936, exact but for team order and opponent HP rounding 1748
+     872 opp_mon_hp
+     369 own_order
+     367 opp_slot_conds
+     359 opp_order
+     353 own_slot_conds
+      57 opp_vol_state:perishsong
+      57 own_vol_state:perishsong
+      52 opp_mon_status_time
+      47 own_mon_status_time
+      19 opp_vol_state:confusion
+      17 own_vol_state:confusion
+      11 opp_vol_missing:destinybond
+      11 opp_vol_state:lockedmove
+      11 own_vol_missing:destinybond
+       8 opp_vol_extra:lockedmove
+       1 opp_mon_pp
+GV-2 pilot_encore pool, pilot_encore vs max_damage: built 2334 (turn 1817, replace 517), not built 0; our State legal within the Battle's 2334, equal 2332; steppable 2334; with a rejected guess 0; turn requests vs truth: both seats' State legal equal 1812 of 1817, exact on every compared part 934, exact but for team order and opponent HP rounding 1624
+     387 own_order
+     381 opp_order
+     315 opp_mon_hp
+      35 opp_mon_types
+      35 own_mon_types
+      12 opp_mon_tox_stage
+      12 own_mon_tox_stage
+      11 opp_slot_conds
+      11 opp_vol_state:encore
+      11 own_slot_conds
+      10 own_vol_state:encore
+       9 opp_vol_state:confusion
+       9 opp_vol_state:lockedmove
+       9 own_vol_state:confusion
+       6 opp_mon_species
+       6 opp_vol_state:perishsong
+       6 own_vol_missing:destinybond
+       6 own_vol_state:perishsong
+       4 opp_vol_missing:destinybond
+       4 rejected brought it led: put first
+       3 rejected moves bittermalice was used, not among the guessed moves; swordsdance dropped
+       1 opp_active
+       1 opp_mon_ability
+       1 opp_mon_active_turns
+       1 opp_mon_maxhp_stats
+       1 opp_mon_status_time
+       1 opp_vol_missing:choicelock
+       1 opp_vol_state:stall
+       1 own_mon_ability
+       1 own_mon_maxhp_stats
+       1 own_mon_status_time
+       1 own_vol_state:stall
+GV-2 shipped pool, tower vs max_damage: built 5136 (turn 3946, replace 1190), not built 0; our State legal within the Battle's 5136, equal 5136; steppable 5136; with a rejected guess 0; turn requests vs truth: both seats' State legal equal 3942 of 3946, exact on every compared part 2013, exact but for team order and opponent HP rounding 3781
+    1001 own_order
+     990 opp_order
+     738 opp_mon_hp
+      28 opp_mon_types
+      28 own_mon_types
+      24 opp_vol_state:lockedmove
+      16 opp_vol_state:confusion
+      14 own_vol_state:confusion
+       9 opp_mon_status_time
+       9 own_mon_status_time
+       6 opp_mon_active_turns
+       4 opp_mon_maxhp_stats
+       4 own_mon_active_turns
+       4 own_mon_maxhp_stats
+       3 opp_slot_conds
+       3 opp_vol_missing:destinybond
+       3 own_slot_conds
+       3 own_vol_missing:destinybond
+       2 opp_active
+       2 opp_mon_species
+       2 opp_vol_state:encore
+       2 opp_vol_state:stall
+       2 own_vol_state:encore
+       2 own_vol_state:stall
+       1 opp_mon_form
+       1 opp_mon_tox_stage
+       1 opp_vol_missing:choicelock
+       1 opp_vol_state:healblock
+       1 own_mon_form
+       1 own_mon_tox_stage
+       1 own_vol_extra:glaiverush
+       1 own_vol_state:healblock
+       1 rejected brought it led: put first
+GV-2 imprison pool, tower vs random: built 4248 (turn 3899, replace 349), not built 0; our State legal within the Battle's 4248, equal 4036; steppable 4248; with a rejected guess 4146; turn requests vs truth: both seats' State legal equal 2759 of 3899, exact on every compared part 127, exact but for team order and opponent HP rounding 289
+    4806 opp_mon_moves
+    4806 opp_mon_pp
+    1707 rejected moves garchomp cannot learn imprison
+    1600 rejected moves gengar cannot learn copycat
+    1508 rejected moves clefable cannot learn transform
+    1206 opp_mon_hp
+    1044 rejected moves imprison was used, not among the guessed moves; added
+     961 rejected moves toxapex cannot learn scald
+     690 opp_order
+     680 own_order
+     622 rejected moves snorlax cannot learn copycat
+     468 rejected moves toxapex cannot learn imprison
+     297 rejected moves transform was used, not among the guessed moves; added
+     267 rejected moves scald was used, not among the guessed moves; added
+     259 rejected moves copycat was used, not among the guessed moves; added
+     195 opp_mon_maxhp_stats
+     192 own_mon_maxhp_stats
+     192 own_mon_moves
+     192 own_mon_pp
+     113 own_mon_tox_stage
+     110 opp_mon_tox_stage
+      18 opp_vol_state:stall
+      18 own_vol_state:stall
+       1 opp_vol_missing:choicelock
+GV-2 traps pool, tower vs disciplined: built 2174 (turn 1718, replace 456), not built 0; our State legal within the Battle's 2174, equal 2174; steppable 2174; with a rejected guess 2174; turn requests vs truth: both seats' State legal equal 870 of 1718, exact on every compared part 0, exact but for team order and opponent HP rounding 0
+    1718 opp_mon_moves
+    1718 opp_mon_pp
+    1257 rejected moves garchomp cannot learn jawlock
+     917 rejected moves annihilape cannot learn noretreat
+     487 own_order
+     438 opp_order
+     422 opp_mon_hp
+      89 opp_vol_state:perishsong
+      88 opp_vol_state:confusion
+      88 own_vol_state:perishsong
+      79 own_vol_state:confusion
+      72 opp_vol_state:lockedmove
+      69 rejected moves noretreat was used, not among the guessed moves; added
+      48 own_vol_missing:noretreat
+      35 opp_vol_missing:noretreat
+      17 opp_vol_missing:destinybond
+      17 own_vol_missing:destinybond
+       6 rejected moves jawlock was used, not among the guessed moves; added
+GV-2 stages pool, endgame vs tower: built 2809 (turn 2402, replace 407), not built 0; our State legal within the Battle's 2809, equal 2809; steppable 2809; with a rejected guess 2809; turn requests vs truth: both seats' State legal equal 1825 of 2402, exact on every compared part 0, exact but for team order and opponent HP rounding 8
+    2394 opp_mon_moves
+    2304 opp_mon_pp
+    1503 rejected moves volcarona cannot learn roost
+    1306 rejected moves gyarados cannot learn haze
+     616 own_order
+     610 opp_order
+     565 opp_mon_hp
+     178 rejected moves haze was used, not among the guessed moves; added
+      69 opp_vol_state:taunt
+      69 own_vol_state:taunt
+       8 rejected moves roost was used, not among the guessed moves; added
+GV-2 charges pool, random vs tower: built 3710 (turn 3297, replace 413), not built 0; our State legal within the Battle's 3710, equal 3710; steppable 3710; with a rejected guess 3486; turn requests vs truth: both seats' State legal equal 2115 of 3297, exact on every compared part 118, exact but for team order and opponent HP rounding 208
+    4379 opp_mon_moves
+    4376 opp_mon_pp
+    1438 rejected moves gengar cannot learn futuresight
+    1340 rejected moves archaludon cannot learn bodypress
+    1323 rejected moves hydreigon cannot learn meteorbeam
+    1041 opp_mon_hp
+     607 own_order
+     591 opp_order
+     546 rejected moves hatterene cannot learn swagger
+     525 rejected moves meteorbeam was used, not among the guessed moves; added
+     496 rejected moves bodypress was used, not among the guessed moves; added
+     411 rejected moves slowbro cannot learn confuseray
+     207 rejected moves futuresight was used, not among the guessed moves; added
+     195 rejected moves swagger was used, not among the guessed moves; added
+     155 opp_slot_conds
+     136 own_slot_conds
+     115 opp_vol_state:confusion
+     103 own_vol_state:confusion
+      78 rejected moves confuseray was used, not among the guessed moves; added
+      64 opp_vol_state:substitute
+      55 own_vol_state:substitute
+      26 opp_vol_state:lockedmove
+      10 opp_mon_status_time
+      10 own_mon_status_time
+       5 own_vol_state:stall
+       3 opp_vol_state:stall
+       1 opp_vol_extra:lockedmove
+GV-2 pilot_weather pool, pilot_weather vs disciplined: built 2492 (turn 1971, replace 521), not built 0; our State legal within the Battle's 2492, equal 2490; steppable 2492; with a rejected guess 0; turn requests vs truth: both seats' State legal equal 1970 of 1971, exact on every compared part 985, exact but for team order and opponent HP rounding 1855
+     465 opp_mon_hp
+     452 own_order
+     439 opp_order
+      13 opp_mon_status_time
+      13 opp_mon_types
+      13 own_mon_status_time
+      13 own_mon_types
+      12 opp_vol_state:confusion
+      12 own_vol_state:confusion
+       9 opp_vol_state:lockedmove
+       6 opp_mon_form
+       6 own_mon_form
+       4 opp_vol_state:encore
+       4 opp_vol_state:perishsong
+       4 own_vol_state:encore
+       4 own_vol_state:perishsong
+       2 opp_mon_maxhp_stats
+       2 own_mon_maxhp_stats
+       1 opp_active
+       1 opp_mon_active_turns
+       1 opp_mon_tox_stage
+       1 opp_vol_missing:destinybond
+       1 opp_vol_state:healblock
+       1 own_mon_tox_stage
+       1 own_vol_missing:destinybond
+       1 own_vol_state:healblock
+GV-2 pilot_hazard pool, pilot_hazard vs tower: built 2622 (turn 2124, replace 498), not built 0; our State legal within the Battle's 2622, equal 2622; steppable 2622; with a rejected guess 0; turn requests vs truth: both seats' State legal equal 2113 of 2124, exact on every compared part 1093, exact but for team order and opponent HP rounding 1868
+     476 opp_mon_hp
+     413 own_order
+     408 opp_order
+      47 opp_mon_status_time
+      47 own_mon_status_time
+      39 opp_mon_tox_stage
+      38 own_mon_tox_stage
+      26 opp_vol_state:confusion
+      23 own_vol_state:confusion
+      16 opp_vol_state:lockedmove
+      12 opp_mon_active_turns
+      10 opp_mon_last_move
+      10 opp_mon_pp
+       7 opp_active
+       5 opp_mon_moves
+       5 own_mon_active_turns
+       4 opp_vol_extra:lockedmove
+       4 opp_vol_state:encore
+       4 own_vol_state:encore
+       4 rejected moves flamethrower was used, not among the guessed moves; ironhead dropped
+       3 opp_mon_types
+       3 opp_vol_missing:choicelock
+       3 own_mon_types
+       3 rejected moves flamethrower was used, not among the guessed moves; fakeout dropped
+       2 opp_vol_missing:destinybond
+       2 opp_vol_state:taunt
+       2 own_vol_missing:destinybond
+       2 own_vol_state:taunt
+       2 rejected moves shadowball was used, not among the guessed moves; partingshot dropped
+GV-2 mechanics pools, paths reached in all: {"a refusal at this request": 83, "disable": 179, "encore": 55, "own move at 0 PP": 101, "replace before its rows": 1759, "substitute": 364, "taunt": 117, "torment": 411, "turn 20 or later": 338}

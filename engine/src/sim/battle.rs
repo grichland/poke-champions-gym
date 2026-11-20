@@ -754,6 +754,50 @@ impl<'a, O: Outcomes> Sim<'a, O> {
         }
     }
 
+    /// The flags a turn start sets on each active Pokemon (trapped, the DisableMove pass), as `end_turn`
+    /// sets them, for a State built from outside that has not run a turn start. Nothing is drawn.
+    pub fn turn_start_flags(&mut self) {
+        for side in 0..SIDES {
+            if !self.s.sides[side].has_active {
+                continue;
+            }
+            let p = (side, self.s.sides[side].active as usize);
+            {
+                let m = self.s.active_mut(side);
+                for ms in m.moves.iter_mut() {
+                    ms.disabled = false;
+                    ms.disabled_hidden = false;
+                }
+            }
+            let mut ctx = Ctx::new(Some(p), None, Eff::None);
+            self.run_event(Ev::DisableMove, &mut ctx, R::True);
+            run_field_hook(self.s, Hook::DisableMove);
+            let nm = self.s.active(side).nmoves as usize;
+            for i in 0..nm {
+                let id = self.s.active(side).moves[i].id;
+                if id == moves::FAKEOUT || id == moves::FIRSTIMPRESSION {
+                    self.move_disable_move(p, id);
+                } else {
+                    run_move_hook(self.s, id, Hook::DisableMove);
+                }
+                let m = self.s.active_mut(side);
+                if id.data().has_flag(flag::CANTUSETWICE) && m.last_move == id {
+                    m.moves[i].disabled = true;
+                }
+            }
+            {
+                let m = self.s.active_mut(side);
+                m.trapped = false;
+                m.trap_hidden = false;
+            }
+            let mut ctx = Ctx::new(Some(p), None, Eff::None);
+            self.run_event(Ev::TrapPokemon, &mut ctx, R::True);
+            run_field_hook(self.s, Hook::TrapPokemon);
+            run_field_hook(self.s, Hook::MaybeTrapPokemon);
+        }
+        self.make_request(Request::Move);
+    }
+
     /// battle.endTurn
     fn end_turn(&mut self) {
         self.s.turn += 1;

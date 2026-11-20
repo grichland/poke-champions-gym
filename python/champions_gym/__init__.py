@@ -1,8 +1,9 @@
 """champions_gym (CG): a Pokémon Champions singles simulator with a batched Python interface."""
 
-__version__ = "0.4.0"
+__version__ = "0.5.0"
 
 from .env import (
+    KIND_NONE,
     KIND_PREVIEW,
     KIND_REPLACE,
     KIND_TURN,
@@ -16,8 +17,11 @@ from .env import (
     Labels,
     Outcome,
     Outcomes,
+    Readout,
     Results,
     check_teams,
+    game_from_battle,
+    game_tensors,
     mix_seed,
     preview_action,
     preview_picks,
@@ -39,6 +43,7 @@ __all__ = [
     "Game",
     "GameRecord",
     "Labels",
+    "KIND_NONE",
     "KIND_PREVIEW",
     "KIND_REPLACE",
     "KIND_TURN",
@@ -51,6 +56,7 @@ __all__ = [
     "Player",
     "RandomPlayer",
     "Request",
+    "Readout",
     "Results",
     "SHAPES",
     "TEAMS",
@@ -58,6 +64,8 @@ __all__ = [
     "VOCAB",
     "builtin_player",
     "check_teams",
+    "game_from_battle",
+    "game_tensors",
     "learnset_table",
     "mix_seed",
     "new_tensors",

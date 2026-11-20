@@ -64,7 +64,8 @@ class RandomPlayer(Player):
 class BuiltinPlayer(Player):
     """One of CG's Rust Players by name (`BUILTIN_PLAYERS`: "random", "max_damage", "tower",
     "best_matchup_max_damage", "disciplined", "endgame", "pilot_encore", "pilot_weather", "pilot_hazard",
-    "pilot_priority"), reading the same Battle.
+    "pilot_priority", "lookahead", "lookahead2"; a lookahead name may carry options after "@"), reading the
+    same Battle.
 
     An action outside the request's mask (possible only when the environment runs the State rule) is
     replaced by the first legal one and counted in `outside_mask`.

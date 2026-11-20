@@ -529,7 +529,7 @@ def test_picks_of_the_phone_battle():
 def test_player_by_path_and_arguments():
     """S8-10: every argument is a keyword from the config; a player is a built-in name, module:attr with
     player_args, or an object; a bad one fails at construction."""
-    assert len(Session("tower").player_name) and len(cg.live.builtin_names()) == 10
+    assert len(Session("tower").player_name) and len(cg.live.builtin_names()) == 12
     s = Session(player="champions_gym.player:BuiltinPlayer", player_args={"name": "max_damage", "seed": 3}, seed=1)
     assert s.player_name == "max_damage"
     s = Session(player="champions_gym.player:builtin_player", player_args={"name": "random"})

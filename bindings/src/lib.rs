@@ -8,12 +8,12 @@
 //! - 11..71 team preview: `11 + lead * 10 + pair` (see `preview_picks`).
 
 use battle::ReqKind;
-use env::batch::{choice_of, each_turn_action, preview_action, preview_picks, turn_actions, Slot, N_PREVIEW_ACTIONS, N_TURN_ACTIONS};
+use env::batch::{each_turn_action, preview_action, preview_picks, Slot, N_PREVIEW_ACTIONS, N_TURN_ACTIONS};
 use env::teams::{mix, read_file, TeamMode, TeamPool};
-use env::{BatchEnv, EnumOptions, EnvConfig, Game, RequestKind, Rule};
-use players::{by_name, Player, Rng, NAMES};
-use cg_engine::sim::state::{Winner, SIDES, TEAM};
-use cg_engine::sim::{Choice, Kind, SideOptions};
+use env::{BatchEnv, EnvConfig, RequestKind, Rule};
+use env::builtin::{by_name, NAMES};
+use players::{Player, Rng};
+use cg_engine::sim::state::TEAM;
 use pyo3::buffer::PyBuffer;
 use pyo3::create_exception;
 use pyo3::exceptions::{PyRuntimeError, PyValueError};
@@ -22,23 +22,26 @@ use pyo3::types::PyBytes;
 use std::panic::{catch_unwind, AssertUnwindSafe};
 use std::sync::Arc;
 
+pub(crate) mod game;
 mod live;
 mod tensors;
 mod view;
 
+use game::PyGame;
+
 create_exception!(_cg, CGError, PyRuntimeError, "An error from the CG engine or environment.");
 
-const N_TURN: usize = N_TURN_ACTIONS;
+pub(crate) const N_TURN: usize = N_TURN_ACTIONS;
 const PREVIEW0: usize = N_TURN_ACTIONS;
-const N_ACTIONS: usize = N_TURN_ACTIONS + N_PREVIEW_ACTIONS;
+pub(crate) const N_ACTIONS: usize = N_TURN_ACTIONS + N_PREVIEW_ACTIONS;
 
 const KIND_PREVIEW: u8 = 0;
-const KIND_TURN: u8 = 1;
-const KIND_REPLACE: u8 = 2;
+pub(crate) const KIND_TURN: u8 = 1;
+pub(crate) const KIND_REPLACE: u8 = 2;
 /// a seat with no decision (Game only)
-const KIND_NONE: i8 = -1;
+pub(crate) const KIND_NONE: i8 = -1;
 
-fn err(e: impl std::fmt::Display) -> PyErr {
+pub(crate) fn err(e: impl std::fmt::Display) -> PyErr {
     CGError::new_err(e.to_string())
 }
 
@@ -53,7 +56,7 @@ fn panic_text(p: Box<dyn std::any::Any + Send>) -> String {
 }
 
 /// Runs `f`, turning a panic into an error string.
-fn guarded<T>(f: impl FnOnce() -> Result<T, String>) -> Result<T, String> {
+pub(crate) fn guarded<T>(f: impl FnOnce() -> Result<T, String>) -> Result<T, String> {
     match catch_unwind(AssertUnwindSafe(f)) {
         Ok(r) => r,
         Err(p) => Err(format!("engine panic: {}", panic_text(p))),
@@ -166,14 +169,24 @@ impl PyBatchEnv {
         Ok(g as usize)
     }
 
-    fn game_of(&self, g: i64) -> PyResult<Game> {
+    /// Game `g`; with `save`, it also carries the slot for `restore`.
+    fn game_of(&self, g: i64, views: bool, save: bool) -> PyResult<PyGame> {
         self.check()?;
         let g = self.game_index(g)?;
         let s = self.env.slot(g);
         if s.in_preview {
             return Err(err(format!("game {} is in team preview: no game yet", g)));
         }
-        Ok(s.game.clone())
+        let mut x = if views {
+            let (game, t) = self.env.tracked(g).expect("not in preview");
+            PyGame::new(game, Some(t))
+        } else {
+            PyGame::new(s.game.clone(), None)
+        };
+        if save {
+            x.save = self.env.save(g).map(Arc::new);
+        }
+        Ok(x)
     }
 
     fn fill_masks(&self, out: &mut [u8]) {
@@ -632,150 +645,32 @@ impl PyBatchEnv {
     }
 
     /// An exact copy of game `g` (same seed state: the same continuation). Not during team preview.
-    fn snapshot(&self, g: i64) -> PyResult<PyGame> {
-        Ok(PyGame { game: self.game_of(g)? })
+    /// `views`: the Game carries both seats' Battles (`Game.battle`, `Game.tensors`).
+    /// With views it also carries the slot (both Battles, labels, ids) for `restore`.
+    #[pyo3(signature = (g, views = false))]
+    fn snapshot(&self, g: i64, views: bool) -> PyResult<PyGame> {
+        self.game_of(g, views, views)
     }
 
     /// A copy of game `g` with its own seed: same State, independent continuation.
-    fn fork(&self, g: i64, seed: u64) -> PyResult<PyGame> {
-        Ok(PyGame { game: self.game_of(g)?.fork(seed) })
-    }
-}
-
-/// One game outside the batch, for trees: both seats choose together, as the engine resolves a step.
-#[pyclass(name = "Game", module = "champions_gym._cg", skip_from_py_object)]
-#[derive(Clone)]
-struct PyGame {
-    game: Game,
-}
-
-impl PyGame {
-    fn options(&self) -> [SideOptions; SIDES] {
-        self.game.state.options()
+    #[pyo3(signature = (g, seed, views = false))]
+    fn fork(&self, g: i64, seed: u64, views: bool) -> PyResult<PyGame> {
+        let mut x = self.game_of(g, views, false)?;
+        x.reseed(seed);
+        Ok(x)
     }
 
-    fn choices(&self, a: [Option<i64>; SIDES]) -> Result<[Option<Choice>; SIDES], String> {
-        if self.game.state.ended {
-            return Err("the game has ended".into());
-        }
-        let o = self.options();
-        let mut ch = [None; SIDES];
-        for s in 0..SIDES {
-            let deciding = matches!(o[s].kind, Kind::Turn | Kind::Replace);
-            match (deciding, a[s]) {
-                (true, Some(x)) => {
-                    let c = if (0..N_TURN as i64).contains(&x) { choice_of(&o[s], x as u16) } else { None };
-                    ch[s] = Some(c.ok_or_else(|| format!("seat {}: action {} not legal for {:?}", s, x, o[s].kind))?);
-                }
-                (true, None) => return Err(format!("seat {} must choose", s)),
-                (false, Some(x)) => return Err(format!("seat {} has no decision (got action {})", s, x)),
-                (false, None) => {}
-            }
-        }
-        Ok(ch)
-    }
-}
-
-#[pymethods]
-impl PyGame {
-    #[getter]
-    fn turn(&self) -> u16 {
-        self.game.state.turn
-    }
-
-    #[getter]
-    fn ended(&self) -> bool {
-        self.game.state.ended
-    }
-
-    /// 0 or 1 once ended; None while playing or for a tie
-    #[getter]
-    fn winner(&self) -> Option<u8> {
-        match self.game.state.winner {
-            Winner::Side(x) if self.game.state.ended => Some(x),
-            _ => None,
-        }
-    }
-
-    /// Each seat's decision kind: 1 turn, 2 replace, -1 none.
-    fn kinds(&self) -> (i8, i8) {
-        let o = self.options();
-        let k = |o: &SideOptions| match o.kind {
-            Kind::Turn => KIND_TURN as i8,
-            Kind::Replace => KIND_REPLACE as i8,
-            _ => KIND_NONE,
-        };
-        (k(&o[0]), k(&o[1]))
-    }
-
-    /// bool[2, 11] as bytes: each seat's legal turn/replace actions.
-    fn masks<'py>(&self, py: Python<'py>) -> PyResult<Bound<'py, PyBytes>> {
-        let o = self.options();
-        PyBytes::new_with(py, SIDES * N_TURN, |b| {
-            let mut v = Vec::with_capacity(16);
-            for s in 0..SIDES {
-                v.clear();
-                turn_actions(&o[s], &mut v);
-                for &a in &v {
-                    b[s * N_TURN + a as usize] = 1;
-                }
-            }
-            Ok(())
-        })
-    }
-
-    /// An exact copy (same seed state).
-    fn snapshot(&self) -> PyGame {
-        PyGame { game: self.game.snapshot() }
-    }
-
-    /// A copy with its own seed.
-    fn fork(&self, seed: u64) -> PyGame {
-        PyGame { game: self.game.fork(seed) }
-    }
-
-    /// One step with the game's seeded source. `a0`, `a1`: each seat's action, None for a seat with no
-    /// decision.
-    #[pyo3(signature = (a0, a1))]
-    fn step(&mut self, py: Python<'_>, a0: Option<i64>, a1: Option<i64>) -> PyResult<()> {
-        let ch = self.choices([a0, a1]).map_err(err)?;
-        let g = &mut self.game;
-        py.detach(|| guarded(|| g.step(ch))).map_err(err)
-    }
-
-    /// One step with every random event forced from `path` (an outcome's path from `outcomes`).
-    #[pyo3(signature = (a0, a1, path))]
-    fn step_forced(&mut self, py: Python<'_>, a0: Option<i64>, a1: Option<i64>, path: Vec<u16>) -> PyResult<()> {
-        let ch = self.choices([a0, a1]).map_err(err)?;
-        let g = &mut self.game;
-        py.detach(|| guarded(|| g.step_forced(ch, &path))).map_err(err)
-    }
-
-    /// Every outcome of the next step with these actions: (outcomes, covered, capped, leaves), where each
-    /// outcome is (probability, path, Game). Each Game keeps this game's seed state. `merge` joins outcomes
-    /// with equal States; `max_branches` caps the replays (then `capped` is true and `covered` < 1).
-    #[pyo3(signature = (a0, a1, merge = true, max_branches = 100_000))]
-    #[allow(clippy::type_complexity)]
-    fn outcomes(
-        &self,
-        py: Python<'_>,
-        a0: Option<i64>,
-        a1: Option<i64>,
-        merge: bool,
-        max_branches: usize,
-    ) -> PyResult<(Vec<(f64, Vec<u16>, PyGame)>, f64, bool, usize)> {
-        let ch = self.choices([a0, a1]).map_err(err)?;
-        let opts = EnumOptions { merge, max_branches: max_branches.max(1), keep_events: false };
-        let g = &self.game;
-        let e = py.detach(|| guarded(|| g.outcomes(ch, &opts))).map_err(err)?;
-        let rng = self.game.rng.clone();
-        let list = e.outcomes.into_iter().map(|o| (o.p, o.path, PyGame { game: Game { state: o.state, rng: rng.clone() } })).collect();
-        Ok((list, e.covered, e.capped, e.leaves))
-    }
-
-    /// Whether the two games' States are equal (the seed state is not compared).
-    fn same_state(&self, other: &PyGame) -> bool {
-        self.game.state == other.game.state
+    /// Replaces slot `slot`'s game with a copy of `game` (from `snapshot(g, views=True)`; the Game stays usable), its
+    /// luck from then on drawn from `seed` alone, waiting on the game's pending decision. Only into a
+    /// slot whose game has not started (it just ended, or the environment is new), from an environment
+    /// with the same settings and teams.
+    fn restore(&mut self, slot: i64, game: &PyGame, seed: u64) -> PyResult<()> {
+        self.check()?;
+        let g = self.game_index(slot)?;
+        let save = game.save.as_ref().ok_or_else(|| {
+            err("restore: this Game does not carry its slot: take it with BatchEnv.snapshot(g, views=True) and do not step it (a plain snapshot, BatchEnv.fork, outcomes, sample and game_from_battle carry none)")
+        })?;
+        self.env.restore(g, save, seed).map_err(err)
     }
 }
 
@@ -834,6 +729,7 @@ fn _cg(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(tensors::features, m)?)?;
     m.add_function(wrap_pyfunction!(tensors::layout_sizes, m)?)?;
     m.add_function(wrap_pyfunction!(tensors::learnset_into, m)?)?;
+    game::register(m)?;
     live::register(m)?;
     m.add("CGError", m.py().get_type::<CGError>())?;
     m.add("N_ACTIONS", N_ACTIONS)?;

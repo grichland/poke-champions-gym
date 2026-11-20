@@ -18,7 +18,7 @@ import tempfile
 import zipfile
 
 NAME = "champions_gym"
-VERSION = "0.4.0"
+VERSION = "0.5.0"
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 PKG = os.path.join(REPO, "python", NAME)
 

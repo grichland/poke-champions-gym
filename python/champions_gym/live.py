@@ -260,6 +260,37 @@ class Session:
         with self._lock:
             return self._core.battle()
 
+    def game(self, opponent: List[Dict[str, Any]], seat: int = 0, genders: Optional[List[Optional[str]]] = None, seed: int = 0) -> tuple:
+        """An engine Game at the open turn or replace request, for lookahead: ``(game, rejected)``.
+
+        `opponent`: one dict per opposing Pokémon brought, lead first (the one that led must be first and
+        every one seen must be there): ``{"slot": preview index 0..5, "moves": [...], "item": str ("" for
+        none), "ability": str, "nature": str, "points": [hp, atk, def, spa, spd, spe] or a dict, "gender":
+        "M"/"F"}``; every key but `slot` may be left out. What the Battle revealed (moves used, item,
+        ability, Mega) always wins over a guess. Each guess that is not used is in `rejected` as
+        ``(pokemon, field, reason)``: an unknown id, a move the species cannot learn, an ability or Mega
+        Stone it cannot have, more than 32 points in a stat or 66 in all, or a guess the Battle
+        contradicts. Fallbacks: the revealed moves only; the revealed item, else none; the revealed
+        ability, else the species' first; nature Serious; no points. `genders`: ours by team index ("M"
+        or "F"; the Battle does not hold them). `seat`: our seat in the Game (0 or 1).
+
+        The Game's State holds what the Battle knows (`champions_gym.env.UNKNOWN` lists what it cannot
+        and the rule used). Our seat's views (`game.battle(seat)`, `game.tensors(seat)`) are this
+        Session's Battle, continued with the rows of each step; the opposing seat's Battle is not known
+        and raises. A replace request is built as a replacement between turns: the rows of its turn
+        have not been read yet (the live order), so the State is the Battle's last turn with our active
+        (or the one already sent in this turn) to be replaced. The Pokemon that led, as the Battle saw it,
+        is put first: under an opposing Illusion that is the disguise, so true guesses with the real lead
+        first get one `(pokemon, "brought", "it led: put first")` entry and the State follows what was
+        seen. A move our Battle forbids (a refusal at this request included) is not offered by the State;
+        one refused bench member still is (no State flag for it). Raises CGError when no Game can be built (no open request, a seen Pokémon
+        missing from `opponent`, a Pokémon with no move known or guessed)."""
+        from .env import Game
+
+        with self._lock:
+            g, rejected = self._core.game(list(opponent), seat, None if genders is None else list(genders), seed)
+        return Game(g), rejected
+
     def legal_actions(self) -> List[int]:
         """The open request's legal actions (preview: 11..70)."""
         with self._lock:

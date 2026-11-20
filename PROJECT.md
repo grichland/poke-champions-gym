@@ -36,7 +36,7 @@ poke-env runs at about 12 games a second per machine. The strongest known bot in
 | D1 | The engine replaces both training and inference for `pcsa`. Showdown is eliminated by the end. |
 | D2 | Until then Showdown is the reference: every rule is tested against it. Model evaluation happens on the engine, not on Showdown. |
 | D3 | Damage is exact for the roll that is drawn or forced: one calculation per hit, not all 16 rolls. |
-| D4 | Only two players are built: tower and max damage. No belief tracker and no guessing of hidden sets of any kind: no build catalogs, no probabilities over sets, no damage ranges. The simplest version. No other scripted players. Extended 19 Nov (user): seven more scripted players ported from pcsa and research on the same terms (a Battle only, CG's fixed rule for unknowns, no catalogs): `best_matchup_max_damage`, `disciplined`, `endgame`, `pilot_encore`, `pilot_weather`, `pilot_hazard`, `pilot_priority`. Round robin and latency: `bench/results/2026-11-19-ports-tables.txt`. |
+| D4 | Only two players are built: tower and max damage. No belief tracker and no guessing of hidden sets of any kind: no build catalogs, no probabilities over sets, no damage ranges. The simplest version. No other scripted players. Extended 19 Nov (user): seven more scripted players ported from pcsa and research on the same terms (a Battle only, CG's fixed rule for unknowns, no catalogs): `best_matchup_max_damage`, `disciplined`, `endgame`, `pilot_encore`, `pilot_weather`, `pilot_hazard`, `pilot_priority`. Round robin and latency: `bench/results/2026-11-19-ports-tables.txt`. Added 19 Nov (the training agent's request): `lookahead` and `lookahead2`, a one- or two-turn search on an engine State built from the player's own Battle by `from_battle`'s fixed rule plus placeholder moves from species data (no belief, no masks, no network), in `env/src/lookahead.rs` because it needs the environment; `env/src/builtin.rs` is now the by-name registry every entry point uses. Results against tower, max damage, disciplined and endgame: `bench/results/2026-11-19-lookahead-results.log` (depth 1 55.5 to 57.7%, depth 2 57.0 to 59.2%, 4,000 games each); speed `2026-11-19-lookahead-speed.txt`. |
 | D5 | Inputs are raw reads plus constant-time feature engineering (including damage). |
 | D6 | No rule masks in this engine. |
 | D7 | The players see their own side fully and only what the opponent has revealed; unknowns are filled by a fixed constant-time rule. |
@@ -149,6 +149,16 @@ bench/                  benchmarks and recorded results
 - Step 11: `snapshot` and `fork` in the Python interface, each copy with its own seed or its own forced
   outcomes; and a call that returns every outcome of a step with its probability.
 - A tree grown from the engine uses both real teams, so it is a training and analysis tool, not live play.
+- Added 19 Nov (0.5.0): a Game carries each seat's Battle when asked (`fork(g, seed, views=True)`):
+  `Game.battle(seat)`, `Game.tensors(seat)` and `game_tensors` give what `BatchEnv` would show that seat
+  after the same actions and outcomes, kept lazily through steps, forced steps and outcome children
+  (`env/src/views.rs`). `Game.sample` draws outcomes with the engine's probabilities; `Game.readout` reads
+  HP, faints, statuses and actives. `Session.game` / `game_from_battle` build a Game from a live Battle
+  plus the caller's guesses for the hidden opposing sets (`env/src/from_battle.rs`; CG checks the guesses,
+  never samples them; `UNKNOWN` lists what the Battle cannot tell), so a tree can also start in live play.
+  `BatchEnv.restore(slot, game, seed)` puts a `snapshot(g, views=True)` back into a slot whose game just
+  ended, as an ordinary batch game with its own seed (training's request `pcsa-former/docs/note-cg-restore-slot.md`;
+  `env::batch::SlotSave`, tests `env/tests/restore.rs`, `python/tests/test_restore.py`).
 
 **Step 8 design.**
 - A new turn resolver in `engine/src/sim/`, built beside the old one. The old resolver and its tests

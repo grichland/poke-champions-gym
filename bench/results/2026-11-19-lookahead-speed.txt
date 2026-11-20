@@ -1,0 +1,30 @@
+## ./target/release/lookahead_speed.exe --name lookahead --games 300 --seed 1 --threads 1 --rounds 3
+lookahead threads 1 decisions 2643 (searched 2390): 266.4 us per decision, 294.6 us per searched decision, wall 0.70 s
+lookahead threads 1 decisions 2643 (searched 2390): 264.7 us per decision, 292.7 us per searched decision, wall 0.70 s
+lookahead threads 1 decisions 2643 (searched 2390): 259.9 us per decision, 287.4 us per searched decision, wall 0.69 s
+best of 3: lookahead threads 1: 259.9 us per decision, 287.4 us per searched decision
+## ./target/release/lookahead_speed.exe --name lookahead --games 300 --seed 1 --threads 8 --rounds 3
+lookahead threads 8 decisions 2643 (searched 2390): 308.4 us per decision, 341.0 us per searched decision, wall 0.83 s
+lookahead threads 8 decisions 2643 (searched 2390): 309.9 us per decision, 342.6 us per searched decision, wall 0.86 s
+lookahead threads 8 decisions 2643 (searched 2390): 379.7 us per decision, 419.8 us per searched decision, wall 1.04 s
+best of 3: lookahead threads 8: 308.4 us per decision, 341.0 us per searched decision
+## ./target/release/lookahead_speed.exe --name lookahead2 --games 300 --seed 1 --threads 1 --rounds 3
+lookahead2 threads 1 decisions 2603 (searched 2370): 1412.0 us per decision, 1550.7 us per searched decision, wall 3.68 s
+lookahead2 threads 1 decisions 2603 (searched 2370): 1514.6 us per decision, 1663.4 us per searched decision, wall 3.94 s
+lookahead2 threads 1 decisions 2603 (searched 2370): 1473.9 us per decision, 1618.8 us per searched decision, wall 3.84 s
+best of 3: lookahead2 threads 1: 1412.0 us per decision, 1550.7 us per searched decision
+## ./target/release/lookahead_speed.exe --name lookahead2 --games 300 --seed 1 --threads 8 --rounds 3
+lookahead2 threads 8 decisions 2603 (searched 2370): 2354.2 us per decision, 2585.6 us per searched decision, wall 6.42 s
+lookahead2 threads 8 decisions 2603 (searched 2370): 2329.1 us per decision, 2558.0 us per searched decision, wall 6.32 s
+lookahead2 threads 8 decisions 2603 (searched 2370): 2067.7 us per decision, 2271.0 us per searched decision, wall 5.58 s
+best of 3: lookahead2 threads 8: 2067.7 us per decision, 2271.0 us per searched decision
+## ./target/release/lookahead_speed.exe --name max_damage --games 300 --seed 1 --threads 1 --rounds 3
+max_damage threads 1 decisions 2183 (searched 1934): 0.9 us per decision, 1.0 us per searched decision, wall 0.00 s
+max_damage threads 1 decisions 2183 (searched 1934): 0.9 us per decision, 1.0 us per searched decision, wall 0.00 s
+max_damage threads 1 decisions 2183 (searched 1934): 0.9 us per decision, 1.0 us per searched decision, wall 0.00 s
+best of 3: max_damage threads 1: 0.9 us per decision, 1.0 us per searched decision
+## ./target/release/lookahead_speed.exe --name max_damage --games 300 --seed 1 --threads 8 --rounds 3
+max_damage threads 8 decisions 2183 (searched 1934): 1.0 us per decision, 1.1 us per searched decision, wall 0.00 s
+max_damage threads 8 decisions 2183 (searched 1934): 1.1 us per decision, 1.2 us per searched decision, wall 0.00 s
+max_damage threads 8 decisions 2183 (searched 1934): 0.9 us per decision, 1.0 us per searched decision, wall 0.00 s
+best of 3: max_damage threads 8: 0.9 us per decision, 1.0 us per searched decision

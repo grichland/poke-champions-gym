@@ -14,6 +14,4 @@ cg-engine = { path = "../engine" }
 battle = { path = "../battle" }
 emit = { path = "../emit" }
 obs = { path = "../obs" }
-
-[dev-dependencies]
 players = { path = "../players" }

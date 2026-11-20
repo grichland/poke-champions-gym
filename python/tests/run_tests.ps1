@@ -3,7 +3,7 @@ param([string]$Python = "C:\Program Files\Python312\python.exe", [string]$Log = 
 $repo = Resolve-Path (Join-Path $PSScriptRoot "..\..")
 $env:PYTHONPATH = Join-Path $repo "python"
 $env:PYTHONDONTWRITEBYTECODE = "1"
-$tests = @((Join-Path $repo "python\tests\test_env.py"), (Join-Path $repo "python\tests\test_battle_view.py"), (Join-Path $repo "python\tests\test_obs.py"), (Join-Path $repo "python\tests\test_teams_builtin.py"), (Join-Path $repo "python\tests\test_live.py"))
+$tests = @((Join-Path $repo "python\tests\test_env.py"), (Join-Path $repo "python\tests\test_battle_view.py"), (Join-Path $repo "python\tests\test_obs.py"), (Join-Path $repo "python\tests\test_teams_builtin.py"), (Join-Path $repo "python\tests\test_live.py"), (Join-Path $repo "python\tests\test_lookahead.py"), (Join-Path $repo "python\tests\test_restore.py"))
 if ($Log -eq "") { $Log = Join-Path $repo "bench\results\pytests.log" }
 Set-Location $repo
 if ($Pytest) {

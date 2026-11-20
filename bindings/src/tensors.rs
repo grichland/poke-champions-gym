@@ -46,7 +46,7 @@ pub fn disjoint(spans: &[(&str, usize, usize)]) -> PyResult<()> {
     Ok(())
 }
 
-fn span<T: Element>(name: &'static str, b: &PyBuffer<T>) -> (&'static str, usize, usize) {
+pub fn span<T: Element>(name: &'static str, b: &PyBuffer<T>) -> (&'static str, usize, usize) {
     (name, b.buf_ptr() as usize, b.len_bytes())
 }
 

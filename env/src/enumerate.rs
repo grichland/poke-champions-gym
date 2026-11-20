@@ -297,3 +297,117 @@ pub fn enumerate_step(state: &State, choices: [Option<Choice>; SIDES], opts: &En
 pub fn enumerate_start(teams: [&[cg_engine::sim::MonSpec]; SIDES], picks: [[u8; TEAM]; SIDES], opts: &EnumOptions) -> Result<Enumeration, String> {
     enumerate_with(opts, |r| State::start(teams, picks, r))
 }
+
+/// A seeded source that also records the path `Replay` would need to reproduce each draw, so a sampled
+/// outcome can be forced again (`Game::step_forced`). Draws have the engine's probabilities.
+#[derive(Clone, Debug)]
+pub struct Sampler {
+    rng: cg_engine::sim::outcome::Seeded,
+    pub path: Vec<u16>,
+}
+
+impl Sampler {
+    pub fn new(seed: u64) -> Sampler {
+        Sampler { rng: cg_engine::sim::outcome::Seeded::new(seed), path: Vec::new() }
+    }
+
+    fn below(&mut self, site: &Site, n: usize) -> usize {
+        self.rng.range(site, 0, n as i32) as usize
+    }
+}
+
+impl Outcomes for Sampler {
+    fn chance(&mut self, site: &Site, num: u32, den: u32) -> bool {
+        if num == 0 || num >= den {
+            return num > 0;
+        }
+        let v = self.rng.chance(site, num, den);
+        self.path.push(if v { 0 } else { 1 });
+        v
+    }
+    fn range(&mut self, site: &Site, lo: i32, hi: i32) -> i32 {
+        if hi - lo <= 1 {
+            return lo;
+        }
+        let v = self.rng.range(site, lo, hi);
+        self.path.push((v - lo) as u16);
+        v
+    }
+    fn sample(&mut self, site: &Site, values: &[i32]) -> i32 {
+        let d = distinct_count(values);
+        if d <= 1 {
+            return values[0];
+        }
+        let i = self.below(site, values.len());
+        let k = distinct_index(values, values[i]).expect("value present");
+        self.path.push(k as u16);
+        values[distinct_at(values, k).0]
+    }
+    fn tie(&mut self, site: &Site, a: u8, b: u8) -> u8 {
+        // the first alternative is `a`, as in `Replay`, even when `a == b`
+        let first = self.below(site, 2) == 0;
+        self.path.push(if first { 0 } else { 1 });
+        if first {
+            a
+        } else {
+            b
+        }
+    }
+    fn tie_effects(&mut self, site: &Site, a: EffectRef, b: EffectRef) -> bool {
+        let v = self.rng.tie_effects(site, a, b);
+        self.path.push(if v { 0 } else { 1 });
+        v
+    }
+    fn sample_str(&mut self, site: &Site, values: &[&'static str]) -> usize {
+        let d = distinct_count(values);
+        if d <= 1 {
+            return 0;
+        }
+        let i = self.below(site, values.len());
+        let k = distinct_index(values, values[i]).expect("value present");
+        self.path.push(k as u16);
+        distinct_at(values, k).0
+    }
+}
+
+/// The position of `v` among the distinct entries of `values` (first-appearance order).
+fn distinct_index<T: PartialEq + Copy>(values: &[T], v: T) -> Option<usize> {
+    let mut k = 0;
+    for i in 0..values.len() {
+        if values[..i].contains(&values[i]) {
+            continue;
+        }
+        if values[i] == v {
+            return Some(k);
+        }
+        k += 1;
+    }
+    None
+}
+
+/// `n` independent outcomes of one step of `state`, drawn with the engine's probabilities from seeds
+/// `mix(seed, k)`. Each outcome has weight 1/n; with `merge`, draws with equal States are one outcome
+/// whose weight adds up and whose `leaves` counts the draws (the first draw's path is kept).
+pub fn sample_step(state: &State, choices: [Option<Choice>; SIDES], n: usize, seed: u64, merge: bool) -> Result<Enumeration, String> {
+    let mut out = Enumeration { covered: 1.0, ..Enumeration::default() };
+    let mut buckets: HashMap<u64, Vec<usize>> = HashMap::new();
+    let w = 1.0 / n.max(1) as f64;
+    for k in 0..n {
+        let mut r = Sampler::new(crate::teams::mix(seed, k as u64));
+        let mut s = *state;
+        s.step(choices, &mut r)?;
+        out.leaves += 1;
+        out.max_depth = out.max_depth.max(r.path.len());
+        if merge {
+            let b = buckets.entry(fingerprint(&s)).or_default();
+            if let Some(&i) = b.iter().find(|&&i| out.outcomes[i].state == s) {
+                out.outcomes[i].p += w;
+                out.outcomes[i].leaves += 1;
+                continue;
+            }
+            b.push(out.outcomes.len());
+        }
+        out.outcomes.push(Outcome { p: w, state: s, path: r.path, events: Vec::new(), leaves: 1 });
+    }
+    Ok(out)
+}

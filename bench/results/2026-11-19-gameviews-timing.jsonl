@@ -1,0 +1,55 @@
+{"label": "before round 1", "version": "0.4.0", "what": "c env.fork", "us": 0.474, "threads": 1}
+{"label": "before round 1", "version": "0.4.0", "what": "c env.fork+step", "us": 5.88, "threads": 1}
+{"label": "before round 1", "version": "0.4.0", "what": "c game.fork", "us": 0.314, "threads": 1}
+{"label": "before round 1", "version": "0.4.0", "what": "c game.fork+step", "us": 4.99, "threads": 1}
+{"label": "after round 1", "version": "0.5.0", "what": "c env.fork", "us": 0.52, "threads": 1}
+{"label": "after round 1", "version": "0.5.0", "what": "c env.fork+step", "us": 6.01, "threads": 1}
+{"label": "after round 1", "version": "0.5.0", "what": "c game.fork", "us": 0.426, "threads": 1}
+{"label": "after round 1", "version": "0.5.0", "what": "c game.fork+step", "us": 5.809, "threads": 1}
+{"label": "after round 1", "version": "0.5.0", "what": "c env.fork(views=True)", "us": 2.744, "threads": 1}
+{"label": "after round 1", "version": "0.5.0", "what": "c env.fork(views=True)+step", "us": 9.431, "threads": 1}
+{"label": "after round 1", "version": "0.5.0", "what": "c game.fork+step, views carried", "us": 5.159, "threads": 1}
+{"label": "before round 2", "version": "0.4.0", "what": "c env.fork", "us": 0.4, "threads": 1}
+{"label": "before round 2", "version": "0.4.0", "what": "c env.fork+step", "us": 5.546, "threads": 1}
+{"label": "before round 2", "version": "0.4.0", "what": "c game.fork", "us": 0.308, "threads": 1}
+{"label": "before round 2", "version": "0.4.0", "what": "c game.fork+step", "us": 5.356, "threads": 1}
+{"label": "after round 2", "version": "0.5.0", "what": "c env.fork", "us": 0.453, "threads": 1}
+{"label": "after round 2", "version": "0.5.0", "what": "c env.fork+step", "us": 5.609, "threads": 1}
+{"label": "after round 2", "version": "0.5.0", "what": "c game.fork", "us": 0.334, "threads": 1}
+{"label": "after round 2", "version": "0.5.0", "what": "c game.fork+step", "us": 5.012, "threads": 1}
+{"label": "after round 2", "version": "0.5.0", "what": "c env.fork(views=True)", "us": 2.652, "threads": 1}
+{"label": "after round 2", "version": "0.5.0", "what": "c env.fork(views=True)+step", "us": 8.779, "threads": 1}
+{"label": "after round 2", "version": "0.5.0", "what": "c game.fork+step, views carried", "us": 4.998, "threads": 1}
+{"label": "before round 3", "version": "0.4.0", "what": "c env.fork", "us": 0.416, "threads": 1}
+{"label": "before round 3", "version": "0.4.0", "what": "c env.fork+step", "us": 5.35, "threads": 1}
+{"label": "before round 3", "version": "0.4.0", "what": "c game.fork", "us": 0.3, "threads": 1}
+{"label": "before round 3", "version": "0.4.0", "what": "c game.fork+step", "us": 4.889, "threads": 1}
+{"label": "after round 3", "version": "0.5.0", "what": "c env.fork", "us": 0.434, "threads": 1}
+{"label": "after round 3", "version": "0.5.0", "what": "c env.fork+step", "us": 6.235, "threads": 1}
+{"label": "after round 3", "version": "0.5.0", "what": "c game.fork", "us": 0.358, "threads": 1}
+{"label": "after round 3", "version": "0.5.0", "what": "c game.fork+step", "us": 5.543, "threads": 1}
+{"label": "after round 3", "version": "0.5.0", "what": "c env.fork(views=True)", "us": 2.928, "threads": 1}
+{"label": "after round 3", "version": "0.5.0", "what": "c env.fork(views=True)+step", "us": 8.923, "threads": 1}
+{"label": "after round 3", "version": "0.5.0", "what": "c game.fork+step, views carried", "us": 5.279, "threads": 1}
+{"label": "before", "version": "0.4.0", "what": "c env.fork", "us": 0.446, "threads": 1}
+{"label": "before", "version": "0.4.0", "what": "c env.fork+step", "us": 5.64, "threads": 1}
+{"label": "before", "version": "0.4.0", "what": "c game.fork", "us": 0.34, "threads": 1}
+{"label": "before", "version": "0.4.0", "what": "c game.fork+step", "us": 5.034, "threads": 1}
+{"label": "before", "version": "0.4.0", "what": "d outcomes per position", "us": 34055.536, "threads": 1, "positions": 59, "leaves": 260517}
+{"label": "after", "version": "0.5.0", "what": "c env.fork", "us": 0.465, "threads": 1}
+{"label": "after", "version": "0.5.0", "what": "c env.fork+step", "us": 5.811, "threads": 1}
+{"label": "after", "version": "0.5.0", "what": "c game.fork", "us": 0.353, "threads": 1}
+{"label": "after", "version": "0.5.0", "what": "c game.fork+step", "us": 5.279, "threads": 1}
+{"label": "after", "version": "0.5.0", "what": "c env.fork(views=True)", "us": 2.793, "threads": 1}
+{"label": "after", "version": "0.5.0", "what": "c env.fork(views=True)+step", "us": 9.062, "threads": 1}
+{"label": "after", "version": "0.5.0", "what": "c game.fork+step, views carried", "us": 5.179, "threads": 1}
+{"label": "after", "version": "0.5.0", "what": "d outcomes per position", "us": 32904.405, "threads": 1, "positions": 59, "leaves": 260517}
+{"label": "after", "version": "0.5.0", "what": "d outcomes per position, views carried", "us": 31814.158, "threads": 1, "positions": 59}
+{"label": "after", "version": "0.5.0", "what": "a fork(views=True) + tensors", "us": 16.88, "threads": 1}
+{"label": "after", "version": "0.5.0", "what": "a fork(views=True) + step + tensors", "us": 38.107, "threads": 1}
+{"label": "after", "version": "0.5.0", "what": "b game_tensors over fresh forks, per game", "us": 8.93, "threads": 1, "games": 1000}
+{"label": "after", "version": "0.5.0", "what": "b game_tensors over stepped forks (one step to emit), per game", "us": 23.04, "threads": 1, "games": 1000}
+{"label": "after", "version": "0.5.0", "what": "b game_tensors over fresh forks, per game", "us": 7.115, "threads": 4, "games": 1000}
+{"label": "after", "version": "0.5.0", "what": "b game_tensors over stepped forks (one step to emit), per game", "us": 22.539, "threads": 4, "games": 1000}
+{"label": "after", "version": "0.5.0", "what": "f sample n=100 per position", "us": 414.525, "threads": 1, "positions": 59}
+{"label": "after", "version": "0.5.0", "what": "e Session.game", "us": 22.032, "threads": 1}

@@ -41,3 +41,7 @@ path = "src/env_threads.rs"
 [[bin]]
 name = "prob_check"
 path = "src/prob_check.rs"
+
+[[bin]]
+name = "lookahead_speed"
+path = "src/lookahead_speed.rs"

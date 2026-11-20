@@ -8,7 +8,8 @@ use battle::live::{AskKind, Session, Step};
 use battle::{Battle, Body, Input, ReqKind, N_ACTIONS as B_ACTIONS};
 use env::teams::{mix, read_file, TeamMode, TeamPool};
 use env::{BatchEnv, EnvConfig, RequestKind};
-use players::{by_name, Player, Rng};
+use env::builtin::by_name;
+use players::{Player, Rng};
 use pyo3::prelude::*;
 use std::collections::HashMap;
 use std::panic::{catch_unwind, AssertUnwindSafe};
@@ -155,6 +156,23 @@ impl PyLiveCore {
     /// action 0..10 or None, picks or None, how: "played", "repeated", "given" or "unknown").
     fn answered(&self) -> Option<(PyBattle, Option<usize>, Option<Vec<u8>>, String)> {
         self.s.answered.as_ref().map(|a| (py_battle(&a.battle, Some((a.seq, a.kind))), a.action, a.picks.clone(), a.how.to_string()))
+    }
+
+    /// A Game at the open turn or replace request with the opponent's guesses (`game_from_battle`), from
+    /// the Session's Builder: (Game, rejected).
+    #[pyo3(signature = (opponent, seat = 0, genders = None, seed = 0))]
+    fn game(&self, opponent: &Bound<'_, pyo3::types::PyList>, seat: usize, genders: Option<Vec<Option<String>>>, seed: u64) -> PyResult<(crate::game::PyGame, Vec<(String, String, String)>)> {
+        if seat > 1 {
+            return Err(super::err("seat is 0 or 1"));
+        }
+        let Some((seq, k)) = self.open().filter(|o| o.1 != AskKind::Preview) else {
+            return Err(super::err("no open turn or replace request"));
+        };
+        let (gs, gd, mut rej) = crate::game::guesses_of(opponent, genders)?;
+        let tag = self.s.tag.clone().unwrap_or_default();
+        let (game, t, r) = crate::guarded(|| env::from_battle::game_from_builder(&self.s.builder, k.req(), seq, seat, &gs, &gd, seed, &tag)).map_err(super::err)?;
+        rej.extend(r);
+        Ok((crate::game::PyGame::new(game, Some(t)), crate::game::rejected_list(rej)))
     }
 
     /// The open request's legal actions in the one action space (preview: 11..70).
@@ -309,7 +327,96 @@ fn selfplay(py: Python<'_>, teams: &str, seed: u64, a: &str, b: &str, replace_be
     Ok((rec, out))
 }
 
+/// The opposing set as a guess dict (the format of `Session.game`).
+fn guess_dict<'py>(py: Python<'py>, slot: u8, m: &cg_engine::sim::MonSpec) -> PyResult<Bound<'py, pyo3::types::PyDict>> {
+    let d = pyo3::types::PyDict::new(py);
+    d.set_item("slot", slot)?;
+    d.set_item("moves", m.moves[..m.nmoves as usize].iter().map(|x| x.id()).collect::<Vec<_>>())?;
+    d.set_item("item", m.item.id())?;
+    d.set_item("ability", m.ability.id())?;
+    d.set_item("nature", cg_engine::sim::data::NATURES[m.nature as usize].id)?;
+    d.set_item("points", m.evs.to_vec())?;
+    d.set_item(
+        "gender",
+        match m.gender {
+            1 => Some("M"),
+            2 => Some("F"),
+            _ => None,
+        },
+    )?;
+    Ok(d)
+}
+
+fn gender_name(g: u8) -> Option<&'static str> {
+    match g {
+        1 => Some("M"),
+        2 => Some("F"),
+        _ => None,
+    }
+}
+
+/// Test helper: `live_selfplay` with the truth at each of seat 0's turn and replace requests:
+/// {seq: (true Game without views, the opponent's true sets as `Session.game` guesses (brought, lead
+/// first), our genders by team index, request kind 1 turn or 2 replace)}.
+#[pyfunction(name = "live_selfplay_truth")]
+#[pyo3(signature = (teams, seed, a = "tower", b = "max_damage", replace_before_rows = true))]
+#[allow(clippy::type_complexity)]
+fn selfplay_truth<'py>(py: Python<'py>, teams: &str, seed: u64, a: &str, b: &str, replace_before_rows: bool) -> PyResult<(Vec<String>, Vec<(i64, PyBattle, i64)>, Bound<'py, pyo3::types::PyDict>)> {
+    let path = teams.to_string();
+    let pool = py.detach(|| TeamPool::read(&read_file(&path)?)).map_err(super::err)?;
+    let pool = Arc::new(pool.at_least_two().map_err(super::err)?);
+    let cfg = EnvConfig { games: 1, seed, team_mode: TeamMode::AsGiven, max_steps: 1000, checks: false, keep_records: true, auto_locked: true, replace_before_rows };
+    let mut env = BatchEnv::new(pool, cfg);
+    let mut ps = [by_name(a).ok_or_else(|| super::err("player a"))?, by_name(b).ok_or_else(|| super::err("player b"))?];
+    let mut rng = [Rng::new(seed), Rng::new(seed ^ 1)];
+    let mut legal = Vec::new();
+    let mut out = vec![];
+    let truth = pyo3::types::PyDict::new(py);
+    while env.games_done < 1 {
+        let p = env.pending(0);
+        let seat = p.seat as usize;
+        let bt = *env.battle(0, seat);
+        let act = match p.kind {
+            RequestKind::Preview => env::batch::preview_action(ps[seat].teampreview(&bt, &mut rng[seat])).ok_or_else(|| super::err("picks"))?,
+            k => ps[seat].choose_move(&bt, if k == RequestKind::Replace { ReqKind::Replace } else { ReqKind::Turn }, &mut rng[seat]) as u16,
+        };
+        env.legal_actions(0, &mut legal);
+        let act = if legal.contains(&act) { act } else { legal[0] };
+        if seat == 0 {
+            let (seq, kind, action) = match p.kind {
+                RequestKind::Preview => (-1, AskKind::Preview, act as i64 + PREVIEW0 as i64),
+                k => (last_seq(&env.slot(0).seats.records[0]), if k == RequestKind::Replace { AskKind::Replace } else { AskKind::Turn }, act as i64),
+            };
+            if kind != AskKind::Preview {
+                let s = env.slot(0);
+                let picks = s.picks[1].expect("picks");
+                let gs = picks.iter().map(|&i| guess_dict(py, i, &s.rosters[1][i as usize])).collect::<PyResult<Vec<_>>>()?;
+                let gd: Vec<Option<&str>> = s.rosters[0].iter().map(|m| gender_name(m.gender)).collect();
+                truth.set_item(seq, (crate::game::PyGame::new(s.game.clone(), None), gs, gd, kind_code(Some(kind))))?;
+            }
+            out.push((seq, py_battle(&bt, Some((seq, kind))), action));
+        }
+        env.act(&[act]).map_err(super::err)?;
+    }
+    let rec = env.slot(0).last_records.as_ref().map(|r| r[0].iter().map(record_line).collect()).unwrap_or_default();
+    Ok((rec, out, truth))
+}
+
+fn last_seq(rec: &[Input]) -> i64 {
+    rec.iter()
+        .rev()
+        .find_map(|i| match i {
+            Input::Msg(m) => match m.body {
+                Body::DecisionRequest { seq, .. } => Some(seq),
+                _ => None,
+            },
+            _ => None,
+        })
+        .unwrap_or(-1)
+}
+
 pub fn register(m: &Bound<'_, PyModule>) -> PyResult<()> {
+    m.add_function(wrap_pyfunction!(selfplay_truth, m)?)?;
     m.add_class::<PyLiveCore>()?;
     m.add("CONTRACT_VERSION", battle::CONTRACT_VERSION)?;
     m.add_function(wrap_pyfunction!(has_player, m)?)?;

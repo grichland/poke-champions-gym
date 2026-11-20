@@ -132,6 +132,8 @@ pub fn each_turn_action(o: &SideOptions, mut f: impl FnMut(u16)) {
 /// game asks is not something a player decides. What may be chosen is the rule's.
 pub trait LegalRule: Sync {
     fn options(&self, s: &State, battles: [&Battle; SIDES]) -> [SideOptions; SIDES];
+    /// the rule as a value, for a Game's views
+    fn as_rule(&self) -> Rule;
 }
 
 /// The State's truth (options.rs): kept for comparison.
@@ -142,6 +144,9 @@ impl LegalRule for StateRule {
     #[inline]
     fn options(&self, s: &State, _: [&Battle; SIDES]) -> [SideOptions; SIDES] {
         s.options()
+    }
+    fn as_rule(&self) -> Rule {
+        Rule::State
     }
 }
 
@@ -186,6 +191,9 @@ impl LegalRule for BattleRule {
         }
         out
     }
+    fn as_rule(&self) -> Rule {
+        Rule::Battle
+    }
 }
 
 /// Either rule, chosen at run time (the Python environment's `rule`).
@@ -202,6 +210,9 @@ impl LegalRule for Rule {
             Rule::Battle => BattleRule.options(s, battles),
             Rule::State => StateRule.options(s, battles),
         }
+    }
+    fn as_rule(&self) -> Rule {
+        *self
     }
 }
 
@@ -409,6 +420,66 @@ pub struct Slot {
     pub at_turn: [Option<(State, Option<(u8, u8)>)>; SIDES],
 }
 
+/// The settings a slot's Battles, options and team ids depend on: a save restores only into an
+/// environment with the same ones.
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+struct Settings {
+    rule: Rule,
+    team_mode: TeamMode,
+    auto_locked: bool,
+    replace_before_rows: bool,
+    checks: bool,
+    keep_records: bool,
+}
+
+/// A game of the environment at its pending decision, everything its slot holds for it (`BatchEnv::save`),
+/// to be put back into a slot with `BatchEnv::restore`.
+#[derive(Clone, Debug)]
+pub struct SlotSave {
+    pub game: Game,
+    pub team_ids: [usize; 2],
+    pub agent: u8,
+    rosters: [Team; 2],
+    picks: [Option<[u8; TEAM]>; SIDES],
+    chosen: [Option<Choice>; SIDES],
+    opts: [SideOptions; SIDES],
+    state_opts: [SideOptions; SIDES],
+    steps: u32,
+    pending: Pending,
+    seats: Seats,
+    refused_here: Vec<u16>,
+    decision: u64,
+    asked: [Asked; SIDES],
+    took: [Took; SIDES],
+    at_turn: Option<Box<[Option<(State, Option<(u8, u8)>)>; SIDES]>>,
+    settings: Settings,
+    pool: Arc<TeamPool>,
+}
+
+impl SlotSave {
+    pub fn pending(&self) -> Pending {
+        self.pending
+    }
+}
+
+/// A copy of a slot's Seats for a save: the last step's events are left out (the next step sets them).
+fn seats_copy(s: &Seats) -> Seats {
+    Seats {
+        builders: s.builders.clone(),
+        records: if s.keep { s.records.clone() } else { Default::default() },
+        keep: s.keep,
+        tag: s.tag.clone(),
+        seq: s.seq,
+        emitter: s.emitter.clone(),
+        last: Default::default(),
+        profile: false,
+        prof: [0; 3],
+        replace_before_rows: s.replace_before_rows,
+        held: s.held.clone(),
+        held_events: s.held_events,
+    }
+}
+
 /// One unit of work's counts (a chunk of games in one `act`), merged in game order afterwards.
 #[derive(Default)]
 struct Local {
@@ -443,7 +514,12 @@ pub struct BatchEnv<R: LegalRule = BattleRule> {
     workers: Option<Pool>,
     locals: Vec<Mutex<Local>>,
     profile: bool,
+    /// each game's agent seat as configured: the seat that draws first
     agent: Vec<u8>,
+    /// each game's agent seat now: a restored game brings its own until it ends
+    agent_now: Vec<u8>,
+    /// games whose restored game has an agent seat other than the configured one
+    agent_moved: Vec<usize>,
 }
 
 /// Games per unit of work handed to a worker.
@@ -481,7 +557,9 @@ impl<R: LegalRule> BatchEnv<R> {
             workers: None,
             locals: Vec::new(),
             profile: false,
+            agent_now: agent.clone(),
             agent,
+            agent_moved: Vec::new(),
         };
         let mut done = 0;
         let mut cx = Ctx { cfg: &env.cfg, pool: &env.pool, rule: &env.rule, c: &mut env.counters, games_done: &mut done, prof: false, agent: &env.agent };
@@ -553,9 +631,102 @@ impl<R: LegalRule> BatchEnv<R> {
         &self.pool
     }
 
-    /// Each game's agent seat (`with_agent`; 0 by default).
+    /// Each game's agent seat (`with_agent`; 0 by default; a restored game's own until it ends).
     pub fn agent_seats(&self) -> &[u8] {
-        &self.agent
+        &self.agent_now
+    }
+
+    fn settings(&self) -> Settings {
+        let c = &self.cfg;
+        Settings { rule: self.rule.as_rule(), team_mode: c.team_mode, auto_locked: c.auto_locked, replace_before_rows: c.replace_before_rows, checks: c.checks, keep_records: c.keep_records }
+    }
+
+    /// Game `g` as its slot holds it at the pending decision; None during team preview.
+    pub fn save(&self, g: usize) -> Option<SlotSave> {
+        let s = &self.slots[g];
+        if s.in_preview {
+            return None;
+        }
+        Some(SlotSave {
+            game: s.game.clone(),
+            team_ids: s.team_ids,
+            agent: self.agent_now[g],
+            rosters: s.rosters,
+            picks: s.picks,
+            chosen: s.chosen,
+            opts: s.opts,
+            state_opts: s.state_opts,
+            steps: s.steps,
+            pending: s.pending,
+            seats: seats_copy(&s.seats),
+            refused_here: s.refused_here.clone(),
+            decision: s.decision,
+            asked: s.asked,
+            took: s.took,
+            at_turn: self.cfg.checks.then(|| Box::new(s.at_turn)),
+            settings: self.settings(),
+            pool: self.pool.clone(),
+        })
+    }
+
+    /// Puts a saved game into slot `g`, its luck from then on drawn from `seed` alone (as
+    /// `Game::fork(seed)`), waiting on the save's pending decision. Both seats' Battles, the decision ids,
+    /// the step count, the team ids and the agent seat come with it; the slot's episode number does not
+    /// change and the game ends as any other (its result counted once), then the slot restarts as usual.
+    /// Only into a slot whose game has not started (team preview with no picks given: a game just
+    /// ended, or a new environment), of an environment with the same settings and teams.
+    pub fn restore(&mut self, g: usize, save: &SlotSave, seed: u64) -> Result<(), String> {
+        if g >= self.slots.len() {
+            return Err(format!("restore: game {} of {}", g, self.slots.len()));
+        }
+        let mine = self.settings();
+        if save.settings != mine {
+            return Err(format!("restore: the save comes from an environment with other settings ({:?}; this one {:?})", save.settings, mine));
+        }
+        if !Arc::ptr_eq(&save.pool, &self.pool) && save.pool.teams != self.pool.teams {
+            return Err("restore: the save comes from an environment with other teams".into());
+        }
+        let s = &mut self.slots[g];
+        if !s.in_preview || s.picks.iter().any(|p| p.is_some()) {
+            let at = if s.in_preview { "in team preview with picks given".to_string() } else { format!("at turn {}", s.game.state.turn) };
+            return Err(format!("restore: game {} is being played ({}); restore into a slot whose game just ended, before acting on it", g, at));
+        }
+        s.game = Game { state: save.game.state, rng: Seeded::new(seed) };
+        s.in_preview = false;
+        s.rosters = save.rosters;
+        s.team_ids = save.team_ids;
+        s.picks = save.picks;
+        s.chosen = save.chosen;
+        s.opts = save.opts;
+        s.state_opts = save.state_opts;
+        s.steps = save.steps;
+        s.pending = save.pending;
+        s.seats = seats_copy(&save.seats);
+        s.refused_here.clone_from(&save.refused_here);
+        s.decision = save.decision;
+        s.asked = save.asked;
+        s.took = save.took;
+        // the hidden-information replay starts from the game's first step: not for a restored game
+        s.log = None;
+        s.at_turn = save.at_turn.as_deref().copied().unwrap_or([None; SIDES]);
+        self.agent_now[g] = save.agent;
+        if save.agent != self.agent[g] && !self.agent_moved.contains(&g) {
+            self.agent_moved.push(g);
+        }
+        Ok(())
+    }
+
+    /// After an act: a restored game that ended gives its slot back its configured agent seat.
+    fn settle_agents(&mut self) {
+        let (results, agent, now) = (&self.results, &self.agent, &mut self.agent_now);
+        self.agent_moved.retain(|&g| {
+            if results[g].done {
+                now[g] = agent[g];
+                false
+            } else {
+                true
+            }
+        });
     }
 
     /// `out[g] = f(&mut state, g, slot)` for every game, on the worker pool in chunks of games, `init`
@@ -596,6 +767,16 @@ impl<R: LegalRule> BatchEnv<R> {
 
     pub fn slot(&self, g: usize) -> &Slot {
         &self.slots[g]
+    }
+
+    /// Game `g` with both seats' views as they are now (`views`); None during team preview.
+    pub fn tracked(&self, g: usize) -> Option<(Game, crate::views::Tracked)> {
+        let s = &self.slots[g];
+        if s.in_preview {
+            return None;
+        }
+        let v = crate::views::Views::of_slot(s, self.rule.as_rule(), self.cfg.auto_locked);
+        Some((s.game.clone(), crate::views::Tracked::new(s.game.state, v)))
     }
 
     /// The Battle of a seat of game `g`: what that seat knows.
@@ -651,6 +832,16 @@ impl<R: LegalRule> BatchEnv<R> {
                 return Err(format!("act: game {} seat {}: action {} not legal for {:?}", g, s.pending.seat, a, s.pending.kind));
             }
         }
+        let r = self.step_all(actions);
+        if !self.agent_moved.is_empty() {
+            self.settle_agents();
+        }
+        r
+    }
+
+    /// `act` once its actions are checked.
+    fn step_all(&mut self, actions: &[u16]) -> Result<(), String> {
+        let n = self.slots.len();
         self.decisions += n as u64;
         let threads = self.threads();
         if threads == 1 || n < 32 {

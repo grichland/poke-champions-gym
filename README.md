@@ -17,7 +17,8 @@ Licence: MIT (`LICENSE`). Third-party notices: `THIRD_PARTY_NOTICES.md`.
   observation read a Battle, never the engine's state.
 - **Built-in players** (`players/`): `random`, `max_damage` and `tower`, and ports of the older Python
   players: `best_matchup_max_damage`, `disciplined`, `endgame`, `pilot_encore`, `pilot_weather`,
-  `pilot_hazard`, `pilot_priority` (see "Built-in players" below). All usable as opponents by name.
+  `pilot_hazard`, `pilot_priority`, and `lookahead` (`env/src/lookahead.rs`), which searches one turn
+  ahead on the engine (see "Built-in players" below). All usable as opponents by name.
 - **Batched environment** (`env/`, `bindings/`, `python/champions_gym`): N games stepped together with
   strict turn-taking (each call asks one seat of each game for one decision), legal-action masks, results,
   snapshot and fork, outcome enumeration, optional worker threads (the same games for any thread count).
@@ -53,15 +54,16 @@ bash tools/build/python-ext.sh
 
 `python-ext.sh` builds the extension for `C:\Program Files\Python312\python.exe` (or the Python given as
 its argument) and copies it into `python/champions_gym/`. `wheel.py` writes
-`dist/champions_gym-0.4.0-cp312-cp312-win_amd64.whl`. Install it into a virtual environment:
+`dist/champions_gym-0.5.0-cp312-cp312-win_amd64.whl`. Install it into a virtual environment:
 
 ```
 "/c/Program Files/Python312/python.exe" -m venv cg-venv
-cg-venv/Scripts/python.exe -m pip install --no-index --no-deps dist/champions_gym-0.4.0-cp312-cp312-win_amd64.whl
+cg-venv/Scripts/python.exe -m pip install --no-index --no-deps dist/champions_gym-0.5.0-cp312-cp312-win_amd64.whl
 ```
 
 Without installing, `PYTHONPATH=python` also works from the repository root. `champions_gym.__version__`
-tells builds apart (0.4.0: LIVE 0.9, the model player hooks; 0.3.0: LIVE 0.8; 0.2.0: LIVE 0.7).
+tells builds apart (0.5.0: a Game's views, Games from a live Battle, sampled outcomes; 0.4.0: LIVE 0.9,
+the model player hooks; 0.3.0: LIVE 0.8; 0.2.0: LIVE 0.7).
 
 numpy is an optional extra (`champions_gym[numpy]`). With numpy every array the package returns is a
 numpy array; without it the same data comes back as typed `memoryview`s of the same shape (indexable as
@@ -125,6 +127,75 @@ built-in player's, so the learner only needs the rows where `seat == agent_seat`
 `env.builtin_actions(name)` gives a built-in player's action for every game's pending decision (computed
 in Rust on the worker threads), the same as `cg.BuiltinPlayer` asked game by game.
 
+### Trees and lookahead
+
+`env.snapshot(g)` and `env.fork(g, seed)` copy one game into a `cg.Game`: both seats choose together
+(`Game.step(a0, a1)`, None for a seat with no decision, `Game.masks()` the State's legal actions),
+`Game.outcomes(a0, a1)` enumerates every outcome of a step with its probability and forced path
+(`Game.step_forced`), and `Game.sample(a0, a1, n, seed)` draws `n` outcomes with the engine's
+probabilities when enumeration is too large (weight 1/n per draw, equal States merged). `Game.readout()`
+gives the State's HP fractions, faints, statuses and active slots of both sides.
+
+With `views=True` the Game also carries each seat's Battle: `Game.battle(seat)` and `Game.tensors(seat)`
+are what `BatchEnv` would show that seat had it played the same actions with the same random outcomes
+(the env's `replace_before_rows` order included; on a fresh fork exactly `observe_tensors` for the
+pending seat). A seat with no open request (not deciding, locked, already answered, the game over) shows
+its Battle as it last saw it with `kind == cg.KIND_NONE`, decision -1 and an empty mask. Forks, steps and
+outcome children keep the views at no cost; the rows are emitted the first time a view is read.
+`cg.game_tensors(games, seats, out=None, threads=1)` writes many Games' observations into one [N, ...]
+batch. Views cost a copy of both Battles (a few microseconds) at `env.fork`, so they are asked for.
+
+`env.restore(slot, game, seed)` puts a copy of `env.snapshot(g, views=True)` (not stepped since; it can be
+restored again, into any number of slots) back into the batch as an ordinary game, waiting on its pending
+turn or replace decision, its luck from then on drawn from `seed` alone (as `game.fork(seed)`), so the same
+snapshot and seed give the same game in any slot for any `threads`. Both Battles, decision ids, the label
+records, `team_ids` and `agent_seat` come with it; no preview is asked and no start reported; its turn
+count and step cap count from the original game's first turn, and `results()` reports it once, under the
+slot's episode number, before the slot restarts as usual. It goes only into a slot whose game has not
+started (just ended, as `results()` shows, or a new environment), from an environment with the same rule,
+team mode, `replace_before_rows` and teams; anything else raises CGError. About 2 microseconds (10 from
+another environment, whose teams are compared); the snapshot with views costs about 1.5 more for it.
+
+```python
+import champions_gym as cg
+
+env = cg.BatchEnv(cg.TEAMS, 64, seed=1)
+saved = []
+while env.games_done < 200:
+    env.act(env.builtin_actions("tower"))
+    kind = env.pending()[1].tolist()
+    if kind[0] == cg.KIND_TURN and len(saved) < 8:
+        saved.append(env.snapshot(0, views=True))
+    for g, done in enumerate(env.results().done.tolist()):
+        if done and saved:
+            env.restore(g, saved[g % len(saved)], seed=g)  # another continuation of a saved position
+```
+
+A Game can also start from a live battle: `Session.game(opponent)` (or `cg.game_from_battle(battle,
+opponent)`) builds the engine State from the Session's Battle at its open request plus the caller's
+guesses for the opponent's three brought (unseen moves, item, ability, nature, stat points). CG only
+checks the guesses (learnset, ability, Mega Stone, stat point limits, nothing the Battle revealed is
+contradicted) and returns the ones it could not use with the reason; `cg.env.UNKNOWN` lists what the
+Battle cannot tell and the rule used. Our seat's views are the live Battle, continued with the rows of
+each step; the opponent's Battle is not known.
+
+```python
+import champions_gym as cg
+
+def lookahead(session, opponent, a1_choices, n=50):
+    """Mean HP fraction we keep after one turn, per our action, against a guessed opponent action set."""
+    game, rejected = session.game(opponent)        # opponent: [{"slot": 2, "moves": [...], ...}, ...]
+    mine = [a for a in range(cg.N_TURN_ACTIONS) if game.battle(0).mask[a]]
+    value = {}
+    for a0 in mine:
+        total = 0.0
+        for a1 in a1_choices:
+            for o in game.sample(a0, a1, n, seed=1).outcomes:
+                total += o.p * sum(o.game.readout().hp[0]) / 3
+        value[a0] = total / len(a1_choices)
+    return value
+```
+
 ## Built-in players
 
 `cg.BUILTIN_PLAYERS` lists them; each name works in `cg.builtin_player(name)`, `cg.play_games(name, ...)`,
@@ -141,8 +212,18 @@ points, no item, revealed moves and abilities only), with no build catalogs.
 | `disciplined` | max damage plus switching, anti-setup, recovery and "ahead: attack only" rules |
 | `endgame` | disciplined until both sides have two or fewer left, then a 1v1 duel chain picks stay, switch or send |
 | `pilot_encore`, `pilot_weather`, `pilot_hazard`, `pilot_priority` | tower plus one signature rule taken 85% of the time when it applies; bring their gimmick members first |
+| `lookahead`, `lookahead2` | one-turn (two-turn) search on an engine State built from its Battle: every legal action against every opposing action, outcomes sampled, positions scored; keeps the action whose worst replies are best. Preview: the three with the best worst-case matchup |
 
-Their rules, thresholds and sources are in each module's header under `players/src/`. Team pools that fit the
+`lookahead` builds the State with `game_from_battle`'s fixed rule and fills unrevealed opposing moves with
+placeholders from public species data (a STAB move per type and one coverage move); it reads nothing
+else. Each position is scored by Pokémon left and their HP, statuses, boosts, who moves first and
+hazards. Options follow the name after `@`: `lookahead@depth=2,samples=4,replies=2,seed=7,fill=1`
+(`depth` 1 or 2, `samples` draws per pair of actions, default 4; `replies` worst opposing replies averaged,
+default 2, 1 is maximin; `seed` mixed into the draws; `fill` 2 (default) or 1, without the coverage move).
+It is deterministic for a seed. About 0.3 ms per decision at depth 1 and 1.4 to 2 ms at depth 2 on one worker
+thread; results against the other built-ins: `bench/results/2026-11-19-lookahead-results.log`.
+
+Their rules, thresholds and sources are in each module's header under `players/src/` and `env/src/lookahead.rs`. Team pools that fit the
 pilots are in `bench/data/pools/pilot_<style>.json` (converted with `tools/pools/showdown_to_cg.py`);
 `players_run --teams-a FILE` gives player A its own pool.
 
@@ -189,7 +270,7 @@ Measured on 18 Nov 2026 on an Intel i9-14900HX with 4,096 games in one `BatchEnv
 `champions_gym.live.Session` plays a live battle for a phone controller (`contracts/LIVE.md`): it takes the
 controller's messages in order, builds the Battle with the same Builder as training, and answers team
 preview with picks and each decision request with an order. Every argument is a keyword a config can pass:
-`player` is a built-in name (`champions_gym.live.builtin_names()`: ten), a `"module:attr"` path to a class or
+`player` is a built-in name (`champions_gym.live.builtin_names()`: twelve), a `"module:attr"` path to a class or
 factory (called with `player_args`, a dict), or any object with `teampreview(battle)` and
 `choose_move(battle)` (it gets the same `Battle` as `cg.Player`); an unknown player fails when the Session is
 made. `seed` seeds the built-in players; `log_dir` keeps every message and reply as JSON lines per battle,
@@ -248,9 +329,9 @@ before a model plays on the phone: `docs/neural-player.md`; an adapter for pcsa-
 | `engine/` | Rust: the rules, the battle state, the outcome source, the generated data tables |
 | `battle/` | Rust: the Battle and its builder from events; legal actions from a Battle |
 | `emit/` | Rust: turns the engine's log rows into each seat's events |
-| `players/` | Rust: the built-in players (random, max damage, tower and the seven ports) |
+| `players/` | Rust: the scripted built-in players (random, max damage, tower and the seven ports) |
 | `obs/` | Rust: the observation and the learnset table |
-| `env/` | Rust: the batched environment, labels, outcome enumeration, team pool |
+| `env/` | Rust: the batched environment, labels, outcome enumeration, team pool; the `lookahead` player and the by-name registry of every built-in (`env/src/builtin.rs`) |
 | `bindings/` | Rust + pyo3: the `_cg` extension |
 | `python/champions_gym/` | the Python package; `data/teams.json` is the shipped pool of 430 teams |
 | `python/tests/` | Python tests |

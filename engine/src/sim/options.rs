@@ -207,6 +207,14 @@ impl State {
         None
     }
 
+    /// Sets the flags a turn start gives the active Pokémon (trapped, disabled moves) and a move request,
+    /// for a State built from outside (`Sim::turn_start_flags`). Nothing is drawn.
+    pub fn turn_start_flags(&mut self) {
+        let mut o = super::outcome::Seeded::new(0);
+        let mut sim = Sim::with_log(self, &mut o, None);
+        sim.turn_start_flags();
+    }
+
     /// The DisableMove pass of a turn start, without drawing: the slots its handlers disable.
     fn disable_pass(&self, side: usize) -> [bool; 4] {
         let sd = &self.sides[side];
