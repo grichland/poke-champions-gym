@@ -157,8 +157,7 @@ bench/                  benchmarks and recorded results
   plus the caller's guesses for the hidden opposing sets (`env/src/from_battle.rs`; CG checks the guesses,
   never samples them; `UNKNOWN` lists what the Battle cannot tell), so a tree can also start in live play.
   `BatchEnv.restore(slot, game, seed)` puts a `snapshot(g, views=True)` back into a slot whose game just
-  ended, as an ordinary batch game with its own seed (training's request `pcsa-former/docs/note-cg-restore-slot.md`;
-  `env::batch::SlotSave`, tests `env/tests/restore.rs`, `python/tests/test_restore.py`).
+  ended, as an ordinary batch game with its own seed (`env::batch::SlotSave`, tests `env/tests/restore.rs`, `python/tests/test_restore.py`).
 
 **Step 8 design.**
 - A new turn resolver in `engine/src/sim/`, built beside the old one. The old resolver and its tests
